@@ -1,22 +1,27 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 
 //import path from "path";
 //import HtmlWebpackPlugin from "html-webpack-plugin";
 
 module.exports = {
-  entry: path.join(__dirname, "src", "index.js"),
+  entry: {
+    main: [
+      "webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000",
+      "./src/index.js"
+    ]
+  },
   output: {
     path: path.join(__dirname, "build"),
-    filename: "index.bundle.js"
+    publicPath: "/",
+    filename: "[name].js"
   },
   mode: "development",
+  target: "web",
+  devtool: "source-map",
   resolve: {
-    modules: [path.resolve(__dirname, "src"), "node_modules"]
-  },
-  devTool: "source-map",
-  devServer: {
-    contentBase: path.join(__dirname, "src")
+    modules: [path.resolve("./", "src"), "node_modules"]
   },
   module: {
     rules: [
@@ -32,12 +37,20 @@ module.exports = {
       {
         test: /\.(jpg|jpeg|png|svg|gif|img|mp3)$/,
         loaders: ["file-loader"]
+      },
+      {
+        test: /\.html$/,
+        use: [{ loader: "html-loader" }]
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src", "index.html")
-    })
+      template: path.join("./", "src", "index.html"),
+      filename: "./index.html",
+      excludeChunks: ["server"]
+    }),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoEmitOnErrorsPlugin()
   ]
 };
