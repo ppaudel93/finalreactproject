@@ -1,8 +1,8 @@
-// const path = require("path");
-// const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-import path from "path";
-import HtmlWebpackPlugin from "html-webpack-plugin";
+//import path from "path";
+//import HtmlWebpackPlugin from "html-webpack-plugin";
 
 module.exports = {
   entry: path.join(__dirname, "src", "index.js"),
@@ -10,10 +10,11 @@ module.exports = {
     path: path.join(__dirname, "build"),
     filename: "index.bundle.js"
   },
-  mode: process.env.NODE_ENV || "development",
+  mode: "development",
   resolve: {
     modules: [path.resolve(__dirname, "src"), "node_modules"]
   },
+  devTool: "source-map",
   devServer: {
     contentBase: path.join(__dirname, "src")
   },
