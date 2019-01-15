@@ -5,12 +5,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf build && mkdir build",
-    "buildDev": "npm run clean && webpack --mode development --config webpack.server.config.js && webpack --mode development --config webpack.config.dev.js",
-    "buildProd": "npm run clean && webpack --mode production --config webpack.server.config.js && webpack --mode production --config webpack.config.prod.js",
-    "start2": "npm run build && node ./build/server.js",
-    "start": "node ./build/server.js",
-    "webpack": "babel-node ./node_modules/webpack/bin/webpack --config webpack.config.dev.js",
-    "start3": "npm run build && webpack-dashboard -- node ./build/server.js"
+    "buildDev": "yarn run clean && webpack --mode development --config webpack.server.config.js && webpack --mode development --config webpack.config.dev.js",
+    "buildProd": "yarn run clean && webpack --mode production --config webpack.server.config.js && webpack --mode production --config webpack.config.prod.js",
+    "start": "yarn run buildDev && node ./build/server.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +18,7 @@
     "html-loader": "^0.5.5",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
     "webpack": "^4.28.4",
     "webpack-dashboard": "^2.0.0",
     "webpack-dev-middleware": "^3.5.0",
