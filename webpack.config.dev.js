@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
+const NodemonPlugin = require("nodemon-webpack-plugin");
 
 //import path from "path";
 //import HtmlWebpackPlugin from "html-webpack-plugin";
@@ -41,6 +42,17 @@ module.exports = {
       {
         test: /\.html$/,
         use: [{ loader: "html-loader" }]
+      },
+      {
+        test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 50000,
+            mimetype: "application/font-woff",
+            name: "./fonts/[name].[ext]"
+          }
+        }
       }
     ]
   },

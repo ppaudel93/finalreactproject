@@ -21,7 +21,6 @@ app.use(
 );
 app.use(webpackHotMiddleware(compiler));
 app.get("/*", (req, res) => {
-  console.log(req.url);
   const context = {};
   const app = ReactDOMServer.renderToString(
     <StaticRouter location={req.url} context={context}>
@@ -33,7 +32,6 @@ app.get("/*", (req, res) => {
       console.log("Something went wrong: ", err);
       return res.status(500).send("Oops, better luck next time.");
     }
-    console.log(data);
     return res.send(
       data.replace('<div id="root"></div>', `<div id="root">${app}</div>`)
     );

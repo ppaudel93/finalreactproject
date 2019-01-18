@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const nodeExternals = require("webpack-node-externals");
+const NodemonPlugin = require("nodemon-webpack-plugin");
 
 module.exports = (env, argv) => {
   const SERVER_PATH =
@@ -23,6 +24,7 @@ module.exports = (env, argv) => {
       __dirname: false,
       __filename: false
     },
+    plugins: [new NodemonPlugin()],
     externals: [nodeExternals()],
     module: {
       rules: [

@@ -1,6 +1,12 @@
 body {
   div#root {
-    background-color: #222;
+    // background-color: #222;
     color: #8ee4af;
+  }
+  background-color: #212121;
+}
+@media (max-width: 500px) {
+  body {
+    background-color: #ffffff;
   }
 }
