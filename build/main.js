@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "ba76bbb6864200b4c2e2";
+/******/ 	var hotCurrentHash = "fe67316c1a922b8de372";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -793,6 +793,22 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./API_KEYS.js":
+/*!*********************!*\
+  !*** ./API_KEYS.js ***!
+  \*********************/
+/*! exports provided: WordnikKey, giphyKey */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WordnikKey", function() { return WordnikKey; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "giphyKey", function() { return giphyKey; });
+var WordnikKey = "c20ca247635126ef6070e0556e90dce11afd830d373e6f0cc";
+var giphyKey = "uQycJdQ55GEWo6iQm2CkpounDRU7j2Ot";
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js":
 /*!******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
@@ -1224,6 +1240,260 @@ function _typeof(obj) {
 }
 
 module.exports = _typeof;
+
+/***/ }),
+
+/***/ "./node_modules/@date-io/date-fns/build/index.esm.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@date-io/date-fns/build/index.esm.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var date_fns_addDays__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! date-fns/addDays */ "./node_modules/date-fns/esm/addDays/index.js");
+/* harmony import */ var date_fns_addMonths__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! date-fns/addMonths */ "./node_modules/date-fns/esm/addMonths/index.js");
+/* harmony import */ var date_fns_addYears__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! date-fns/addYears */ "./node_modules/date-fns/esm/addYears/index.js");
+/* harmony import */ var date_fns_differenceInMilliseconds__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! date-fns/differenceInMilliseconds */ "./node_modules/date-fns/esm/differenceInMilliseconds/index.js");
+/* harmony import */ var date_fns_eachDayOfInterval__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! date-fns/eachDayOfInterval */ "./node_modules/date-fns/esm/eachDayOfInterval/index.js");
+/* harmony import */ var date_fns_endOfDay__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! date-fns/endOfDay */ "./node_modules/date-fns/esm/endOfDay/index.js");
+/* harmony import */ var date_fns_endOfWeek__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! date-fns/endOfWeek */ "./node_modules/date-fns/esm/endOfWeek/index.js");
+/* harmony import */ var date_fns_endOfYear__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! date-fns/endOfYear */ "./node_modules/date-fns/esm/endOfYear/index.js");
+/* harmony import */ var date_fns_format__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! date-fns/format */ "./node_modules/date-fns/esm/format/index.js");
+/* harmony import */ var date_fns_getHours__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! date-fns/getHours */ "./node_modules/date-fns/esm/getHours/index.js");
+/* harmony import */ var date_fns_getSeconds__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! date-fns/getSeconds */ "./node_modules/date-fns/esm/getSeconds/index.js");
+/* harmony import */ var date_fns_getYear__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! date-fns/getYear */ "./node_modules/date-fns/esm/getYear/index.js");
+/* harmony import */ var date_fns_isAfter__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! date-fns/isAfter */ "./node_modules/date-fns/esm/isAfter/index.js");
+/* harmony import */ var date_fns_isBefore__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! date-fns/isBefore */ "./node_modules/date-fns/esm/isBefore/index.js");
+/* harmony import */ var date_fns_isEqual__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! date-fns/isEqual */ "./node_modules/date-fns/esm/isEqual/index.js");
+/* harmony import */ var date_fns_isSameDay__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! date-fns/isSameDay */ "./node_modules/date-fns/esm/isSameDay/index.js");
+/* harmony import */ var date_fns_isValid__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! date-fns/isValid */ "./node_modules/date-fns/esm/isValid/index.js");
+/* harmony import */ var date_fns_parse__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! date-fns/parse */ "./node_modules/date-fns/esm/parse/index.js");
+/* harmony import */ var date_fns_setHours__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! date-fns/setHours */ "./node_modules/date-fns/esm/setHours/index.js");
+/* harmony import */ var date_fns_setMinutes__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! date-fns/setMinutes */ "./node_modules/date-fns/esm/setMinutes/index.js");
+/* harmony import */ var date_fns_setSeconds__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! date-fns/setSeconds */ "./node_modules/date-fns/esm/setSeconds/index.js");
+/* harmony import */ var date_fns_setYear__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! date-fns/setYear */ "./node_modules/date-fns/esm/setYear/index.js");
+/* harmony import */ var date_fns_startOfDay__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! date-fns/startOfDay */ "./node_modules/date-fns/esm/startOfDay/index.js");
+/* harmony import */ var date_fns_startOfMonth__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! date-fns/startOfMonth */ "./node_modules/date-fns/esm/startOfMonth/index.js");
+/* harmony import */ var date_fns_endOfMonth__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! date-fns/endOfMonth */ "./node_modules/date-fns/esm/endOfMonth/index.js");
+/* harmony import */ var date_fns_startOfWeek__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! date-fns/startOfWeek */ "./node_modules/date-fns/esm/startOfWeek/index.js");
+/* harmony import */ var date_fns_startOfYear__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! date-fns/startOfYear */ "./node_modules/date-fns/esm/startOfYear/index.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var DateFnsUtils = /** @class */ (function () {
+    function DateFnsUtils(_a) {
+        var locale = (_a === void 0 ? {} : _a).locale;
+        this.dateTime12hFormat = "MMMM do hh:mm aaaa";
+        this.dateTime24hFormat = "MMMM do HH:mm";
+        this.time12hFormat = "hh:mm a";
+        this.time24hFormat = "HH:mm";
+        this.dateFormat = "MMMM do";
+        this.locale = locale;
+    }
+    // Note: date-fns input types are more lenient than this adapter, so we need to expose our more
+    //  strict signature and delegate to the more lenient sigtature.  Otherwise, we have downstream type errors upon usage.
+    DateFnsUtils.prototype.addDays = function (value, count) {
+        return Object(date_fns_addDays__WEBPACK_IMPORTED_MODULE_0__["default"])(value, count);
+    };
+    DateFnsUtils.prototype.isValid = function (value) {
+        return Object(date_fns_isValid__WEBPACK_IMPORTED_MODULE_16__["default"])(value);
+    };
+    DateFnsUtils.prototype.getDiff = function (value, comparing) {
+        return Object(date_fns_differenceInMilliseconds__WEBPACK_IMPORTED_MODULE_3__["default"])(value, comparing);
+    };
+    DateFnsUtils.prototype.isAfter = function (value, comparing) {
+        return Object(date_fns_isAfter__WEBPACK_IMPORTED_MODULE_12__["default"])(value, comparing);
+    };
+    DateFnsUtils.prototype.isBefore = function (value, comparing) {
+        return Object(date_fns_isBefore__WEBPACK_IMPORTED_MODULE_13__["default"])(value, comparing);
+    };
+    DateFnsUtils.prototype.startOfDay = function (value) {
+        return Object(date_fns_startOfDay__WEBPACK_IMPORTED_MODULE_22__["default"])(value);
+    };
+    DateFnsUtils.prototype.endOfDay = function (value) {
+        return Object(date_fns_endOfDay__WEBPACK_IMPORTED_MODULE_5__["default"])(value);
+    };
+    DateFnsUtils.prototype.getHours = function (value) {
+        return Object(date_fns_getHours__WEBPACK_IMPORTED_MODULE_9__["default"])(value);
+    };
+    DateFnsUtils.prototype.setHours = function (value, count) {
+        return Object(date_fns_setHours__WEBPACK_IMPORTED_MODULE_18__["default"])(value, count);
+    };
+    DateFnsUtils.prototype.setMinutes = function (value, count) {
+        return Object(date_fns_setMinutes__WEBPACK_IMPORTED_MODULE_19__["default"])(value, count);
+    };
+    DateFnsUtils.prototype.getSeconds = function (value) {
+        return Object(date_fns_getSeconds__WEBPACK_IMPORTED_MODULE_10__["default"])(value);
+    };
+    DateFnsUtils.prototype.setSeconds = function (value, count) {
+        return Object(date_fns_setSeconds__WEBPACK_IMPORTED_MODULE_20__["default"])(value, count);
+    };
+    DateFnsUtils.prototype.isSameDay = function (value, comparing) {
+        return Object(date_fns_isSameDay__WEBPACK_IMPORTED_MODULE_15__["default"])(value, comparing);
+    };
+    DateFnsUtils.prototype.startOfMonth = function (value) {
+        return Object(date_fns_startOfMonth__WEBPACK_IMPORTED_MODULE_23__["default"])(value);
+    };
+    DateFnsUtils.prototype.endOfMonth = function (value) {
+        return Object(date_fns_endOfMonth__WEBPACK_IMPORTED_MODULE_24__["default"])(value);
+    };
+    DateFnsUtils.prototype.getYear = function (value) {
+        return Object(date_fns_getYear__WEBPACK_IMPORTED_MODULE_11__["default"])(value);
+    };
+    DateFnsUtils.prototype.setYear = function (value, count) {
+        return Object(date_fns_setYear__WEBPACK_IMPORTED_MODULE_21__["default"])(value, count);
+    };
+    DateFnsUtils.prototype.date = function (value) {
+        if (typeof value === "undefined") {
+            return new Date();
+        }
+        if (value === null) {
+            return null;
+        }
+        return new Date(value);
+    };
+    DateFnsUtils.prototype.parse = function (value, formatString) {
+        if (value === "") {
+            return null;
+        }
+        return Object(date_fns_parse__WEBPACK_IMPORTED_MODULE_17__["default"])(value, formatString, new Date());
+    };
+    DateFnsUtils.prototype.format = function (date, formatString) {
+        return Object(date_fns_format__WEBPACK_IMPORTED_MODULE_8__["default"])(date, formatString, { locale: this.locale });
+    };
+    DateFnsUtils.prototype.isEqual = function (date, comparing) {
+        if (date === null && comparing === null) {
+            return true;
+        }
+        return Object(date_fns_isEqual__WEBPACK_IMPORTED_MODULE_14__["default"])(date, comparing);
+    };
+    DateFnsUtils.prototype.isNull = function (date) {
+        return date === null;
+    };
+    DateFnsUtils.prototype.isAfterDay = function (date, value) {
+        return Object(date_fns_isAfter__WEBPACK_IMPORTED_MODULE_12__["default"])(date, Object(date_fns_endOfDay__WEBPACK_IMPORTED_MODULE_5__["default"])(value));
+    };
+    DateFnsUtils.prototype.isBeforeDay = function (date, value) {
+        return Object(date_fns_isBefore__WEBPACK_IMPORTED_MODULE_13__["default"])(date, Object(date_fns_startOfDay__WEBPACK_IMPORTED_MODULE_22__["default"])(value));
+    };
+    DateFnsUtils.prototype.isBeforeYear = function (date, value) {
+        return Object(date_fns_isBefore__WEBPACK_IMPORTED_MODULE_13__["default"])(date, Object(date_fns_startOfYear__WEBPACK_IMPORTED_MODULE_26__["default"])(value));
+    };
+    DateFnsUtils.prototype.isAfterYear = function (date, value) {
+        return Object(date_fns_isAfter__WEBPACK_IMPORTED_MODULE_12__["default"])(date, Object(date_fns_endOfYear__WEBPACK_IMPORTED_MODULE_7__["default"])(value));
+    };
+    DateFnsUtils.prototype.formatNumber = function (numberToFormat) {
+        return numberToFormat;
+    };
+    DateFnsUtils.prototype.getMinutes = function (date) {
+        return date.getMinutes();
+    };
+    DateFnsUtils.prototype.getMonth = function (date) {
+        return date.getMonth();
+    };
+    DateFnsUtils.prototype.getMeridiemText = function (ampm) {
+        return ampm === "am" ? "AM" : "PM";
+    };
+    DateFnsUtils.prototype.getNextMonth = function (date) {
+        return Object(date_fns_addMonths__WEBPACK_IMPORTED_MODULE_1__["default"])(date, 1);
+    };
+    DateFnsUtils.prototype.getPreviousMonth = function (date) {
+        return Object(date_fns_addMonths__WEBPACK_IMPORTED_MODULE_1__["default"])(date, -1);
+    };
+    DateFnsUtils.prototype.mergeDateAndTime = function (date, time) {
+        return this.setMinutes(this.setHours(date, this.getHours(time)), this.getMinutes(time));
+    };
+    DateFnsUtils.prototype.getWeekdays = function () {
+        var _this = this;
+        var now = new Date();
+        return Object(date_fns_eachDayOfInterval__WEBPACK_IMPORTED_MODULE_4__["default"])({
+            start: Object(date_fns_startOfWeek__WEBPACK_IMPORTED_MODULE_25__["default"])(now, { locale: this.locale }),
+            end: Object(date_fns_endOfWeek__WEBPACK_IMPORTED_MODULE_6__["default"])(now, { locale: this.locale })
+        }, { locale: this.locale }).map(function (day) { return Object(date_fns_format__WEBPACK_IMPORTED_MODULE_8__["default"])(day, "EEEEEE", { locale: _this.locale }); });
+    };
+    DateFnsUtils.prototype.getWeekArray = function (date) {
+        var start = Object(date_fns_startOfWeek__WEBPACK_IMPORTED_MODULE_25__["default"])(Object(date_fns_startOfMonth__WEBPACK_IMPORTED_MODULE_23__["default"])(date), { locale: this.locale });
+        var end = Object(date_fns_endOfWeek__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(date_fns_endOfMonth__WEBPACK_IMPORTED_MODULE_24__["default"])(date), { locale: this.locale });
+        var count = 0;
+        var current = start;
+        var nestedWeeks = [];
+        while (Object(date_fns_isBefore__WEBPACK_IMPORTED_MODULE_13__["default"])(current, end)) {
+            var weekNumber = Math.floor(count / 7);
+            nestedWeeks[weekNumber] = nestedWeeks[weekNumber] || [];
+            nestedWeeks[weekNumber].push(current);
+            current = Object(date_fns_addDays__WEBPACK_IMPORTED_MODULE_0__["default"])(current, 1);
+            count += 1;
+        }
+        return nestedWeeks;
+    };
+    DateFnsUtils.prototype.getYearRange = function (start, end) {
+        var startDate = Object(date_fns_startOfYear__WEBPACK_IMPORTED_MODULE_26__["default"])(start);
+        var endDate = Object(date_fns_endOfYear__WEBPACK_IMPORTED_MODULE_7__["default"])(end);
+        var years = [];
+        var current = startDate;
+        while (Object(date_fns_isBefore__WEBPACK_IMPORTED_MODULE_13__["default"])(current, endDate)) {
+            years.push(current);
+            current = Object(date_fns_addYears__WEBPACK_IMPORTED_MODULE_2__["default"])(current, 1);
+        }
+        return years;
+    };
+    // displaying methpds
+    DateFnsUtils.prototype.getCalendarHeaderText = function (date) {
+        return Object(date_fns_format__WEBPACK_IMPORTED_MODULE_8__["default"])(date, "MMMM yyyy", { locale: this.locale });
+    };
+    DateFnsUtils.prototype.getYearText = function (date) {
+        return Object(date_fns_format__WEBPACK_IMPORTED_MODULE_8__["default"])(date, "yyyy", { locale: this.locale });
+    };
+    DateFnsUtils.prototype.getDatePickerHeaderText = function (date) {
+        return Object(date_fns_format__WEBPACK_IMPORTED_MODULE_8__["default"])(date, "EEE, MMM d", { locale: this.locale });
+    };
+    DateFnsUtils.prototype.getDateTimePickerHeaderText = function (date) {
+        return Object(date_fns_format__WEBPACK_IMPORTED_MODULE_8__["default"])(date, "MMM d", { locale: this.locale });
+    };
+    DateFnsUtils.prototype.getDayText = function (date) {
+        return Object(date_fns_format__WEBPACK_IMPORTED_MODULE_8__["default"])(date, "d", { locale: this.locale });
+    };
+    DateFnsUtils.prototype.getHourText = function (date, ampm) {
+        return Object(date_fns_format__WEBPACK_IMPORTED_MODULE_8__["default"])(date, ampm ? "hh" : "HH", { locale: this.locale });
+    };
+    DateFnsUtils.prototype.getMinuteText = function (date) {
+        return Object(date_fns_format__WEBPACK_IMPORTED_MODULE_8__["default"])(date, "mm", { locale: this.locale });
+    };
+    DateFnsUtils.prototype.getSecondText = function (date) {
+        return Object(date_fns_format__WEBPACK_IMPORTED_MODULE_8__["default"])(date, "ss", { locale: this.locale });
+    };
+    return DateFnsUtils;
+}());
+
+/* harmony default export */ __webpack_exports__["default"] = (DateFnsUtils);
+
 
 /***/ }),
 
@@ -36714,6 +36984,176 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/icons/AccountCircle.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@material-ui/icons/AccountCircle.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement(_react.default.Fragment, null, _react.default.createElement("path", {
+  d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+}), _react.default.createElement("path", {
+  fill: "none",
+  d: "M0 0h24v24H0z"
+})), 'AccountCircle');
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/icons/AddAPhoto.js":
+/*!******************************************************!*\
+  !*** ./node_modules/@material-ui/icons/AddAPhoto.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement(_react.default.Fragment, null, _react.default.createElement("defs", null, _react.default.createElement("path", {
+  id: "a",
+  d: "M24 24H0V0h24v24z"
+})), _react.default.createElement("path", {
+  d: "M3 4V1h2v3h3v2H5v3H3V6H0V4h3zm3 6V7h3V4h7l1.83 2H21c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V10h3zm7 9c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-3.2-5c0 1.77 1.43 3.2 3.2 3.2s3.2-1.43 3.2-3.2-1.43-3.2-3.2-3.2-3.2 1.43-3.2 3.2z"
+})), 'AddAPhoto');
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/icons/Home.js":
+/*!*************************************************!*\
+  !*** ./node_modules/@material-ui/icons/Home.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement(_react.default.Fragment, null, _react.default.createElement("path", {
+  d: "M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+}), _react.default.createElement("path", {
+  fill: "none",
+  d: "M0 0h24v24H0z"
+})), 'Home');
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/icons/Settings.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/@material-ui/icons/Settings.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement(_react.default.Fragment, null, _react.default.createElement("path", {
+  transform: "scale(1.2, 1.2)",
+  fill: "none",
+  d: "M0 0h20v20H0V0z"
+}), _react.default.createElement("path", {
+  transform: "scale(1.2, 1.2)",
+  d: "M15.95 10.78c.03-.25.05-.51.05-.78s-.02-.53-.06-.78l1.69-1.32c.15-.12.19-.34.1-.51l-1.6-2.77c-.1-.18-.31-.24-.49-.18l-1.99.8c-.42-.32-.86-.58-1.35-.78L12 2.34c-.03-.2-.2-.34-.4-.34H8.4c-.2 0-.36.14-.39.34l-.3 2.12c-.49.2-.94.47-1.35.78l-1.99-.8c-.18-.07-.39 0-.49.18l-1.6 2.77c-.1.18-.06.39.1.51l1.69 1.32c-.04.25-.07.52-.07.78s.02.53.06.78L2.37 12.1c-.15.12-.19.34-.1.51l1.6 2.77c.1.18.31.24.49.18l1.99-.8c.42.32.86.58 1.35.78l.3 2.12c.04.2.2.34.4.34h3.2c.2 0 .37-.14.39-.34l.3-2.12c.49-.2.94-.47 1.35-.78l1.99.8c.18.07.39 0 .49-.18l1.6-2.77c.1-.18.06-.39-.1-.51l-1.67-1.32zM10 13c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z"
+})), 'Settings');
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/icons/utils/createSvgIcon.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@material-ui/icons/utils/createSvgIcon.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _pure = _interopRequireDefault(__webpack_require__(/*! recompose/pure */ "./node_modules/recompose/pure.js"));
+
+var _SvgIcon = _interopRequireDefault(__webpack_require__(/*! @material-ui/core/SvgIcon */ "./node_modules/@material-ui/core/SvgIcon/index.js"));
+
+function createSvgIcon(path, displayName) {
+  var Icon = function Icon(props) {
+    return _react.default.createElement(_SvgIcon.default, props, path);
+  };
+
+  Icon.displayName = "".concat(displayName, "Icon");
+  Icon = (0, _pure.default)(Icon);
+  Icon.muiName = 'SvgIcon';
+  return Icon;
+}
+
+;
+var _default = createSvgIcon;
+exports.default = _default;
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/utils/chainPropTypes.js":
 /*!***********************************************************!*\
   !*** ./node_modules/@material-ui/utils/chainPropTypes.js ***!
@@ -37348,7 +37788,7 @@ exports.push([module.i, "/* roboto-100normal - latin */\n@font-face {\n  font-fa
 
 exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "body {\n  background-color: #212121; }\n  body div#root {\n    color: #8ee4af; }\n", ""]);
+exports.push([module.i, "body {\n  background-color: #212121; }\n  body div#root {\n    color: #8ee4af; }\n\n@media (max-width: 500px) {\n  body {\n    background-color: #ffffff; } }\n", ""]);
 
 
 
@@ -37788,6 +38228,6218 @@ function supportedValue(property, value) {
 
 /***/ }),
 
+/***/ "./node_modules/date-fns/esm/_lib/getTimezoneOffsetInMilliseconds/index.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/getTimezoneOffsetInMilliseconds/index.js ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getTimezoneOffsetInMilliseconds; });
+var MILLISECONDS_IN_MINUTE = 60000
+
+/**
+ * Google Chrome as of 67.0.3396.87 introduced timezones with offset that includes seconds.
+ * They usually appear for dates that denote time before the timezones were introduced
+ * (e.g. for 'Europe/Prague' timezone the offset is GMT+00:57:44 before 1 October 1891
+ * and GMT+01:00:00 after that date)
+ *
+ * Date#getTimezoneOffset returns the offset in minutes and would return 57 for the example above,
+ * which would lead to incorrect calculations.
+ *
+ * This function returns the timezone offset in milliseconds that takes seconds in account.
+ */
+function getTimezoneOffsetInMilliseconds (dirtyDate) {
+  var date = new Date(dirtyDate.getTime())
+  var baseTimezoneOffset = date.getTimezoneOffset()
+  date.setSeconds(0, 0)
+  var millisecondsPartOfTimezoneOffset = date.getTime() % MILLISECONDS_IN_MINUTE
+
+  return baseTimezoneOffset * MILLISECONDS_IN_MINUTE + millisecondsPartOfTimezoneOffset
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/_lib/getUTCDayOfYear/index.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/getUTCDayOfYear/index.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getUTCDayOfYear; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+var MILLISECONDS_IN_DAY = 86400000
+
+// This function will be a part of public API when UTC function will be implemented.
+// See issue: https://github.com/date-fns/date-fns/issues/376
+function getUTCDayOfYear (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  var timestamp = date.getTime()
+  date.setUTCMonth(0, 1)
+  date.setUTCHours(0, 0, 0, 0)
+  var startOfYearTimestamp = date.getTime()
+  var difference = timestamp - startOfYearTimestamp
+  return Math.floor(difference / MILLISECONDS_IN_DAY) + 1
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/_lib/getUTCISOWeek/index.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/getUTCISOWeek/index.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getUTCISOWeek; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+/* harmony import */ var _startOfUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../startOfUTCISOWeek/index.js */ "./node_modules/date-fns/esm/_lib/startOfUTCISOWeek/index.js");
+/* harmony import */ var _startOfUTCISOWeekYear_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../startOfUTCISOWeekYear/index.js */ "./node_modules/date-fns/esm/_lib/startOfUTCISOWeekYear/index.js");
+
+
+
+
+var MILLISECONDS_IN_WEEK = 604800000
+
+// This function will be a part of public API when UTC function will be implemented.
+// See issue: https://github.com/date-fns/date-fns/issues/376
+function getUTCISOWeek (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  var diff = Object(_startOfUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(date, dirtyOptions).getTime() - Object(_startOfUTCISOWeekYear_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(date, dirtyOptions).getTime()
+
+  // Round the number of days to the nearest integer
+  // because the number of milliseconds in a week is not constant
+  // (e.g. it's different in the week of the daylight saving time clock shift)
+  return Math.round(diff / MILLISECONDS_IN_WEEK) + 1
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/_lib/getUTCISOWeekYear/index.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/getUTCISOWeekYear/index.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getUTCISOWeekYear; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+/* harmony import */ var _startOfUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../startOfUTCISOWeek/index.js */ "./node_modules/date-fns/esm/_lib/startOfUTCISOWeek/index.js");
+
+
+
+// This function will be a part of public API when UTC function will be implemented.
+// See issue: https://github.com/date-fns/date-fns/issues/376
+function getUTCISOWeekYear (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  var year = date.getUTCFullYear()
+
+  var fourthOfJanuaryOfNextYear = new Date(0)
+  fourthOfJanuaryOfNextYear.setUTCFullYear(year + 1, 0, 4)
+  fourthOfJanuaryOfNextYear.setUTCHours(0, 0, 0, 0)
+  var startOfNextYear = Object(_startOfUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(fourthOfJanuaryOfNextYear, dirtyOptions)
+
+  var fourthOfJanuaryOfThisYear = new Date(0)
+  fourthOfJanuaryOfThisYear.setUTCFullYear(year, 0, 4)
+  fourthOfJanuaryOfThisYear.setUTCHours(0, 0, 0, 0)
+  var startOfThisYear = Object(_startOfUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(fourthOfJanuaryOfThisYear, dirtyOptions)
+
+  if (date.getTime() >= startOfNextYear.getTime()) {
+    return year + 1
+  } else if (date.getTime() >= startOfThisYear.getTime()) {
+    return year
+  } else {
+    return year - 1
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/_lib/getUTCWeek/index.js":
+/*!************************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/getUTCWeek/index.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getUTCWeek; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+/* harmony import */ var _startOfUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../startOfUTCWeek/index.js */ "./node_modules/date-fns/esm/_lib/startOfUTCWeek/index.js");
+/* harmony import */ var _startOfUTCWeekYear_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../startOfUTCWeekYear/index.js */ "./node_modules/date-fns/esm/_lib/startOfUTCWeekYear/index.js");
+
+
+
+
+var MILLISECONDS_IN_WEEK = 604800000
+
+// This function will be a part of public API when UTC function will be implemented.
+// See issue: https://github.com/date-fns/date-fns/issues/376
+function getUTCWeek (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  var diff = Object(_startOfUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(date, dirtyOptions).getTime() - Object(_startOfUTCWeekYear_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(date, dirtyOptions).getTime()
+
+  // Round the number of days to the nearest integer
+  // because the number of milliseconds in a week is not constant
+  // (e.g. it's different in the week of the daylight saving time clock shift)
+  return Math.round(diff / MILLISECONDS_IN_WEEK) + 1
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/_lib/getUTCWeekYear/index.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/getUTCWeekYear/index.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getUTCWeekYear; });
+/* harmony import */ var _toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+/* harmony import */ var _startOfUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../startOfUTCWeek/index.js */ "./node_modules/date-fns/esm/_lib/startOfUTCWeek/index.js");
+
+
+
+
+// This function will be a part of public API when UTC function will be implemented.
+// See issue: https://github.com/date-fns/date-fns/issues/376
+function getUTCWeekYear (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, dirtyOptions)
+  var year = date.getUTCFullYear()
+
+  var options = dirtyOptions || {}
+  var locale = options.locale
+  var localeFirstWeekContainsDate = locale &&
+    locale.options &&
+    locale.options.firstWeekContainsDate
+  var defaultFirstWeekContainsDate =
+    localeFirstWeekContainsDate == null
+      ? 1
+      : Object(_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(localeFirstWeekContainsDate)
+  var firstWeekContainsDate =
+    options.firstWeekContainsDate == null
+      ? defaultFirstWeekContainsDate
+      : Object(_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(options.firstWeekContainsDate)
+
+  // Test if weekStartsOn is between 1 and 7 _and_ is not NaN
+  if (!(firstWeekContainsDate >= 1 && firstWeekContainsDate <= 7)) {
+    throw new RangeError('firstWeekContainsDate must be between 1 and 7 inclusively')
+  }
+
+  var firstWeekOfNextYear = new Date(0)
+  firstWeekOfNextYear.setUTCFullYear(year + 1, 0, firstWeekContainsDate)
+  firstWeekOfNextYear.setUTCHours(0, 0, 0, 0)
+  var startOfNextYear = Object(_startOfUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(firstWeekOfNextYear, dirtyOptions)
+
+  var firstWeekOfThisYear = new Date(0)
+  firstWeekOfThisYear.setUTCFullYear(year, 0, firstWeekContainsDate)
+  firstWeekOfThisYear.setUTCHours(0, 0, 0, 0)
+  var startOfThisYear = Object(_startOfUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(firstWeekOfThisYear, dirtyOptions)
+
+  if (date.getTime() >= startOfNextYear.getTime()) {
+    return year + 1
+  } else if (date.getTime() >= startOfThisYear.getTime()) {
+    return year
+  } else {
+    return year - 1
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/_lib/protectedTokens/index.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/protectedTokens/index.js ***!
+  \*****************************************************************/
+/*! exports provided: protectedTokens, isProtectedToken, throwProtectedError */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "protectedTokens", function() { return protectedTokens; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isProtectedToken", function() { return isProtectedToken; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "throwProtectedError", function() { return throwProtectedError; });
+var protectedTokens = ['D', 'DD', 'YY', 'YYYY']
+
+function isProtectedToken(token) {
+  return protectedTokens.indexOf(token) !== -1
+}
+
+function throwProtectedError(token) {
+  throw new RangeError(
+    '`options.awareOfUnicodeTokens` must be set to `true` to use `' +
+      token +
+      '` token; see: https://git.io/fxCyr'
+  )
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/_lib/setUTCDay/index.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/setUTCDay/index.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return setUTCDay; });
+/* harmony import */ var _toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+
+// This function will be a part of public API when UTC function will be implemented.
+// See issue: https://github.com/date-fns/date-fns/issues/376
+function setUTCDay (dirtyDate, dirtyDay, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var options = dirtyOptions || {}
+  var locale = options.locale
+  var localeWeekStartsOn = locale && locale.options && locale.options.weekStartsOn
+  var defaultWeekStartsOn = localeWeekStartsOn == null ? 0 : Object(_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(localeWeekStartsOn)
+  var weekStartsOn = options.weekStartsOn == null ? defaultWeekStartsOn : Object(_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(options.weekStartsOn)
+
+  // Test if weekStartsOn is between 0 and 6 _and_ is not NaN
+  if (!(weekStartsOn >= 0 && weekStartsOn <= 6)) {
+    throw new RangeError('weekStartsOn must be between 0 and 6 inclusively')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, dirtyOptions)
+  var day = Object(_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDay)
+
+  var currentDay = date.getUTCDay()
+
+  var remainder = day % 7
+  var dayIndex = (remainder + 7) % 7
+
+  var diff = (dayIndex < weekStartsOn ? 7 : 0) + day - currentDay
+
+  date.setUTCDate(date.getUTCDate() + diff)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/_lib/setUTCISODay/index.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/setUTCISODay/index.js ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return setUTCISODay; });
+/* harmony import */ var _toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+
+// This function will be a part of public API when UTC function will be implemented.
+// See issue: https://github.com/date-fns/date-fns/issues/376
+function setUTCISODay (dirtyDate, dirtyDay, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var day = Object(_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDay)
+
+  if (day % 7 === 0) {
+    day = day - 7
+  }
+
+  var weekStartsOn = 1
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, dirtyOptions)
+  var currentDay = date.getUTCDay()
+
+  var remainder = day % 7
+  var dayIndex = (remainder + 7) % 7
+
+  var diff = (dayIndex < weekStartsOn ? 7 : 0) + day - currentDay
+
+  date.setUTCDate(date.getUTCDate() + diff)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/_lib/setUTCISOWeek/index.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/setUTCISOWeek/index.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return setUTCISOWeek; });
+/* harmony import */ var _toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+/* harmony import */ var _getUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../getUTCISOWeek/index.js */ "./node_modules/date-fns/esm/_lib/getUTCISOWeek/index.js");
+
+
+
+
+// This function will be a part of public API when UTC function will be implemented.
+// See issue: https://github.com/date-fns/date-fns/issues/376
+function setUTCISOWeek (dirtyDate, dirtyISOWeek, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, dirtyOptions)
+  var isoWeek = Object(_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyISOWeek)
+  var diff = Object(_getUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(date, dirtyOptions) - isoWeek
+  date.setUTCDate(date.getUTCDate() - diff * 7)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/_lib/setUTCWeek/index.js":
+/*!************************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/setUTCWeek/index.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return setUTCWeek; });
+/* harmony import */ var _toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+/* harmony import */ var _getUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../getUTCWeek/index.js */ "./node_modules/date-fns/esm/_lib/getUTCWeek/index.js");
+
+
+
+
+// This function will be a part of public API when UTC function will be implemented.
+// See issue: https://github.com/date-fns/date-fns/issues/376
+function setUTCWeek (dirtyDate, dirtyWeek, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, dirtyOptions)
+  var week = Object(_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyWeek)
+  var diff = Object(_getUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(date, dirtyOptions) - week
+  date.setUTCDate(date.getUTCDate() - diff * 7)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/_lib/startOfUTCISOWeek/index.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/startOfUTCISOWeek/index.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return startOfUTCISOWeek; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+// This function will be a part of public API when UTC function will be implemented.
+// See issue: https://github.com/date-fns/date-fns/issues/376
+function startOfUTCISOWeek (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var weekStartsOn = 1
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  var day = date.getUTCDay()
+  var diff = (day < weekStartsOn ? 7 : 0) + day - weekStartsOn
+
+  date.setUTCDate(date.getUTCDate() - diff)
+  date.setUTCHours(0, 0, 0, 0)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/_lib/startOfUTCISOWeekYear/index.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/startOfUTCISOWeekYear/index.js ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return startOfUTCISOWeekYear; });
+/* harmony import */ var _getUTCISOWeekYear_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../getUTCISOWeekYear/index.js */ "./node_modules/date-fns/esm/_lib/getUTCISOWeekYear/index.js");
+/* harmony import */ var _startOfUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../startOfUTCISOWeek/index.js */ "./node_modules/date-fns/esm/_lib/startOfUTCISOWeek/index.js");
+
+
+
+// This function will be a part of public API when UTC function will be implemented.
+// See issue: https://github.com/date-fns/date-fns/issues/376
+function startOfUTCISOWeekYear (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var year = Object(_getUTCISOWeekYear_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  var fourthOfJanuary = new Date(0)
+  fourthOfJanuary.setUTCFullYear(year, 0, 4)
+  fourthOfJanuary.setUTCHours(0, 0, 0, 0)
+  var date = Object(_startOfUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(fourthOfJanuary, dirtyOptions)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/_lib/startOfUTCWeek/index.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/startOfUTCWeek/index.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return startOfUTCWeek; });
+/* harmony import */ var _toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+
+// This function will be a part of public API when UTC function will be implemented.
+// See issue: https://github.com/date-fns/date-fns/issues/376
+function startOfUTCWeek (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var options = dirtyOptions || {}
+  var locale = options.locale
+  var localeWeekStartsOn = locale && locale.options && locale.options.weekStartsOn
+  var defaultWeekStartsOn = localeWeekStartsOn == null ? 0 : Object(_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(localeWeekStartsOn)
+  var weekStartsOn = options.weekStartsOn == null ? defaultWeekStartsOn : Object(_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(options.weekStartsOn)
+
+  // Test if weekStartsOn is between 0 and 6 _and_ is not NaN
+  if (!(weekStartsOn >= 0 && weekStartsOn <= 6)) {
+    throw new RangeError('weekStartsOn must be between 0 and 6 inclusively')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, options)
+  var day = date.getUTCDay()
+  var diff = (day < weekStartsOn ? 7 : 0) + day - weekStartsOn
+
+  date.setUTCDate(date.getUTCDate() - diff)
+  date.setUTCHours(0, 0, 0, 0)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/_lib/startOfUTCWeekYear/index.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/startOfUTCWeekYear/index.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return startOfUTCWeekYear; });
+/* harmony import */ var _toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _getUTCWeekYear_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../getUTCWeekYear/index.js */ "./node_modules/date-fns/esm/_lib/getUTCWeekYear/index.js");
+/* harmony import */ var _startOfUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../startOfUTCWeek/index.js */ "./node_modules/date-fns/esm/_lib/startOfUTCWeek/index.js");
+
+
+
+
+// This function will be a part of public API when UTC function will be implemented.
+// See issue: https://github.com/date-fns/date-fns/issues/376
+function startOfUTCWeekYear (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var options = dirtyOptions || {}
+  var locale = options.locale
+  var localeFirstWeekContainsDate = locale &&
+    locale.options &&
+    locale.options.firstWeekContainsDate
+  var defaultFirstWeekContainsDate =
+    localeFirstWeekContainsDate == null
+      ? 1
+      : Object(_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(localeFirstWeekContainsDate)
+  var firstWeekContainsDate =
+    options.firstWeekContainsDate == null
+      ? defaultFirstWeekContainsDate
+      : Object(_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(options.firstWeekContainsDate)
+
+  var year = Object(_getUTCWeekYear_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, dirtyOptions)
+  var firstWeek = new Date(0)
+  firstWeek.setUTCFullYear(year, 0, firstWeekContainsDate)
+  firstWeek.setUTCHours(0, 0, 0, 0)
+  var date = Object(_startOfUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(firstWeek, dirtyOptions)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/_lib/toInteger/index.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/date-fns/esm/_lib/toInteger/index.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return toInteger; });
+function toInteger (dirtyNumber) {
+  if (dirtyNumber === null || dirtyNumber === true || dirtyNumber === false) {
+    return NaN
+  }
+
+  var number = Number(dirtyNumber)
+
+  if (isNaN(number)) {
+    return number
+  }
+
+  return number < 0 ? Math.ceil(number) : Math.floor(number)
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/addDays/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/date-fns/esm/addDays/index.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return addDays; });
+/* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+
+/**
+ * @name addDays
+ * @category Day Helpers
+ * @summary Add the specified number of days to the given date.
+ *
+ * @description
+ * Add the specified number of days to the given date.
+ *
+ * @param {Date|String|Number} date - the date to be changed
+ * @param {Number} amount - the amount of days to be added
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date} the new date with the days added
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Add 10 days to 1 September 2014:
+ * var result = addDays(new Date(2014, 8, 1), 10)
+ * //=> Thu Sep 11 2014 00:00:00
+ */
+function addDays (dirtyDate, dirtyAmount, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, dirtyOptions)
+  var amount = Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyAmount)
+  date.setDate(date.getDate() + amount)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/addMilliseconds/index.js":
+/*!************************************************************!*\
+  !*** ./node_modules/date-fns/esm/addMilliseconds/index.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return addMilliseconds; });
+/* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+
+/**
+ * @name addMilliseconds
+ * @category Millisecond Helpers
+ * @summary Add the specified number of milliseconds to the given date.
+ *
+ * @description
+ * Add the specified number of milliseconds to the given date.
+ *
+ * @param {Date|String|Number} date - the date to be changed
+ * @param {Number} amount - the amount of milliseconds to be added
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date} the new date with the milliseconds added
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Add 750 milliseconds to 10 July 2014 12:45:30.000:
+ * var result = addMilliseconds(new Date(2014, 6, 10, 12, 45, 30, 0), 750)
+ * //=> Thu Jul 10 2014 12:45:30.750
+ */
+function addMilliseconds (dirtyDate, dirtyAmount, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var timestamp = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, dirtyOptions).getTime()
+  var amount = Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyAmount)
+  return new Date(timestamp + amount)
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/addMonths/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/date-fns/esm/addMonths/index.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return addMonths; });
+/* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+/* harmony import */ var _getDaysInMonth_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../getDaysInMonth/index.js */ "./node_modules/date-fns/esm/getDaysInMonth/index.js");
+
+
+
+
+/**
+ * @name addMonths
+ * @category Month Helpers
+ * @summary Add the specified number of months to the given date.
+ *
+ * @description
+ * Add the specified number of months to the given date.
+ *
+ * @param {Date|String|Number} date - the date to be changed
+ * @param {Number} amount - the amount of months to be added
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date} the new date with the months added
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Add 5 months to 1 September 2014:
+ * var result = addMonths(new Date(2014, 8, 1), 5)
+ * //=> Sun Feb 01 2015 00:00:00
+ */
+function addMonths (dirtyDate, dirtyAmount, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, dirtyOptions)
+  var amount = Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyAmount)
+  var desiredMonth = date.getMonth() + amount
+  var dateWithDesiredMonth = new Date(0)
+  dateWithDesiredMonth.setFullYear(date.getFullYear(), desiredMonth, 1)
+  dateWithDesiredMonth.setHours(0, 0, 0, 0)
+  var daysInMonth = Object(_getDaysInMonth_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(dateWithDesiredMonth, dirtyOptions)
+  // Set the last day of the new month
+  // if the original date was the last day of the longer month
+  date.setMonth(desiredMonth, Math.min(daysInMonth, date.getDate()))
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/addYears/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/date-fns/esm/addYears/index.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return addYears; });
+/* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _addMonths_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../addMonths/index.js */ "./node_modules/date-fns/esm/addMonths/index.js");
+
+
+
+/**
+ * @name addYears
+ * @category Year Helpers
+ * @summary Add the specified number of years to the given date.
+ *
+ * @description
+ * Add the specified number of years to the given date.
+ *
+ * @param {Date|String|Number} date - the date to be changed
+ * @param {Number} amount - the amount of years to be added
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date} the new date with the years added
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Add 5 years to 1 September 2014:
+ * var result = addYears(new Date(2014, 8, 1), 5)
+ * //=> Sun Sep 01 2019 00:00:00
+ */
+function addYears (dirtyDate, dirtyAmount, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var amount = Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyAmount)
+  return Object(_addMonths_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, amount * 12, dirtyOptions)
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/differenceInMilliseconds/index.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/date-fns/esm/differenceInMilliseconds/index.js ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return differenceInMilliseconds; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name differenceInMilliseconds
+ * @category Millisecond Helpers
+ * @summary Get the number of milliseconds between the given dates.
+ *
+ * @description
+ * Get the number of milliseconds between the given dates.
+ *
+ * @param {Date|String|Number} dateLeft - the later date
+ * @param {Date|String|Number} dateRight - the earlier date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Number} the number of milliseconds
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // How many milliseconds are between
+ * // 2 July 2014 12:30:20.600 and 2 July 2014 12:30:21.700?
+ * var result = differenceInMilliseconds(
+ *   new Date(2014, 6, 2, 12, 30, 21, 700),
+ *   new Date(2014, 6, 2, 12, 30, 20, 600)
+ * )
+ * //=> 1100
+ */
+function differenceInMilliseconds (dirtyDateLeft, dirtyDateRight, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var dateLeft = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDateLeft, dirtyOptions)
+  var dateRight = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDateRight, dirtyOptions)
+  return dateLeft.getTime() - dateRight.getTime()
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/eachDayOfInterval/index.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/date-fns/esm/eachDayOfInterval/index.js ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return eachDayOfInterval; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name eachDayOfInterval
+ * @category Interval Helpers
+ * @summary Return the array of dates within the specified time interval.
+ *
+ * @description
+ * Return the array of dates within the specified time interval.
+ *
+ * @param {Interval} interval - the interval. See [Interval]{@link docs/types/Interval}
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date[]} the array with starts of days from the day of the interval start to the day of the interval end
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ * @throws {RangeError} The start of an interval cannot be after its end
+ * @throws {RangeError} Date in interval cannot be `Invalid Date`
+ *
+ * @example
+ * // Each day between 6 October 2014 and 10 October 2014:
+ * var result = eachDayOfInterval({
+ *   start: new Date(2014, 9, 6),
+ *   end: new Date(2014, 9, 10)
+ * })
+ * //=> [
+ * //   Mon Oct 06 2014 00:00:00,
+ * //   Tue Oct 07 2014 00:00:00,
+ * //   Wed Oct 08 2014 00:00:00,
+ * //   Thu Oct 09 2014 00:00:00,
+ * //   Fri Oct 10 2014 00:00:00
+ * // ]
+ */
+function eachDayOfInterval (dirtyInterval, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var interval = dirtyInterval || {}
+  var startDate = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(interval.start, dirtyOptions)
+  var endDate = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(interval.end, dirtyOptions)
+
+  var endTime = endDate.getTime()
+
+  // Throw an exception if start date is after end date or if any date is `Invalid Date`
+  if (!(startDate.getTime() <= endTime)) {
+    throw new RangeError('Invalid interval')
+  }
+
+  var dates = []
+
+  var currentDate = startDate
+  currentDate.setHours(0, 0, 0, 0)
+
+  while (currentDate.getTime() <= endTime) {
+    dates.push(Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(currentDate, dirtyOptions))
+    currentDate.setDate(currentDate.getDate() + 1)
+  }
+
+  return dates
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/endOfDay/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/date-fns/esm/endOfDay/index.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return endOfDay; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name endOfDay
+ * @category Day Helpers
+ * @summary Return the end of a day for the given date.
+ *
+ * @description
+ * Return the end of a day for the given date.
+ * The result will be in the local timezone.
+ *
+ * @param {Date|String|Number} date - the original date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date} the end of a day
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // The end of a day for 2 September 2014 11:55:00:
+ * var result = endOfDay(new Date(2014, 8, 2, 11, 55, 0))
+ * //=> Tue Sep 02 2014 23:59:59.999
+ */
+function endOfDay (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  date.setHours(23, 59, 59, 999)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/endOfMonth/index.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/date-fns/esm/endOfMonth/index.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return endOfMonth; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name endOfMonth
+ * @category Month Helpers
+ * @summary Return the end of a month for the given date.
+ *
+ * @description
+ * Return the end of a month for the given date.
+ * The result will be in the local timezone.
+ *
+ * @param {Date|String|Number} date - the original date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date} the end of a month
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // The end of a month for 2 September 2014 11:55:00:
+ * var result = endOfMonth(new Date(2014, 8, 2, 11, 55, 0))
+ * //=> Tue Sep 30 2014 23:59:59.999
+ */
+function endOfMonth (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  var month = date.getMonth()
+  date.setFullYear(date.getFullYear(), month + 1, 0)
+  date.setHours(23, 59, 59, 999)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/endOfWeek/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/date-fns/esm/endOfWeek/index.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return endOfWeek; });
+/* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+
+/**
+ * @name endOfWeek
+ * @category Week Helpers
+ * @summary Return the end of a week for the given date.
+ *
+ * @description
+ * Return the end of a week for the given date.
+ * The result will be in the local timezone.
+ *
+ * @param {Date|String|Number} date - the original date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @param {0|1|2|3|4|5|6} [options.weekStartsOn=0] - the index of the first day of the week (0 - Sunday)
+ * @param {Locale} [options.locale=defaultLocale] - the locale object. See [Locale]{@link https://date-fns.org/docs/Locale}
+ * @returns {Date} the end of a week
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ * @throws {RangeError} `options.weekStartsOn` must be between 0 and 6
+ *
+ * @example
+ * // The end of a week for 2 September 2014 11:55:00:
+ * var result = endOfWeek(new Date(2014, 8, 2, 11, 55, 0))
+ * //=> Sat Sep 06 2014 23:59:59.999
+ *
+ * @example
+ * // If the week starts on Monday, the end of the week for 2 September 2014 11:55:00:
+ * var result = endOfWeek(new Date(2014, 8, 2, 11, 55, 0), {weekStartsOn: 1})
+ * //=> Sun Sep 07 2014 23:59:59.999
+ */
+function endOfWeek (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var options = dirtyOptions || {}
+
+  var locale = options.locale
+  var localeWeekStartsOn = locale && locale.options && locale.options.weekStartsOn
+  var defaultWeekStartsOn = localeWeekStartsOn == null ? 0 : Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(localeWeekStartsOn)
+  var weekStartsOn = options.weekStartsOn == null ? defaultWeekStartsOn : Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(options.weekStartsOn)
+
+  // Test if weekStartsOn is between 0 and 6 _and_ is not NaN
+  if (!(weekStartsOn >= 0 && weekStartsOn <= 6)) {
+    throw new RangeError('weekStartsOn must be between 0 and 6 inclusively')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, options)
+  var day = date.getDay()
+  var diff = (day < weekStartsOn ? -7 : 0) + 6 - (day - weekStartsOn)
+
+  date.setDate(date.getDate() + diff)
+  date.setHours(23, 59, 59, 999)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/endOfYear/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/date-fns/esm/endOfYear/index.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return endOfYear; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name endOfYear
+ * @category Year Helpers
+ * @summary Return the end of a year for the given date.
+ *
+ * @description
+ * Return the end of a year for the given date.
+ * The result will be in the local timezone.
+ *
+ * @param {Date|String|Number} date - the original date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date} the end of a year
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // The end of a year for 2 September 2014 11:55:00:
+ * var result = endOfYear(new Date(2014, 8, 2, 11, 55, 00))
+ * //=> Wed Dec 31 2014 23:59:59.999
+ */
+function endOfYear (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  var year = date.getFullYear()
+  date.setFullYear(year + 1, 0, 0)
+  date.setHours(23, 59, 59, 999)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/format/_lib/formatters/index.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/date-fns/esm/format/_lib/formatters/index.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _lib_getUTCDayOfYear_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../_lib/getUTCDayOfYear/index.js */ "./node_modules/date-fns/esm/_lib/getUTCDayOfYear/index.js");
+/* harmony import */ var _lib_getUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../_lib/getUTCISOWeek/index.js */ "./node_modules/date-fns/esm/_lib/getUTCISOWeek/index.js");
+/* harmony import */ var _lib_getUTCISOWeekYear_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../_lib/getUTCISOWeekYear/index.js */ "./node_modules/date-fns/esm/_lib/getUTCISOWeekYear/index.js");
+/* harmony import */ var _lib_getUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../_lib/getUTCWeek/index.js */ "./node_modules/date-fns/esm/_lib/getUTCWeek/index.js");
+/* harmony import */ var _lib_getUTCWeekYear_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../_lib/getUTCWeekYear/index.js */ "./node_modules/date-fns/esm/_lib/getUTCWeekYear/index.js");
+
+
+
+
+
+
+var dayPeriodEnum = {
+  am: 'am',
+  pm: 'pm',
+  midnight: 'midnight',
+  noon: 'noon',
+  morning: 'morning',
+  afternoon: 'afternoon',
+  evening: 'evening',
+  night: 'night'
+}
+
+/*
+ * |     | Unit                           |     | Unit                           |
+ * |-----|--------------------------------|-----|--------------------------------|
+ * |  a  | AM, PM                         |  A* | Milliseconds in day            |
+ * |  b  | AM, PM, noon, midnight         |  B  | Flexible day period            |
+ * |  c  | Stand-alone local day of week  |  C* | Localized hour w/ day period   |
+ * |  d  | Day of month                   |  D  | Day of year                    |
+ * |  e  | Local day of week              |  E  | Day of week                    |
+ * |  f  |                                |  F* | Day of week in month           |
+ * |  g* | Modified Julian day            |  G  | Era                            |
+ * |  h  | Hour [1-12]                    |  H  | Hour [0-23]                    |
+ * |  i! | ISO day of week                |  I! | ISO week of year               |
+ * |  j* | Localized hour w/ day period   |  J* | Localized hour w/o day period  |
+ * |  k  | Hour [1-24]                    |  K  | Hour [0-11]                    |
+ * |  l* | (deprecated)                   |  L  | Stand-alone month              |
+ * |  m  | Minute                         |  M  | Month                          |
+ * |  n  |                                |  N  |                                |
+ * |  o! | Ordinal number modifier        |  O  | Timezone (GMT)                 |
+ * |  p! | Long localized time            |  P! | Long localized date            |
+ * |  q  | Stand-alone quarter            |  Q  | Quarter                        |
+ * |  r* | Related Gregorian year         |  R! | ISO week-numbering year        |
+ * |  s  | Second                         |  S  | Fraction of second             |
+ * |  t! | Seconds timestamp              |  T! | Milliseconds timestamp         |
+ * |  u  | Extended year                  |  U* | Cyclic year                    |
+ * |  v* | Timezone (generic non-locat.)  |  V* | Timezone (location)            |
+ * |  w  | Local week of year             |  W* | Week of month                  |
+ * |  x  | Timezone (ISO-8601 w/o Z)      |  X  | Timezone (ISO-8601)            |
+ * |  y  | Year (abs)                     |  Y  | Local week-numbering year      |
+ * |  z  | Timezone (specific non-locat.) |  Z* | Timezone (aliases)             |
+ *
+ * Letters marked by * are not implemented but reserved by Unicode standard.
+ *
+ * Letters marked by ! are non-standard, but implemented by date-fns:
+ * - `o` modifies the previous token to turn it into an ordinal (see `format` docs)
+ * - `i` is ISO day of week. For `i` and `ii` is returns numeric ISO week days,
+ *   i.e. 7 for Sunday, 1 for Monday, etc.
+ * - `I` is ISO week of year, as opposed to `w` which is local week of year.
+ * - `R` is ISO week-numbering year, as opposed to `Y` which is local week-numbering year.
+ *   `R` is supposed to be used in conjunction with `I` and `i`
+ *   for universal ISO week-numbering date, whereas
+ *   `Y` is supposed to be used in conjunction with `w` and `e`
+ *   for week-numbering date specific to the locale.
+ * - `P` is long localized date format
+ * - `p` is long localized time format
+ */
+
+var formatters = {
+  // Era
+  G: function (date, token, localize) {
+    var era = date.getUTCFullYear() > 0 ? 1 : 0
+    switch (token) {
+      // AD, BC
+      case 'G':
+      case 'GG':
+      case 'GGG':
+        return localize.era(era, {width: 'abbreviated'})
+      // A, B
+      case 'GGGGG':
+        return localize.era(era, {width: 'narrow'})
+      // Anno Domini, Before Christ
+      case 'GGGG':
+      default:
+        return localize.era(era, {width: 'wide'})
+    }
+  },
+
+  // Year
+  y: function (date, token, localize, options) {
+    // From http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_tokens
+    // | Year     |     y | yy |   yyy |  yyyy | yyyyy |
+    // |----------|-------|----|-------|-------|-------|
+    // | AD 1     |     1 | 01 |   001 |  0001 | 00001 |
+    // | AD 12    |    12 | 12 |   012 |  0012 | 00012 |
+    // | AD 123   |   123 | 23 |   123 |  0123 | 00123 |
+    // | AD 1234  |  1234 | 34 |  1234 |  1234 | 01234 |
+    // | AD 12345 | 12345 | 45 | 12345 | 12345 | 12345 |
+
+    var signedYear = date.getUTCFullYear()
+
+    // Returns 1 for 1 BC (which is year 0 in JavaScript)
+    var year = signedYear > 0 ? signedYear : 1 - signedYear
+
+    // Two digit year
+    if (token === 'yy') {
+      var twoDigitYear = year % 100
+      return addLeadingZeros(twoDigitYear, 2)
+    }
+
+    // Ordinal number
+    if (token === 'yo') {
+      return localize.ordinalNumber(year, {unit: 'year'})
+    }
+
+    // Padding
+    return addLeadingZeros(year, token.length)
+  },
+
+  // Local week-numbering year
+  Y: function (date, token, localize, options) {
+    var signedWeekYear = Object(_lib_getUTCWeekYear_index_js__WEBPACK_IMPORTED_MODULE_4__["default"])(date, options)
+    var weekYear = signedWeekYear > 0 ? signedWeekYear : 1 - signedWeekYear
+
+    // Two digit year
+    if (token === 'YY') {
+      var twoDigitYear = weekYear % 100
+      return addLeadingZeros(twoDigitYear, 2)
+    }
+
+    // Ordinal number
+    if (token === 'Yo') {
+      return localize.ordinalNumber(weekYear, {unit: 'year'})
+    }
+
+    // Padding
+    return addLeadingZeros(weekYear, token.length)
+  },
+
+  // ISO week-numbering year
+  R: function (date, token, localize, options) {
+    var isoWeekYear = Object(_lib_getUTCISOWeekYear_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(date, options)
+
+    // Padding
+    return addLeadingZeros(isoWeekYear, token.length)
+  },
+
+  // Extended year. This is a single number designating the year of this calendar system.
+  // The main difference between `y` and `u` localizers are B.C. years:
+  // | Year | `y` | `u` |
+  // |------|-----|-----|
+  // | AC 1 |   1 |   1 |
+  // | BC 1 |   1 |   0 |
+  // | BC 2 |   2 |  -1 |
+  // Also `yy` always returns the last two digits of a year,
+  // while `uu` pads single digit years to 2 characters and returns other years unchanged.
+  u: function (date, token, localize, options) {
+    var year = date.getUTCFullYear()
+    return addLeadingZeros(year, token.length)
+  },
+
+  // Quarter
+  Q: function (date, token, localize, options) {
+    var quarter = Math.ceil((date.getUTCMonth() + 1) / 3)
+    switch (token) {
+      // 1, 2, 3, 4
+      case 'Q':
+        return String(quarter)
+      // 01, 02, 03, 04
+      case 'QQ':
+        return addLeadingZeros(quarter, 2)
+      // 1st, 2nd, 3rd, 4th
+      case 'Qo':
+        return localize.ordinalNumber(quarter, {unit: 'quarter'})
+      // Q1, Q2, Q3, Q4
+      case 'QQQ':
+        return localize.quarter(quarter, {width: 'abbreviated', context: 'formatting'})
+      // 1, 2, 3, 4 (narrow quarter; could be not numerical)
+      case 'QQQQQ':
+        return localize.quarter(quarter, {width: 'narrow', context: 'formatting'})
+      // 1st quarter, 2nd quarter, ...
+      case 'QQQQ':
+      default:
+        return localize.quarter(quarter, {width: 'wide', context: 'formatting'})
+    }
+  },
+
+  // Stand-alone quarter
+  q: function (date, token, localize, options) {
+    var quarter = Math.ceil((date.getUTCMonth() + 1) / 3)
+    switch (token) {
+      // 1, 2, 3, 4
+      case 'q':
+        return String(quarter)
+      // 01, 02, 03, 04
+      case 'qq':
+        return addLeadingZeros(quarter, 2)
+      // 1st, 2nd, 3rd, 4th
+      case 'qo':
+        return localize.ordinalNumber(quarter, {unit: 'quarter'})
+      // Q1, Q2, Q3, Q4
+      case 'qqq':
+        return localize.quarter(quarter, {width: 'abbreviated', context: 'standalone'})
+      // 1, 2, 3, 4 (narrow quarter; could be not numerical)
+      case 'qqqqq':
+        return localize.quarter(quarter, {width: 'narrow', context: 'standalone'})
+      // 1st quarter, 2nd quarter, ...
+      case 'qqqq':
+      default:
+        return localize.quarter(quarter, {width: 'wide', context: 'standalone'})
+    }
+  },
+
+  // Month
+  M: function (date, token, localize, options) {
+    var month = date.getUTCMonth()
+    switch (token) {
+      // 1, 2, ..., 12
+      case 'M':
+        return String(month + 1)
+      // 01, 02, ..., 12
+      case 'MM':
+        return addLeadingZeros(month + 1, 2)
+      // 1st, 2nd, ..., 12th
+      case 'Mo':
+        return localize.ordinalNumber(month + 1, {unit: 'month'})
+      // Jan, Feb, ..., Dec
+      case 'MMM':
+        return localize.month(month, {width: 'abbreviated', context: 'formatting'})
+      // J, F, ..., D
+      case 'MMMMM':
+        return localize.month(month, {width: 'narrow', context: 'formatting'})
+      // January, February, ..., December
+      case 'MMMM':
+      default:
+        return localize.month(month, {width: 'wide', context: 'formatting'})
+    }
+  },
+
+  // Stand-alone month
+  L: function (date, token, localize, options) {
+    var month = date.getUTCMonth()
+    switch (token) {
+      // 1, 2, ..., 12
+      case 'L':
+        return String(month + 1)
+      // 01, 02, ..., 12
+      case 'LL':
+        return addLeadingZeros(month + 1, 2)
+      // 1st, 2nd, ..., 12th
+      case 'Lo':
+        return localize.ordinalNumber(month + 1, {unit: 'month'})
+      // Jan, Feb, ..., Dec
+      case 'LLL':
+        return localize.month(month, {width: 'abbreviated', context: 'standalone'})
+      // J, F, ..., D
+      case 'LLLLL':
+        return localize.month(month, {width: 'narrow', context: 'standalone'})
+      // January, February, ..., December
+      case 'LLLL':
+      default:
+        return localize.month(month, {width: 'wide', context: 'standalone'})
+    }
+  },
+
+  // Local week of year
+  w: function (date, token, localize, options) {
+    var week = Object(_lib_getUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_3__["default"])(date, options)
+
+    if (token === 'wo') {
+      return localize.ordinalNumber(week, {unit: 'week'})
+    }
+
+    return addLeadingZeros(week, token.length)
+  },
+
+  // ISO week of year
+  I: function (date, token, localize, options) {
+    var isoWeek = Object(_lib_getUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(date, options)
+
+    if (token === 'Io') {
+      return localize.ordinalNumber(isoWeek, {unit: 'week'})
+    }
+
+    return addLeadingZeros(isoWeek, token.length)
+  },
+
+  // Day of the month
+  d: function (date, token, localize, options) {
+    var dayOfMonth = date.getUTCDate()
+
+    if (token === 'do') {
+      return localize.ordinalNumber(dayOfMonth, {unit: 'date'})
+    }
+
+    return addLeadingZeros(dayOfMonth, token.length)
+  },
+
+  // Day of year
+  D: function (date, token, localize, options) {
+    var dayOfYear = Object(_lib_getUTCDayOfYear_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(date, options)
+
+    if (token === 'Do') {
+      return localize.ordinalNumber(dayOfYear, {unit: 'dayOfYear'})
+    }
+
+    return addLeadingZeros(dayOfYear, token.length)
+  },
+
+  // Day of week
+  E: function (date, token, localize, options) {
+    var dayOfWeek = date.getUTCDay()
+    switch (token) {
+      // Tue
+      case 'E':
+      case 'EE':
+      case 'EEE':
+        return localize.day(dayOfWeek, {width: 'abbreviated', context: 'formatting'})
+      // T
+      case 'EEEEE':
+        return localize.day(dayOfWeek, {width: 'narrow', context: 'formatting'})
+      // Tu
+      case 'EEEEEE':
+        return localize.day(dayOfWeek, {width: 'short', context: 'formatting'})
+      // Tuesday
+      case 'EEEE':
+      default:
+        return localize.day(dayOfWeek, {width: 'wide', context: 'formatting'})
+    }
+  },
+
+  // Local day of week
+  e: function (date, token, localize, options) {
+    var dayOfWeek = date.getUTCDay()
+    var localDayOfWeek = ((dayOfWeek - options.weekStartsOn + 8) % 7) || 7
+    switch (token) {
+      // Numerical value (Nth day of week with current locale or weekStartsOn)
+      case 'e':
+        return String(localDayOfWeek)
+      // Padded numerical value
+      case 'ee':
+        return addLeadingZeros(localDayOfWeek, 2)
+      // 1st, 2nd, ..., 7th
+      case 'eo':
+        return localize.ordinalNumber(localDayOfWeek, {unit: 'day'})
+      case 'eee':
+        return localize.day(dayOfWeek, {width: 'abbreviated', context: 'formatting'})
+      // T
+      case 'eeeee':
+        return localize.day(dayOfWeek, {width: 'narrow', context: 'formatting'})
+      // Tu
+      case 'eeeeee':
+        return localize.day(dayOfWeek, {width: 'short', context: 'formatting'})
+      // Tuesday
+      case 'eeee':
+      default:
+        return localize.day(dayOfWeek, {width: 'wide', context: 'formatting'})
+    }
+  },
+
+  // Stand-alone local day of week
+  c: function (date, token, localize, options) {
+    var dayOfWeek = date.getUTCDay()
+    var localDayOfWeek = ((dayOfWeek - options.weekStartsOn + 8) % 7) || 7
+    switch (token) {
+      // Numerical value (same as in `e`)
+      case 'c':
+        return String(localDayOfWeek)
+      // Padded numberical value
+      case 'cc':
+        return addLeadingZeros(localDayOfWeek, token.length)
+      // 1st, 2nd, ..., 7th
+      case 'co':
+        return localize.ordinalNumber(localDayOfWeek, {unit: 'day'})
+      case 'ccc':
+        return localize.day(dayOfWeek, {width: 'abbreviated', context: 'standalone'})
+      // T
+      case 'ccccc':
+        return localize.day(dayOfWeek, {width: 'narrow', context: 'standalone'})
+      // Tu
+      case 'cccccc':
+        return localize.day(dayOfWeek, {width: 'short', context: 'standalone'})
+      // Tuesday
+      case 'cccc':
+      default:
+        return localize.day(dayOfWeek, {width: 'wide', context: 'standalone'})
+    }
+  },
+
+  // ISO day of week
+  i: function (date, token, localize, options) {
+    var dayOfWeek = date.getUTCDay()
+    var isoDayOfWeek = dayOfWeek === 0 ? 7 : dayOfWeek
+    switch (token) {
+      // 2
+      case 'i':
+        return String(isoDayOfWeek)
+      // 02
+      case 'ii':
+        return addLeadingZeros(isoDayOfWeek, token.length)
+      // 2nd
+      case 'io':
+        return localize.ordinalNumber(isoDayOfWeek, {unit: 'day'})
+      // Tue
+      case 'iii':
+        return localize.day(dayOfWeek, {width: 'abbreviated', context: 'formatting'})
+      // T
+      case 'iiiii':
+        return localize.day(dayOfWeek, {width: 'narrow', context: 'formatting'})
+      // Tu
+      case 'iiiiii':
+        return localize.day(dayOfWeek, {width: 'short', context: 'formatting'})
+      // Tuesday
+      case 'iiii':
+      default:
+        return localize.day(dayOfWeek, {width: 'wide', context: 'formatting'})
+    }
+  },
+
+  // AM or PM
+  a: function (date, token, localize) {
+    var hours = date.getUTCHours()
+    var dayPeriodEnumValue = (hours / 12) >= 1 ? 'pm' : 'am'
+
+    switch (token) {
+      case 'a':
+      case 'aa':
+      case 'aaa':
+        return localize.dayPeriod(dayPeriodEnumValue, {width: 'abbreviated', context: 'formatting'})
+      case 'aaaaa':
+        return localize.dayPeriod(dayPeriodEnumValue, {width: 'narrow', context: 'formatting'})
+      case 'aaaa':
+      default:
+        return localize.dayPeriod(dayPeriodEnumValue, {width: 'wide', context: 'formatting'})
+    }
+  },
+
+  // AM, PM, midnight, noon
+  b: function (date, token, localize) {
+    var hours = date.getUTCHours()
+    var dayPeriodEnumValue
+    if (hours === 12) {
+      dayPeriodEnumValue = dayPeriodEnum.noon
+    } else if (hours === 0) {
+      dayPeriodEnumValue = dayPeriodEnum.midnight
+    } else {
+      dayPeriodEnumValue = (hours / 12) >= 1 ? 'pm' : 'am'
+    }
+
+    switch (token) {
+      case 'b':
+      case 'bb':
+      case 'bbb':
+        return localize.dayPeriod(dayPeriodEnumValue, {width: 'abbreviated', context: 'formatting'})
+      case 'bbbbb':
+        return localize.dayPeriod(dayPeriodEnumValue, {width: 'narrow', context: 'formatting'})
+      case 'bbbb':
+      default:
+        return localize.dayPeriod(dayPeriodEnumValue, {width: 'wide', context: 'formatting'})
+    }
+  },
+
+  // in the morning, in the afternoon, in the evening, at night
+  B: function (date, token, localize) {
+    var hours = date.getUTCHours()
+    var dayPeriodEnumValue
+    if (hours >= 17) {
+      dayPeriodEnumValue = dayPeriodEnum.evening
+    } else if (hours >= 12) {
+      dayPeriodEnumValue = dayPeriodEnum.afternoon
+    } else if (hours >= 4) {
+      dayPeriodEnumValue = dayPeriodEnum.morning
+    } else {
+      dayPeriodEnumValue = dayPeriodEnum.night
+    }
+
+    switch (token) {
+      case 'B':
+      case 'BB':
+      case 'BBB':
+        return localize.dayPeriod(dayPeriodEnumValue, {width: 'abbreviated', context: 'formatting'})
+      case 'BBBBB':
+        return localize.dayPeriod(dayPeriodEnumValue, {width: 'narrow', context: 'formatting'})
+      case 'BBBB':
+      default:
+        return localize.dayPeriod(dayPeriodEnumValue, {width: 'wide', context: 'formatting'})
+    }
+  },
+
+  // Hour [1-12]
+  h: function (date, token, localize, options) {
+    var hours = date.getUTCHours() % 12
+
+    if (hours === 0) {
+      hours = 12
+    }
+
+    if (token === 'ho') {
+      return localize.ordinalNumber(hours, {unit: 'hour'})
+    }
+
+    return addLeadingZeros(hours, token.length)
+  },
+
+  // Hour [0-23]
+  H: function (date, token, localize, options) {
+    var hours = date.getUTCHours()
+
+    if (token === 'Ho') {
+      return localize.ordinalNumber(hours, {unit: 'hour'})
+    }
+
+    return addLeadingZeros(hours, token.length)
+  },
+
+  // Hour [0-11]
+  K: function (date, token, localize, options) {
+    var hours = date.getUTCHours() % 12
+
+    if (token === 'Ko') {
+      return localize.ordinalNumber(hours, {unit: 'hour'})
+    }
+
+    return addLeadingZeros(hours, token.length)
+  },
+
+  // Hour [1-24]
+  k: function (date, token, localize, options) {
+    var hours = date.getUTCHours()
+
+    if (hours === 0) {
+      hours = 24
+    }
+
+    if (token === 'ko') {
+      return localize.ordinalNumber(hours, {unit: 'hour'})
+    }
+
+    return addLeadingZeros(hours, token.length)
+  },
+
+  // Minute
+  m: function (date, token, localize, options) {
+    var minutes = date.getUTCMinutes()
+
+    if (token === 'mo') {
+      return localize.ordinalNumber(minutes, {unit: 'minute'})
+    }
+
+    return addLeadingZeros(minutes, token.length)
+  },
+
+  // Second
+  s: function (date, token, localize, options) {
+    var seconds = date.getUTCSeconds()
+
+    if (token === 'so') {
+      return localize.ordinalNumber(seconds, {unit: 'second'})
+    }
+
+    return addLeadingZeros(seconds, token.length)
+  },
+
+  // Fraction of second
+  S: function (date, token, localize, options) {
+    var numberOfDigits = token.length
+    var milliseconds = date.getUTCMilliseconds()
+    var fractionalSeconds = Math.floor(milliseconds * Math.pow(10, numberOfDigits - 3))
+    return addLeadingZeros(fractionalSeconds, numberOfDigits)
+  },
+
+  // Timezone (ISO-8601. If offset is 0, output is always `'Z'`)
+  X: function (date, token, localize, options) {
+    var originalDate = options._originalDate || date
+    var timezoneOffset = originalDate.getTimezoneOffset()
+
+    if (timezoneOffset === 0) {
+      return 'Z'
+    }
+
+    switch (token) {
+      // Hours and optional minutes
+      case 'X':
+        return formatTimezoneWithOptionalMinutes(timezoneOffset)
+
+      // Hours, minutes and optional seconds without `:` delimeter
+      // Note: neither ISO-8601 nor JavaScript supports seconds in timezone offsets
+      // so this token always has the same output as `XX`
+      case 'XXXX':
+      case 'XX': // Hours and minutes without `:` delimeter
+        return formatTimezone(timezoneOffset)
+
+      // Hours, minutes and optional seconds with `:` delimeter
+      // Note: neither ISO-8601 nor JavaScript supports seconds in timezone offsets
+      // so this token always has the same output as `XXX`
+      case 'XXXXX':
+      case 'XXX': // Hours and minutes with `:` delimeter
+      default:
+        return formatTimezone(timezoneOffset, ':')
+    }
+  },
+
+  // Timezone (ISO-8601. If offset is 0, output is `'+00:00'` or equivalent)
+  x: function (date, token, localize, options) {
+    var originalDate = options._originalDate || date
+    var timezoneOffset = originalDate.getTimezoneOffset()
+
+    switch (token) {
+      // Hours and optional minutes
+      case 'x':
+        return formatTimezoneWithOptionalMinutes(timezoneOffset)
+
+      // Hours, minutes and optional seconds without `:` delimeter
+      // Note: neither ISO-8601 nor JavaScript supports seconds in timezone offsets
+      // so this token always has the same output as `xx`
+      case 'xxxx':
+      case 'xx': // Hours and minutes without `:` delimeter
+        return formatTimezone(timezoneOffset)
+
+      // Hours, minutes and optional seconds with `:` delimeter
+      // Note: neither ISO-8601 nor JavaScript supports seconds in timezone offsets
+      // so this token always has the same output as `xxx`
+      case 'xxxxx':
+      case 'xxx': // Hours and minutes with `:` delimeter
+      default:
+        return formatTimezone(timezoneOffset, ':')
+    }
+  },
+
+  // Timezone (GMT)
+  O: function (date, token, localize, options) {
+    var originalDate = options._originalDate || date
+    var timezoneOffset = originalDate.getTimezoneOffset()
+
+    switch (token) {
+      // Short
+      case 'O':
+      case 'OO':
+      case 'OOO':
+        return 'GMT' + formatTimezoneShort(timezoneOffset, ':')
+      // Long
+      case 'OOOO':
+      default:
+        return 'GMT' + formatTimezone(timezoneOffset, ':')
+    }
+  },
+
+  // Timezone (specific non-location)
+  z: function (date, token, localize, options) {
+    var originalDate = options._originalDate || date
+    var timezoneOffset = originalDate.getTimezoneOffset()
+
+    switch (token) {
+      // Short
+      case 'z':
+      case 'zz':
+      case 'zzz':
+        return 'GMT' + formatTimezoneShort(timezoneOffset, ':')
+      // Long
+      case 'zzzz':
+      default:
+        return 'GMT' + formatTimezone(timezoneOffset, ':')
+    }
+  },
+
+  // Seconds timestamp
+  t: function (date, token, localize, options) {
+    var originalDate = options._originalDate || date
+    var timestamp = Math.floor(originalDate.getTime() / 1000)
+    return addLeadingZeros(timestamp, token.length)
+  },
+
+  // Milliseconds timestamp
+  T: function (date, token, localize, options) {
+    var originalDate = options._originalDate || date
+    var timestamp = originalDate.getTime()
+    return addLeadingZeros(timestamp, token.length)
+  }
+}
+
+function addLeadingZeros (number, targetLength) {
+  var sign = number < 0 ? '-' : ''
+  var output = Math.abs(number).toString()
+  while (output.length < targetLength) {
+    output = '0' + output
+  }
+  return sign + output
+}
+
+function formatTimezone (offset, dirtyDelimeter) {
+  var delimeter = dirtyDelimeter || ''
+  var sign = offset > 0 ? '-' : '+'
+  var absOffset = Math.abs(offset)
+  var hours = addLeadingZeros(Math.floor(absOffset / 60), 2)
+  var minutes = addLeadingZeros(absOffset % 60, 2)
+  return sign + hours + delimeter + minutes
+}
+
+function formatTimezoneWithOptionalMinutes (offset, dirtyDelimeter) {
+  if (offset % 60 === 0) {
+    var sign = offset > 0 ? '-' : '+'
+    return sign + addLeadingZeros(Math.abs(offset) / 60, 2)
+  }
+  return formatTimezone(offset, dirtyDelimeter)
+}
+
+function formatTimezoneShort (offset, dirtyDelimeter) {
+  var sign = offset > 0 ? '-' : '+'
+  var absOffset = Math.abs(offset)
+  var hours = Math.floor(absOffset / 60)
+  var minutes = absOffset % 60
+  if (minutes === 0) {
+    return sign + String(hours)
+  }
+  var delimeter = dirtyDelimeter || ''
+  return sign + String(hours) + delimeter + addLeadingZeros(minutes, 2)
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (formatters);
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/format/_lib/longFormatters/index.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/date-fns/esm/format/_lib/longFormatters/index.js ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function dateLongFormatter (pattern, formatLong, options) {
+  switch (pattern) {
+    case 'P':
+      return formatLong.date({width: 'short'})
+    case 'PP':
+      return formatLong.date({width: 'medium'})
+    case 'PPP':
+      return formatLong.date({width: 'long'})
+    case 'PPPP':
+    default:
+      return formatLong.date({width: 'full'})
+  }
+}
+
+function timeLongFormatter (pattern, formatLong, options) {
+  switch (pattern) {
+    case 'p':
+      return formatLong.time({width: 'short'})
+    case 'pp':
+      return formatLong.time({width: 'medium'})
+    case 'ppp':
+      return formatLong.time({width: 'long'})
+    case 'pppp':
+    default:
+      return formatLong.time({width: 'full'})
+  }
+}
+
+function dateTimeLongFormatter (pattern, formatLong, options) {
+  var matchResult = pattern.match(/(P+)(p+)?/)
+  var datePattern = matchResult[1]
+  var timePattern = matchResult[2]
+
+  if (!timePattern) {
+    return dateLongFormatter(pattern, formatLong, options)
+  }
+
+  var dateTimeFormat
+
+  switch (datePattern) {
+    case 'P':
+      dateTimeFormat = formatLong.dateTime({width: 'short'})
+      break
+    case 'PP':
+      dateTimeFormat = formatLong.dateTime({width: 'medium'})
+      break
+    case 'PPP':
+      dateTimeFormat = formatLong.dateTime({width: 'long'})
+      break
+    case 'PPPP':
+    default:
+      dateTimeFormat = formatLong.dateTime({width: 'full'})
+      break
+  }
+
+  return dateTimeFormat
+    .replace('{{date}}', dateLongFormatter(datePattern, formatLong, options))
+    .replace('{{time}}', timeLongFormatter(timePattern, formatLong, options))
+}
+
+var longFormatters = {
+  p: timeLongFormatter,
+  P: dateTimeLongFormatter
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (longFormatters);
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/format/index.js":
+/*!***************************************************!*\
+  !*** ./node_modules/date-fns/esm/format/index.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return format; });
+/* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _lib_getTimezoneOffsetInMilliseconds_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_lib/getTimezoneOffsetInMilliseconds/index.js */ "./node_modules/date-fns/esm/_lib/getTimezoneOffsetInMilliseconds/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+/* harmony import */ var _isValid_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../isValid/index.js */ "./node_modules/date-fns/esm/isValid/index.js");
+/* harmony import */ var _locale_en_US_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../locale/en-US/index.js */ "./node_modules/date-fns/esm/locale/en-US/index.js");
+/* harmony import */ var _lib_formatters_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./_lib/formatters/index.js */ "./node_modules/date-fns/esm/format/_lib/formatters/index.js");
+/* harmony import */ var _lib_longFormatters_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./_lib/longFormatters/index.js */ "./node_modules/date-fns/esm/format/_lib/longFormatters/index.js");
+/* harmony import */ var _subMilliseconds_index_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../subMilliseconds/index.js */ "./node_modules/date-fns/esm/subMilliseconds/index.js");
+/* harmony import */ var _lib_protectedTokens_index_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../_lib/protectedTokens/index.js */ "./node_modules/date-fns/esm/_lib/protectedTokens/index.js");
+
+
+
+
+
+
+
+
+
+
+// This RegExp consists of three parts separated by `|`:
+// - [yYQqMLwIdDecihHKkms]o matches any available ordinal number token
+//   (one of the certain letters followed by `o`)
+// - (\w)\1* matches any sequences of the same letter
+// - '' matches two quote characters in a row
+// - '(''|[^'])+('|$) matches anything surrounded by two quote characters ('),
+//   except a single quote symbol, which ends the sequence.
+//   Two quote characters do not end the sequence.
+//   If there is no matching single quote
+//   then the sequence will continue until the end of the string.
+// - . matches any single character unmatched by previous parts of the RegExps
+var formattingTokensRegExp = /[yYQqMLwIdDecihHKkms]o|(\w)\1*|''|'(''|[^'])+('|$)|./g
+
+// This RegExp catches symbols escaped by quotes, and also
+// sequences of symbols P, p, and the combinations like `PPPPPPPppppp`
+var longFormattingTokensRegExp = /P+p+|P+|p+|''|'(''|[^'])+('|$)|./g
+
+var escapedStringRegExp = /^'(.*?)'?$/
+var doubleQuoteRegExp = /''/g
+
+/**
+ * @name format
+ * @category Common Helpers
+ * @summary Format the date.
+ *
+ * @description
+ * Return the formatted date string in the given format. The result may vary by locale.
+ *
+ * > ⚠️ Please note that the `format` tokens differ from Moment.js and other libraries.
+ * > See: https://git.io/fxCyr
+ *
+ * The characters wrapped between two single quotes characters (') are escaped.
+ * Two single quotes in a row, whether inside or outside a quoted sequence, represent a 'real' single quote.
+ * (see the last example)
+ *
+ * Format of the string is based on Unicode Technical Standard #35:
+ * https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table
+ * with a few additions (see note 7 below the table).
+ *
+ * Accepted patterns:
+ * | Unit                            | Pattern | Result examples                   | Notes |
+ * |---------------------------------|---------|-----------------------------------|-------|
+ * | Era                             | G..GGG  | AD, BC                            |       |
+ * |                                 | GGGG    | Anno Domini, Before Christ        | 2     |
+ * |                                 | GGGGG   | A, B                              |       |
+ * | Calendar year                   | y       | 44, 1, 1900, 2017                 | 5     |
+ * |                                 | yo      | 44th, 1st, 0th, 17th              | 5,7   |
+ * |                                 | yy      | 44, 01, 00, 17                    | 5     |
+ * |                                 | yyy     | 044, 001, 1900, 2017              | 5     |
+ * |                                 | yyyy    | 0044, 0001, 1900, 2017            | 5     |
+ * |                                 | yyyyy   | ...                               | 3,5   |
+ * | Local week-numbering year       | Y       | 44, 1, 1900, 2017                 | 5     |
+ * |                                 | Yo      | 44th, 1st, 1900th, 2017th         | 5,7   |
+ * |                                 | YY      | 44, 01, 00, 17                    | 5,8   |
+ * |                                 | YYY     | 044, 001, 1900, 2017              | 5     |
+ * |                                 | YYYY    | 0044, 0001, 1900, 2017            | 5,8   |
+ * |                                 | YYYYY   | ...                               | 3,5   |
+ * | ISO week-numbering year         | R       | -43, 0, 1, 1900, 2017             | 5,7   |
+ * |                                 | RR      | -43, 00, 01, 1900, 2017           | 5,7   |
+ * |                                 | RRR     | -043, 000, 001, 1900, 2017        | 5,7   |
+ * |                                 | RRRR    | -0043, 0000, 0001, 1900, 2017     | 5,7   |
+ * |                                 | RRRRR   | ...                               | 3,5,7 |
+ * | Extended year                   | u       | -43, 0, 1, 1900, 2017             | 5     |
+ * |                                 | uu      | -43, 01, 1900, 2017               | 5     |
+ * |                                 | uuu     | -043, 001, 1900, 2017             | 5     |
+ * |                                 | uuuu    | -0043, 0001, 1900, 2017           | 5     |
+ * |                                 | uuuuu   | ...                               | 3,5   |
+ * | Quarter (formatting)            | Q       | 1, 2, 3, 4                        |       |
+ * |                                 | Qo      | 1st, 2nd, 3rd, 4th                | 7     |
+ * |                                 | QQ      | 01, 02, 03, 04                    |       |
+ * |                                 | QQQ     | Q1, Q2, Q3, Q4                    |       |
+ * |                                 | QQQQ    | 1st quarter, 2nd quarter, ...     | 2     |
+ * |                                 | QQQQQ   | 1, 2, 3, 4                        | 4     |
+ * | Quarter (stand-alone)           | q       | 1, 2, 3, 4                        |       |
+ * |                                 | qo      | 1st, 2nd, 3rd, 4th                | 7     |
+ * |                                 | qq      | 01, 02, 03, 04                    |       |
+ * |                                 | qqq     | Q1, Q2, Q3, Q4                    |       |
+ * |                                 | qqqq    | 1st quarter, 2nd quarter, ...     | 2     |
+ * |                                 | qqqqq   | 1, 2, 3, 4                        | 4     |
+ * | Month (formatting)              | M       | 1, 2, ..., 12                     |       |
+ * |                                 | Mo      | 1st, 2nd, ..., 12th               | 7     |
+ * |                                 | MM      | 01, 02, ..., 12                   |       |
+ * |                                 | MMM     | Jan, Feb, ..., Dec                |       |
+ * |                                 | MMMM    | January, February, ..., December  | 2     |
+ * |                                 | MMMMM   | J, F, ..., D                      |       |
+ * | Month (stand-alone)             | L       | 1, 2, ..., 12                     |       |
+ * |                                 | Lo      | 1st, 2nd, ..., 12th               | 7     |
+ * |                                 | LL      | 01, 02, ..., 12                   |       |
+ * |                                 | LLL     | Jan, Feb, ..., Dec                |       |
+ * |                                 | LLLL    | January, February, ..., December  | 2     |
+ * |                                 | LLLLL   | J, F, ..., D                      |       |
+ * | Local week of year              | w       | 1, 2, ..., 53                     |       |
+ * |                                 | wo      | 1st, 2nd, ..., 53th               | 7     |
+ * |                                 | ww      | 01, 02, ..., 53                   |       |
+ * | ISO week of year                | I       | 1, 2, ..., 53                     | 7     |
+ * |                                 | Io      | 1st, 2nd, ..., 53th               | 7     |
+ * |                                 | II      | 01, 02, ..., 53                   | 7     |
+ * | Day of month                    | d       | 1, 2, ..., 31                     |       |
+ * |                                 | do      | 1st, 2nd, ..., 31st               | 7     |
+ * |                                 | dd      | 01, 02, ..., 31                   |       |
+ * | Day of year                     | D       | 1, 2, ..., 365, 366               | 8     |
+ * |                                 | Do      | 1st, 2nd, ..., 365th, 366th       | 7     |
+ * |                                 | DD      | 01, 02, ..., 365, 366             | 8     |
+ * |                                 | DDD     | 001, 002, ..., 365, 366           |       |
+ * |                                 | DDDD    | ...                               | 3     |
+ * | Day of week (formatting)        | E..EEE  | Mon, Tue, Wed, ..., Su            |       |
+ * |                                 | EEEE    | Monday, Tuesday, ..., Sunday      | 2     |
+ * |                                 | EEEEE   | M, T, W, T, F, S, S               |       |
+ * |                                 | EEEEEE  | Mo, Tu, We, Th, Fr, Su, Sa        |       |
+ * | ISO day of week (formatting)    | i       | 1, 2, 3, ..., 7                   | 7     |
+ * |                                 | io      | 1st, 2nd, ..., 7th                | 7     |
+ * |                                 | ii      | 01, 02, ..., 07                   | 7     |
+ * |                                 | iii     | Mon, Tue, Wed, ..., Su            | 7     |
+ * |                                 | iiii    | Monday, Tuesday, ..., Sunday      | 2,7   |
+ * |                                 | iiiii   | M, T, W, T, F, S, S               | 7     |
+ * |                                 | iiiiii  | Mo, Tu, We, Th, Fr, Su, Sa        | 7     |
+ * | Local day of week (formatting)  | e       | 2, 3, 4, ..., 1                   |       |
+ * |                                 | eo      | 2nd, 3rd, ..., 1st                | 7     |
+ * |                                 | ee      | 02, 03, ..., 01                   |       |
+ * |                                 | eee     | Mon, Tue, Wed, ..., Su            |       |
+ * |                                 | eeee    | Monday, Tuesday, ..., Sunday      | 2     |
+ * |                                 | eeeee   | M, T, W, T, F, S, S               |       |
+ * |                                 | eeeeee  | Mo, Tu, We, Th, Fr, Su, Sa        |       |
+ * | Local day of week (stand-alone) | c       | 2, 3, 4, ..., 1                   |       |
+ * |                                 | co      | 2nd, 3rd, ..., 1st                | 7     |
+ * |                                 | cc      | 02, 03, ..., 01                   |       |
+ * |                                 | ccc     | Mon, Tue, Wed, ..., Su            |       |
+ * |                                 | cccc    | Monday, Tuesday, ..., Sunday      | 2     |
+ * |                                 | ccccc   | M, T, W, T, F, S, S               |       |
+ * |                                 | cccccc  | Mo, Tu, We, Th, Fr, Su, Sa        |       |
+ * | AM, PM                          | a..aaa  | AM, PM                            |       |
+ * |                                 | aaaa    | a.m., p.m.                        | 2     |
+ * |                                 | aaaaa   | a, p                              |       |
+ * | AM, PM, noon, midnight          | b..bbb  | AM, PM, noon, midnight            |       |
+ * |                                 | bbbb    | a.m., p.m., noon, midnight        | 2     |
+ * |                                 | bbbbb   | a, p, n, mi                       |       |
+ * | Flexible day period             | B..BBB  | at night, in the morning, ...     |       |
+ * |                                 | BBBB    | at night, in the morning, ...     | 2     |
+ * |                                 | BBBBB   | at night, in the morning, ...     |       |
+ * | Hour [1-12]                     | h       | 1, 2, ..., 11, 12                 |       |
+ * |                                 | ho      | 1st, 2nd, ..., 11th, 12th         | 7     |
+ * |                                 | hh      | 01, 02, ..., 11, 12               |       |
+ * | Hour [0-23]                     | H       | 0, 1, 2, ..., 23                  |       |
+ * |                                 | Ho      | 0th, 1st, 2nd, ..., 23rd          | 7     |
+ * |                                 | HH      | 00, 01, 02, ..., 23               |       |
+ * | Hour [0-11]                     | K       | 1, 2, ..., 11, 0                  |       |
+ * |                                 | Ko      | 1st, 2nd, ..., 11th, 0th          | 7     |
+ * |                                 | KK      | 1, 2, ..., 11, 0                  |       |
+ * | Hour [1-24]                     | k       | 24, 1, 2, ..., 23                 |       |
+ * |                                 | ko      | 24th, 1st, 2nd, ..., 23rd         | 7     |
+ * |                                 | kk      | 24, 01, 02, ..., 23               |       |
+ * | Minute                          | m       | 0, 1, ..., 59                     |       |
+ * |                                 | mo      | 0th, 1st, ..., 59th               | 7     |
+ * |                                 | mm      | 00, 01, ..., 59                   |       |
+ * | Second                          | s       | 0, 1, ..., 59                     |       |
+ * |                                 | so      | 0th, 1st, ..., 59th               | 7     |
+ * |                                 | ss      | 00, 01, ..., 59                   |       |
+ * | Fraction of second              | S       | 0, 1, ..., 9                      |       |
+ * |                                 | SS      | 00, 01, ..., 99                   |       |
+ * |                                 | SSS     | 000, 0001, ..., 999               |       |
+ * |                                 | SSSS    | ...                               | 3     |
+ * | Timezone (ISO-8601 w/ Z)        | X       | -08, +0530, Z                     |       |
+ * |                                 | XX      | -0800, +0530, Z                   |       |
+ * |                                 | XXX     | -08:00, +05:30, Z                 |       |
+ * |                                 | XXXX    | -0800, +0530, Z, +123456          | 2     |
+ * |                                 | XXXXX   | -08:00, +05:30, Z, +12:34:56      |       |
+ * | Timezone (ISO-8601 w/o Z)       | x       | -08, +0530, +00                   |       |
+ * |                                 | xx      | -0800, +0530, +0000               |       |
+ * |                                 | xxx     | -08:00, +05:30, +00:00            | 2     |
+ * |                                 | xxxx    | -0800, +0530, +0000, +123456      |       |
+ * |                                 | xxxxx   | -08:00, +05:30, +00:00, +12:34:56 |       |
+ * | Timezone (GMT)                  | O...OOO | GMT-8, GMT+5:30, GMT+0            |       |
+ * |                                 | OOOO    | GMT-08:00, GMT+05:30, GMT+00:00   | 2     |
+ * | Timezone (specific non-locat.)  | z...zzz | GMT-8, GMT+5:30, GMT+0            | 6     |
+ * |                                 | zzzz    | GMT-08:00, GMT+05:30, GMT+00:00   | 2,6   |
+ * | Seconds timestamp               | t       | 512969520                         | 7     |
+ * |                                 | tt      | ...                               | 3,7   |
+ * | Milliseconds timestamp          | T       | 512969520900                      | 7     |
+ * |                                 | TT      | ...                               | 3,7   |
+ * | Long localized date             | P       | 05/29/1453                        | 7     |
+ * |                                 | PP      | May 29, 1453                      | 7     |
+ * |                                 | PPP     | May 29th, 1453                    | 7     |
+ * |                                 | PPPP    | Sunday, May 29th, 1453            | 2,7   |
+ * | Long localized time             | p       | 12:00 AM                          | 7     |
+ * |                                 | pp      | 12:00:00 AM                       | 7     |
+ * |                                 | ppp     | 12:00:00 AM GMT+2                 | 7     |
+ * |                                 | pppp    | 12:00:00 AM GMT+02:00             | 2,7   |
+ * | Combination of date and time    | Pp      | 05/29/1453, 12:00 AM              | 7     |
+ * |                                 | PPpp    | May 29, 1453, 12:00:00 AM         | 7     |
+ * |                                 | PPPppp  | May 29th, 1453 at ...             | 7     |
+ * |                                 | PPPPpppp| Sunday, May 29th, 1453 at ...     | 2,7   |
+ * Notes:
+ * 1. "Formatting" units (e.g. formatting quarter) in the default en-US locale
+ *    are the same as "stand-alone" units, but are different in some languages.
+ *    "Formatting" units are declined according to the rules of the language
+ *    in the context of a date. "Stand-alone" units are always nominative singular:
+ *
+ *    `format(new Date(2017, 10, 6), 'do LLLL', {locale: cs}) //=> '6. listopad'`
+ *
+ *    `format(new Date(2017, 10, 6), 'do MMMM', {locale: cs}) //=> '6. listopadu'`
+ *
+ * 2. Any sequence of the identical letters is a pattern, unless it is escaped by
+ *    the single quote characters (see below).
+ *    If the sequence is longer than listed in table (e.g. `EEEEEEEEEEE`)
+ *    the output will be the same as default pattern for this unit, usually
+ *    the longest one (in case of ISO weekdays, `EEEE`). Default patterns for units
+ *    are marked with "2" in the last column of the table.
+ *
+ *    `format(new Date(2017, 10, 6), 'MMM') //=> 'Nov'`
+ *
+ *    `format(new Date(2017, 10, 6), 'MMMM') //=> 'November'`
+ *
+ *    `format(new Date(2017, 10, 6), 'MMMMM') //=> 'N'`
+ *
+ *    `format(new Date(2017, 10, 6), 'MMMMMM') //=> 'November'`
+ *
+ *    `format(new Date(2017, 10, 6), 'MMMMMMM') //=> 'November'`
+ *
+ * 3. Some patterns could be unlimited length (such as `yyyyyyyy`).
+ *    The output will be padded with zeros to match the length of the pattern.
+ *
+ *    `format(new Date(2017, 10, 6), 'yyyyyyyy') //=> '00002017'`
+ *
+ * 4. `QQQQQ` and `qqqqq` could be not strictly numerical in some locales.
+ *    These tokens represent the shortest form of the quarter.
+ *
+ * 5. The main difference between `y` and `u` patterns are B.C. years:
+ *
+ *    | Year | `y` | `u` |
+ *    |------|-----|-----|
+ *    | AC 1 |   1 |   1 |
+ *    | BC 1 |   1 |   0 |
+ *    | BC 2 |   2 |  -1 |
+ *
+ *    Also `yy` always returns the last two digits of a year,
+ *    while `uu` pads single digit years to 2 characters and returns other years unchanged:
+ *
+ *    | Year | `yy` | `uu` |
+ *    |------|------|------|
+ *    | 1    |   01 |   01 |
+ *    | 14   |   14 |   14 |
+ *    | 376  |   76 |  376 |
+ *    | 1453 |   53 | 1453 |
+ *
+ *    The same difference is true for local and ISO week-numbering years (`Y` and `R`),
+ *    except local week-numbering years are dependent on `options.weekStartsOn`
+ *    and `options.firstWeekContainsDate` (compare [getISOWeekYear]{@link https://date-fns.org/docs/getISOWeekYear}
+ *    and [getWeekYear]{@link https://date-fns.org/docs/getWeekYear}).
+ *
+ * 6. Specific non-location timezones are currently unavailable in `date-fns`,
+ *    so right now these tokens fall back to GMT timezones.
+ *
+ * 7. These patterns are not in the Unicode Technical Standard #35:
+ *    - `i`: ISO day of week
+ *    - `I`: ISO week of year
+ *    - `R`: ISO week-numbering year
+ *    - `t`: seconds timestamp
+ *    - `T`: milliseconds timestamp
+ *    - `o`: ordinal number modifier
+ *    - `P`: long localized date
+ *    - `p`: long localized time
+ *
+ * 8. These tokens are often confused with others. See: https://git.io/fxCyr
+ *
+ * @param {Date|String|Number} date - the original date
+ * @param {String} format - the string of tokens
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @param {0|1|2|3|4|5|6} [options.weekStartsOn=0] - the index of the first day of the week (0 - Sunday)
+ * @param {Number} [options.firstWeekContainsDate=1] - the day of January, which is
+ * @param {Locale} [options.locale=defaultLocale] - the locale object. See [Locale]{@link https://date-fns.org/docs/Locale}
+ * @param {Boolean} [options.awareOfUnicodeTokens=false] - if true, allows usage of Unicode tokens causes confusion:
+ *   - Some of the day of year tokens (`D`, `DD`) that are confused with the day of month tokens (`d`, `dd`).
+ *   - Some of the local week-numbering year tokens (`YY`, `YYYY`) that are confused with the calendar year tokens (`yy`, `yyyy`).
+ *   See: https://git.io/fxCyr
+ * @returns {String} the formatted date string
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ * @throws {RangeError} `options.locale` must contain `localize` property
+ * @throws {RangeError} `options.locale` must contain `formatLong` property
+ * @throws {RangeError} `options.weekStartsOn` must be between 0 and 6
+ * @throws {RangeError} `options.firstWeekContainsDate` must be between 1 and 7
+ * @throws {RangeError} `options.awareOfUnicodeTokens` must be set to `true` to use `XX` token; see: https://git.io/fxCyr
+ *
+ * @example
+ * // Represent 11 February 2014 in middle-endian format:
+ * var result = format(
+ *   new Date(2014, 1, 11),
+ *   'MM/dd/yyyy'
+ * )
+ * //=> '02/11/2014'
+ *
+ * @example
+ * // Represent 2 July 2014 in Esperanto:
+ * import { eoLocale } from 'date-fns/locale/eo'
+ * var result = format(
+ *   new Date(2014, 6, 2),
+ *   "do 'de' MMMM yyyy",
+ *   {locale: eoLocale}
+ * )
+ * //=> '2-a de julio 2014'
+ *
+ * @example
+ * // Escape string by single quote characters:
+ * var result = format(
+ *   new Date(2014, 6, 2, 15),
+ *   "h 'o''clock'"
+ * )
+ * //=> "3 o'clock"
+ */
+function format(dirtyDate, dirtyFormatStr, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError(
+      '2 arguments required, but only ' + arguments.length + ' present'
+    )
+  }
+
+  var formatStr = String(dirtyFormatStr)
+  var options = dirtyOptions || {}
+
+  var locale = options.locale || _locale_en_US_index_js__WEBPACK_IMPORTED_MODULE_4__["default"]
+
+  var localeFirstWeekContainsDate =
+    locale.options && locale.options.firstWeekContainsDate
+  var defaultFirstWeekContainsDate =
+    localeFirstWeekContainsDate == null
+      ? 1
+      : Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(localeFirstWeekContainsDate)
+  var firstWeekContainsDate =
+    options.firstWeekContainsDate == null
+      ? defaultFirstWeekContainsDate
+      : Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(options.firstWeekContainsDate)
+
+  // Test if weekStartsOn is between 1 and 7 _and_ is not NaN
+  if (!(firstWeekContainsDate >= 1 && firstWeekContainsDate <= 7)) {
+    throw new RangeError(
+      'firstWeekContainsDate must be between 1 and 7 inclusively'
+    )
+  }
+
+  var localeWeekStartsOn = locale.options && locale.options.weekStartsOn
+  var defaultWeekStartsOn =
+    localeWeekStartsOn == null ? 0 : Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(localeWeekStartsOn)
+  var weekStartsOn =
+    options.weekStartsOn == null
+      ? defaultWeekStartsOn
+      : Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(options.weekStartsOn)
+
+  // Test if weekStartsOn is between 0 and 6 _and_ is not NaN
+  if (!(weekStartsOn >= 0 && weekStartsOn <= 6)) {
+    throw new RangeError('weekStartsOn must be between 0 and 6 inclusively')
+  }
+
+  if (!locale.localize) {
+    throw new RangeError('locale must contain localize property')
+  }
+
+  if (!locale.formatLong) {
+    throw new RangeError('locale must contain formatLong property')
+  }
+
+  var originalDate = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(dirtyDate, options)
+
+  if (!Object(_isValid_index_js__WEBPACK_IMPORTED_MODULE_3__["default"])(originalDate, options)) {
+    return 'Invalid Date'
+  }
+
+  // Convert the date in system timezone to the same date in UTC+00:00 timezone.
+  // This ensures that when UTC functions will be implemented, locales will be compatible with them.
+  // See an issue about UTC functions: https://github.com/date-fns/date-fns/issues/376
+  var timezoneOffset = Object(_lib_getTimezoneOffsetInMilliseconds_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(originalDate)
+  var utcDate = Object(_subMilliseconds_index_js__WEBPACK_IMPORTED_MODULE_7__["default"])(originalDate, timezoneOffset, options)
+
+  var formatterOptions = {
+    firstWeekContainsDate: firstWeekContainsDate,
+    weekStartsOn: weekStartsOn,
+    locale: locale,
+    _originalDate: originalDate
+  }
+
+  var result = formatStr
+    .match(longFormattingTokensRegExp)
+    .map(function(substring) {
+      var firstCharacter = substring[0]
+      if (firstCharacter === 'p' || firstCharacter === 'P') {
+        var longFormatter = _lib_longFormatters_index_js__WEBPACK_IMPORTED_MODULE_6__["default"][firstCharacter]
+        return longFormatter(substring, locale.formatLong, formatterOptions)
+      }
+      return substring
+    })
+    .join('')
+    .match(formattingTokensRegExp)
+    .map(function(substring) {
+      // Replace two single quote characters with one single quote character
+      if (substring === "''") {
+        return "'"
+      }
+
+      var firstCharacter = substring[0]
+      if (firstCharacter === "'") {
+        return cleanEscapedString(substring)
+      }
+
+      var formatter = _lib_formatters_index_js__WEBPACK_IMPORTED_MODULE_5__["default"][firstCharacter]
+      if (formatter) {
+        if (!options.awareOfUnicodeTokens && Object(_lib_protectedTokens_index_js__WEBPACK_IMPORTED_MODULE_8__["isProtectedToken"])(substring)) {
+          Object(_lib_protectedTokens_index_js__WEBPACK_IMPORTED_MODULE_8__["throwProtectedError"])(substring)
+        }
+        return formatter(utcDate, substring, locale.localize, formatterOptions)
+      }
+
+      return substring
+    })
+    .join('')
+
+  return result
+}
+
+function cleanEscapedString(input) {
+  return input.match(escapedStringRegExp)[1].replace(doubleQuoteRegExp, "'")
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/getDaysInMonth/index.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/date-fns/esm/getDaysInMonth/index.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getDaysInMonth; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name getDaysInMonth
+ * @category Month Helpers
+ * @summary Get the number of days in a month of the given date.
+ *
+ * @description
+ * Get the number of days in a month of the given date.
+ *
+ * @param {Date|String|Number} date - the given date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Number} the number of days in a month
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // How many days are in February 2000?
+ * var result = getDaysInMonth(new Date(2000, 1))
+ * //=> 29
+ */
+function getDaysInMonth (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  var year = date.getFullYear()
+  var monthIndex = date.getMonth()
+  var lastDayOfMonth = new Date(0)
+  lastDayOfMonth.setFullYear(year, monthIndex + 1, 0)
+  lastDayOfMonth.setHours(0, 0, 0, 0)
+  return lastDayOfMonth.getDate()
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/getHours/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/date-fns/esm/getHours/index.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getHours; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name getHours
+ * @category Hour Helpers
+ * @summary Get the hours of the given date.
+ *
+ * @description
+ * Get the hours of the given date.
+ *
+ * @param {Date|String|Number} date - the given date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Number} the hours
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Get the hours of 29 February 2012 11:45:00:
+ * var result = getHours(new Date(2012, 1, 29, 11, 45))
+ * //=> 11
+ */
+function getHours (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  var hours = date.getHours()
+  return hours
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/getSeconds/index.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/date-fns/esm/getSeconds/index.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getSeconds; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name getSeconds
+ * @category Second Helpers
+ * @summary Get the seconds of the given date.
+ *
+ * @description
+ * Get the seconds of the given date.
+ *
+ * @param {Date|String|Number} date - the given date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Number} the seconds
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Get the seconds of 29 February 2012 11:45:05.123:
+ * var result = getSeconds(new Date(2012, 1, 29, 11, 45, 5, 123))
+ * //=> 5
+ */
+function getSeconds (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  var seconds = date.getSeconds()
+  return seconds
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/getYear/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/date-fns/esm/getYear/index.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getYear; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name getYear
+ * @category Year Helpers
+ * @summary Get the year of the given date.
+ *
+ * @description
+ * Get the year of the given date.
+ *
+ * @param {Date|String|Number} date - the given date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Number} the year
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Which year is 2 July 2014?
+ * var result = getYear(new Date(2014, 6, 2))
+ * //=> 2014
+ */
+function getYear (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  var year = date.getFullYear()
+  return year
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/isAfter/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/date-fns/esm/isAfter/index.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return isAfter; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name isAfter
+ * @category Common Helpers
+ * @summary Is the first date after the second one?
+ *
+ * @description
+ * Is the first date after the second one?
+ *
+ * @param {Date|String|Number} date - the date that should be after the other one to return true
+ * @param {Date|String|Number} dateToCompare - the date to compare with
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Boolean} the first date is after the second date
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Is 10 July 1989 after 11 February 1987?
+ * var result = isAfter(new Date(1989, 6, 10), new Date(1987, 1, 11))
+ * //=> true
+ */
+function isAfter (dirtyDate, dirtyDateToCompare, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  var dateToCompare = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDateToCompare, dirtyOptions)
+  return date.getTime() > dateToCompare.getTime()
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/isBefore/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/date-fns/esm/isBefore/index.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return isBefore; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name isBefore
+ * @category Common Helpers
+ * @summary Is the first date before the second one?
+ *
+ * @description
+ * Is the first date before the second one?
+ *
+ * @param {Date|String|Number} date - the date that should be before the other one to return true
+ * @param {Date|String|Number} dateToCompare - the date to compare with
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Boolean} the first date is before the second date
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Is 10 July 1989 before 11 February 1987?
+ * var result = isBefore(new Date(1989, 6, 10), new Date(1987, 1, 11))
+ * //=> false
+ */
+function isBefore (dirtyDate, dirtyDateToCompare, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  var dateToCompare = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDateToCompare, dirtyOptions)
+  return date.getTime() < dateToCompare.getTime()
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/isEqual/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/date-fns/esm/isEqual/index.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return isEqual; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name isEqual
+ * @category Common Helpers
+ * @summary Are the given dates equal?
+ *
+ * @description
+ * Are the given dates equal?
+ *
+ * @param {Date|String|Number} dateLeft - the first date to compare
+ * @param {Date|String|Number} dateRight - the second date to compare
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Boolean} the dates are equal
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Are 2 July 2014 06:30:45.000 and 2 July 2014 06:30:45.500 equal?
+ * var result = isEqual(
+ *   new Date(2014, 6, 2, 6, 30, 45, 0)
+ *   new Date(2014, 6, 2, 6, 30, 45, 500)
+ * )
+ * //=> false
+ */
+function isEqual (dirtyLeftDate, dirtyRightDate, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var dateLeft = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyLeftDate, dirtyOptions)
+  var dateRight = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyRightDate, dirtyOptions)
+  return dateLeft.getTime() === dateRight.getTime()
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/isSameDay/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/date-fns/esm/isSameDay/index.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return isSameDay; });
+/* harmony import */ var _startOfDay_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../startOfDay/index.js */ "./node_modules/date-fns/esm/startOfDay/index.js");
+
+
+/**
+ * @name isSameDay
+ * @category Day Helpers
+ * @summary Are the given dates in the same day?
+ *
+ * @description
+ * Are the given dates in the same day?
+ *
+ * @param {Date|String|Number} dateLeft - the first date to check
+ * @param {Date|String|Number} dateRight - the second date to check
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Boolean} the dates are in the same day
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Are 4 September 06:00:00 and 4 September 18:00:00 in the same day?
+ * var result = isSameDay(
+ *   new Date(2014, 8, 4, 6, 0),
+ *   new Date(2014, 8, 4, 18, 0)
+ * )
+ * //=> true
+ */
+function isSameDay (dirtyDateLeft, dirtyDateRight, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var dateLeftStartOfDay = Object(_startOfDay_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDateLeft, dirtyOptions)
+  var dateRightStartOfDay = Object(_startOfDay_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDateRight, dirtyOptions)
+
+  return dateLeftStartOfDay.getTime() === dateRightStartOfDay.getTime()
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/isValid/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/date-fns/esm/isValid/index.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return isValid; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name isValid
+ * @category Common Helpers
+ * @summary Is the given date valid?
+ *
+ * @description
+ * Returns false if argument is Invalid Date and true otherwise.
+ * Argument is converted to Date using `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * Invalid Date is a Date, whose time value is NaN.
+ *
+ * Time value of Date: http://es5.github.io/#x15.9.1.1
+ *
+ * @param {*} date - the date to check
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Boolean} the date is valid
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // For the valid date:
+ * var result = isValid(new Date(2014, 1, 31))
+ * //=> true
+ *
+ * @example
+ * // For the value, convertable into a date:
+ * var result = isValid('2014-02-31')
+ * //=> true
+ *
+ * @example
+ * // For the invalid date:
+ * var result = isValid(new Date(''))
+ * //=> false
+ */
+function isValid (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  return !isNaN(date)
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/locale/_lib/buildFormatLongFn/index.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/date-fns/esm/locale/_lib/buildFormatLongFn/index.js ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return buildFormatLongFn; });
+function buildFormatLongFn (args) {
+  return function (dirtyOptions) {
+    var options = dirtyOptions || {}
+    var width = options.width ? String(options.width) : args.defaultWidth
+    var format = args.formats[width] || args.formats[args.defaultWidth]
+    return format
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/locale/_lib/buildLocalizeFn/index.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/date-fns/esm/locale/_lib/buildLocalizeFn/index.js ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return buildLocalizeFn; });
+function buildLocalizeFn (args) {
+  return function (dirtyIndex, dirtyOptions) {
+    var options = dirtyOptions || {}
+    var width = options.width ? String(options.width) : args.defaultWidth
+    var context = options.context ? String(options.context) : 'standalone'
+
+    var valuesArray
+    if (context === 'formatting' && args.formattingValues) {
+      valuesArray = args.formattingValues[width] || args.formattingValues[args.defaultFormattingWidth]
+    } else {
+      valuesArray = args.values[width] || args.values[args.defaultWidth]
+    }
+    var index = args.argumentCallback ? args.argumentCallback(dirtyIndex) : dirtyIndex
+    return valuesArray[index]
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/locale/_lib/buildMatchFn/index.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/date-fns/esm/locale/_lib/buildMatchFn/index.js ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return buildMatchFn; });
+function buildMatchFn (args) {
+  return function (dirtyString, dirtyOptions) {
+    var string = String(dirtyString)
+    var options = dirtyOptions || {}
+    var width = options.width
+
+    var matchPattern = (width && args.matchPatterns[width]) || args.matchPatterns[args.defaultMatchWidth]
+    var matchResult = string.match(matchPattern)
+
+    if (!matchResult) {
+      return null
+    }
+    var matchedString = matchResult[0]
+
+    var parsePatterns = (width && args.parsePatterns[width]) || args.parsePatterns[args.defaultParseWidth]
+
+    var value
+    if (Object.prototype.toString.call(parsePatterns) === '[object Array]') {
+      value = parsePatterns.findIndex(function (pattern) {
+        return pattern.test(string)
+      })
+    } else {
+      value = findKey(parsePatterns, function (pattern) {
+        return pattern.test(string)
+      })
+    }
+
+    value = args.valueCallback ? args.valueCallback(value) : value
+    value = options.valueCallback ? options.valueCallback(value) : value
+
+    return {
+      value: value,
+      rest: string.slice(matchedString.length)
+    }
+  }
+}
+
+function findKey (object, predicate) {
+  for (var key in object) {
+    if (object.hasOwnProperty(key) && predicate(object[key])) {
+      return key
+    }
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/locale/_lib/buildMatchPatternFn/index.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/date-fns/esm/locale/_lib/buildMatchPatternFn/index.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return buildMatchPatternFn; });
+function buildMatchPatternFn (args) {
+  return function (dirtyString, dirtyOptions) {
+    var string = String(dirtyString)
+    var options = dirtyOptions || {}
+
+    var matchResult = string.match(args.matchPattern)
+    if (!matchResult) {
+      return null
+    }
+    var matchedString = matchResult[0]
+
+    var parseResult = string.match(args.parsePattern)
+    if (!parseResult) {
+      return null
+    }
+    var value = args.valueCallback ? args.valueCallback(parseResult[0]) : parseResult[0]
+    value = options.valueCallback ? options.valueCallback(value) : value
+
+    return {
+      value: value,
+      rest: string.slice(matchedString.length)
+    }
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/locale/en-US/_lib/formatDistance/index.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/date-fns/esm/locale/en-US/_lib/formatDistance/index.js ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return formatDistance; });
+var formatDistanceLocale = {
+  lessThanXSeconds: {
+    one: 'less than a second',
+    other: 'less than {{count}} seconds'
+  },
+
+  xSeconds: {
+    one: '1 second',
+    other: '{{count}} seconds'
+  },
+
+  halfAMinute: 'half a minute',
+
+  lessThanXMinutes: {
+    one: 'less than a minute',
+    other: 'less than {{count}} minutes'
+  },
+
+  xMinutes: {
+    one: '1 minute',
+    other: '{{count}} minutes'
+  },
+
+  aboutXHours: {
+    one: 'about 1 hour',
+    other: 'about {{count}} hours'
+  },
+
+  xHours: {
+    one: '1 hour',
+    other: '{{count}} hours'
+  },
+
+  xDays: {
+    one: '1 day',
+    other: '{{count}} days'
+  },
+
+  aboutXMonths: {
+    one: 'about 1 month',
+    other: 'about {{count}} months'
+  },
+
+  xMonths: {
+    one: '1 month',
+    other: '{{count}} months'
+  },
+
+  aboutXYears: {
+    one: 'about 1 year',
+    other: 'about {{count}} years'
+  },
+
+  xYears: {
+    one: '1 year',
+    other: '{{count}} years'
+  },
+
+  overXYears: {
+    one: 'over 1 year',
+    other: 'over {{count}} years'
+  },
+
+  almostXYears: {
+    one: 'almost 1 year',
+    other: 'almost {{count}} years'
+  }
+}
+
+function formatDistance (token, count, options) {
+  options = options || {}
+
+  var result
+  if (typeof formatDistanceLocale[token] === 'string') {
+    result = formatDistanceLocale[token]
+  } else if (count === 1) {
+    result = formatDistanceLocale[token].one
+  } else {
+    result = formatDistanceLocale[token].other.replace('{{count}}', count)
+  }
+
+  if (options.addSuffix) {
+    if (options.comparison > 0) {
+      return 'in ' + result
+    } else {
+      return result + ' ago'
+    }
+  }
+
+  return result
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/locale/en-US/_lib/formatLong/index.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/date-fns/esm/locale/en-US/_lib/formatLong/index.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _lib_buildFormatLongFn_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../_lib/buildFormatLongFn/index.js */ "./node_modules/date-fns/esm/locale/_lib/buildFormatLongFn/index.js");
+
+
+var dateFormats = {
+  full: 'EEEE, MMMM do, y',
+  long: 'MMMM do, y',
+  medium: 'MMM d, y',
+  short: 'MM/dd/yyyy'
+}
+
+var timeFormats = {
+  full: 'h:mm:ss a zzzz',
+  long: 'h:mm:ss a z',
+  medium: 'h:mm:ss a',
+  short: 'h:mm a'
+}
+
+var dateTimeFormats = {
+  full: "{{date}} 'at' {{time}}",
+  long: "{{date}} 'at' {{time}}",
+  medium: '{{date}}, {{time}}',
+  short: '{{date}}, {{time}}'
+}
+
+var formatLong = {
+  date: Object(_lib_buildFormatLongFn_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    formats: dateFormats,
+    defaultWidth: 'full'
+  }),
+
+  time: Object(_lib_buildFormatLongFn_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    formats: timeFormats,
+    defaultWidth: 'full'
+  }),
+
+  dateTime: Object(_lib_buildFormatLongFn_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    formats: dateTimeFormats,
+    defaultWidth: 'full'
+  })
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (formatLong);
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/locale/en-US/_lib/formatRelative/index.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/date-fns/esm/locale/en-US/_lib/formatRelative/index.js ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return formatRelative; });
+var formatRelativeLocale = {
+  lastWeek: "'last' eeee 'at' p",
+  yesterday: "'yesterday at' p",
+  today: "'today at' p",
+  tomorrow: "'tomorrow at' p",
+  nextWeek: "eeee 'at' p",
+  other: 'P'
+}
+
+function formatRelative (token, date, baseDate, options) {
+  return formatRelativeLocale[token]
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/locale/en-US/_lib/localize/index.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/date-fns/esm/locale/en-US/_lib/localize/index.js ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _lib_buildLocalizeFn_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../_lib/buildLocalizeFn/index.js */ "./node_modules/date-fns/esm/locale/_lib/buildLocalizeFn/index.js");
+
+
+var eraValues = {
+  narrow: ['B', 'A'],
+  abbreviated: ['BC', 'AD'],
+  wide: ['Before Christ', 'Anno Domini']
+}
+
+var quarterValues = {
+  narrow: ['1', '2', '3', '4'],
+  abbreviated: ['Q1', 'Q2', 'Q3', 'Q4'],
+  wide: ['1st quarter', '2nd quarter', '3rd quarter', '4th quarter']
+}
+
+// Note: in English, the names of days of the week and months are capitalized.
+// If you are making a new locale based on this one, check if the same is true for the language you're working on.
+// Generally, formatted dates should look like they are in the middle of a sentence,
+// e.g. in Spanish language the weekdays and months should be in the lowercase.
+var monthValues = {
+  narrow: ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D'],
+  abbreviated: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  wide: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+}
+
+var dayValues = {
+  narrow: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+  short: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+  abbreviated: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+  wide: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+}
+
+var dayPeriodValues = {
+  narrow: {
+    am: 'a',
+    pm: 'p',
+    midnight: 'mi',
+    noon: 'n',
+    morning: 'morning',
+    afternoon: 'afternoon',
+    evening: 'evening',
+    night: 'night'
+  },
+  abbreviated: {
+    am: 'AM',
+    pm: 'PM',
+    midnight: 'midnight',
+    noon: 'noon',
+    morning: 'morning',
+    afternoon: 'afternoon',
+    evening: 'evening',
+    night: 'night'
+  },
+  wide: {
+    am: 'a.m.',
+    pm: 'p.m.',
+    midnight: 'midnight',
+    noon: 'noon',
+    morning: 'morning',
+    afternoon: 'afternoon',
+    evening: 'evening',
+    night: 'night'
+  }
+}
+var formattingDayPeriodValues = {
+  narrow: {
+    am: 'a',
+    pm: 'p',
+    midnight: 'mi',
+    noon: 'n',
+    morning: 'in the morning',
+    afternoon: 'in the afternoon',
+    evening: 'in the evening',
+    night: 'at night'
+  },
+  abbreviated: {
+    am: 'AM',
+    pm: 'PM',
+    midnight: 'midnight',
+    noon: 'noon',
+    morning: 'in the morning',
+    afternoon: 'in the afternoon',
+    evening: 'in the evening',
+    night: 'at night'
+  },
+  wide: {
+    am: 'a.m.',
+    pm: 'p.m.',
+    midnight: 'midnight',
+    noon: 'noon',
+    morning: 'in the morning',
+    afternoon: 'in the afternoon',
+    evening: 'in the evening',
+    night: 'at night'
+  }
+}
+
+function ordinalNumber (dirtyNumber, dirtyOptions) {
+  var number = Number(dirtyNumber)
+
+  // If ordinal numbers depend on context, for example,
+  // if they are different for different grammatical genders,
+  // use `options.unit`:
+  //
+  //   var options = dirtyOptions || {}
+  //   var unit = String(options.unit)
+  //
+  // where `unit` can be 'year', 'quarter', 'month', 'week', 'date', 'dayOfYear',
+  // 'day', 'hour', 'minute', 'second'
+
+  var rem100 = number % 100
+  if (rem100 > 20 || rem100 < 10) {
+    switch (rem100 % 10) {
+      case 1:
+        return number + 'st'
+      case 2:
+        return number + 'nd'
+      case 3:
+        return number + 'rd'
+    }
+  }
+  return number + 'th'
+}
+
+var localize = {
+  ordinalNumber: ordinalNumber,
+
+  era: Object(_lib_buildLocalizeFn_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    values: eraValues,
+    defaultWidth: 'wide'
+  }),
+
+  quarter: Object(_lib_buildLocalizeFn_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    values: quarterValues,
+    defaultWidth: 'wide',
+    argumentCallback: function (quarter) {
+      return Number(quarter) - 1
+    }
+  }),
+
+  month: Object(_lib_buildLocalizeFn_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    values: monthValues,
+    defaultWidth: 'wide'
+  }),
+
+  day: Object(_lib_buildLocalizeFn_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    values: dayValues,
+    defaultWidth: 'wide'
+  }),
+
+  dayPeriod: Object(_lib_buildLocalizeFn_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    values: dayPeriodValues,
+    defaultWidth: 'wide',
+    formattingValues: formattingDayPeriodValues,
+    defaulFormattingWidth: 'wide'
+  })
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (localize);
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/locale/en-US/_lib/match/index.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/date-fns/esm/locale/en-US/_lib/match/index.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _lib_buildMatchPatternFn_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../_lib/buildMatchPatternFn/index.js */ "./node_modules/date-fns/esm/locale/_lib/buildMatchPatternFn/index.js");
+/* harmony import */ var _lib_buildMatchFn_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../_lib/buildMatchFn/index.js */ "./node_modules/date-fns/esm/locale/_lib/buildMatchFn/index.js");
+
+
+
+var matchOrdinalNumberPattern = /^(\d+)(th|st|nd|rd)?/i
+var parseOrdinalNumberPattern = /\d+/i
+
+var matchEraPatterns = {
+  narrow: /^(b|a)/i,
+  abbreviated: /^(b\.?\s?c\.?|b\.?\s?c\.?\s?e\.?|a\.?\s?d\.?|c\.?\s?e\.?)/i,
+  wide: /^(before christ|before common era|anno domini|common era)/i
+}
+var parseEraPatterns = {
+  any: [/^b/i, /^(a|c)/i]
+}
+
+var matchQuarterPatterns = {
+  narrow: /^[1234]/i,
+  abbreviated: /^q[1234]/i,
+  wide: /^[1234](th|st|nd|rd)? quarter/i
+}
+var parseQuarterPatterns = {
+  any: [/1/i, /2/i, /3/i, /4/i]
+}
+
+var matchMonthPatterns = {
+  narrow: /^[jfmasond]/i,
+  abbreviated: /^(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i,
+  wide: /^(january|february|march|april|may|june|july|august|september|october|november|december)/i
+}
+var parseMonthPatterns = {
+  narrow: [/^j/i, /^f/i, /^m/i, /^a/i, /^m/i, /^j/i, /^j/i, /^a/i, /^s/i, /^o/i, /^n/i, /^d/i],
+  any: [/^ja/i, /^f/i, /^mar/i, /^ap/i, /^may/i, /^jun/i, /^jul/i, /^au/i, /^s/i, /^o/i, /^n/i, /^d/i]
+}
+
+var matchDayPatterns = {
+  narrow: /^[smtwf]/i,
+  short: /^(su|mo|tu|we|th|fr|sa)/i,
+  abbreviated: /^(sun|mon|tue|wed|thu|fri|sat)/i,
+  wide: /^(sunday|monday|tuesday|wednesday|thursday|friday|saturday)/i
+}
+var parseDayPatterns = {
+  narrow: [/^s/i, /^m/i, /^t/i, /^w/i, /^t/i, /^f/i, /^s/i],
+  any: [/^su/i, /^m/i, /^tu/i, /^w/i, /^th/i, /^f/i, /^sa/i]
+}
+
+var matchDayPeriodPatterns = {
+  narrow: /^(a|p|mi|n|(in the|at) (morning|afternoon|evening|night))/i,
+  any: /^([ap]\.?\s?m\.?|midnight|noon|(in the|at) (morning|afternoon|evening|night))/i
+}
+var parseDayPeriodPatterns = {
+  any: {
+    am: /^a/i,
+    pm: /^p/i,
+    midnight: /^mi/i,
+    noon: /^no/i,
+    morning: /morning/i,
+    afternoon: /afternoon/i,
+    evening: /evening/i,
+    night: /night/i
+  }
+}
+
+var match = {
+  ordinalNumber: Object(_lib_buildMatchPatternFn_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    matchPattern: matchOrdinalNumberPattern,
+    parsePattern: parseOrdinalNumberPattern,
+    valueCallback: function (value) {
+      return parseInt(value, 10)
+    }
+  }),
+
+  era: Object(_lib_buildMatchFn_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    matchPatterns: matchEraPatterns,
+    defaultMatchWidth: 'wide',
+    parsePatterns: parseEraPatterns,
+    defaultParseWidth: 'any'
+  }),
+
+  quarter: Object(_lib_buildMatchFn_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    matchPatterns: matchQuarterPatterns,
+    defaultMatchWidth: 'wide',
+    parsePatterns: parseQuarterPatterns,
+    defaultParseWidth: 'any',
+    valueCallback: function (index) {
+      return index + 1
+    }
+  }),
+
+  month: Object(_lib_buildMatchFn_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    matchPatterns: matchMonthPatterns,
+    defaultMatchWidth: 'wide',
+    parsePatterns: parseMonthPatterns,
+    defaultParseWidth: 'any'
+  }),
+
+  day: Object(_lib_buildMatchFn_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    matchPatterns: matchDayPatterns,
+    defaultMatchWidth: 'wide',
+    parsePatterns: parseDayPatterns,
+    defaultParseWidth: 'any'
+  }),
+
+  dayPeriod: Object(_lib_buildMatchFn_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])({
+    matchPatterns: matchDayPeriodPatterns,
+    defaultMatchWidth: 'any',
+    parsePatterns: parseDayPeriodPatterns,
+    defaultParseWidth: 'any'
+  })
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (match);
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/locale/en-US/index.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/date-fns/esm/locale/en-US/index.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _lib_formatDistance_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_lib/formatDistance/index.js */ "./node_modules/date-fns/esm/locale/en-US/_lib/formatDistance/index.js");
+/* harmony import */ var _lib_formatLong_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_lib/formatLong/index.js */ "./node_modules/date-fns/esm/locale/en-US/_lib/formatLong/index.js");
+/* harmony import */ var _lib_formatRelative_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_lib/formatRelative/index.js */ "./node_modules/date-fns/esm/locale/en-US/_lib/formatRelative/index.js");
+/* harmony import */ var _lib_localize_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_lib/localize/index.js */ "./node_modules/date-fns/esm/locale/en-US/_lib/localize/index.js");
+/* harmony import */ var _lib_match_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./_lib/match/index.js */ "./node_modules/date-fns/esm/locale/en-US/_lib/match/index.js");
+
+
+
+
+
+
+/**
+ * @type {Locale}
+ * @category Locales
+ * @summary English locale (United States).
+ * @language English
+ * @iso-639-2 eng
+ * @author Sasha Koss [@kossnocorp]{@link https://github.com/kossnocorp}
+ * @author Lesha Koss [@leshakoss]{@link https://github.com/leshakoss}
+ */
+var locale = {
+  formatDistance: _lib_formatDistance_index_js__WEBPACK_IMPORTED_MODULE_0__["default"],
+  formatLong: _lib_formatLong_index_js__WEBPACK_IMPORTED_MODULE_1__["default"],
+  formatRelative: _lib_formatRelative_index_js__WEBPACK_IMPORTED_MODULE_2__["default"],
+  localize: _lib_localize_index_js__WEBPACK_IMPORTED_MODULE_3__["default"],
+  match: _lib_match_index_js__WEBPACK_IMPORTED_MODULE_4__["default"],
+  options: {
+    weekStartsOn: 0 /* Sunday */,
+    firstWeekContainsDate: 1
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (locale);
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/parse/_lib/parsers/index.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/date-fns/esm/parse/_lib/parsers/index.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _lib_getUTCWeekYear_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../_lib/getUTCWeekYear/index.js */ "./node_modules/date-fns/esm/_lib/getUTCWeekYear/index.js");
+/* harmony import */ var _lib_setUTCDay_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../_lib/setUTCDay/index.js */ "./node_modules/date-fns/esm/_lib/setUTCDay/index.js");
+/* harmony import */ var _lib_setUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../_lib/setUTCWeek/index.js */ "./node_modules/date-fns/esm/_lib/setUTCWeek/index.js");
+/* harmony import */ var _lib_startOfUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../_lib/startOfUTCWeek/index.js */ "./node_modules/date-fns/esm/_lib/startOfUTCWeek/index.js");
+/* harmony import */ var _lib_setUTCISODay_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../_lib/setUTCISODay/index.js */ "./node_modules/date-fns/esm/_lib/setUTCISODay/index.js");
+/* harmony import */ var _lib_setUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../_lib/setUTCISOWeek/index.js */ "./node_modules/date-fns/esm/_lib/setUTCISOWeek/index.js");
+/* harmony import */ var _lib_startOfUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../_lib/startOfUTCISOWeek/index.js */ "./node_modules/date-fns/esm/_lib/startOfUTCISOWeek/index.js");
+
+
+
+
+
+
+
+
+var MILLISECONDS_IN_HOUR = 3600000
+var MILLISECONDS_IN_MINUTE = 60000
+var MILLISECONDS_IN_SECOND = 1000
+
+var numericPatterns = {
+  month: /^(1[0-2]|0?\d)/, // 0 to 12
+  date: /^(3[0-1]|[0-2]?\d)/, // 0 to 31
+  dayOfYear: /^(36[0-6]|3[0-5]\d|[0-2]?\d?\d)/, // 0 to 366
+  week: /^(5[0-3]|[0-4]?\d)/, // 0 to 53
+  hour23h: /^(2[0-3]|[0-1]?\d)/, // 0 to 23
+  hour24h: /^(2[0-4]|[0-1]?\d)/, // 0 to 24
+  hour11h: /^(1[0-1]|0?\d)/, // 0 to 11
+  hour12h: /^(1[0-2]|0?\d)/, // 0 to 12
+  minute: /^[0-5]?\d/, // 0 to 59
+  second: /^[0-5]?\d/, // 0 to 59
+
+  singleDigit: /^\d/, // 0 to 9
+  twoDigits: /^\d{1,2}/, // 0 to 99
+  threeDigits: /^\d{1,3}/, // 0 to 999
+  fourDigits: /^\d{1,4}/, // 0 to 9999
+
+  anyDigitsSigned: /^-?\d+/,
+  singleDigitSigned: /^-?\d/, // 0 to 9, -0 to -9
+  twoDigitsSigned: /^-?\d{1,2}/, // 0 to 99, -0 to -99
+  threeDigitsSigned: /^-?\d{1,3}/, // 0 to 999, -0 to -999
+  fourDigitsSigned: /^-?\d{1,4}/ // 0 to 9999, -0 to -9999
+}
+
+var timezonePatterns = {
+  basicOptionalMinutes: /^([+-])(\d{2})(\d{2})?|Z/,
+  basic: /^([+-])(\d{2})(\d{2})|Z/,
+  basicOptionalSeconds: /^([+-])(\d{2})(\d{2})((\d{2}))?|Z/,
+  extended: /^([+-])(\d{2}):(\d{2})|Z/,
+  extendedOptionalSeconds: /^([+-])(\d{2}):(\d{2})(:(\d{2}))?|Z/
+}
+
+function parseNumericPattern (pattern, string, valueCallback) {
+  var matchResult = string.match(pattern)
+
+  if (!matchResult) {
+    return null
+  }
+
+  var value = parseInt(matchResult[0], 10)
+
+  return {
+    value: valueCallback ? valueCallback(value) : value,
+    rest: string.slice(matchResult[0].length)
+  }
+}
+
+function parseTimezonePattern (pattern, string) {
+  var matchResult = string.match(pattern)
+
+  if (!matchResult) {
+    return null
+  }
+
+  // Input is 'Z'
+  if (matchResult[0] === 'Z') {
+    return {
+      value: 0,
+      rest: string.slice(1)
+    }
+  }
+
+  var sign = matchResult[1] === '+' ? 1 : -1
+  var hours = matchResult[2] ? parseInt(matchResult[2], 10) : 0
+  var minutes = matchResult[3] ? parseInt(matchResult[3], 10) : 0
+  var seconds = matchResult[5] ? parseInt(matchResult[5], 10) : 0
+
+  return {
+    value: sign * (
+      hours * MILLISECONDS_IN_HOUR +
+        minutes * MILLISECONDS_IN_MINUTE +
+        seconds * MILLISECONDS_IN_SECOND
+    ),
+    rest: string.slice(matchResult[0].length)
+  }
+}
+
+function parseAnyDigitsSigned (string, valueCallback) {
+  return parseNumericPattern(numericPatterns.anyDigitsSigned, string, valueCallback)
+}
+
+function parseNDigits (n, string, valueCallback) {
+  switch (n) {
+    case 1:
+      return parseNumericPattern(numericPatterns.singleDigit, string, valueCallback)
+    case 2:
+      return parseNumericPattern(numericPatterns.twoDigits, string, valueCallback)
+    case 3:
+      return parseNumericPattern(numericPatterns.threeDigits, string, valueCallback)
+    case 4:
+      return parseNumericPattern(numericPatterns.fourDigits, string, valueCallback)
+    default:
+      return parseNumericPattern(new RegExp('^\\d{1,' + n + '}'), string, valueCallback)
+  }
+}
+
+function parseNDigitsSigned (n, string, valueCallback) {
+  switch (n) {
+    case 1:
+      return parseNumericPattern(numericPatterns.singleDigitSigned, string, valueCallback)
+    case 2:
+      return parseNumericPattern(numericPatterns.twoDigitsSigned, string, valueCallback)
+    case 3:
+      return parseNumericPattern(numericPatterns.threeDigitsSigned, string, valueCallback)
+    case 4:
+      return parseNumericPattern(numericPatterns.fourDigitsSigned, string, valueCallback)
+    default:
+      return parseNumericPattern(new RegExp('^-?\\d{1,' + n + '}'), string, valueCallback)
+  }
+}
+
+function dayPeriodEnumToHours (enumValue) {
+  switch (enumValue) {
+    case 'morning':
+      return 4
+    case 'evening':
+      return 17
+    case 'pm':
+    case 'noon':
+    case 'afternoon':
+      return 12
+    case 'am':
+    case 'midnight':
+    case 'night':
+    default:
+      return 0
+  }
+}
+
+function normalizeTwoDigitYear (twoDigitYear, currentYear) {
+  var isCommonEra = currentYear > 0
+  // Absolute number of the current year:
+  // 1 -> 1 AC
+  // 0 -> 1 BC
+  // -1 -> 2 BC
+  var absCurrentYear = isCommonEra ? currentYear : 1 - currentYear
+
+  var result
+  if (absCurrentYear <= 50) {
+    result = twoDigitYear || 100
+  } else {
+    var rangeEnd = absCurrentYear + 50
+    var rangeEndCentury = Math.floor(rangeEnd / 100) * 100
+    var isPreviousCentury = twoDigitYear >= rangeEnd % 100
+    result = twoDigitYear + rangeEndCentury - (isPreviousCentury ? 100 : 0)
+  }
+
+  return isCommonEra ? result : 1 - result
+}
+
+var DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+var DAYS_IN_MONTH_LEAP_YEAR = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+// User for validation
+function isLeapYearIndex (year) {
+  return year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)
+}
+
+/*
+ * |     | Unit                           |     | Unit                           |
+ * |-----|--------------------------------|-----|--------------------------------|
+ * |  a  | AM, PM                         |  A* | Milliseconds in day            |
+ * |  b  | AM, PM, noon, midnight         |  B  | Flexible day period            |
+ * |  c  | Stand-alone local day of week  |  C* | Localized hour w/ day period   |
+ * |  d  | Day of month                   |  D  | Day of year                    |
+ * |  e  | Local day of week              |  E  | Day of week                    |
+ * |  f  |                                |  F* | Day of week in month           |
+ * |  g* | Modified Julian day            |  G  | Era                            |
+ * |  h  | Hour [1-12]                    |  H  | Hour [0-23]                    |
+ * |  i! | ISO day of week                |  I! | ISO week of year               |
+ * |  j* | Localized hour w/ day period   |  J* | Localized hour w/o day period  |
+ * |  k  | Hour [1-24]                    |  K  | Hour [0-11]                    |
+ * |  l* | (deprecated)                   |  L  | Stand-alone month              |
+ * |  m  | Minute                         |  M  | Month                          |
+ * |  n  |                                |  N  |                                |
+ * |  o! | Ordinal number modifier        |  O* | Timezone (GMT)                 |
+ * |  p  |                                |  P  |                                |
+ * |  q  | Stand-alone quarter            |  Q  | Quarter                        |
+ * |  r* | Related Gregorian year         |  R! | ISO week-numbering year        |
+ * |  s  | Second                         |  S  | Fraction of second             |
+ * |  t! | Seconds timestamp              |  T! | Milliseconds timestamp         |
+ * |  u  | Extended year                  |  U* | Cyclic year                    |
+ * |  v* | Timezone (generic non-locat.)  |  V* | Timezone (location)            |
+ * |  w  | Local week of year             |  W* | Week of month                  |
+ * |  x  | Timezone (ISO-8601 w/o Z)      |  X  | Timezone (ISO-8601)            |
+ * |  y  | Year (abs)                     |  Y  | Local week-numbering year      |
+ * |  z* | Timezone (specific non-locat.) |  Z* | Timezone (aliases)             |
+ *
+ * Letters marked by * are not implemented but reserved by Unicode standard.
+ *
+ * Letters marked by ! are non-standard, but implemented by date-fns:
+ * - `o` modifies the previous token to turn it into an ordinal (see `parse` docs)
+ * - `i` is ISO day of week. For `i` and `ii` is returns numeric ISO week days,
+ *   i.e. 7 for Sunday, 1 for Monday, etc.
+ * - `I` is ISO week of year, as opposed to `w` which is local week of year.
+ * - `R` is ISO week-numbering year, as opposed to `Y` which is local week-numbering year.
+ *   `R` is supposed to be used in conjunction with `I` and `i`
+ *   for universal ISO week-numbering date, whereas
+ *   `Y` is supposed to be used in conjunction with `w` and `e`
+ *   for week-numbering date specific to the locale.
+ */
+var parsers = {
+  // Era
+  G: {
+    priority: 140,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        // AD, BC
+        case 'G':
+        case 'GG':
+        case 'GGG':
+          return match.era(string, {width: 'abbreviated'}) ||
+            match.era(string, {width: 'narrow'})
+        // A, B
+        case 'GGGGG':
+          return match.era(string, {width: 'narrow'})
+        // Anno Domini, Before Christ
+        case 'GGGG':
+        default:
+          return match.era(string, {width: 'wide'}) ||
+            match.era(string, {width: 'abbreviated'}) ||
+            match.era(string, {width: 'narrow'})
+      }
+    },
+    set: function (date, value, options) {
+      // Sets year 10 BC if BC, or 10 AC if AC
+      date.setUTCFullYear(value === 1 ? 10 : -9, 0, 1)
+      date.setUTCHours(0, 0, 0, 0)
+      return date
+    }
+  },
+
+  // Year
+  y: {
+    // From http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns
+    // | Year     |     y | yy |   yyy |  yyyy | yyyyy |
+    // |----------|-------|----|-------|-------|-------|
+    // | AD 1     |     1 | 01 |   001 |  0001 | 00001 |
+    // | AD 12    |    12 | 12 |   012 |  0012 | 00012 |
+    // | AD 123   |   123 | 23 |   123 |  0123 | 00123 |
+    // | AD 1234  |  1234 | 34 |  1234 |  1234 | 01234 |
+    // | AD 12345 | 12345 | 45 | 12345 | 12345 | 12345 |
+
+    priority: 130,
+    parse: function (string, token, match, options) {
+      var valueCallback = function (year) {
+        return {
+          year: year,
+          isTwoDigitYear: token === 'yy'
+        }
+      }
+
+      switch (token) {
+        case 'y':
+          return parseNDigits(4, string, valueCallback)
+        case 'yo':
+          return match.ordinalNumber(string, {unit: 'year', valueCallback: valueCallback})
+        default:
+          return parseNDigits(token.length, string, valueCallback)
+      }
+    },
+    validate: function (date, value, options) {
+      return value.isTwoDigitYear || value.year > 0
+    },
+    set: function (date, value, options) {
+      var currentYear = Object(_lib_getUTCWeekYear_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(date, options)
+
+      if (value.isTwoDigitYear) {
+        var normalizedTwoDigitYear = normalizeTwoDigitYear(value.year, currentYear)
+        date.setUTCFullYear(normalizedTwoDigitYear, 0, 1)
+        date.setUTCHours(0, 0, 0, 0)
+        return date
+      }
+
+      var year = currentYear > 0 ? value.year : 1 - value.year
+      date.setUTCFullYear(year, 0, 1)
+      date.setUTCHours(0, 0, 0, 0)
+      return date
+    }
+  },
+
+  // Local week-numbering year
+  Y: {
+    priority: 130,
+    parse: function (string, token, match, options) {
+      var valueCallback = function (year) {
+        return {
+          year: year,
+          isTwoDigitYear: token === 'YY'
+        }
+      }
+
+      switch (token) {
+        case 'Y':
+          return parseNDigits(4, string, valueCallback)
+        case 'Yo':
+          return match.ordinalNumber(string, {unit: 'year', valueCallback: valueCallback})
+        default:
+          return parseNDigits(token.length, string, valueCallback)
+      }
+    },
+    validate: function (date, value, options) {
+      return value.isTwoDigitYear || value.year > 0
+    },
+    set: function (date, value, options) {
+      var currentYear = date.getUTCFullYear()
+
+      if (value.isTwoDigitYear) {
+        var normalizedTwoDigitYear = normalizeTwoDigitYear(value.year, currentYear)
+        date.setUTCFullYear(normalizedTwoDigitYear, 0, options.firstWeekContainsDate)
+        date.setUTCHours(0, 0, 0, 0)
+        return Object(_lib_startOfUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_3__["default"])(date, options)
+      }
+
+      var year = currentYear > 0 ? value.year : 1 - value.year
+      date.setUTCFullYear(year, 0, options.firstWeekContainsDate)
+      date.setUTCHours(0, 0, 0, 0)
+      return Object(_lib_startOfUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_3__["default"])(date, options)
+    }
+  },
+
+  // ISO week-numbering year
+  R: {
+    priority: 130,
+    parse: function (string, token, match, options) {
+      if (token === 'R') {
+        return parseNDigitsSigned(4, string)
+      }
+
+      return parseNDigitsSigned(token.length, string)
+    },
+    set: function (date, value, options) {
+      var firstWeekOfYear = new Date(0)
+      firstWeekOfYear.setUTCFullYear(value, 0, 4)
+      firstWeekOfYear.setUTCHours(0, 0, 0, 0)
+      return Object(_lib_startOfUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_6__["default"])(firstWeekOfYear)
+    }
+  },
+
+  // Extended year
+  u: {
+    priority: 130,
+    parse: function (string, token, match, options) {
+      if (token === 'u') {
+        return parseNDigitsSigned(4, string)
+      }
+
+      return parseNDigitsSigned(token.length, string)
+    },
+    set: function (date, value, options) {
+      date.setUTCFullYear(value, 0, 1)
+      date.setUTCHours(0, 0, 0, 0)
+      return date
+    }
+  },
+
+  // Quarter
+  Q: {
+    priority: 120,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        // 1, 2, 3, 4
+        case 'Q':
+        case 'QQ': // 01, 02, 03, 04
+          return parseNDigits(token.length, string)
+        // 1st, 2nd, 3rd, 4th
+        case 'Qo':
+          return match.ordinalNumber(string, {unit: 'quarter'})
+        // Q1, Q2, Q3, Q4
+        case 'QQQ':
+          return match.quarter(string, {width: 'abbreviated', context: 'formatting'}) ||
+            match.quarter(string, {width: 'narrow', context: 'formatting'})
+        // 1, 2, 3, 4 (narrow quarter; could be not numerical)
+        case 'QQQQQ':
+          return match.quarter(string, {width: 'narrow', context: 'formatting'})
+        // 1st quarter, 2nd quarter, ...
+        case 'QQQQ':
+        default:
+          return match.quarter(string, {width: 'wide', context: 'formatting'}) ||
+            match.quarter(string, {width: 'abbreviated', context: 'formatting'}) ||
+            match.quarter(string, {width: 'narrow', context: 'formatting'})
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 1 && value <= 4
+    },
+    set: function (date, value, options) {
+      date.setUTCMonth((value - 1) * 3, 1)
+      date.setUTCHours(0, 0, 0, 0)
+      return date
+    }
+  },
+
+  // Stand-alone quarter
+  q: {
+    priority: 120,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        // 1, 2, 3, 4
+        case 'q':
+        case 'qq': // 01, 02, 03, 04
+          return parseNDigits(token.length, string)
+        // 1st, 2nd, 3rd, 4th
+        case 'qo':
+          return match.ordinalNumber(string, {unit: 'quarter'})
+        // Q1, Q2, Q3, Q4
+        case 'qqq':
+          return match.quarter(string, {width: 'abbreviated', context: 'standalone'}) ||
+            match.quarter(string, {width: 'narrow', context: 'standalone'})
+        // 1, 2, 3, 4 (narrow quarter; could be not numerical)
+        case 'qqqqq':
+          return match.quarter(string, {width: 'narrow', context: 'standalone'})
+        // 1st quarter, 2nd quarter, ...
+        case 'qqqq':
+        default:
+          return match.quarter(string, {width: 'wide', context: 'standalone'}) ||
+            match.quarter(string, {width: 'abbreviated', context: 'standalone'}) ||
+            match.quarter(string, {width: 'narrow', context: 'standalone'})
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 1 && value <= 4
+    },
+    set: function (date, value, options) {
+      date.setUTCMonth((value - 1) * 3, 1)
+      date.setUTCHours(0, 0, 0, 0)
+      return date
+    }
+  },
+
+  // Month
+  M: {
+    priority: 110,
+    parse: function (string, token, match, options) {
+      var valueCallback = function (value) {
+        return value - 1
+      }
+
+      switch (token) {
+        // 1, 2, ..., 12
+        case 'M':
+          return parseNumericPattern(numericPatterns.month, string, valueCallback)
+        // 01, 02, ..., 12
+        case 'MM':
+          return parseNDigits(2, string, valueCallback)
+        // 1st, 2nd, ..., 12th
+        case 'Mo':
+          return match.ordinalNumber(string, {unit: 'month', valueCallback: valueCallback})
+        // Jan, Feb, ..., Dec
+        case 'MMM':
+          return match.month(string, {width: 'abbreviated', context: 'formatting'}) ||
+            match.month(string, {width: 'narrow', context: 'formatting'})
+        // J, F, ..., D
+        case 'MMMMM':
+          return match.month(string, {width: 'narrow', context: 'formatting'})
+        // January, February, ..., December
+        case 'MMMM':
+        default:
+          return match.month(string, {width: 'wide', context: 'formatting'}) ||
+            match.month(string, {width: 'abbreviated', context: 'formatting'}) ||
+            match.month(string, {width: 'narrow', context: 'formatting'})
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 0 && value <= 11
+    },
+    set: function (date, value, options) {
+      date.setUTCMonth(value, 1)
+      date.setUTCHours(0, 0, 0, 0)
+      return date
+    }
+  },
+
+  // Stand-alone month
+  L: {
+    priority: 110,
+    parse: function (string, token, match, options) {
+      var valueCallback = function (value) {
+        return value - 1
+      }
+
+      switch (token) {
+        // 1, 2, ..., 12
+        case 'L':
+          return parseNumericPattern(numericPatterns.month, string, valueCallback)
+        // 01, 02, ..., 12
+        case 'LL':
+          return parseNDigits(2, string, valueCallback)
+        // 1st, 2nd, ..., 12th
+        case 'Lo':
+          return match.ordinalNumber(string, {unit: 'month', valueCallback: valueCallback})
+        // Jan, Feb, ..., Dec
+        case 'LLL':
+          return match.month(string, {width: 'abbreviated', context: 'standalone'}) ||
+            match.month(string, {width: 'narrow', context: 'standalone'})
+        // J, F, ..., D
+        case 'LLLLL':
+          return match.month(string, {width: 'narrow', context: 'standalone'})
+        // January, February, ..., December
+        case 'LLLL':
+        default:
+          return match.month(string, {width: 'wide', context: 'standalone'}) ||
+            match.month(string, {width: 'abbreviated', context: 'standalone'}) ||
+            match.month(string, {width: 'narrow', context: 'standalone'})
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 0 && value <= 11
+    },
+    set: function (date, value, options) {
+      date.setUTCMonth(value, 1)
+      date.setUTCHours(0, 0, 0, 0)
+      return date
+    }
+  },
+
+  // Local week of year
+  w: {
+    priority: 100,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        case 'w':
+          return parseNumericPattern(numericPatterns.week, string)
+        case 'wo':
+          return match.ordinalNumber(string, {unit: 'week'})
+        default:
+          return parseNDigits(token.length, string)
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 1 && value <= 53
+    },
+    set: function (date, value, options) {
+      return Object(_lib_startOfUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_3__["default"])(Object(_lib_setUTCWeek_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(date, value, options), options)
+    }
+  },
+
+  // ISO week of year
+  I: {
+    priority: 100,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        case 'I':
+          return parseNumericPattern(numericPatterns.week, string)
+        case 'Io':
+          return match.ordinalNumber(string, {unit: 'week'})
+        default:
+          return parseNDigits(token.length, string)
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 1 && value <= 53
+    },
+    set: function (date, value, options) {
+      return Object(_lib_startOfUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_lib_setUTCISOWeek_index_js__WEBPACK_IMPORTED_MODULE_5__["default"])(date, value, options), options)
+    }
+  },
+
+  // Day of the month
+  d: {
+    priority: 90,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        case 'd':
+          return parseNumericPattern(numericPatterns.date, string)
+        case 'do':
+          return match.ordinalNumber(string, {unit: 'date'})
+        default:
+          return parseNDigits(token.length, string)
+      }
+    },
+    validate: function (date, value, options) {
+      var year = date.getUTCFullYear()
+      var isLeapYear = isLeapYearIndex(year)
+      var month = date.getUTCMonth()
+      if (isLeapYear) {
+        return value >= 1 && value <= DAYS_IN_MONTH_LEAP_YEAR[month]
+      } else {
+        return value >= 1 && value <= DAYS_IN_MONTH[month]
+      }
+    },
+    set: function (date, value, options) {
+      date.setUTCDate(value)
+      date.setUTCHours(0, 0, 0, 0)
+      return date
+    }
+  },
+
+  // Day of year
+  D: {
+    priority: 90,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        case 'D':
+        case 'DD':
+          return parseNumericPattern(numericPatterns.dayOfYear, string)
+        case 'Do':
+          return match.ordinalNumber(string, {unit: 'date'})
+        default:
+          return parseNDigits(token.length, string)
+      }
+    },
+    validate: function (date, value, options) {
+      var year = date.getUTCFullYear()
+      var isLeapYear = isLeapYearIndex(year)
+      if (isLeapYear) {
+        return value >= 1 && value <= 366
+      } else {
+        return value >= 1 && value <= 365
+      }
+    },
+    set: function (date, value, options) {
+      date.setUTCMonth(0, value)
+      date.setUTCHours(0, 0, 0, 0)
+      return date
+    }
+  },
+
+  // Day of week
+  E: {
+    priority: 90,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        // Tue
+        case 'E':
+        case 'EE':
+        case 'EEE':
+          return match.day(string, {width: 'abbreviated', context: 'formatting'}) ||
+            match.day(string, {width: 'short', context: 'formatting'}) ||
+            match.day(string, {width: 'narrow', context: 'formatting'})
+        // T
+        case 'EEEEE':
+          return match.day(string, {width: 'narrow', context: 'formatting'})
+        // Tu
+        case 'EEEEEE':
+          return match.day(string, {width: 'short', context: 'formatting'}) ||
+          match.day(string, {width: 'narrow', context: 'formatting'})
+        // Tuesday
+        case 'EEEE':
+        default:
+          return match.day(string, {width: 'wide', context: 'formatting'}) ||
+            match.day(string, {width: 'abbreviated', context: 'formatting'}) ||
+            match.day(string, {width: 'short', context: 'formatting'}) ||
+            match.day(string, {width: 'narrow', context: 'formatting'})
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 0 && value <= 6
+    },
+    set: function (date, value, options) {
+      date = Object(_lib_setUTCDay_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(date, value, options)
+      date.setUTCHours(0, 0, 0, 0)
+      return date
+    }
+  },
+
+  // Local day of week
+  e: {
+    priority: 90,
+    parse: function (string, token, match, options) {
+      var valueCallback = function (value) {
+        var wholeWeekDays = Math.floor((value - 1) / 7) * 7
+        return (value + options.weekStartsOn + 6) % 7 + wholeWeekDays
+      }
+
+      switch (token) {
+        // 3
+        case 'e':
+        case 'ee': // 03
+          return parseNDigits(token.length, string, valueCallback)
+        // 3rd
+        case 'eo':
+          return match.ordinalNumber(string, {unit: 'day', valueCallback: valueCallback})
+        // Tue
+        case 'eee':
+          return match.day(string, {width: 'abbreviated', context: 'formatting'}) ||
+            match.day(string, {width: 'short', context: 'formatting'}) ||
+            match.day(string, {width: 'narrow', context: 'formatting'})
+        // T
+        case 'eeeee':
+          return match.day(string, {width: 'narrow', context: 'formatting'})
+        // Tu
+        case 'eeeeee':
+          return match.day(string, {width: 'short', context: 'formatting'}) ||
+          match.day(string, {width: 'narrow', context: 'formatting'})
+        // Tuesday
+        case 'eeee':
+        default:
+          return match.day(string, {width: 'wide', context: 'formatting'}) ||
+            match.day(string, {width: 'abbreviated', context: 'formatting'}) ||
+            match.day(string, {width: 'short', context: 'formatting'}) ||
+            match.day(string, {width: 'narrow', context: 'formatting'})
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 0 && value <= 6
+    },
+    set: function (date, value, options) {
+      date = Object(_lib_setUTCDay_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(date, value, options)
+      date.setUTCHours(0, 0, 0, 0)
+      return date
+    }
+  },
+
+  // Stand-alone local day of week
+  c: {
+    priority: 90,
+    parse: function (string, token, match, options) {
+      var valueCallback = function (value) {
+        var wholeWeekDays = Math.floor((value - 1) / 7) * 7
+        return (value + options.weekStartsOn + 6) % 7 + wholeWeekDays
+      }
+
+      switch (token) {
+        // 3
+        case 'c':
+        case 'cc': // 03
+          return parseNDigits(token.length, string, valueCallback)
+        // 3rd
+        case 'co':
+          return match.ordinalNumber(string, {unit: 'day', valueCallback: valueCallback})
+        // Tue
+        case 'ccc':
+          return match.day(string, {width: 'abbreviated', context: 'standalone'}) ||
+            match.day(string, {width: 'short', context: 'standalone'}) ||
+            match.day(string, {width: 'narrow', context: 'standalone'})
+        // T
+        case 'ccccc':
+          return match.day(string, {width: 'narrow', context: 'standalone'})
+        // Tu
+        case 'cccccc':
+          return match.day(string, {width: 'short', context: 'standalone'}) ||
+          match.day(string, {width: 'narrow', context: 'standalone'})
+        // Tuesday
+        case 'cccc':
+        default:
+          return match.day(string, {width: 'wide', context: 'standalone'}) ||
+            match.day(string, {width: 'abbreviated', context: 'standalone'}) ||
+            match.day(string, {width: 'short', context: 'standalone'}) ||
+            match.day(string, {width: 'narrow', context: 'standalone'})
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 0 && value <= 6
+    },
+    set: function (date, value, options) {
+      date = Object(_lib_setUTCDay_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(date, value, options)
+      date.setUTCHours(0, 0, 0, 0)
+      return date
+    }
+  },
+
+  // ISO day of week
+  i: {
+    priority: 90,
+    parse: function (string, token, match, options) {
+      var valueCallback = function (value) {
+        if (value === 0) {
+          return 7
+        }
+        return value
+      }
+
+      switch (token) {
+        // 2
+        case 'i':
+        case 'ii': // 02
+          return parseNDigits(token.length, string)
+        // 2nd
+        case 'io':
+          return match.ordinalNumber(string, {unit: 'day'})
+        // Tue
+        case 'iii':
+          return match.day(string, {width: 'abbreviated', context: 'formatting', valueCallback: valueCallback}) ||
+            match.day(string, {width: 'short', context: 'formatting', valueCallback: valueCallback}) ||
+            match.day(string, {width: 'narrow', context: 'formatting', valueCallback: valueCallback})
+        // T
+        case 'iiiii':
+          return match.day(string, {width: 'narrow', context: 'formatting', valueCallback: valueCallback})
+        // Tu
+        case 'iiiiii':
+          return match.day(string, {width: 'short', context: 'formatting', valueCallback: valueCallback}) ||
+          match.day(string, {width: 'narrow', context: 'formatting', valueCallback: valueCallback})
+        // Tuesday
+        case 'iiii':
+        default:
+          return match.day(string, {width: 'wide', context: 'formatting', valueCallback: valueCallback}) ||
+            match.day(string, {width: 'abbreviated', context: 'formatting', valueCallback: valueCallback}) ||
+            match.day(string, {width: 'short', context: 'formatting', valueCallback: valueCallback}) ||
+            match.day(string, {width: 'narrow', context: 'formatting', valueCallback: valueCallback})
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 1 && value <= 7
+    },
+    set: function (date, value, options) {
+      date = Object(_lib_setUTCISODay_index_js__WEBPACK_IMPORTED_MODULE_4__["default"])(date, value, options)
+      date.setUTCHours(0, 0, 0, 0)
+      return date
+    }
+  },
+
+  // AM or PM
+  a: {
+    priority: 80,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        case 'a':
+        case 'aa':
+        case 'aaa':
+          return match.dayPeriod(string, {width: 'abbreviated', context: 'formatting'}) ||
+            match.dayPeriod(string, {width: 'narrow', context: 'formatting'})
+        case 'aaaaa':
+          return match.dayPeriod(string, {width: 'narrow', context: 'formatting'})
+        case 'aaaa':
+        default:
+          return match.dayPeriod(string, {width: 'wide', context: 'formatting'}) ||
+            match.dayPeriod(string, {width: 'abbreviated', context: 'formatting'}) ||
+            match.dayPeriod(string, {width: 'narrow', context: 'formatting'})
+      }
+    },
+    set: function (date, value, options) {
+      date.setUTCHours(dayPeriodEnumToHours(value), 0, 0, 0)
+      return date
+    }
+  },
+
+  // AM, PM, midnight
+  b: {
+    priority: 80,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        case 'b':
+        case 'bb':
+        case 'bbb':
+          return match.dayPeriod(string, {width: 'abbreviated', context: 'formatting'}) ||
+            match.dayPeriod(string, {width: 'narrow', context: 'formatting'})
+        case 'bbbbb':
+          return match.dayPeriod(string, {width: 'narrow', context: 'formatting'})
+        case 'bbbb':
+        default:
+          return match.dayPeriod(string, {width: 'wide', context: 'formatting'}) ||
+            match.dayPeriod(string, {width: 'abbreviated', context: 'formatting'}) ||
+            match.dayPeriod(string, {width: 'narrow', context: 'formatting'})
+      }
+    },
+    set: function (date, value, options) {
+      date.setUTCHours(dayPeriodEnumToHours(value), 0, 0, 0)
+      return date
+    }
+  },
+
+  // in the morning, in the afternoon, in the evening, at night
+  B: {
+    priority: 80,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        case 'B':
+        case 'BB':
+        case 'BBB':
+          return match.dayPeriod(string, {width: 'abbreviated', context: 'formatting'}) ||
+            match.dayPeriod(string, {width: 'narrow', context: 'formatting'})
+        case 'BBBBB':
+          return match.dayPeriod(string, {width: 'narrow', context: 'formatting'})
+        case 'BBBB':
+        default:
+          return match.dayPeriod(string, {width: 'wide', context: 'formatting'}) ||
+            match.dayPeriod(string, {width: 'abbreviated', context: 'formatting'}) ||
+            match.dayPeriod(string, {width: 'narrow', context: 'formatting'})
+      }
+    },
+    set: function (date, value, options) {
+      date.setUTCHours(dayPeriodEnumToHours(value), 0, 0, 0)
+      return date
+    }
+  },
+
+  // Hour [1-12]
+  h: {
+    priority: 70,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        case 'h':
+          return parseNumericPattern(numericPatterns.hour12h, string)
+        case 'ho':
+          return match.ordinalNumber(string, {unit: 'hour'})
+        default:
+          return parseNDigits(token.length, string)
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 1 && value <= 12
+    },
+    set: function (date, value, options) {
+      var isPM = date.getUTCHours() >= 12
+      if (isPM && value < 12) {
+        date.setUTCHours(value + 12, 0, 0, 0)
+      } else if (!isPM && value === 12) {
+        date.setUTCHours(0, 0, 0, 0)
+      } else {
+        date.setUTCHours(value, 0, 0, 0)
+      }
+      return date
+    }
+  },
+
+  // Hour [0-23]
+  H: {
+    priority: 70,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        case 'H':
+          return parseNumericPattern(numericPatterns.hour23h, string)
+        case 'Ho':
+          return match.ordinalNumber(string, {unit: 'hour'})
+        default:
+          return parseNDigits(token.length, string)
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 0 && value <= 23
+    },
+    set: function (date, value, options) {
+      date.setUTCHours(value, 0, 0, 0)
+      return date
+    }
+  },
+
+  // Hour [0-11]
+  K: {
+    priority: 70,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        case 'K':
+          return parseNumericPattern(numericPatterns.hour11h, string)
+        case 'Ko':
+          return match.ordinalNumber(string, {unit: 'hour'})
+        default:
+          return parseNDigits(token.length, string)
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 0 && value <= 11
+    },
+    set: function (date, value, options) {
+      var isPM = date.getUTCHours() >= 12
+      if (isPM && value < 12) {
+        date.setUTCHours(value + 12, 0, 0, 0)
+      } else {
+        date.setUTCHours(value, 0, 0, 0)
+      }
+      return date
+    }
+  },
+
+  // Hour [1-24]
+  k: {
+    priority: 70,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        case 'k':
+          return parseNumericPattern(numericPatterns.hour24h, string)
+        case 'ko':
+          return match.ordinalNumber(string, {unit: 'hour'})
+        default:
+          return parseNDigits(token.length, string)
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 1 && value <= 24
+    },
+    set: function (date, value, options) {
+      var hours = value <= 24 ? value % 24 : value
+      date.setUTCHours(hours, 0, 0, 0)
+      return date
+    }
+  },
+
+  // Minute
+  m: {
+    priority: 60,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        case 'm':
+          return parseNumericPattern(numericPatterns.minute, string)
+        case 'mo':
+          return match.ordinalNumber(string, {unit: 'minute'})
+        default:
+          return parseNDigits(token.length, string)
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 0 && value <= 59
+    },
+    set: function (date, value, options) {
+      date.setUTCMinutes(value, 0, 0)
+      return date
+    }
+  },
+
+  // Second
+  s: {
+    priority: 50,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        case 's':
+          return parseNumericPattern(numericPatterns.second, string)
+        case 'so':
+          return match.ordinalNumber(string, {unit: 'second'})
+        default:
+          return parseNDigits(token.length, string)
+      }
+    },
+    validate: function (date, value, options) {
+      return value >= 0 && value <= 59
+    },
+    set: function (date, value, options) {
+      date.setUTCSeconds(value, 0)
+      return date
+    }
+  },
+
+  // Fraction of second
+  S: {
+    priority: 40,
+    parse: function (string, token, match, options) {
+      var valueCallback = function (value) {
+        return Math.floor(value * Math.pow(10, -token.length + 3))
+      }
+      return parseNDigits(token.length, string, valueCallback)
+    },
+    set: function (date, value, options) {
+      date.setUTCMilliseconds(value)
+      return date
+    }
+  },
+
+  // Timezone (ISO-8601. +00:00 is `'Z'`)
+  X: {
+    priority: 20,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        case 'X':
+          return parseTimezonePattern(timezonePatterns.basicOptionalMinutes, string)
+        case 'XX':
+          return parseTimezonePattern(timezonePatterns.basic, string)
+        case 'XXXX':
+          return parseTimezonePattern(timezonePatterns.basicOptionalSeconds, string)
+        case 'XXXXX':
+          return parseTimezonePattern(timezonePatterns.extendedOptionalSeconds, string)
+        case 'XXX':
+        default:
+          return parseTimezonePattern(timezonePatterns.extended, string)
+      }
+    },
+    set: function (date, value, options) {
+      return new Date(date.getTime() - value)
+    }
+  },
+
+  // Timezone (ISO-8601)
+  x: {
+    priority: 20,
+    parse: function (string, token, match, options) {
+      switch (token) {
+        case 'x':
+          return parseTimezonePattern(timezonePatterns.basicOptionalMinutes, string)
+        case 'xx':
+          return parseTimezonePattern(timezonePatterns.basic, string)
+        case 'xxxx':
+          return parseTimezonePattern(timezonePatterns.basicOptionalSeconds, string)
+        case 'xxxxx':
+          return parseTimezonePattern(timezonePatterns.extendedOptionalSeconds, string)
+        case 'xxx':
+        default:
+          return parseTimezonePattern(timezonePatterns.extended, string)
+      }
+    },
+    set: function (date, value, options) {
+      return new Date(date.getTime() - value)
+    }
+  },
+
+  // Seconds timestamp
+  t: {
+    priority: 10,
+    parse: function (string, token, match, options) {
+      return parseAnyDigitsSigned(string)
+    },
+    set: function (date, value, options) {
+      return new Date(value * 1000)
+    }
+  },
+
+  // Milliseconds timestamp
+  T: {
+    priority: 10,
+    parse: function (string, token, match, options) {
+      return parseAnyDigitsSigned(string)
+    },
+    set: function (date, value, options) {
+      return new Date(value)
+    }
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (parsers);
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/parse/index.js":
+/*!**************************************************!*\
+  !*** ./node_modules/date-fns/esm/parse/index.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return parse; });
+/* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _lib_getTimezoneOffsetInMilliseconds_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_lib/getTimezoneOffsetInMilliseconds/index.js */ "./node_modules/date-fns/esm/_lib/getTimezoneOffsetInMilliseconds/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+/* harmony import */ var _subMilliseconds_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../subMilliseconds/index.js */ "./node_modules/date-fns/esm/subMilliseconds/index.js");
+/* harmony import */ var _locale_en_US_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../locale/en-US/index.js */ "./node_modules/date-fns/esm/locale/en-US/index.js");
+/* harmony import */ var _lib_parsers_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./_lib/parsers/index.js */ "./node_modules/date-fns/esm/parse/_lib/parsers/index.js");
+/* harmony import */ var _lib_protectedTokens_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../_lib/protectedTokens/index.js */ "./node_modules/date-fns/esm/_lib/protectedTokens/index.js");
+
+
+
+
+
+
+
+
+var TIMEZONE_UNIT_PRIORITY = 20
+
+// This RegExp consists of three parts separated by `|`:
+// - [yYQqMLwIdDecihHKkms]o matches any available ordinal number token
+//   (one of the certain letters followed by `o`)
+// - (\w)\1* matches any sequences of the same letter
+// - '' matches two quote characters in a row
+// - '(''|[^'])+('|$) matches anything surrounded by two quote characters ('),
+//   except a single quote symbol, which ends the sequence.
+//   Two quote characters do not end the sequence.
+//   If there is no matching single quote
+//   then the sequence will continue until the end of the string.
+// - . matches any single character unmatched by previous parts of the RegExps
+var formattingTokensRegExp = /[yYQqMLwIdDecihHKkms]o|(\w)\1*|''|'(''|[^'])+('|$)|./g
+
+var escapedStringRegExp = /^'(.*?)'?$/
+var doubleQuoteRegExp = /''/g
+
+var notWhitespaceRegExp = /\S/
+
+/**
+ * @name parse
+ * @category Common Helpers
+ * @summary Parse the date.
+ *
+ * @description
+ * Return the date parsed from string using the given format string.
+ *
+ * > ⚠️ Please note that the `format` tokens differ from Moment.js and other libraries.
+ * > See: https://git.io/fxCyr
+ *
+ * The characters in the format string wrapped between two single quotes characters (') are escaped.
+ * Two single quotes in a row, whether inside or outside a quoted sequence, represent a 'real' single quote.
+ *
+ * Format of the format string is based on Unicode Technical Standard #35:
+ * https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table
+ * with a few additions (see note 5 below the table).
+ *
+ * Accepted format string patterns:
+ * | Unit                            |Prior| Pattern | Result examples                   | Notes |
+ * |---------------------------------|-----|---------|-----------------------------------|-------|
+ * | Era                             | 140 | G..GGG  | AD, BC                            |       |
+ * |                                 |     | GGGG    | Anno Domini, Before Christ        | 2     |
+ * |                                 |     | GGGGG   | A, B                              |       |
+ * | Calendar year                   | 130 | y       | 44, 1, 1900, 2017, 9999           | 4     |
+ * |                                 |     | yo      | 44th, 1st, 1900th, 9999999th      | 4,5   |
+ * |                                 |     | yy      | 44, 01, 00, 17                    | 4     |
+ * |                                 |     | yyy     | 044, 001, 123, 999                | 4     |
+ * |                                 |     | yyyy    | 0044, 0001, 1900, 2017            | 4     |
+ * |                                 |     | yyyyy   | ...                               | 2,4   |
+ * | Local week-numbering year       | 130 | Y       | 44, 1, 1900, 2017, 9000           | 4     |
+ * |                                 |     | Yo      | 44th, 1st, 1900th, 9999999th      | 4,5   |
+ * |                                 |     | YY      | 44, 01, 00, 17                    | 4,6   |
+ * |                                 |     | YYY     | 044, 001, 123, 999                | 4     |
+ * |                                 |     | YYYY    | 0044, 0001, 1900, 2017            | 4,6   |
+ * |                                 |     | YYYYY   | ...                               | 2,4   |
+ * | ISO week-numbering year         | 130 | R       | -43, 1, 1900, 2017, 9999, -9999   | 4,5   |
+ * |                                 |     | RR      | -43, 01, 00, 17                   | 4,5   |
+ * |                                 |     | RRR     | -043, 001, 123, 999, -999         | 4,5   |
+ * |                                 |     | RRRR    | -0043, 0001, 2017, 9999, -9999    | 4,5   |
+ * |                                 |     | RRRRR   | ...                               | 2,4,5 |
+ * | Extended year                   | 130 | u       | -43, 1, 1900, 2017, 9999, -999    | 4     |
+ * |                                 |     | uu      | -43, 01, 99, -99                  | 4     |
+ * |                                 |     | uuu     | -043, 001, 123, 999, -999         | 4     |
+ * |                                 |     | uuuu    | -0043, 0001, 2017, 9999, -9999    | 4     |
+ * |                                 |     | uuuuu   | ...                               | 2,4   |
+ * | Quarter (formatting)            | 120 | Q       | 1, 2, 3, 4                        |       |
+ * |                                 |     | Qo      | 1st, 2nd, 3rd, 4th                | 5     |
+ * |                                 |     | QQ      | 01, 02, 03, 04                    |       |
+ * |                                 |     | QQQ     | Q1, Q2, Q3, Q4                    |       |
+ * |                                 |     | QQQQ    | 1st quarter, 2nd quarter, ...     | 2     |
+ * |                                 |     | QQQQQ   | 1, 2, 3, 4                        | 4     |
+ * | Quarter (stand-alone)           | 120 | q       | 1, 2, 3, 4                        |       |
+ * |                                 |     | qo      | 1st, 2nd, 3rd, 4th                | 5     |
+ * |                                 |     | qq      | 01, 02, 03, 04                    |       |
+ * |                                 |     | qqq     | Q1, Q2, Q3, Q4                    |       |
+ * |                                 |     | qqqq    | 1st quarter, 2nd quarter, ...     | 2     |
+ * |                                 |     | qqqqq   | 1, 2, 3, 4                        | 3     |
+ * | Month (formatting)              | 110 | M       | 1, 2, ..., 12                     |       |
+ * |                                 |     | Mo      | 1st, 2nd, ..., 12th               | 5     |
+ * |                                 |     | MM      | 01, 02, ..., 12                   |       |
+ * |                                 |     | MMM     | Jan, Feb, ..., Dec                |       |
+ * |                                 |     | MMMM    | January, February, ..., December  | 2     |
+ * |                                 |     | MMMMM   | J, F, ..., D                      |       |
+ * | Month (stand-alone)             | 110 | L       | 1, 2, ..., 12                     |       |
+ * |                                 |     | Lo      | 1st, 2nd, ..., 12th               | 5     |
+ * |                                 |     | LL      | 01, 02, ..., 12                   |       |
+ * |                                 |     | LLL     | Jan, Feb, ..., Dec                |       |
+ * |                                 |     | LLLL    | January, February, ..., December  | 2     |
+ * |                                 |     | LLLLL   | J, F, ..., D                      |       |
+ * | Local week of year              | 100 | w       | 1, 2, ..., 53                     |       |
+ * |                                 |     | wo      | 1st, 2nd, ..., 53th               | 5     |
+ * |                                 |     | ww      | 01, 02, ..., 53                   |       |
+ * | ISO week of year                | 100 | I       | 1, 2, ..., 53                     | 5     |
+ * |                                 |     | Io      | 1st, 2nd, ..., 53th               | 5     |
+ * |                                 |     | II      | 01, 02, ..., 53                   | 5     |
+ * | Day of month                    |  90 | d       | 1, 2, ..., 31                     |       |
+ * |                                 |     | do      | 1st, 2nd, ..., 31st               | 5     |
+ * |                                 |     | dd      | 01, 02, ..., 31                   |       |
+ * | Day of year                     |  90 | D       | 1, 2, ..., 365, 366               | 6     |
+ * |                                 |     | Do      | 1st, 2nd, ..., 365th, 366th       | 5     |
+ * |                                 |     | DD      | 01, 02, ..., 365, 366             | 6     |
+ * |                                 |     | DDD     | 001, 002, ..., 365, 366           |       |
+ * |                                 |     | DDDD    | ...                               | 2     |
+ * | Day of week (formatting)        |  90 | E..EEE  | Mon, Tue, Wed, ..., Su            |       |
+ * |                                 |     | EEEE    | Monday, Tuesday, ..., Sunday      | 2     |
+ * |                                 |     | EEEEE   | M, T, W, T, F, S, S               |       |
+ * |                                 |     | EEEEEE  | Mo, Tu, We, Th, Fr, Su, Sa        |       |
+ * | ISO day of week (formatting)    |  90 | i       | 1, 2, 3, ..., 7                   | 5     |
+ * |                                 |     | io      | 1st, 2nd, ..., 7th                | 5     |
+ * |                                 |     | ii      | 01, 02, ..., 07                   | 5     |
+ * |                                 |     | iii     | Mon, Tue, Wed, ..., Su            | 5     |
+ * |                                 |     | iiii    | Monday, Tuesday, ..., Sunday      | 2,5   |
+ * |                                 |     | iiiii   | M, T, W, T, F, S, S               | 5     |
+ * |                                 |     | iiiiii  | Mo, Tu, We, Th, Fr, Su, Sa        | 5     |
+ * | Local day of week (formatting)  |  90 | e       | 2, 3, 4, ..., 1                   |       |
+ * |                                 |     | eo      | 2nd, 3rd, ..., 1st                | 5     |
+ * |                                 |     | ee      | 02, 03, ..., 01                   |       |
+ * |                                 |     | eee     | Mon, Tue, Wed, ..., Su            |       |
+ * |                                 |     | eeee    | Monday, Tuesday, ..., Sunday      | 2     |
+ * |                                 |     | eeeee   | M, T, W, T, F, S, S               |       |
+ * |                                 |     | eeeeee  | Mo, Tu, We, Th, Fr, Su, Sa        |       |
+ * | Local day of week (stand-alone) |  90 | c       | 2, 3, 4, ..., 1                   |       |
+ * |                                 |     | co      | 2nd, 3rd, ..., 1st                | 5     |
+ * |                                 |     | cc      | 02, 03, ..., 01                   |       |
+ * |                                 |     | ccc     | Mon, Tue, Wed, ..., Su            |       |
+ * |                                 |     | cccc    | Monday, Tuesday, ..., Sunday      | 2     |
+ * |                                 |     | ccccc   | M, T, W, T, F, S, S               |       |
+ * |                                 |     | cccccc  | Mo, Tu, We, Th, Fr, Su, Sa        |       |
+ * | AM, PM                          |  80 | a..aaa  | AM, PM                            |       |
+ * |                                 |     | aaaa    | a.m., p.m.                        | 2     |
+ * |                                 |     | aaaaa   | a, p                              |       |
+ * | AM, PM, noon, midnight          |  80 | b..bbb  | AM, PM, noon, midnight            |       |
+ * |                                 |     | bbbb    | a.m., p.m., noon, midnight        | 2     |
+ * |                                 |     | bbbbb   | a, p, n, mi                       |       |
+ * | Flexible day period             |  80 | B..BBB  | at night, in the morning, ...     |       |
+ * |                                 |     | BBBB    | at night, in the morning, ...     | 2     |
+ * |                                 |     | BBBBB   | at night, in the morning, ...     |       |
+ * | Hour [1-12]                     |  70 | h       | 1, 2, ..., 11, 12                 |       |
+ * |                                 |     | ho      | 1st, 2nd, ..., 11th, 12th         | 5     |
+ * |                                 |     | hh      | 01, 02, ..., 11, 12               |       |
+ * | Hour [0-23]                     |  70 | H       | 0, 1, 2, ..., 23                  |       |
+ * |                                 |     | Ho      | 0th, 1st, 2nd, ..., 23rd          | 5     |
+ * |                                 |     | HH      | 00, 01, 02, ..., 23               |       |
+ * | Hour [0-11]                     |  70 | K       | 1, 2, ..., 11, 0                  |       |
+ * |                                 |     | Ko      | 1st, 2nd, ..., 11th, 0th          | 5     |
+ * |                                 |     | KK      | 1, 2, ..., 11, 0                  |       |
+ * | Hour [1-24]                     |  70 | k       | 24, 1, 2, ..., 23                 |       |
+ * |                                 |     | ko      | 24th, 1st, 2nd, ..., 23rd         | 5     |
+ * |                                 |     | kk      | 24, 01, 02, ..., 23               |       |
+ * | Minute                          |  60 | m       | 0, 1, ..., 59                     |       |
+ * |                                 |     | mo      | 0th, 1st, ..., 59th               | 5     |
+ * |                                 |     | mm      | 00, 01, ..., 59                   |       |
+ * | Second                          |  50 | s       | 0, 1, ..., 59                     |       |
+ * |                                 |     | so      | 0th, 1st, ..., 59th               | 5     |
+ * |                                 |     | ss      | 00, 01, ..., 59                   |       |
+ * | Fraction of second              |  40 | S       | 0, 1, ..., 9                      |       |
+ * |                                 |     | SS      | 00, 01, ..., 99                   |       |
+ * |                                 |     | SSS     | 000, 0001, ..., 999               |       |
+ * |                                 |     | SSSS    | ...                               | 2     |
+ * | Timezone (ISO-8601 w/ Z)        |  20 | X       | -08, +0530, Z                     |       |
+ * |                                 |     | XX      | -0800, +0530, Z                   |       |
+ * |                                 |     | XXX     | -08:00, +05:30, Z                 |       |
+ * |                                 |     | XXXX    | -0800, +0530, Z, +123456          | 2     |
+ * |                                 |     | XXXXX   | -08:00, +05:30, Z, +12:34:56      |       |
+ * | Timezone (ISO-8601 w/o Z)       |  20 | x       | -08, +0530, +00                   |       |
+ * |                                 |     | xx      | -0800, +0530, +0000               |       |
+ * |                                 |     | xxx     | -08:00, +05:30, +00:00            | 2     |
+ * |                                 |     | xxxx    | -0800, +0530, +0000, +123456      |       |
+ * |                                 |     | xxxxx   | -08:00, +05:30, +00:00, +12:34:56 |       |
+ * | Seconds timestamp               |  10 | t       | 512969520                         |       |
+ * |                                 |     | tt      | ...                               | 2     |
+ * | Milliseconds timestamp          |  10 | T       | 512969520900                      |       |
+ * |                                 |     | TT      | ...                               | 2     |
+ * Notes:
+ * 1. "Formatting" units (e.g. formatting quarter) in the default en-US locale
+ *    are the same as "stand-alone" units, but are different in some languages.
+ *    "Formatting" units are declined according to the rules of the language
+ *    in the context of a date. "Stand-alone" units are always nominative singular.
+ *    In `format` function, they will produce different result:
+ *
+ *    `format(new Date(2017, 10, 6), 'do LLLL', {locale: cs}) //=> '6. listopad'`
+ *
+ *    `format(new Date(2017, 10, 6), 'do MMMM', {locale: cs}) //=> '6. listopadu'`
+ *
+ *    `parse` will try to match both formatting and stand-alone units interchangably.
+ *
+ * 2. Any sequence of the identical letters is a pattern, unless it is escaped by
+ *    the single quote characters (see below).
+ *    If the sequence is longer than listed in table:
+ *    - for numerical units (`yyyyyyyy`) `parse` will try to match a number
+ *      as wide as the sequence
+ *    - for text units (`MMMMMMMM`) `parse` will try to match the widest variation of the unit.
+ *      These variations are marked with "2" in the last column of the table.
+ *
+ * 3. `QQQQQ` and `qqqqq` could be not strictly numerical in some locales.
+ *    These tokens represent the shortest form of the quarter.
+ *
+ * 4. The main difference between `y` and `u` patterns are B.C. years:
+ *
+ *    | Year | `y` | `u` |
+ *    |------|-----|-----|
+ *    | AC 1 |   1 |   1 |
+ *    | BC 1 |   1 |   0 |
+ *    | BC 2 |   2 |  -1 |
+ *
+ *    Also `yy` will try to guess the century of two digit year by proximity with `baseDate`:
+ *
+ *    `parse('50', 'yy', new Date(2018, 0, 1)) //=> Sat Jan 01 2050 00:00:00`
+ *
+ *    `parse('75', 'yy', new Date(2018, 0, 1)) //=> Wed Jan 01 1975 00:00:00`
+ *
+ *    while `uu` will just assign the year as is:
+ *
+ *    `parse('50', 'uu', new Date(2018, 0, 1)) //=> Sat Jan 01 0050 00:00:00`
+ *
+ *    `parse('75', 'uu', new Date(2018, 0, 1)) //=> Tue Jan 01 0075 00:00:00`
+ *
+ *    The same difference is true for local and ISO week-numbering years (`Y` and `R`),
+ *    except local week-numbering years are dependent on `options.weekStartsOn`
+ *    and `options.firstWeekContainsDate` (compare [setISOWeekYear]{@link https://date-fns.org/docs/setISOWeekYear}
+ *    and [setWeekYear]{@link https://date-fns.org/docs/setWeekYear}).
+ *
+ * 5. These patterns are not in the Unicode Technical Standard #35:
+ *    - `i`: ISO day of week
+ *    - `I`: ISO week of year
+ *    - `R`: ISO week-numbering year
+ *    - `o`: ordinal number modifier
+ *
+ * 6. These tokens are often confused with others. See: https://git.io/fxCyr
+ *
+ * Values will be assigned to the date in the descending order of its unit's priority.
+ * Units of an equal priority overwrite each other in the order of appearance.
+ *
+ * If no values of higher priority are parsed (e.g. when parsing string 'January 1st' without a year),
+ * the values will be taken from 3rd argument `baseDate` which works as a context of parsing.
+ *
+ * `baseDate` must be passed for correct work of the function.
+ * If you're not sure which `baseDate` to supply, create a new instance of Date:
+ * `parse('02/11/2014', 'MM/dd/yyyy', new Date())`
+ * In this case parsing will be done in the context of the current date.
+ * If `baseDate` is `Invalid Date` or a value not convertible to valid `Date`,
+ * then `Invalid Date` will be returned.
+ *
+ * The result may vary by locale.
+ *
+ * If `formatString` matches with `dateString` but does not provides tokens, `baseDate` will be returned.
+ *
+ * If parsing failed, `Invalid Date` will be returned.
+ * Invalid Date is a Date, whose time value is NaN.
+ * Time value of Date: http://es5.github.io/#x15.9.1.1
+ *
+ * @param {String} dateString - the string to parse
+ * @param {String} formatString - the string of tokens
+ * @param {Date|String|Number} baseDate - defines values missing from the parsed dateString
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @param {Locale} [options.locale=defaultLocale] - the locale object. See [Locale]{@link https://date-fns.org/docs/Locale}
+ * @param {0|1|2|3|4|5|6} [options.weekStartsOn=0] - the index of the first day of the week (0 - Sunday)
+ * @param {1|2|3|4|5|6|7} [options.firstWeekContainsDate=1] - the day of January, which is always in the first week of the year
+ * @param {Boolean} [options.awareOfUnicodeTokens=false] - if true, allows usage of Unicode tokens causes confusion:
+ *   - Some of the day of year tokens (`D`, `DD`) that are confused with the day of month tokens (`d`, `dd`).
+ *   - Some of the local week-numbering year tokens (`YY`, `YYYY`) that are confused with the calendar year tokens (`yy`, `yyyy`).
+ *   See: https://git.io/fxCyr
+ * @returns {Date} the parsed date
+ * @throws {TypeError} 3 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ * @throws {RangeError} `options.weekStartsOn` must be between 0 and 6
+ * @throws {RangeError} `options.firstWeekContainsDate` must be between 1 and 7
+ * @throws {RangeError} `options.locale` must contain `match` property
+ * @throws {RangeError} `options.awareOfUnicodeTokens` must be set to `true` to use `XX` token; see: https://git.io/fxCyr
+ *
+ * @example
+ * // Parse 11 February 2014 from middle-endian format:
+ * var result = parse(
+ *   '02/11/2014',
+ *   'MM/dd/yyyy',
+ *   new Date()
+ * )
+ * //=> Tue Feb 11 2014 00:00:00
+ *
+ * @example
+ * // Parse 28th of February in Esperanto locale in the context of 2010 year:
+ * import eo from 'date-fns/locale/eo'
+ * var result = parse(
+ *   '28-a de februaro',
+ *   "do 'de' MMMM",
+ *   new Date(2010, 0, 1),
+ *   {locale: eo}
+ * )
+ * //=> Sun Feb 28 2010 00:00:00
+ */
+function parse(
+  dirtyDateString,
+  dirtyFormatString,
+  dirtyBaseDate,
+  dirtyOptions
+) {
+  if (arguments.length < 3) {
+    throw new TypeError(
+      '3 arguments required, but only ' + arguments.length + ' present'
+    )
+  }
+
+  var dateString = String(dirtyDateString)
+  var formatString = String(dirtyFormatString)
+  var options = dirtyOptions || {}
+
+  var locale = options.locale || _locale_en_US_index_js__WEBPACK_IMPORTED_MODULE_4__["default"]
+
+  if (!locale.match) {
+    throw new RangeError('locale must contain match property')
+  }
+
+  var localeFirstWeekContainsDate =
+    locale.options && locale.options.firstWeekContainsDate
+  var defaultFirstWeekContainsDate =
+    localeFirstWeekContainsDate == null
+      ? 1
+      : Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(localeFirstWeekContainsDate)
+  var firstWeekContainsDate =
+    options.firstWeekContainsDate == null
+      ? defaultFirstWeekContainsDate
+      : Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(options.firstWeekContainsDate)
+
+  // Test if weekStartsOn is between 1 and 7 _and_ is not NaN
+  if (!(firstWeekContainsDate >= 1 && firstWeekContainsDate <= 7)) {
+    throw new RangeError(
+      'firstWeekContainsDate must be between 1 and 7 inclusively'
+    )
+  }
+
+  var localeWeekStartsOn = locale.options && locale.options.weekStartsOn
+  var defaultWeekStartsOn =
+    localeWeekStartsOn == null ? 0 : Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(localeWeekStartsOn)
+  var weekStartsOn =
+    options.weekStartsOn == null
+      ? defaultWeekStartsOn
+      : Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(options.weekStartsOn)
+
+  // Test if weekStartsOn is between 0 and 6 _and_ is not NaN
+  if (!(weekStartsOn >= 0 && weekStartsOn <= 6)) {
+    throw new RangeError('weekStartsOn must be between 0 and 6 inclusively')
+  }
+
+  if (formatString === '') {
+    if (dateString === '') {
+      return Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(dirtyBaseDate, options)
+    } else {
+      return new Date(NaN)
+    }
+  }
+
+  var subFnOptions = {
+    firstWeekContainsDate: firstWeekContainsDate,
+    weekStartsOn: weekStartsOn,
+    locale: locale
+  }
+
+  // If timezone isn't specified, it will be set to the system timezone
+  var setters = [
+    {
+      priority: TIMEZONE_UNIT_PRIORITY,
+      set: dateToSystemTimezone,
+      index: 0
+    }
+  ]
+
+  var i
+
+  var tokens = formatString.match(formattingTokensRegExp)
+
+  for (i = 0; i < tokens.length; i++) {
+    var token = tokens[i]
+
+    if (!options.awareOfUnicodeTokens && Object(_lib_protectedTokens_index_js__WEBPACK_IMPORTED_MODULE_6__["isProtectedToken"])(token)) {
+      Object(_lib_protectedTokens_index_js__WEBPACK_IMPORTED_MODULE_6__["throwProtectedError"])(token)
+    }
+
+    var firstCharacter = token[0]
+    var parser = _lib_parsers_index_js__WEBPACK_IMPORTED_MODULE_5__["default"][firstCharacter]
+    if (parser) {
+      var parseResult = parser.parse(
+        dateString,
+        token,
+        locale.match,
+        subFnOptions
+      )
+
+      if (!parseResult) {
+        return new Date(NaN)
+      }
+
+      setters.push({
+        priority: parser.priority,
+        set: parser.set,
+        validate: parser.validate,
+        value: parseResult.value,
+        index: setters.length
+      })
+
+      dateString = parseResult.rest
+    } else {
+      // Replace two single quote characters with one single quote character
+      if (token === "''") {
+        token = "'"
+      } else if (firstCharacter === "'") {
+        token = cleanEscapedString(token)
+      }
+
+      // Cut token from string, or, if string doesn't match the token, return Invalid Date
+      if (dateString.indexOf(token) === 0) {
+        dateString = dateString.slice(token.length)
+      } else {
+        return new Date(NaN)
+      }
+    }
+  }
+
+  // Check if the remaining input contains something other than whitespace
+  if (dateString.length > 0 && notWhitespaceRegExp.test(dateString)) {
+    return new Date(NaN)
+  }
+
+  var uniquePrioritySetters = setters
+    .map(function(setter) {
+      return setter.priority
+    })
+    .sort(function(a, b) {
+      return b - a
+    })
+    .filter(function(priority, index, array) {
+      return array.indexOf(priority) === index
+    })
+    .map(function(priority) {
+      return setters
+        .filter(function(setter) {
+          return setter.priority === priority
+        })
+        .reverse()
+    })
+    .map(function(setterArray) {
+      return setterArray[0]
+    })
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(dirtyBaseDate, options)
+
+  if (isNaN(date)) {
+    return new Date(NaN)
+  }
+
+  // Convert the date in system timezone to the same date in UTC+00:00 timezone.
+  // This ensures that when UTC functions will be implemented, locales will be compatible with them.
+  // See an issue about UTC functions: https://github.com/date-fns/date-fns/issues/37
+  var utcDate = Object(_subMilliseconds_index_js__WEBPACK_IMPORTED_MODULE_3__["default"])(date, Object(_lib_getTimezoneOffsetInMilliseconds_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(date))
+
+  for (i = 0; i < uniquePrioritySetters.length; i++) {
+    var setter = uniquePrioritySetters[i]
+
+    if (
+      setter.validate &&
+      !setter.validate(utcDate, setter.value, subFnOptions)
+    ) {
+      return new Date(NaN)
+    }
+
+    utcDate = setter.set(utcDate, setter.value, subFnOptions)
+  }
+
+  return utcDate
+}
+
+function dateToSystemTimezone(date) {
+  var convertedDate = new Date(0)
+  convertedDate.setFullYear(
+    date.getUTCFullYear(),
+    date.getUTCMonth(),
+    date.getUTCDate()
+  )
+  convertedDate.setHours(
+    date.getUTCHours(),
+    date.getUTCMinutes(),
+    date.getUTCSeconds(),
+    date.getUTCMilliseconds()
+  )
+  return convertedDate
+}
+
+function cleanEscapedString(input) {
+  return input.match(escapedStringRegExp)[1].replace(doubleQuoteRegExp, "'")
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/setHours/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/date-fns/esm/setHours/index.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return setHours; });
+/* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+
+/**
+ * @name setHours
+ * @category Hour Helpers
+ * @summary Set the hours to the given date.
+ *
+ * @description
+ * Set the hours to the given date.
+ *
+ * @param {Date|String|Number} date - the date to be changed
+ * @param {Number} hours - the hours of the new date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date} the new date with the hours setted
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Set 4 hours to 1 September 2014 11:30:00:
+ * var result = setHours(new Date(2014, 8, 1, 11, 30), 4)
+ * //=> Mon Sep 01 2014 04:30:00
+ */
+function setHours (dirtyDate, dirtyHours, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, dirtyOptions)
+  var hours = Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyHours)
+  date.setHours(hours)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/setMinutes/index.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/date-fns/esm/setMinutes/index.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return setMinutes; });
+/* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+
+/**
+ * @name setMinutes
+ * @category Minute Helpers
+ * @summary Set the minutes to the given date.
+ *
+ * @description
+ * Set the minutes to the given date.
+ *
+ * @param {Date|String|Number} date - the date to be changed
+ * @param {Number} minutes - the minutes of the new date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date} the new date with the minutes setted
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Set 45 minutes to 1 September 2014 11:30:40:
+ * var result = setMinutes(new Date(2014, 8, 1, 11, 30, 40), 45)
+ * //=> Mon Sep 01 2014 11:45:40
+ */
+function setMinutes (dirtyDate, dirtyMinutes, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, dirtyOptions)
+  var minutes = Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyMinutes)
+  date.setMinutes(minutes)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/setSeconds/index.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/date-fns/esm/setSeconds/index.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return setSeconds; });
+/* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+
+/**
+ * @name setSeconds
+ * @category Second Helpers
+ * @summary Set the seconds to the given date.
+ *
+ * @description
+ * Set the seconds to the given date.
+ *
+ * @param {Date|String|Number} date - the date to be changed
+ * @param {Number} seconds - the seconds of the new date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date} the new date with the seconds setted
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Set 45 seconds to 1 September 2014 11:30:40:
+ * var result = setSeconds(new Date(2014, 8, 1, 11, 30, 40), 45)
+ * //=> Mon Sep 01 2014 11:30:45
+ */
+function setSeconds (dirtyDate, dirtySeconds, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, dirtyOptions)
+  var seconds = Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtySeconds)
+  date.setSeconds(seconds)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/setYear/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/date-fns/esm/setYear/index.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return setYear; });
+/* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+
+/**
+ * @name setYear
+ * @category Year Helpers
+ * @summary Set the year to the given date.
+ *
+ * @description
+ * Set the year to the given date.
+ *
+ * @param {Date|String|Number} date - the date to be changed
+ * @param {Number} year - the year of the new date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date} the new date with the year setted
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Set year 2013 to 1 September 2014:
+ * var result = setYear(new Date(2014, 8, 1), 2013)
+ * //=> Sun Sep 01 2013 00:00:00
+ */
+function setYear (dirtyDate, dirtyYear, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, dirtyOptions)
+  var year = Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyYear)
+
+  // Check if date is Invalid Date because Date.prototype.setFullYear ignores the value of Invalid Date
+  if (isNaN(date)) {
+    return new Date(NaN)
+  }
+
+  date.setFullYear(year)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/startOfDay/index.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/date-fns/esm/startOfDay/index.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return startOfDay; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name startOfDay
+ * @category Day Helpers
+ * @summary Return the start of a day for the given date.
+ *
+ * @description
+ * Return the start of a day for the given date.
+ * The result will be in the local timezone.
+ *
+ * @param {Date|String|Number} date - the original date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date} the start of a day
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // The start of a day for 2 September 2014 11:55:00:
+ * var result = startOfDay(new Date(2014, 8, 2, 11, 55, 0))
+ * //=> Tue Sep 02 2014 00:00:00
+ */
+function startOfDay (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  date.setHours(0, 0, 0, 0)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/startOfMonth/index.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/date-fns/esm/startOfMonth/index.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return startOfMonth; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name startOfMonth
+ * @category Month Helpers
+ * @summary Return the start of a month for the given date.
+ *
+ * @description
+ * Return the start of a month for the given date.
+ * The result will be in the local timezone.
+ *
+ * @param {Date|String|Number} date - the original date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date} the start of a month
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // The start of a month for 2 September 2014 11:55:00:
+ * var result = startOfMonth(new Date(2014, 8, 2, 11, 55, 0))
+ * //=> Mon Sep 01 2014 00:00:00
+ */
+function startOfMonth (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  date.setDate(1)
+  date.setHours(0, 0, 0, 0)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/startOfWeek/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/date-fns/esm/startOfWeek/index.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return startOfWeek; });
+/* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+
+/**
+ * @name startOfWeek
+ * @category Week Helpers
+ * @summary Return the start of a week for the given date.
+ *
+ * @description
+ * Return the start of a week for the given date.
+ * The result will be in the local timezone.
+ *
+ * @param {Date|String|Number} date - the original date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @param {0|1|2|3|4|5|6} [options.weekStartsOn=0] - the index of the first day of the week (0 - Sunday)
+ * @param {Locale} [options.locale=defaultLocale] - the locale object. See [Locale]{@link https://date-fns.org/docs/Locale}
+ * @returns {Date} the start of a week
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ * @throws {RangeError} `options.weekStartsOn` must be between 0 and 6
+ *
+ * @example
+ * // The start of a week for 2 September 2014 11:55:00:
+ * var result = startOfWeek(new Date(2014, 8, 2, 11, 55, 0))
+ * //=> Sun Aug 31 2014 00:00:00
+ *
+ * @example
+ * // If the week starts on Monday, the start of the week for 2 September 2014 11:55:00:
+ * var result = startOfWeek(new Date(2014, 8, 2, 11, 55, 0), {weekStartsOn: 1})
+ * //=> Mon Sep 01 2014 00:00:00
+ */
+function startOfWeek (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var options = dirtyOptions || {}
+  var locale = options.locale
+  var localeWeekStartsOn = locale && locale.options && locale.options.weekStartsOn
+  var defaultWeekStartsOn = localeWeekStartsOn == null ? 0 : Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(localeWeekStartsOn)
+  var weekStartsOn = options.weekStartsOn == null ? defaultWeekStartsOn : Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(options.weekStartsOn)
+
+  // Test if weekStartsOn is between 0 and 6 _and_ is not NaN
+  if (!(weekStartsOn >= 0 && weekStartsOn <= 6)) {
+    throw new RangeError('weekStartsOn must be between 0 and 6 inclusively')
+  }
+
+  var date = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, options)
+  var day = date.getDay()
+  var diff = (day < weekStartsOn ? 7 : 0) + day - weekStartsOn
+
+  date.setDate(date.getDate() - diff)
+  date.setHours(0, 0, 0, 0)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/startOfYear/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/date-fns/esm/startOfYear/index.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return startOfYear; });
+/* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../toDate/index.js */ "./node_modules/date-fns/esm/toDate/index.js");
+
+
+/**
+ * @name startOfYear
+ * @category Year Helpers
+ * @summary Return the start of a year for the given date.
+ *
+ * @description
+ * Return the start of a year for the given date.
+ * The result will be in the local timezone.
+ *
+ * @param {Date|String|Number} date - the original date
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date} the start of a year
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // The start of a year for 2 September 2014 11:55:00:
+ * var result = startOfYear(new Date(2014, 8, 2, 11, 55, 00))
+ * //=> Wed Jan 01 2014 00:00:00
+ */
+function startOfYear (dirtyDate, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  var cleanDate = Object(_toDate_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyDate, dirtyOptions)
+  var date = new Date(0)
+  date.setFullYear(cleanDate.getFullYear(), 0, 1)
+  date.setHours(0, 0, 0, 0)
+  return date
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/subMilliseconds/index.js":
+/*!************************************************************!*\
+  !*** ./node_modules/date-fns/esm/subMilliseconds/index.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return subMilliseconds; });
+/* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _addMilliseconds_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../addMilliseconds/index.js */ "./node_modules/date-fns/esm/addMilliseconds/index.js");
+
+
+
+/**
+ * @name subMilliseconds
+ * @category Millisecond Helpers
+ * @summary Subtract the specified number of milliseconds from the given date.
+ *
+ * @description
+ * Subtract the specified number of milliseconds from the given date.
+ *
+ * @param {Date|String|Number} date - the date to be changed
+ * @param {Number} amount - the amount of milliseconds to be subtracted
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - passed to `toDate`. See [toDate]{@link https://date-fns.org/docs/toDate}
+ * @returns {Date} the new date with the milliseconds subtracted
+ * @throws {TypeError} 2 arguments required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Subtract 750 milliseconds from 10 July 2014 12:45:30.000:
+ * var result = subMilliseconds(new Date(2014, 6, 10, 12, 45, 30, 0), 750)
+ * //=> Thu Jul 10 2014 12:45:29.250
+ */
+function subMilliseconds (dirtyDate, dirtyAmount, dirtyOptions) {
+  if (arguments.length < 2) {
+    throw new TypeError('2 arguments required, but only ' + arguments.length + ' present')
+  }
+
+  var amount = Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(dirtyAmount)
+  return Object(_addMilliseconds_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(dirtyDate, -amount, dirtyOptions)
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/date-fns/esm/toDate/index.js":
+/*!***************************************************!*\
+  !*** ./node_modules/date-fns/esm/toDate/index.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return toDate; });
+/* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_lib/toInteger/index.js */ "./node_modules/date-fns/esm/_lib/toInteger/index.js");
+/* harmony import */ var _lib_getTimezoneOffsetInMilliseconds_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_lib/getTimezoneOffsetInMilliseconds/index.js */ "./node_modules/date-fns/esm/_lib/getTimezoneOffsetInMilliseconds/index.js");
+
+
+
+var MILLISECONDS_IN_HOUR = 3600000
+var MILLISECONDS_IN_MINUTE = 60000
+var DEFAULT_ADDITIONAL_DIGITS = 2
+
+var patterns = {
+  dateTimeDelimeter: /[T ]/,
+  plainTime: /:/,
+  timeZoneDelimeter: /[Z ]/i,
+
+  // year tokens
+  YY: /^(\d{2})$/,
+  YYY: [
+    /^([+-]\d{2})$/, // 0 additional digits
+    /^([+-]\d{3})$/, // 1 additional digit
+    /^([+-]\d{4})$/ // 2 additional digits
+  ],
+  YYYY: /^(\d{4})/,
+  YYYYY: [
+    /^([+-]\d{4})/, // 0 additional digits
+    /^([+-]\d{5})/, // 1 additional digit
+    /^([+-]\d{6})/ // 2 additional digits
+  ],
+
+  // date tokens
+  MM: /^-(\d{2})$/,
+  DDD: /^-?(\d{3})$/,
+  MMDD: /^-?(\d{2})-?(\d{2})$/,
+  Www: /^-?W(\d{2})$/,
+  WwwD: /^-?W(\d{2})-?(\d{1})$/,
+
+  HH: /^(\d{2}([.,]\d*)?)$/,
+  HHMM: /^(\d{2}):?(\d{2}([.,]\d*)?)$/,
+  HHMMSS: /^(\d{2}):?(\d{2}):?(\d{2}([.,]\d*)?)$/,
+
+  // timezone tokens
+  timezone: /([Z+-].*)$/,
+  timezoneZ: /^(Z)$/,
+  timezoneHH: /^([+-])(\d{2})$/,
+  timezoneHHMM: /^([+-])(\d{2}):?(\d{2})$/
+}
+
+/**
+ * @name toDate
+ * @category Common Helpers
+ * @summary Convert the given argument to an instance of Date.
+ *
+ * @description
+ * Convert the given argument to an instance of Date.
+ *
+ * If the argument is an instance of Date, the function returns its clone.
+ *
+ * If the argument is a number, it is treated as a timestamp.
+ *
+ * If an argument is a string, the function tries to parse it.
+ * Function accepts complete ISO 8601 formats as well as partial implementations.
+ * ISO 8601: http://en.wikipedia.org/wiki/ISO_8601
+ * If the function cannot parse the string or the values are invalid, it returns Invalid Date.
+ *
+ * If the argument is none of the above, the function returns Invalid Date.
+ *
+ * **Note**: *all* Date arguments passed to any *date-fns* function is processed by `toDate`.
+ * All *date-fns* functions will throw `RangeError` if `options.additionalDigits` is not 0, 1, 2 or undefined.
+ *
+ * @param {Date|String|Number} argument - the value to convert
+ * @param {Options} [options] - the object with options. See [Options]{@link https://date-fns.org/docs/Options}
+ * @param {0|1|2} [options.additionalDigits=2] - the additional number of digits in the extended year format
+ * @returns {Date} the parsed date in the local time zone
+ * @throws {TypeError} 1 argument required
+ * @throws {RangeError} `options.additionalDigits` must be 0, 1 or 2
+ *
+ * @example
+ * // Convert string '2014-02-11T11:30:30' to date:
+ * var result = toDate('2014-02-11T11:30:30')
+ * //=> Tue Feb 11 2014 11:30:30
+ *
+ * @example
+ * // Convert string '+02014101' to date,
+ * // if the additional number of digits in the extended year format is 1:
+ * var result = toDate('+02014101', {additionalDigits: 1})
+ * //=> Fri Apr 11 2014 00:00:00
+ */
+function toDate (argument, dirtyOptions) {
+  if (arguments.length < 1) {
+    throw new TypeError('1 argument required, but only ' + arguments.length + ' present')
+  }
+
+  if (argument === null) {
+    return new Date(NaN)
+  }
+
+  var options = dirtyOptions || {}
+
+  var additionalDigits = options.additionalDigits == null ? DEFAULT_ADDITIONAL_DIGITS : Object(_lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__["default"])(options.additionalDigits)
+  if (additionalDigits !== 2 && additionalDigits !== 1 && additionalDigits !== 0) {
+    throw new RangeError('additionalDigits must be 0, 1 or 2')
+  }
+
+  // Clone the date
+  if (argument instanceof Date ||
+    (typeof argument === 'object' && Object.prototype.toString.call(argument) === '[object Date]')
+  ) {
+    // Prevent the date to lose the milliseconds when passed to new Date() in IE10
+    return new Date(argument.getTime())
+  } else if (typeof argument === 'number' || Object.prototype.toString.call(argument) === '[object Number]') {
+    return new Date(argument)
+  } else if (!(typeof argument === 'string' || Object.prototype.toString.call(argument) === '[object String]')) {
+    return new Date(NaN)
+  }
+
+  var dateStrings = splitDateString(argument)
+
+  var parseYearResult = parseYear(dateStrings.date, additionalDigits)
+  var year = parseYearResult.year
+  var restDateString = parseYearResult.restDateString
+
+  var date = parseDate(restDateString, year)
+
+  if (isNaN(date)) {
+    return new Date(NaN)
+  }
+
+  if (date) {
+    var timestamp = date.getTime()
+    var time = 0
+    var offset
+
+    if (dateStrings.time) {
+      time = parseTime(dateStrings.time)
+
+      if (isNaN(time)) {
+        return new Date(NaN)
+      }
+    }
+
+    if (dateStrings.timezone) {
+      offset = parseTimezone(dateStrings.timezone)
+      if (isNaN(offset)) {
+        return new Date(NaN)
+      }
+    } else {
+      // get offset accurate to hour in timezones that change offset
+      offset = Object(_lib_getTimezoneOffsetInMilliseconds_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(new Date(timestamp + time))
+      offset = Object(_lib_getTimezoneOffsetInMilliseconds_index_js__WEBPACK_IMPORTED_MODULE_1__["default"])(new Date(timestamp + time + offset))
+    }
+
+    return new Date(timestamp + time + offset)
+  } else {
+    return new Date(NaN)
+  }
+}
+
+function splitDateString (dateString) {
+  var dateStrings = {}
+  var array = dateString.split(patterns.dateTimeDelimeter)
+  var timeString
+
+  if (patterns.plainTime.test(array[0])) {
+    dateStrings.date = null
+    timeString = array[0]
+  } else {
+    dateStrings.date = array[0]
+    timeString = array[1]
+    if (patterns.timeZoneDelimeter.test(dateStrings.date)) {
+      dateStrings.date = dateString.split(patterns.timeZoneDelimeter)[0]
+      timeString = dateString.substr(dateStrings.date.length, dateString.length)
+    }
+  }
+
+  if (timeString) {
+    var token = patterns.timezone.exec(timeString)
+    if (token) {
+      dateStrings.time = timeString.replace(token[1], '')
+      dateStrings.timezone = token[1]
+    } else {
+      dateStrings.time = timeString
+    }
+  }
+
+  return dateStrings
+}
+
+function parseYear (dateString, additionalDigits) {
+  var patternYYY = patterns.YYY[additionalDigits]
+  var patternYYYYY = patterns.YYYYY[additionalDigits]
+
+  var token
+
+  // YYYY or ±YYYYY
+  token = patterns.YYYY.exec(dateString) || patternYYYYY.exec(dateString)
+  if (token) {
+    var yearString = token[1]
+    return {
+      year: parseInt(yearString, 10),
+      restDateString: dateString.slice(yearString.length)
+    }
+  }
+
+  // YY or ±YYY
+  token = patterns.YY.exec(dateString) || patternYYY.exec(dateString)
+  if (token) {
+    var centuryString = token[1]
+    return {
+      year: parseInt(centuryString, 10) * 100,
+      restDateString: dateString.slice(centuryString.length)
+    }
+  }
+
+  // Invalid ISO-formatted year
+  return {
+    year: null
+  }
+}
+
+function parseDate (dateString, year) {
+  // Invalid ISO-formatted year
+  if (year === null) {
+    return null
+  }
+
+  var token
+  var date
+  var month
+  var week
+
+  // YYYY
+  if (dateString.length === 0) {
+    date = new Date(0)
+    date.setUTCFullYear(year)
+    return date
+  }
+
+  // YYYY-MM
+  token = patterns.MM.exec(dateString)
+  if (token) {
+    date = new Date(0)
+    month = parseInt(token[1], 10) - 1
+
+    if (!validateDate(year, month)) {
+      return new Date(NaN)
+    }
+
+    date.setUTCFullYear(year, month)
+    return date
+  }
+
+  // YYYY-DDD or YYYYDDD
+  token = patterns.DDD.exec(dateString)
+  if (token) {
+    date = new Date(0)
+    var dayOfYear = parseInt(token[1], 10)
+
+    if (!validateDayOfYearDate(year, dayOfYear)) {
+      return new Date(NaN)
+    }
+
+    date.setUTCFullYear(year, 0, dayOfYear)
+    return date
+  }
+
+  // YYYY-MM-DD or YYYYMMDD
+  token = patterns.MMDD.exec(dateString)
+  if (token) {
+    date = new Date(0)
+    month = parseInt(token[1], 10) - 1
+    var day = parseInt(token[2], 10)
+
+    if (!validateDate(year, month, day)) {
+      return new Date(NaN)
+    }
+
+    date.setUTCFullYear(year, month, day)
+    return date
+  }
+
+  // YYYY-Www or YYYYWww
+  token = patterns.Www.exec(dateString)
+  if (token) {
+    week = parseInt(token[1], 10) - 1
+
+    if (!validateWeekDate(year, week)) {
+      return new Date(NaN)
+    }
+
+    return dayOfISOWeekYear(year, week)
+  }
+
+  // YYYY-Www-D or YYYYWwwD
+  token = patterns.WwwD.exec(dateString)
+  if (token) {
+    week = parseInt(token[1], 10) - 1
+    var dayOfWeek = parseInt(token[2], 10) - 1
+
+    if (!validateWeekDate(year, week, dayOfWeek)) {
+      return new Date(NaN)
+    }
+
+    return dayOfISOWeekYear(year, week, dayOfWeek)
+  }
+
+  // Invalid ISO-formatted date
+  return null
+}
+
+function parseTime (timeString) {
+  var token
+  var hours
+  var minutes
+
+  // hh
+  token = patterns.HH.exec(timeString)
+  if (token) {
+    hours = parseFloat(token[1].replace(',', '.'))
+
+    if (!validateTime(hours)) {
+      return NaN
+    }
+
+    return (hours % 24) * MILLISECONDS_IN_HOUR
+  }
+
+  // hh:mm or hhmm
+  token = patterns.HHMM.exec(timeString)
+  if (token) {
+    hours = parseInt(token[1], 10)
+    minutes = parseFloat(token[2].replace(',', '.'))
+
+    if (!validateTime(hours, minutes)) {
+      return NaN
+    }
+
+    return (hours % 24) * MILLISECONDS_IN_HOUR +
+      minutes * MILLISECONDS_IN_MINUTE
+  }
+
+  // hh:mm:ss or hhmmss
+  token = patterns.HHMMSS.exec(timeString)
+  if (token) {
+    hours = parseInt(token[1], 10)
+    minutes = parseInt(token[2], 10)
+    var seconds = parseFloat(token[3].replace(',', '.'))
+
+    if (!validateTime(hours, minutes, seconds)) {
+      return NaN
+    }
+
+    return (hours % 24) * MILLISECONDS_IN_HOUR +
+      minutes * MILLISECONDS_IN_MINUTE +
+      seconds * 1000
+  }
+
+  // Invalid ISO-formatted time
+  return null
+}
+
+function parseTimezone (timezoneString) {
+  var token
+  var absoluteOffset
+
+  // Z
+  token = patterns.timezoneZ.exec(timezoneString)
+  if (token) {
+    return 0
+  }
+
+  var hours
+
+  // ±hh
+  token = patterns.timezoneHH.exec(timezoneString)
+  if (token) {
+    hours = parseInt(token[2], 10)
+
+    if (!validateTimezone(hours)) {
+      return NaN
+    }
+
+    absoluteOffset = hours * MILLISECONDS_IN_HOUR
+    return (token[1] === '+') ? -absoluteOffset : absoluteOffset
+  }
+
+  // ±hh:mm or ±hhmm
+  token = patterns.timezoneHHMM.exec(timezoneString)
+  if (token) {
+    hours = parseInt(token[2], 10)
+    var minutes = parseInt(token[3], 10)
+
+    if (!validateTimezone(hours, minutes)) {
+      return NaN
+    }
+
+    absoluteOffset = hours * MILLISECONDS_IN_HOUR + minutes * MILLISECONDS_IN_MINUTE
+    return (token[1] === '+') ? -absoluteOffset : absoluteOffset
+  }
+
+  return 0
+}
+
+function dayOfISOWeekYear (isoWeekYear, week, day) {
+  week = week || 0
+  day = day || 0
+  var date = new Date(0)
+  date.setUTCFullYear(isoWeekYear, 0, 4)
+  var fourthOfJanuaryDay = date.getUTCDay() || 7
+  var diff = week * 7 + day + 1 - fourthOfJanuaryDay
+  date.setUTCDate(date.getUTCDate() + diff)
+  return date
+}
+
+// Validation functions
+
+var DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+var DAYS_IN_MONTH_LEAP_YEAR = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+function isLeapYearIndex (year) {
+  return year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)
+}
+
+function validateDate (year, month, date) {
+  if (month < 0 || month > 11) {
+    return false
+  }
+
+  if (date != null) {
+    if (date < 1) {
+      return false
+    }
+
+    var isLeapYear = isLeapYearIndex(year)
+    if (isLeapYear && date > DAYS_IN_MONTH_LEAP_YEAR[month]) {
+      return false
+    }
+    if (!isLeapYear && date > DAYS_IN_MONTH[month]) {
+      return false
+    }
+  }
+
+  return true
+}
+
+function validateDayOfYearDate (year, dayOfYear) {
+  if (dayOfYear < 1) {
+    return false
+  }
+
+  var isLeapYear = isLeapYearIndex(year)
+  if (isLeapYear && dayOfYear > 366) {
+    return false
+  }
+  if (!isLeapYear && dayOfYear > 365) {
+    return false
+  }
+
+  return true
+}
+
+function validateWeekDate (year, week, day) {
+  if (week < 0 || week > 52) {
+    return false
+  }
+
+  if (day != null && (day < 0 || day > 6)) {
+    return false
+  }
+
+  return true
+}
+
+function validateTime (hours, minutes, seconds) {
+  if (hours != null && (hours < 0 || hours >= 25)) {
+    return false
+  }
+
+  if (minutes != null && (minutes < 0 || minutes >= 60)) {
+    return false
+  }
+
+  if (seconds != null && (seconds < 0 || seconds >= 60)) {
+    return false
+  }
+
+  return true
+}
+
+function validateTimezone (hours, minutes) {
+  if (minutes != null && (minutes < 0 || minutes > 59)) {
+    return false
+  }
+
+  return true
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/debounce/index.js":
 /*!****************************************!*\
   !*** ./node_modules/debounce/index.js ***!
@@ -37973,6 +44625,72 @@ return deepmerge_1;
 
 })));
 
+
+/***/ }),
+
+/***/ "./node_modules/dom-helpers/class/addClass.js":
+/*!****************************************************!*\
+  !*** ./node_modules/dom-helpers/class/addClass.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+exports.__esModule = true;
+exports.default = addClass;
+
+var _hasClass = _interopRequireDefault(__webpack_require__(/*! ./hasClass */ "./node_modules/dom-helpers/class/hasClass.js"));
+
+function addClass(element, className) {
+  if (element.classList) element.classList.add(className);else if (!(0, _hasClass.default)(element, className)) if (typeof element.className === 'string') element.className = element.className + ' ' + className;else element.setAttribute('class', (element.className && element.className.baseVal || '') + ' ' + className);
+}
+
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./node_modules/dom-helpers/class/hasClass.js":
+/*!****************************************************!*\
+  !*** ./node_modules/dom-helpers/class/hasClass.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = hasClass;
+
+function hasClass(element, className) {
+  if (element.classList) return !!className && element.classList.contains(className);else return (" " + (element.className.baseVal || element.className) + " ").indexOf(" " + className + " ") !== -1;
+}
+
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./node_modules/dom-helpers/class/removeClass.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/dom-helpers/class/removeClass.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function replaceClassName(origClass, classToRemove) {
+  return origClass.replace(new RegExp('(^|\\s)' + classToRemove + '(?:\\s|$)', 'g'), '$1').replace(/\s+/g, ' ').replace(/^\s*|\s*$/g, '');
+}
+
+module.exports = function removeClass(element, className) {
+  if (element.classList) element.classList.remove(className);else if (typeof element.className === 'string') element.className = replaceClassName(element.className, className);else element.setAttribute('class', replaceClassName(element.className && element.className.baseVal || '', className));
+};
 
 /***/ }),
 
@@ -44639,6 +51357,3789 @@ for (i in codes) names[codes[i]] = i
 for (var alias in aliases) {
   codes[alias] = aliases[alias]
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/material-ui-pickers/dist/material-ui-pickers.esm.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/material-ui-pickers/dist/material-ui-pickers.esm.js ***!
+  \**************************************************************************/
+/*! exports provided: DatePicker, InlineDatePicker, TimePicker, InlineTimePicker, DateTimePicker, InlineDateTimePicker, BasePicker, Calendar, Day, TimePickerView, Clock, MuiPickersUtilsProvider, MuiPickersContextConsumer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DatePicker", function() { return DatePickerModal$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InlineDatePicker", function() { return DatePickerInline$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TimePicker", function() { return TimePickerModal$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InlineTimePicker", function() { return TimePickerInline$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DateTimePicker", function() { return DateTimePickerModal$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InlineDateTimePicker", function() { return DateTimePickerInline$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BasePicker", function() { return BasePicker$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Calendar", function() { return Calendar$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Day", function() { return Day$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TimePickerView", function() { return TimePickerView$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Clock", function() { return Clock$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MuiPickersUtilsProvider", function() { return MuiPickersUtilsProvider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MuiPickersContextConsumer", function() { return MuiPickersContextConsumer; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var keycode__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! keycode */ "./node_modules/keycode/index.js");
+/* harmony import */ var keycode__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(keycode__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/IconButton */ "./node_modules/@material-ui/core/IconButton/index.js");
+/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_core_InputAdornment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/InputAdornment */ "./node_modules/@material-ui/core/InputAdornment/index.js");
+/* harmony import */ var _material_ui_core_InputAdornment__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_InputAdornment__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/TextField */ "./node_modules/@material-ui/core/TextField/index.js");
+/* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_core_SvgIcon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/SvgIcon */ "./node_modules/@material-ui/core/SvgIcon/index.js");
+/* harmony import */ var _material_ui_core_SvgIcon__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_SvgIcon__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_text_mask__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-text-mask */ "./node_modules/react-text-mask/dist/reactTextMask.js");
+/* harmony import */ var react_text_mask__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_text_mask__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/Button/index.js");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/Dialog */ "./node_modules/@material-ui/core/Dialog/index.js");
+/* harmony import */ var _material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _material_ui_core_DialogActions__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/DialogActions */ "./node_modules/@material-ui/core/DialogActions/index.js");
+/* harmony import */ var _material_ui_core_DialogActions__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_DialogActions__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _material_ui_core_DialogContent__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/DialogContent */ "./node_modules/@material-ui/core/DialogContent/index.js");
+/* harmony import */ var _material_ui_core_DialogContent__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_DialogContent__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/styles/index.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var react_event_listener__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react-event-listener */ "./node_modules/react-event-listener/dist/react-event-listener.cjs.js");
+/* harmony import */ var react_event_listener__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(react_event_listener__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _material_ui_core_styles_createStyles__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/core/styles/createStyles */ "./node_modules/@material-ui/core/styles/createStyles.js");
+/* harmony import */ var _material_ui_core_styles_createStyles__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles_createStyles__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @material-ui/core/styles/withStyles */ "./node_modules/@material-ui/core/styles/withStyles.js");
+/* harmony import */ var _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @material-ui/core/Toolbar */ "./node_modules/@material-ui/core/Toolbar/index.js");
+/* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/Typography/index.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! react-transition-group */ "./node_modules/react-transition-group/index.js");
+/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(react_transition_group__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _material_ui_core_Popover__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @material-ui/core/Popover */ "./node_modules/@material-ui/core/Popover/index.js");
+/* harmony import */ var _material_ui_core_Popover__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Popover__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @material-ui/core/Paper */ "./node_modules/@material-ui/core/Paper/index.js");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var _material_ui_core_styles_withTheme__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @material-ui/core/styles/withTheme */ "./node_modules/@material-ui/core/styles/withTheme.js");
+/* harmony import */ var _material_ui_core_styles_withTheme__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles_withTheme__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @material-ui/core/Tab */ "./node_modules/@material-ui/core/Tab/index.js");
+/* harmony import */ var _material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var _material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @material-ui/core/Tabs */ "./node_modules/@material-ui/core/Tabs/index.js");
+/* harmony import */ var _material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_26__);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var date = Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["oneOfType"])([prop_types__WEBPACK_IMPORTED_MODULE_2__["object"], prop_types__WEBPACK_IMPORTED_MODULE_2__["string"], prop_types__WEBPACK_IMPORTED_MODULE_2__["number"], Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["instanceOf"])(Date)]);
+var DomainPropTypes = {
+  date: date
+};
+
+var _a = Object(react__WEBPACK_IMPORTED_MODULE_1__["createContext"])(null),
+    Consumer = _a.Consumer,
+    Provider = _a.Provider;
+
+var MuiPickersContextConsumer = Consumer;
+
+var MuiPickersUtilsProvider =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(MuiPickersUtilsProvider, _super);
+
+  function MuiPickersUtilsProvider() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.state = {
+      utils: null
+    };
+    return _this;
+  }
+
+  MuiPickersUtilsProvider.getDerivedStateFromProps = function (_a) {
+    var Utils = _a.utils,
+        locale = _a.locale,
+        moment = _a.moment;
+    return {
+      utils: new Utils({
+        locale: locale,
+        moment: moment
+      })
+    };
+  };
+
+  MuiPickersUtilsProvider.prototype.render = function () {
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(Provider, {
+      value: this.state.utils,
+      children: this.props.children
+    });
+  };
+
+   true ? MuiPickersUtilsProvider.propTypes = {
+    utils: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired,
+    locale: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["oneOfType"])([prop_types__WEBPACK_IMPORTED_MODULE_2__["object"], prop_types__WEBPACK_IMPORTED_MODULE_2__["string"]]),
+    children: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["oneOfType"])([prop_types__WEBPACK_IMPORTED_MODULE_2__["element"].isRequired, Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["arrayOf"])(prop_types__WEBPACK_IMPORTED_MODULE_2__["element"].isRequired)]).isRequired,
+    moment: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"]
+  } : undefined;
+  return MuiPickersUtilsProvider;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+var checkUtils = function (utils) {
+  if (!utils) {
+    // tslint:disable-next-line
+    throw new Error('Can not find utils in context. You either a) forgot to wrap your component tree in MuiPickersUtilsProvider; or b) mixed named and direct file imports.  Recommendation: use named imports from the module index.');
+  }
+};
+
+var withUtils = function () {
+  return function (Component$$1) {
+    var WithUtils = function (props) {
+      return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(MuiPickersContextConsumer, null, function (utils) {
+        checkUtils(utils);
+        return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(Component$$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+          utils: utils
+        }, props));
+      });
+    };
+
+    WithUtils.displayName = "WithUtils(" + (Component$$1.displayName || Component$$1.name) + ")";
+    return WithUtils;
+  };
+};
+
+var getInitialDate = function (_a) {
+  var utils = _a.utils,
+      value = _a.value,
+      initialFocusedDate = _a.initialFocusedDate;
+  var initialDate = value || initialFocusedDate || utils.date();
+  var date = utils.date(initialDate);
+  return date && utils.isValid(date) ? date : utils.date();
+};
+
+var BasePicker =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(BasePicker, _super);
+
+  function BasePicker() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.state = {
+      date: getInitialDate(_this.props),
+      isAccepted: false
+    };
+
+    _this.changeDate = function (date, callback) {
+      return _this.setState({
+        date: date
+      }, callback);
+    };
+
+    _this.handleAcceptedChange = function (isAccepted, callback) {
+      return _this.setState({
+        isAccepted: isAccepted
+      }, callback);
+    };
+
+    _this.handleClear = function () {
+      return _this.props.onChange(null);
+    };
+
+    _this.handleAccept = function () {
+      return _this.props.onChange(_this.state.date);
+    };
+
+    _this.handleSetTodayDate = function () {
+      return _this.handleChange(_this.props.utils.date(), false);
+    };
+
+    _this.handleTextFieldChange = function (date) {
+      var _a = _this.props,
+          onChange = _a.onChange,
+          utils = _a.utils,
+          mergePreviousDateOnChange = _a.mergePreviousDateOnChange;
+
+      if (mergePreviousDateOnChange) {
+        date = utils.mergeDateAndTime(_this.state.date, date);
+      }
+
+      if (date === null) {
+        onChange(null);
+      } else {
+        _this.changeDate(date, function () {
+          return onChange(date);
+        });
+      }
+    };
+
+    _this.pick12hOr24hFormat = function (default12hFormat, default24hFormat) {
+      var _a = _this.props,
+          format = _a.format,
+          ampm = _a.ampm;
+
+      if (format) {
+        return format;
+      }
+
+      return ampm ? default12hFormat : default24hFormat;
+    };
+
+    _this.handleChange = function (newDate, isFinish) {
+      if (isFinish === void 0) {
+        isFinish = true;
+      }
+
+      var _a = _this.props,
+          autoOk = _a.autoOk,
+          onChange = _a.onChange;
+
+      _this.changeDate(newDate, function () {
+        if (isFinish && autoOk) {
+          onChange(newDate); // pass down accept true, and make it false in the next tick
+
+          _this.handleAcceptedChange(true, function () {
+            return _this.handleAcceptedChange(false);
+          });
+        }
+      });
+    };
+
+    _this.handleDismiss = function () {
+      _this.setState({
+        date: getInitialDate(_this.props)
+      });
+    };
+
+    return _this;
+  }
+
+  BasePicker.prototype.componentDidUpdate = function (prevProps) {
+    var _a = this.props,
+        utils = _a.utils,
+        value = _a.value,
+        initialFocusedDate = _a.initialFocusedDate;
+
+    if (prevProps.value !== value || prevProps.utils.locale !== utils.locale || prevProps.initialFocusedDate !== initialFocusedDate) {
+      this.changeDate(getInitialDate(this.props));
+    }
+  };
+
+  BasePicker.prototype.render = function () {
+    return this.props.children(Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, this.state, {
+      utils: this.props.utils,
+      changeDate: this.changeDate,
+      handleAcceptedChange: this.handleAcceptedChange,
+      handleClear: this.handleClear,
+      handleAccept: this.handleAccept,
+      handleDismiss: this.handleDismiss,
+      handleSetTodayDate: this.handleSetTodayDate,
+      handleTextFieldChange: this.handleTextFieldChange,
+      pick12hOr24hFormat: this.pick12hOr24hFormat,
+      handleChange: this.handleChange
+    }));
+  };
+
+   true ? BasePicker.propTypes = {
+    value: DomainPropTypes.date,
+    onChange: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired,
+    autoOk: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    initialFocusedDate: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"]
+  } : undefined;
+  BasePicker.defaultProps = {
+    value: new Date(),
+    autoOK: false,
+    ampm: true
+  };
+  return BasePicker;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+var BasePicker$1 = withUtils()(BasePicker);
+
+var getDisplayDate = function (_a) {
+  var utils = _a.utils,
+      value = _a.value,
+      format = _a.format,
+      invalidLabel = _a.invalidLabel,
+      emptyLabel = _a.emptyLabel,
+      labelFunc = _a.labelFunc;
+  var isEmpty = value === null;
+  var date = utils.date(value);
+
+  if (labelFunc) {
+    return labelFunc(isEmpty ? null : date, invalidLabel);
+  }
+
+  if (isEmpty) {
+    return emptyLabel;
+  }
+
+  return utils.isValid(date) ? utils.format(date, format) : invalidLabel;
+};
+var getError = function (value, props) {
+  var utils = props.utils,
+      maxDate = props.maxDate,
+      minDate = props.minDate,
+      disablePast = props.disablePast,
+      disableFuture = props.disableFuture,
+      maxDateMessage = props.maxDateMessage,
+      minDateMessage = props.minDateMessage,
+      invalidDateMessage = props.invalidDateMessage; // if null - do not show error
+
+  if (utils.isNull(value)) {
+    return '';
+  }
+
+  if (!utils.isValid(value)) {
+    return invalidDateMessage;
+  }
+
+  if (maxDate && utils.isAfter(value, utils.endOfDay(utils.date(maxDate))) || disableFuture && utils.isAfter(value, utils.endOfDay(utils.date()))) {
+    return maxDateMessage;
+  }
+
+  if (minDate && utils.isBefore(value, utils.startOfDay(utils.date(minDate))) || disablePast && utils.isBefore(value, utils.startOfDay(utils.date()))) {
+    return minDateMessage;
+  }
+
+  return '';
+};
+
+var KeyboardIcon = function (props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_SvgIcon__WEBPACK_IMPORTED_MODULE_7___default.a, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, props), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
+    d: "M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
+    fill: "none",
+    d: "M0 0h24v24H0z"
+  }));
+};
+
+var Input =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(Input, _super);
+
+  function Input() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.createInputRef = function (ref) {
+      var inputRef = _this.props.inputRef;
+
+      if (inputRef && typeof inputRef === 'function') {
+        // @ts-ignore inputElement exists in Masked input. Issue in typings
+        inputRef(ref ? ref.inputElement : null);
+      }
+    };
+
+    return _this;
+  }
+
+  Input.prototype.render = function () {
+    var _a = this.props,
+        inputRef = _a.inputRef,
+        keepCharPositions = _a.keepCharPositions,
+        rest = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(_a, ["inputRef", "keepCharPositions"]);
+
+    return this.props.mask ? Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(react_text_mask__WEBPACK_IMPORTED_MODULE_8___default.a, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, rest, {
+      ref: this.createInputRef,
+      keepCharPositions: keepCharPositions
+    })) : Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("input", Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, rest, {
+      ref: inputRef
+    }));
+  };
+
+   true ? Input.propTypes = {
+    mask: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"],
+    inputRef: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired
+  } : undefined;
+  return Input;
+}(react__WEBPACK_IMPORTED_MODULE_1__["PureComponent"]);
+
+var DateTextField =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(DateTextField, _super);
+
+  function DateTextField() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.state = DateTextField.getStateFromProps(_this.props);
+
+    _this.commitUpdates = function (value) {
+      var _a = _this.props,
+          onChange = _a.onChange,
+          clearable = _a.clearable,
+          onClear = _a.onClear,
+          utils = _a.utils,
+          format = _a.format,
+          onError = _a.onError;
+
+      if (value === '') {
+        if (_this.props.value === null) {
+          _this.setState(DateTextField.getStateFromProps(_this.props));
+        } else if (clearable && onClear) {
+          onClear();
+        }
+
+        return;
+      }
+
+      var oldValue = utils.date(_this.state.value);
+      var newValue = utils.parse(value, format);
+      var error = getError(newValue, _this.props);
+
+      _this.setState({
+        error: error,
+        displayValue: value,
+        value: error ? newValue : oldValue
+      }, function () {
+        if (!error && !utils.isEqual(newValue, oldValue)) {
+          onChange(newValue);
+        }
+
+        if (error && onError) {
+          onError(newValue, error);
+        }
+      });
+    };
+
+    _this.handleBlur = function (e) {
+      if (_this.props.keyboard) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        _this.commitUpdates(e.target.value);
+
+        if (_this.props.onBlur) {
+          _this.props.onBlur(e);
+        }
+      }
+    };
+
+    _this.handleChange = function (e) {
+      var _a = _this.props,
+          utils = _a.utils,
+          format = _a.format,
+          onInputChange = _a.onInputChange;
+      var parsedValue = utils.parse(e.target.value, format);
+
+      if (onInputChange) {
+        onInputChange(e);
+      }
+
+      _this.setState({
+        displayValue: e.target.value,
+        error: getError(parsedValue, _this.props)
+      });
+    };
+
+    _this.handleFocus = function (e) {
+      e.stopPropagation();
+      e.preventDefault();
+
+      if (!_this.props.keyboard) {
+        _this.openPicker(e);
+      }
+    };
+
+    _this.handleKeyPress = function (e) {
+      if (e.key === 'Enter') {
+        if (!_this.props.disableOpenOnEnter) {
+          _this.openPicker(e);
+        } else {
+          // @ts-ignore TODO check me
+          _this.commitUpdates(e.target.value);
+        }
+      }
+    };
+
+    _this.openPicker = function (e) {
+      var _a = _this.props,
+          disabled = _a.disabled,
+          onClick = _a.onClick;
+
+      if (!disabled) {
+        onClick(e);
+      }
+    };
+
+    return _this;
+  }
+
+  DateTextField.prototype.componentDidUpdate = function (prevProps) {
+    var utils = this.props.utils;
+
+    if (!utils.isEqual(utils.date(this.props.value), utils.date(prevProps.value)) || prevProps.format !== this.props.format || prevProps.maxDate !== this.props.maxDate || prevProps.minDate !== this.props.minDate || prevProps.emptyLabel !== this.props.emptyLabel || prevProps.utils !== this.props.utils) {
+      this.setState(DateTextField.getStateFromProps(this.props));
+    }
+  };
+
+  DateTextField.prototype.render = function () {
+    var _a = this.props,
+        adornmentPosition = _a.adornmentPosition,
+        clearable = _a.clearable,
+        disabled = _a.disabled,
+        disableFuture = _a.disableFuture,
+        disableOpenOnEnter = _a.disableOpenOnEnter,
+        disablePast = _a.disablePast,
+        emptyLabel = _a.emptyLabel,
+        format = _a.format,
+        InputAdornmentProps = _a.InputAdornmentProps,
+        InputProps = _a.InputProps,
+        invalidDateMessage = _a.invalidDateMessage,
+        invalidLabel = _a.invalidLabel,
+        keyboard = _a.keyboard,
+        keyboardIcon = _a.keyboardIcon,
+        labelFunc = _a.labelFunc,
+        mask = _a.mask,
+        maxDate = _a.maxDate,
+        maxDateMessage = _a.maxDateMessage,
+        minDate = _a.minDate,
+        minDateMessage = _a.minDateMessage,
+        onBlur = _a.onBlur,
+        onClear = _a.onClear,
+        onClick = _a.onClick,
+        pipe = _a.pipe,
+        keepCharPositions = _a.keepCharPositions,
+        TextFieldComponent = _a.TextFieldComponent,
+        utils = _a.utils,
+        value = _a.value,
+        onInputChange = _a.onInputChange,
+        other = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(_a, ["adornmentPosition", "clearable", "disabled", "disableFuture", "disableOpenOnEnter", "disablePast", "emptyLabel", "format", "InputAdornmentProps", "InputProps", "invalidDateMessage", "invalidLabel", "keyboard", "keyboardIcon", "labelFunc", "mask", "maxDate", "maxDateMessage", "minDate", "minDateMessage", "onBlur", "onClear", "onClick", "pipe", "keepCharPositions", "TextFieldComponent", "utils", "value", "onInputChange"]);
+
+    var _b = this.state,
+        displayValue = _b.displayValue,
+        error = _b.error;
+    var localInputProps = {
+      inputComponent: Input,
+      inputProps: {
+        mask: !keyboard ? null : mask,
+        pipe: !keyboard ? null : pipe,
+        keepCharPositions: !keyboard ? undefined : keepCharPositions,
+        readOnly: !keyboard
+      }
+    };
+
+    if (keyboard) {
+      localInputProps[adornmentPosition + "Adornment"] = Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_InputAdornment__WEBPACK_IMPORTED_MODULE_5___default.a, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+        position: adornmentPosition
+      }, InputAdornmentProps), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        disabled: disabled,
+        onClick: this.openPicker
+      }, keyboardIcon));
+    }
+
+    var Component$$1 = TextFieldComponent;
+
+    var inputProps = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, localInputProps, InputProps);
+
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(Component$$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      onClick: this.handleFocus,
+      error: !!error,
+      helperText: error,
+      onKeyPress: this.handleKeyPress,
+      onBlur: this.handleBlur,
+      disabled: disabled,
+      value: displayValue
+    }, other, {
+      onError: undefined,
+      onChange: this.handleChange,
+      InputProps: inputProps
+    }));
+  };
+
+   true ? DateTextField.propTypes = {
+    value: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["oneOfType"])([prop_types__WEBPACK_IMPORTED_MODULE_2__["object"], prop_types__WEBPACK_IMPORTED_MODULE_2__["string"], prop_types__WEBPACK_IMPORTED_MODULE_2__["number"], Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["instanceOf"])(Date)]),
+    minDate: DomainPropTypes.date,
+    maxDate: DomainPropTypes.date,
+    disablePast: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    disableFuture: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    format: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"],
+    onBlur: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"],
+    onChange: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired,
+    onClear: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"],
+    onClick: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired,
+    clearable: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    utils: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"].isRequired,
+    InputProps: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["shape"])({}),
+    mask: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"],
+    minDateMessage: prop_types__WEBPACK_IMPORTED_MODULE_2__["node"],
+    maxDateMessage: prop_types__WEBPACK_IMPORTED_MODULE_2__["node"],
+    invalidLabel: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"],
+    emptyLabel: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"],
+    labelFunc: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"],
+    keyboard: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    keyboardIcon: prop_types__WEBPACK_IMPORTED_MODULE_2__["node"],
+    disableOpenOnEnter: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    invalidDateMessage: prop_types__WEBPACK_IMPORTED_MODULE_2__["node"],
+    TextFieldComponent: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["oneOfType"])([prop_types__WEBPACK_IMPORTED_MODULE_2__["string"], prop_types__WEBPACK_IMPORTED_MODULE_2__["func"]]),
+    InputAdornmentProps: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"],
+    adornmentPosition: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["oneOf"])(['start', 'end']),
+    onError: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"],
+    onInputChange: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"],
+    pipe: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"],
+    keepCharPositions: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"]
+  } : undefined;
+  DateTextField.defaultProps = {
+    disabled: false,
+    invalidLabel: 'Unknown',
+    emptyLabel: '',
+    keyboard: false,
+    keyboardIcon: Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(KeyboardIcon, null),
+    disableOpenOnEnter: false,
+    invalidDateMessage: 'Invalid Date Format',
+    clearable: false,
+    disablePast: false,
+    disableFuture: false,
+    minDate: '1900-01-01',
+    maxDate: '2100-01-01',
+    minDateMessage: 'Date should not be before minimal date',
+    maxDateMessage: 'Date should not be after maximal date',
+    TextFieldComponent: _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_6___default.a,
+    InputAdornmentProps: {},
+    adornmentPosition: 'end',
+    keepCharPositions: false
+  };
+
+  DateTextField.getStateFromProps = function (props) {
+    return {
+      value: props.value,
+      displayValue: getDisplayDate(props),
+      error: getError(props.utils.date(props.value), props)
+    };
+  };
+
+  return DateTextField;
+}(react__WEBPACK_IMPORTED_MODULE_1__["PureComponent"]);
+var DateTextField$1 = withUtils()(DateTextField);
+
+var DIALOG_WIDTH = 310;
+
+var ModalDialog = function (_a) {
+  var children = _a.children,
+      classes = _a.classes,
+      onKeyDownInner = _a.onKeyDownInner,
+      onAccept = _a.onAccept,
+      onDismiss = _a.onDismiss,
+      onClear = _a.onClear,
+      onSetToday = _a.onSetToday,
+      okLabel = _a.okLabel,
+      cancelLabel = _a.cancelLabel,
+      clearLabel = _a.clearLabel,
+      todayLabel = _a.todayLabel,
+      clearable = _a.clearable,
+      showTodayButton = _a.showTodayButton,
+      showTabs = _a.showTabs,
+      other = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(_a, ["children", "classes", "onKeyDownInner", "onAccept", "onDismiss", "onClear", "onSetToday", "okLabel", "cancelLabel", "clearLabel", "todayLabel", "clearable", "showTodayButton", "showTabs"]);
+
+  var _b, _c, _d;
+
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_10___default.a, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+    role: "dialog",
+    onClose: onDismiss,
+    classes: {
+      paper: classnames__WEBPACK_IMPORTED_MODULE_14___default()(classes.dialogRoot, (_b = {}, _b[classes.dialogWithTabs] = showTabs, _b))
+    }
+  }, other), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(react_event_listener__WEBPACK_IMPORTED_MODULE_15___default.a, {
+    target: "window",
+    onKeyDown: onKeyDownInner
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_DialogContent__WEBPACK_IMPORTED_MODULE_12___default.a, {
+    children: children,
+    className: classnames__WEBPACK_IMPORTED_MODULE_14___default()(classes.dialog, (_c = {}, _c[classes.dialogWithTabs] = showTabs, _c))
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_DialogActions__WEBPACK_IMPORTED_MODULE_11___default.a, {
+    classes: {
+      root: clearable || showTodayButton ? classes.dialogActions : undefined,
+      action: classnames__WEBPACK_IMPORTED_MODULE_14___default()(classes.dialogAction, (_d = {}, _d[classes.clearableDialogAction] = clearable, _d[classes.todayDialogAction] = !clearable && showTodayButton, _d))
+    }
+  }, clearable && Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9___default.a, {
+    color: "primary",
+    onClick: onClear
+  }, clearLabel), !clearable && showTodayButton && Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9___default.a, {
+    color: "primary",
+    onClick: onSetToday
+  }, todayLabel), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9___default.a, {
+    color: "primary",
+    onClick: onDismiss
+  }, cancelLabel), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_9___default.a, {
+    color: "primary",
+    onClick: onAccept
+  }, okLabel)));
+};
+ModalDialog.displayName = 'ModalDialog';
+var dialogHeight = 405;
+var dialogHeightWithTabs = 455;
+var styles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_13__["createStyles"])({
+  dialogRoot: {
+    minWidth: DIALOG_WIDTH,
+    minHeight: dialogHeight
+  },
+  dialog: {
+    minHeight: dialogHeight,
+    overflow: 'hidden',
+    '&:first-child': {
+      padding: 0
+    }
+  },
+  dialogWithTabs: {
+    minHeight: dialogHeightWithTabs
+  },
+  dialogActions: {
+    // set justifyContent to default value to fix IE11 layout bug
+    // see https://github.com/dmtrKovalenko/material-ui-pickers/pull/267
+    justifyContent: 'flex-start'
+  },
+  clearableDialogAction: {
+    '&:first-child': {
+      marginRight: 'auto'
+    }
+  },
+  todayDialogAction: {
+    '&:first-child': {
+      marginRight: 'auto'
+    }
+  },
+  dialogAction: {// empty but may be needed for override
+  }
+});
+var ModalDialog$1 = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_13__["withStyles"])(styles, {
+  name: 'MuiPickersModal'
+})(ModalDialog);
+
+var ModalWrapper =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(ModalWrapper, _super);
+
+  function ModalWrapper() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.state = {
+      open: false
+    };
+
+    _this.handleKeyDown = function (event) {
+      switch (keycode__WEBPACK_IMPORTED_MODULE_3___default()(event)) {
+        case 'enter':
+          _this.handleAccept();
+
+          break;
+
+        default:
+          // if keycode is not handled, stop execution
+          return;
+      } // if event was handled prevent other side effects
+
+
+      event.preventDefault();
+    };
+
+    _this.handleSetTodayDate = function () {
+      if (_this.props.onSetToday) {
+        _this.props.onSetToday();
+      }
+    };
+
+    _this.open = function () {
+      _this.setState({
+        open: true
+      });
+
+      if (_this.props.onOpen) {
+        _this.props.onOpen();
+      }
+    };
+
+    _this.close = function () {
+      _this.setState({
+        open: false
+      });
+
+      if (_this.props.onClose) {
+        _this.props.onClose();
+      }
+    };
+
+    _this.handleAccept = function () {
+      _this.close();
+
+      if (_this.props.onAccept) {
+        _this.props.onAccept();
+      }
+    };
+
+    _this.handleDismiss = function () {
+      _this.close();
+
+      if (_this.props.onDismiss) {
+        _this.props.onDismiss();
+      }
+    };
+
+    _this.handleClear = function () {
+      _this.close();
+
+      if (_this.props.onClear) {
+        _this.props.onClear();
+      }
+    };
+
+    return _this;
+  }
+
+  ModalWrapper.getDerivedStateFromProps = function (nextProps) {
+    // only if accept = true close the dialog
+    if (nextProps.isAccepted) {
+      if (nextProps.onClose) {
+        nextProps.onClose();
+      }
+
+      return {
+        open: false
+      };
+    }
+
+    return null;
+  };
+
+  ModalWrapper.prototype.render = function () {
+    var _a = this.props,
+        value = _a.value,
+        format = _a.format,
+        children = _a.children,
+        onAccept = _a.onAccept,
+        onDismiss = _a.onDismiss,
+        invalidLabel = _a.invalidLabel,
+        labelFunc = _a.labelFunc,
+        okLabel = _a.okLabel,
+        cancelLabel = _a.cancelLabel,
+        clearLabel = _a.clearLabel,
+        clearable = _a.clearable,
+        todayLabel = _a.todayLabel,
+        showTodayButton = _a.showTodayButton,
+        onOpen = _a.onOpen,
+        onClose = _a.onClose,
+        onSetToday = _a.onSetToday,
+        isAccepted = _a.isAccepted,
+        DialogProps = _a.DialogProps,
+        showTabs = _a.showTabs,
+        other = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(_a, ["value", "format", "children", "onAccept", "onDismiss", "invalidLabel", "labelFunc", "okLabel", "cancelLabel", "clearLabel", "clearable", "todayLabel", "showTodayButton", "onOpen", "onClose", "onSetToday", "isAccepted", "DialogProps", "showTabs"]);
+
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DateTextField$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      value: value,
+      format: format,
+      onClick: this.open,
+      invalidLabel: invalidLabel,
+      labelFunc: labelFunc,
+      clearable: clearable
+    }, other)), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ModalDialog$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      showTabs: showTabs,
+      open: this.state.open,
+      onKeyDownInner: this.handleKeyDown,
+      onClear: this.handleClear,
+      onAccept: this.handleAccept,
+      onDismiss: this.handleDismiss,
+      onSetToday: this.handleSetTodayDate,
+      clearLabel: clearLabel,
+      todayLabel: todayLabel,
+      okLabel: okLabel,
+      cancelLabel: cancelLabel,
+      clearable: clearable,
+      showTodayButton: showTodayButton,
+      children: children
+    }, DialogProps)));
+  };
+
+   true ? ModalWrapper.propTypes = {
+    okLabel: prop_types__WEBPACK_IMPORTED_MODULE_2__["node"],
+    cancelLabel: prop_types__WEBPACK_IMPORTED_MODULE_2__["node"],
+    clearLabel: prop_types__WEBPACK_IMPORTED_MODULE_2__["node"],
+    clearable: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    todayLabel: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"],
+    showTodayButton: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    onOpen: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"],
+    DialogProps: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"],
+    onClose: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"]
+  } : undefined;
+  ModalWrapper.defaultProps = {
+    value: new Date(),
+    okLabel: 'OK',
+    cancelLabel: 'Cancel',
+    clearLabel: 'Clear',
+    todayLabel: 'Today',
+    clearable: false,
+    showTodayButton: false,
+    isAccepted: false
+  };
+  return ModalWrapper;
+}(react__WEBPACK_IMPORTED_MODULE_1__["PureComponent"]);
+
+var PickerToolbar = function (_a) {
+  var children = _a.children,
+      className = _a.className,
+      classes = _a.classes,
+      other = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(_a, ["children", "className", "classes"]);
+
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_18___default.a, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+    className: classnames__WEBPACK_IMPORTED_MODULE_14___default()(classes.toolbar, className)
+  }, other), children);
+};
+
+ true ? PickerToolbar.propTypes = {
+  children: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["arrayOf"])(prop_types__WEBPACK_IMPORTED_MODULE_2__["node"]).isRequired,
+  className: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"],
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"].isRequired,
+  innerRef: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"]
+} : undefined;
+PickerToolbar.defaultProps = {
+  className: ''
+};
+var styles$1 = function (theme) {
+  return _material_ui_core_styles_createStyles__WEBPACK_IMPORTED_MODULE_16___default()({
+    toolbar: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      justifyContent: 'center',
+      height: 100,
+      backgroundColor: theme.palette.type === 'light' ? theme.palette.primary.main : theme.palette.background["default"]
+    }
+  });
+};
+var PickerToolbar$1 = _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default()(styles$1, {
+  name: 'MuiPickersToolbar'
+})(PickerToolbar);
+
+var ToolbarButton = function (_a) {
+  var classes = _a.classes,
+      selected = _a.selected,
+      label = _a.label,
+      className = _a.className,
+      other = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(_a, ["classes", "selected", "label", "className"]);
+
+  var _b;
+
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_19___default.a, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+    className: classnames__WEBPACK_IMPORTED_MODULE_14___default()(classes.toolbarBtn, className, (_b = {}, _b[classes.toolbarBtnSelected] = selected, _b))
+  }, other), label);
+};
+
+ true ? ToolbarButton.propTypes = {
+  selected: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"].isRequired,
+  label: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"].isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"].isRequired,
+  className: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"],
+  innerRef: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"]
+} : undefined;
+ToolbarButton.defaultProps = {
+  className: ''
+};
+var styles$2 = function (theme) {
+  return {
+    toolbarBtn: {
+      cursor: 'pointer',
+      color: 'rgba(255, 255, 255, 0.54)'
+    },
+    toolbarBtnSelected: {
+      color: theme.palette.common.white
+    }
+  };
+};
+var ToolbarButton$1 = _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default()(styles$2, {
+  name: 'MuiPickersToolbarButton'
+})(ToolbarButton);
+
+var findClosestEnabledDate = function (_a) {
+  var date = _a.date,
+      utils = _a.utils,
+      minDate = _a.minDate,
+      maxDate = _a.maxDate,
+      disableFuture = _a.disableFuture,
+      disablePast = _a.disablePast,
+      shouldDisableDate = _a.shouldDisableDate;
+  var today = utils.startOfDay(utils.date());
+  minDate = minDate && utils.date(minDate);
+  maxDate = maxDate && utils.date(maxDate);
+
+  if (disablePast && utils.isBefore(minDate, today)) {
+    minDate = today;
+  }
+
+  if (disableFuture && utils.isAfter(maxDate, today)) {
+    maxDate = today;
+  }
+
+  var forward = date;
+  var backward = date;
+
+  if (utils.isBefore(date, minDate)) {
+    forward = utils.date(minDate);
+    backward = null;
+  }
+
+  if (utils.isAfter(date, maxDate)) {
+    if (backward) {
+      backward = utils.date(maxDate);
+    }
+
+    forward = null;
+  }
+
+  while (forward || backward) {
+    if (forward && utils.isAfter(forward, maxDate)) {
+      forward = null;
+    }
+
+    if (backward && utils.isBefore(backward, minDate)) {
+      backward = null;
+    }
+
+    if (forward) {
+      if (!shouldDisableDate(forward)) {
+        return forward;
+      }
+
+      forward = utils.addDays(forward, 1);
+    }
+
+    if (backward) {
+      if (!shouldDisableDate(backward)) {
+        return backward;
+      }
+
+      backward = utils.addDays(backward, -1);
+    }
+  }
+
+  return null;
+};
+
+var ArrowLeftIcon = function (props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_SvgIcon__WEBPACK_IMPORTED_MODULE_7___default.a, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, props), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
+    d: "M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
+    fill: "none",
+    d: "M0 0h24v24H0V0z"
+  }));
+};
+
+var ArrowRightIcon = function (props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_SvgIcon__WEBPACK_IMPORTED_MODULE_7___default.a, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, props), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
+    d: "M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
+    fill: "none",
+    d: "M0 0h24v24H0V0z"
+  }));
+};
+
+var animationDuration = 350;
+
+var SlideTransition = function (_a) {
+  var classes = _a.classes,
+      className = _a.className,
+      children = _a.children,
+      transKey = _a.transKey,
+      slideDirection = _a.slideDirection;
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(react_transition_group__WEBPACK_IMPORTED_MODULE_20__["TransitionGroup"], {
+    className: classnames__WEBPACK_IMPORTED_MODULE_14___default()(classes.transitionContainer, className)
+  }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(react_transition_group__WEBPACK_IMPORTED_MODULE_20__["CSSTransition"], {
+    key: transKey,
+    mountOnEnter: true,
+    unmountOnExit: true,
+    timeout: animationDuration,
+    children: children,
+    classNames: {
+      enter: classes["slideEnter-" + slideDirection],
+      enterActive: classes.slideEnterActive,
+      exit: classes.slideExit,
+      exitActive: classes["slideExitActiveLeft-" + slideDirection]
+    }
+  }));
+};
+
+ true ? SlideTransition.propTypes = {
+  children: prop_types__WEBPACK_IMPORTED_MODULE_2__["node"].isRequired,
+  className: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"],
+  slideDirection: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["oneOf"])(['left', 'right']).isRequired,
+  transKey: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"].isRequired,
+  innerRef: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"]
+} : undefined;
+var styles$3 = function (theme) {
+  var slideTransition = theme.transitions.create('transform', {
+    duration: animationDuration,
+    easing: 'cubic-bezier(0.35, 0.8, 0.4, 1)'
+  });
+  return _material_ui_core_styles_createStyles__WEBPACK_IMPORTED_MODULE_16___default()({
+    transitionContainer: {
+      display: 'block',
+      position: 'relative',
+      '& > *': {
+        position: 'absolute',
+        top: 0,
+        right: 0,
+        left: 0
+      }
+    },
+    'slideEnter-left': {
+      willChange: 'transform',
+      transform: 'translate(100%)'
+    },
+    'slideEnter-right': {
+      willChange: 'transform',
+      transform: 'translate(-100%)'
+    },
+    slideEnterActive: {
+      transform: 'translate(0%)',
+      transition: slideTransition
+    },
+    slideExit: {
+      transform: 'translate(0%)'
+    },
+    'slideExitActiveLeft-left': {
+      willChange: 'transform',
+      transform: 'translate(-200%)',
+      transition: slideTransition
+    },
+    'slideExitActiveLeft-right': {
+      willChange: 'transform',
+      transform: 'translate(200%)',
+      transition: slideTransition
+    }
+  });
+};
+var SlideTransition$1 = _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default()(styles$3, {
+  name: 'MuiPickersSlideTransition'
+})(SlideTransition);
+
+var CalendarHeader = function (_a) {
+  var classes = _a.classes,
+      theme = _a.theme,
+      currentMonth = _a.currentMonth,
+      onMonthChange = _a.onMonthChange,
+      leftArrowIcon = _a.leftArrowIcon,
+      rightArrowIcon = _a.rightArrowIcon,
+      disablePrevMonth = _a.disablePrevMonth,
+      disableNextMonth = _a.disableNextMonth,
+      utils = _a.utils,
+      slideDirection = _a.slideDirection;
+  var rtl = theme.direction === 'rtl';
+
+  var selectNextMonth = function () {
+    return onMonthChange(utils.getNextMonth(currentMonth), 'left');
+  };
+
+  var selectPreviousMonth = function () {
+    return onMonthChange(utils.getPreviousMonth(currentMonth), 'right');
+  };
+
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", null, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+    className: classes.switchHeader
+  }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    disabled: disablePrevMonth,
+    onClick: selectPreviousMonth,
+    className: classes.iconButton
+  }, rtl ? rightArrowIcon : leftArrowIcon), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(SlideTransition$1, {
+    slideDirection: slideDirection,
+    transKey: currentMonth.toString(),
+    className: classes.transitionContainer
+  }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_19___default.a, {
+    align: "center",
+    variant: "body1"
+  }, utils.getCalendarHeaderText(currentMonth))), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    disabled: disableNextMonth,
+    onClick: selectNextMonth,
+    className: classes.iconButton
+  }, rtl ? leftArrowIcon : rightArrowIcon)), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+    className: classes.daysHeader
+  }, utils.getWeekdays().map(function (day, index) {
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_19___default.a, {
+      key: index,
+      variant: "caption",
+      className: classes.dayLabel
+    }, day);
+  })));
+};
+ true ? CalendarHeader.propTypes = {
+  currentMonth: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"].isRequired,
+  onMonthChange: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired,
+  leftArrowIcon: prop_types__WEBPACK_IMPORTED_MODULE_2__["node"],
+  rightArrowIcon: prop_types__WEBPACK_IMPORTED_MODULE_2__["node"],
+  disablePrevMonth: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+  disableNextMonth: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+  slideDirection: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["oneOf"])(['right', 'left']).isRequired,
+  innerRef: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"]
+} : undefined;
+CalendarHeader.defaultProps = {
+  leftArrowIcon: Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ArrowLeftIcon, null),
+  rightArrowIcon: Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ArrowRightIcon, null),
+  disablePrevMonth: false,
+  disableNextMonth: false
+};
+var styles$4 = function (theme) {
+  return _material_ui_core_styles_createStyles__WEBPACK_IMPORTED_MODULE_16___default()({
+    switchHeader: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginTop: theme.spacing.unit / 2,
+      marginBottom: theme.spacing.unit
+    },
+    transitionContainer: {
+      width: '100%',
+      height: 20
+    },
+    iconButton: {
+      zIndex: 2,
+      backgroundColor: theme.palette.background.paper,
+      '& > *': {
+        // label
+        backgroundColor: theme.palette.background.paper,
+        '& > *': {
+          // icon
+          zIndex: 1,
+          overflow: 'visible'
+        }
+      }
+    },
+    daysHeader: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      maxHeight: 16
+    },
+    dayLabel: {
+      width: 36,
+      margin: '0 2px',
+      textAlign: 'center',
+      color: theme.palette.text.hint
+    }
+  });
+};
+var CalendarHeader$1 = _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default()(styles$4, {
+  withTheme: true,
+  name: 'MuiPickersCalendarHeader'
+})(withUtils()(CalendarHeader));
+
+var Day =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(Day, _super);
+
+  function Day() {
+    return _super !== null && _super.apply(this, arguments) || this;
+  }
+
+  Day.prototype.render = function () {
+    var _a;
+
+    var _b = this.props,
+        children = _b.children,
+        classes = _b.classes,
+        disabled = _b.disabled,
+        hidden = _b.hidden,
+        current = _b.current,
+        selected = _b.selected,
+        other = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(_b, ["children", "classes", "disabled", "hidden", "current", "selected"]);
+
+    var className = classnames__WEBPACK_IMPORTED_MODULE_14___default()(classes.day, (_a = {}, _a[classes.hidden] = hidden, _a[classes.current] = current, _a[classes.selected] = selected, _a[classes.disabled] = disabled, _a));
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_4___default.a, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      className: className,
+      tabIndex: hidden || disabled ? -1 : 0
+    }, other), children);
+  };
+
+   true ? Day.propTypes = {
+    children: prop_types__WEBPACK_IMPORTED_MODULE_2__["node"].isRequired,
+    classes: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"].isRequired,
+    current: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    disabled: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    hidden: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    selected: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    innerRef: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"]
+  } : undefined;
+  Day.defaultProps = {
+    disabled: false,
+    hidden: false,
+    current: false,
+    selected: false
+  };
+  return Day;
+}(react__WEBPACK_IMPORTED_MODULE_1__["PureComponent"]);
+
+var styles$5 = function (theme) {
+  return _material_ui_core_styles_createStyles__WEBPACK_IMPORTED_MODULE_16___default()({
+    day: {
+      width: 36,
+      height: 36,
+      fontSize: theme.typography.caption.fontSize,
+      margin: '0 2px',
+      color: theme.palette.text.primary,
+      fontWeight: theme.typography.fontWeightMedium,
+      padding: 0
+    },
+    hidden: {
+      opacity: 0,
+      pointerEvents: 'none'
+    },
+    current: {
+      color: theme.palette.primary.main,
+      fontWeight: 600
+    },
+    selected: {
+      color: theme.palette.common.white,
+      backgroundColor: theme.palette.primary.main,
+      fontWeight: theme.typography.fontWeightMedium,
+      '&:hover': {
+        backgroundColor: theme.palette.primary.main
+      }
+    },
+    disabled: {
+      pointerEvents: 'none',
+      color: theme.palette.text.hint
+    }
+  });
+};
+var Day$1 = _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default()(styles$5, {
+  name: 'MuiPickersDay'
+})(Day);
+
+var DayWrapper =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(DayWrapper, _super);
+
+  function DayWrapper() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.handleClick = function () {
+      _this.props.onSelect(_this.props.value);
+    };
+
+    return _this;
+  }
+
+  DayWrapper.prototype.render = function () {
+    var _a = this.props,
+        children = _a.children,
+        value = _a.value,
+        dayInCurrentMonth = _a.dayInCurrentMonth,
+        disabled = _a.disabled,
+        onSelect = _a.onSelect,
+        other = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(_a, ["children", "value", "dayInCurrentMonth", "disabled", "onSelect"]);
+
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      onClick: dayInCurrentMonth && !disabled ? this.handleClick : undefined,
+      onKeyPress: dayInCurrentMonth && !disabled ? this.handleClick : undefined,
+      role: "presentation"
+    }, other), children);
+  };
+
+   true ? DayWrapper.propTypes = {
+    children: prop_types__WEBPACK_IMPORTED_MODULE_2__["node"].isRequired,
+    dayInCurrentMonth: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    disabled: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    onSelect: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired,
+    value: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"].isRequired
+  } : undefined;
+  DayWrapper.defaultProps = {
+    dayInCurrentMonth: true,
+    disabled: false
+  };
+  return DayWrapper;
+}(react__WEBPACK_IMPORTED_MODULE_1__["PureComponent"]);
+
+var Calendar =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(Calendar, _super);
+
+  function Calendar() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.state = {
+      slideDirection: 'left',
+      currentMonth: _this.props.utils.startOfMonth(_this.props.date)
+    };
+
+    _this.onDateSelect = function (day, isFinish) {
+      if (isFinish === void 0) {
+        isFinish = true;
+      }
+
+      var _a = _this.props,
+          date = _a.date,
+          utils = _a.utils;
+
+      _this.props.onChange(utils.mergeDateAndTime(day, date), isFinish);
+    };
+
+    _this.handleChangeMonth = function (newMonth, slideDirection) {
+      _this.setState({
+        currentMonth: newMonth,
+        slideDirection: slideDirection
+      });
+    };
+
+    _this.validateMinMaxDate = function (day) {
+      var _a = _this.props,
+          minDate = _a.minDate,
+          maxDate = _a.maxDate,
+          utils = _a.utils;
+      return minDate && utils.isBeforeDay(day, utils.date(minDate)) || maxDate && utils.isAfterDay(day, utils.date(maxDate));
+    };
+
+    _this.shouldDisablePrevMonth = function () {
+      var _a = _this.props,
+          utils = _a.utils,
+          disablePast = _a.disablePast,
+          minDate = _a.minDate;
+      var now = utils.date();
+      return !utils.isBefore(utils.startOfMonth(disablePast && utils.isAfter(now, minDate) ? now : utils.date(minDate)), _this.state.currentMonth);
+    };
+
+    _this.shouldDisableNextMonth = function () {
+      var _a = _this.props,
+          utils = _a.utils,
+          disableFuture = _a.disableFuture,
+          maxDate = _a.maxDate;
+      var now = utils.date();
+      return !utils.isAfter(utils.startOfMonth(disableFuture && utils.isBefore(now, maxDate) ? now : utils.date(maxDate)), _this.state.currentMonth);
+    };
+
+    _this.shouldDisableDate = function (day) {
+      var _a = _this.props,
+          disablePast = _a.disablePast,
+          disableFuture = _a.disableFuture,
+          shouldDisableDate = _a.shouldDisableDate,
+          utils = _a.utils;
+      return Boolean(disableFuture && utils.isAfterDay(day, utils.date()) || disablePast && utils.isBeforeDay(day, utils.date()) || _this.validateMinMaxDate(day) || shouldDisableDate && shouldDisableDate(day));
+    };
+
+    _this.moveToDay = function (day) {
+      if (day && !_this.shouldDisableDate(day)) {
+        _this.onDateSelect(day, false);
+      }
+    };
+
+    _this.handleKeyDown = function (event) {
+      var _a = _this.props,
+          theme = _a.theme,
+          date = _a.date,
+          utils = _a.utils;
+
+      switch (keycode__WEBPACK_IMPORTED_MODULE_3___default()(event)) {
+        case 'up':
+          _this.moveToDay(utils.addDays(date, -7));
+
+          break;
+
+        case 'down':
+          _this.moveToDay(utils.addDays(date, 7));
+
+          break;
+
+        case 'left':
+          theme.direction === 'ltr' ? _this.moveToDay(utils.addDays(date, -1)) : _this.moveToDay(utils.addDays(date, 1));
+          break;
+
+        case 'right':
+          theme.direction === 'ltr' ? _this.moveToDay(utils.addDays(date, 1)) : _this.moveToDay(utils.addDays(date, -1));
+          break;
+
+        default:
+          // if keycode is not handled, stop execution
+          return;
+      } // if event was handled prevent other side effects (e.g. page scroll)
+
+
+      event.preventDefault();
+    };
+
+    _this.renderWeeks = function () {
+      var utils = _this.props.utils;
+      var currentMonth = _this.state.currentMonth;
+      var weeks = utils.getWeekArray(currentMonth);
+      return weeks.map(function (week) {
+        return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+          key: "week-" + week[0].toString(),
+          className: _this.props.classes.week
+        }, _this.renderDays(week));
+      });
+    };
+
+    _this.renderDays = function (week) {
+      var _a = _this.props,
+          date = _a.date,
+          renderDay = _a.renderDay,
+          utils = _a.utils;
+      var now = utils.date();
+      var selectedDate = utils.startOfDay(date);
+      var currentMonthNumber = utils.getMonth(_this.state.currentMonth);
+      return week.map(function (day) {
+        var disabled = _this.shouldDisableDate(day);
+
+        var dayInCurrentMonth = utils.getMonth(day) === currentMonthNumber;
+        var dayComponent = Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(Day$1, {
+          disabled: disabled,
+          current: utils.isSameDay(day, now),
+          hidden: !dayInCurrentMonth,
+          selected: utils.isSameDay(selectedDate, day)
+        }, utils.getDayText(day));
+
+        if (renderDay) {
+          dayComponent = renderDay(day, selectedDate, dayInCurrentMonth, dayComponent);
+        }
+
+        return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DayWrapper, {
+          value: day,
+          key: day.toString(),
+          disabled: disabled,
+          dayInCurrentMonth: dayInCurrentMonth,
+          onSelect: _this.onDateSelect
+        }, dayComponent);
+      });
+    };
+
+    return _this;
+  }
+
+  Calendar.getDerivedStateFromProps = function (nextProps, state) {
+    if (!nextProps.utils.isEqual(nextProps.date, state.lastDate)) {
+      return {
+        lastDate: nextProps.date,
+        currentMonth: nextProps.utils.startOfMonth(nextProps.date)
+      };
+    }
+
+    return null;
+  };
+
+  Calendar.prototype.componentDidMount = function () {
+    var _a = this.props,
+        date = _a.date,
+        minDate = _a.minDate,
+        maxDate = _a.maxDate,
+        utils = _a.utils,
+        disablePast = _a.disablePast,
+        disableFuture = _a.disableFuture;
+
+    if (this.shouldDisableDate(date)) {
+      var closestEnabledDate = findClosestEnabledDate({
+        date: date,
+        utils: utils,
+        minDate: minDate,
+        maxDate: maxDate,
+        disablePast: Boolean(disablePast),
+        disableFuture: Boolean(disableFuture),
+        shouldDisableDate: this.shouldDisableDate
+      });
+      this.onDateSelect(closestEnabledDate || minDate, false);
+    }
+  };
+
+  Calendar.prototype.render = function () {
+    var _a = this.state,
+        currentMonth = _a.currentMonth,
+        slideDirection = _a.slideDirection;
+    var _b = this.props,
+        classes = _b.classes,
+        allowKeyboardControl = _b.allowKeyboardControl;
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, allowKeyboardControl && Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(react_event_listener__WEBPACK_IMPORTED_MODULE_15___default.a, {
+      target: "window",
+      onKeyDown: this.handleKeyDown
+    }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(CalendarHeader$1, {
+      slideDirection: slideDirection,
+      currentMonth: currentMonth,
+      onMonthChange: this.handleChangeMonth,
+      leftArrowIcon: this.props.leftArrowIcon,
+      rightArrowIcon: this.props.rightArrowIcon,
+      disablePrevMonth: this.shouldDisablePrevMonth(),
+      disableNextMonth: this.shouldDisableNextMonth()
+    }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(SlideTransition$1, {
+      slideDirection: slideDirection,
+      transKey: currentMonth.toString(),
+      className: classes.transitionContainer
+    }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", null, this.renderWeeks())));
+  };
+
+   true ? Calendar.propTypes = {
+    date: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"].isRequired,
+    minDate: DomainPropTypes.date,
+    maxDate: DomainPropTypes.date,
+    onChange: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired,
+    disablePast: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    disableFuture: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    renderDay: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"],
+    shouldDisableDate: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"],
+    utils: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"].isRequired,
+    allowKeyboardControl: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    innerRef: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"]
+  } : undefined;
+  Calendar.defaultProps = {
+    minDate: '1900-01-01',
+    maxDate: '2100-01-01',
+    disablePast: false,
+    disableFuture: false,
+    allowKeyboardControl: true
+  };
+  return Calendar;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+var styles$6 = function (theme) {
+  return {
+    transitionContainer: {
+      minHeight: 36 * 6,
+      marginTop: theme.spacing.unit * 1.5
+    },
+    week: {
+      display: 'flex',
+      justifyContent: 'center'
+    }
+  };
+};
+var Calendar$1 = _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default()(styles$6, {
+  name: 'MuiPickersCalendar',
+  withTheme: true
+})(withUtils()(Calendar));
+
+var Year =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(Year, _super);
+
+  function Year() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.handleClick = function () {
+      _this.props.onSelect(_this.props.value);
+    };
+
+    return _this;
+  }
+
+  Year.prototype.render = function () {
+    var _a;
+
+    var _b = this.props,
+        classes = _b.classes,
+        selected = _b.selected,
+        disabled = _b.disabled,
+        value = _b.value,
+        children = _b.children,
+        other = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(_b, ["classes", "selected", "disabled", "value", "children"]);
+
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_19___default.a, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      role: "button",
+      component: "div",
+      className: classnames__WEBPACK_IMPORTED_MODULE_14___default()(classes.root, (_a = {}, _a[classes.selected] = selected, _a[classes.disabled] = disabled, _a)),
+      tabIndex: disabled ? -1 : 0,
+      onClick: this.handleClick,
+      onKeyPress: this.handleClick,
+      color: selected ? 'primary' : 'default',
+      variant: selected ? 'h5' : 'subtitle1'
+    }, other), children);
+  };
+
+   true ? Year.propTypes = {
+    children: prop_types__WEBPACK_IMPORTED_MODULE_2__["node"].isRequired,
+    classes: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"].isRequired,
+    disabled: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    onSelect: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired,
+    selected: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    value: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"].isRequired,
+    innerRef: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"]
+  } : undefined;
+  Year.defaultProps = {
+    selected: false,
+    disabled: false
+  };
+  return Year;
+}(react__WEBPACK_IMPORTED_MODULE_1__["PureComponent"]);
+var styles$7 = function (theme) {
+  return _material_ui_core_styles_createStyles__WEBPACK_IMPORTED_MODULE_16___default()({
+    root: {
+      height: theme.spacing.unit * 5,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      cursor: 'pointer',
+      outline: 'none',
+      '&:focus': {
+        color: theme.palette.primary.main,
+        fontWeight: theme.typography.fontWeightMedium
+      }
+    },
+    selected: {
+      margin: '10px 0',
+      fontWeight: theme.typography.fontWeightMedium
+    },
+    disabled: {
+      pointerEvents: 'none',
+      color: theme.palette.text.hint
+    }
+  });
+};
+var Year$1 = _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default()(styles$7, {
+  name: 'MuiPickersYear'
+})(Year);
+
+var YearSelection =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(YearSelection, _super);
+
+  function YearSelection() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.selectedYearRef = undefined;
+
+    _this.getSelectedYearRef = function (ref) {
+      _this.selectedYearRef = ref;
+    };
+
+    _this.scrollToCurrentYear = function (domNode) {
+      var animateYearScrolling = _this.props.animateYearScrolling;
+      var currentYearElement = Object(react_dom__WEBPACK_IMPORTED_MODULE_21__["findDOMNode"])(domNode);
+
+      if (currentYearElement && currentYearElement.scrollIntoView) {
+        if (animateYearScrolling) {
+          setTimeout(function () {
+            return currentYearElement.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }, 100);
+        } else {
+          currentYearElement.scrollIntoView();
+        }
+      }
+    };
+
+    _this.onYearSelect = function (year) {
+      var _a = _this.props,
+          date = _a.date,
+          onChange = _a.onChange,
+          utils = _a.utils;
+      var newDate = utils.setYear(date, year);
+      onChange(newDate);
+    };
+
+    return _this;
+  }
+
+  YearSelection.prototype.componentDidMount = function () {
+    if (this.selectedYearRef) {
+      this.scrollToCurrentYear(this.selectedYearRef);
+    }
+  };
+
+  YearSelection.prototype.render = function () {
+    var _this = this;
+
+    var _a = this.props,
+        minDate = _a.minDate,
+        maxDate = _a.maxDate,
+        date = _a.date,
+        classes = _a.classes,
+        disablePast = _a.disablePast,
+        disableFuture = _a.disableFuture,
+        utils = _a.utils;
+    var currentYear = utils.getYear(date);
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+      className: classes.container
+    }, utils.getYearRange(minDate, maxDate).map(function (year) {
+      var yearNumber = utils.getYear(year);
+      var selected = yearNumber === currentYear;
+      return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(Year$1, {
+        key: utils.getYearText(year),
+        selected: selected,
+        value: yearNumber,
+        onSelect: _this.onYearSelect,
+        ref: selected ? _this.getSelectedYearRef : undefined,
+        disabled: disablePast && utils.isBeforeYear(year, utils.date()) || disableFuture && utils.isAfterYear(year, utils.date())
+      }, utils.getYearText(year));
+    }));
+  };
+
+   true ? YearSelection.propTypes = {
+    date: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["shape"])({}).isRequired,
+    minDate: DomainPropTypes.date,
+    maxDate: DomainPropTypes.date,
+    onChange: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired,
+    animateYearScrolling: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    innerRef: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"]
+  } : undefined;
+  YearSelection.defaultProps = {
+    animateYearScrolling: false,
+    minDate: '1900-01-01',
+    maxDate: '2100-01-01'
+  };
+  return YearSelection;
+}(react__WEBPACK_IMPORTED_MODULE_1__["PureComponent"]);
+var styles$8 = _material_ui_core_styles_createStyles__WEBPACK_IMPORTED_MODULE_16___default()({
+  container: {
+    maxHeight: 300,
+    overflowY: 'auto',
+    justifyContent: 'center'
+  }
+});
+var YearSelection$1 = _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default()(styles$8, {
+  name: 'MuiPickersYearSelection'
+})(withUtils()(YearSelection));
+
+var DatePicker =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(DatePicker, _super);
+
+  function DatePicker() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.state = {
+      showYearSelection: Boolean(_this.props.openToYearSelection)
+    };
+
+    _this.handleYearSelect = function (date) {
+      _this.props.onChange(date, false);
+
+      _this.openCalendar();
+    };
+
+    _this.openYearSelection = function () {
+      _this.setState({
+        showYearSelection: true
+      });
+    };
+
+    _this.openCalendar = function () {
+      _this.setState({
+        showYearSelection: false
+      });
+    };
+
+    return _this;
+  }
+
+  Object.defineProperty(DatePicker.prototype, "date", {
+    get: function () {
+      return this.props.date;
+    },
+    enumerable: true,
+    configurable: true
+  });
+  Object.defineProperty(DatePicker.prototype, "minDate", {
+    get: function () {
+      return this.props.utils.date(this.props.minDate);
+    },
+    enumerable: true,
+    configurable: true
+  });
+  Object.defineProperty(DatePicker.prototype, "maxDate", {
+    get: function () {
+      return this.props.utils.date(this.props.maxDate);
+    },
+    enumerable: true,
+    configurable: true
+  });
+
+  DatePicker.prototype.render = function () {
+    var showYearSelection = this.state.showYearSelection;
+    var _a = this.props,
+        disablePast = _a.disablePast,
+        disableFuture = _a.disableFuture,
+        onChange = _a.onChange,
+        animateYearScrolling = _a.animateYearScrolling,
+        leftArrowIcon = _a.leftArrowIcon,
+        rightArrowIcon = _a.rightArrowIcon,
+        renderDay = _a.renderDay,
+        utils = _a.utils,
+        shouldDisableDate = _a.shouldDisableDate,
+        allowKeyboardControl = _a.allowKeyboardControl;
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(PickerToolbar$1, null, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+      variant: "subtitle1",
+      onClick: this.openYearSelection,
+      selected: showYearSelection,
+      label: utils.getYearText(this.date)
+    }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+      variant: "h4",
+      onClick: this.openCalendar,
+      selected: !showYearSelection,
+      label: utils.getDatePickerHeaderText(this.date)
+    })), this.props.children, showYearSelection ? Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(YearSelection$1, {
+      date: this.date,
+      onChange: this.handleYearSelect,
+      minDate: this.minDate,
+      maxDate: this.maxDate,
+      disablePast: disablePast,
+      disableFuture: disableFuture,
+      animateYearScrolling: animateYearScrolling
+    }) : Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(Calendar$1, {
+      date: this.date,
+      onChange: onChange,
+      disablePast: disablePast,
+      disableFuture: disableFuture,
+      minDate: this.minDate,
+      maxDate: this.maxDate,
+      leftArrowIcon: leftArrowIcon,
+      rightArrowIcon: rightArrowIcon,
+      renderDay: renderDay,
+      shouldDisableDate: shouldDisableDate,
+      allowKeyboardControl: allowKeyboardControl
+    }));
+  };
+
+   true ? DatePicker.propTypes = {
+    openToYearSelection: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"]
+  } : undefined;
+  DatePicker.defaultProps = {
+    minDate: '1900-01-01',
+    maxDate: '2100-01-01',
+    openToYearSelection: false
+  };
+  return DatePicker;
+}(react__WEBPACK_IMPORTED_MODULE_1__["PureComponent"]);
+var DatePicker$1 = withUtils()(DatePicker);
+
+var DatePickerModal = function (props) {
+  var allowKeyboardControl = props.allowKeyboardControl,
+      animateYearScrolling = props.animateYearScrolling,
+      autoOk = props.autoOk,
+      disableFuture = props.disableFuture,
+      disablePast = props.disablePast,
+      format = props.format,
+      forwardedRef = props.forwardedRef,
+      labelFunc = props.labelFunc,
+      leftArrowIcon = props.leftArrowIcon,
+      maxDate = props.maxDate,
+      minDate = props.minDate,
+      initialFocusedDate = props.initialFocusedDate,
+      onChange = props.onChange,
+      openToYearSelection = props.openToYearSelection,
+      renderDay = props.renderDay,
+      rightArrowIcon = props.rightArrowIcon,
+      shouldDisableDate = props.shouldDisableDate,
+      value = props.value,
+      other = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(props, ["allowKeyboardControl", "animateYearScrolling", "autoOk", "disableFuture", "disablePast", "format", "forwardedRef", "labelFunc", "leftArrowIcon", "maxDate", "minDate", "initialFocusedDate", "onChange", "openToYearSelection", "renderDay", "rightArrowIcon", "shouldDisableDate", "value"]);
+
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(BasePicker$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, props), function (_a) {
+    var date = _a.date,
+        utils = _a.utils,
+        handleAccept = _a.handleAccept,
+        handleChange = _a.handleChange,
+        handleClear = _a.handleClear,
+        handleDismiss = _a.handleDismiss,
+        handleSetTodayDate = _a.handleSetTodayDate,
+        handleTextFieldChange = _a.handleTextFieldChange,
+        isAccepted = _a.isAccepted;
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ModalWrapper, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      disableFuture: disableFuture,
+      disablePast: disablePast,
+      format: format || utils.dateFormat,
+      labelFunc: labelFunc,
+      maxDate: maxDate,
+      minDate: minDate,
+      onAccept: handleAccept,
+      onChange: handleTextFieldChange,
+      onClear: handleClear,
+      onDismiss: handleDismiss,
+      onSetToday: handleSetTodayDate,
+      ref: forwardedRef,
+      value: value,
+      isAccepted: isAccepted
+    }, other), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DatePicker$1, {
+      date: date,
+      allowKeyboardControl: allowKeyboardControl,
+      animateYearScrolling: animateYearScrolling,
+      disableFuture: disableFuture,
+      disablePast: disablePast,
+      leftArrowIcon: leftArrowIcon,
+      maxDate: maxDate,
+      minDate: minDate,
+      onChange: handleChange,
+      openToYearSelection: openToYearSelection,
+      renderDay: renderDay,
+      rightArrowIcon: rightArrowIcon,
+      shouldDisableDate: shouldDisableDate
+    }));
+  });
+};
+var DatePickerModal$1 = Object(react__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function (props, ref) {
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DatePickerModal, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, props, {
+    forwardedRef: ref
+  }));
+});
+
+var InlineWrapper =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(InlineWrapper, _super);
+
+  function InlineWrapper() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.state = {
+      anchorEl: null
+    };
+
+    _this.open = function (e) {
+      _this.setState({
+        anchorEl: e.currentTarget
+      });
+
+      if (_this.props.onOpen) {
+        _this.props.onOpen();
+      }
+    };
+
+    _this.close = function () {
+      _this.setState({
+        anchorEl: null
+      });
+
+      if (_this.props.value !== null) {
+        _this.props.handleAccept();
+      }
+
+      if (_this.props.onClose) {
+        _this.props.onClose();
+      }
+    };
+
+    _this.handleKeyDown = function (event) {
+      switch (keycode__WEBPACK_IMPORTED_MODULE_3___default()(event)) {
+        case 'enter':
+          {
+            _this.props.handleAccept();
+
+            _this.close();
+
+            break;
+          }
+
+        default:
+          // if keycode is not handled, stop execution
+          return;
+      } // if event was handled prevent other side effects
+
+
+      event.preventDefault();
+    };
+
+    return _this;
+  }
+
+  InlineWrapper.getDerivedStateFromProps = function (nextProps) {
+    // only if accept = true close the popover
+    if (nextProps.isAccepted) {
+      if (nextProps.onClose) {
+        nextProps.onClose();
+      }
+
+      return {
+        anchorEl: null
+      };
+    }
+
+    return null;
+  };
+
+  InlineWrapper.prototype.render = function () {
+    var _a = this.props,
+        value = _a.value,
+        format = _a.format,
+        children = _a.children,
+        onOpen = _a.onOpen,
+        onClose = _a.onClose,
+        PopoverProps = _a.PopoverProps,
+        isAccepted = _a.isAccepted,
+        keyboard = _a.keyboard,
+        onlyCalendar = _a.onlyCalendar,
+        classes = _a.classes,
+        handleAccept = _a.handleAccept,
+        other = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(_a, ["value", "format", "children", "onOpen", "onClose", "PopoverProps", "isAccepted", "keyboard", "onlyCalendar", "classes", "handleAccept"]);
+
+    var isOpen = Boolean(this.state.anchorEl);
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, isOpen && Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(react_event_listener__WEBPACK_IMPORTED_MODULE_15___default.a, {
+      target: "window",
+      onKeyDown: this.handleKeyDown
+    }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DateTextField$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      value: value,
+      format: format,
+      onClick: this.open,
+      keyboard: keyboard
+    }, other)), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Popover__WEBPACK_IMPORTED_MODULE_22___default.a, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      id: "picker-popover",
+      open: isOpen,
+      anchorEl: this.state.anchorEl,
+      onClose: this.close,
+      classes: {
+        paper: classes.popoverPaper
+      },
+      anchorOrigin: {
+        vertical: 'bottom',
+        horizontal: keyboard ? 'right' : 'center'
+      },
+      transformOrigin: {
+        vertical: 'top',
+        horizontal: keyboard ? 'right' : 'center'
+      },
+      children: children
+    }, PopoverProps)));
+  };
+
+   true ? InlineWrapper.propTypes = {
+    onlyCalendar: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    onOpen: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"],
+    onClose: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"],
+    PopoverProps: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"]
+  } : undefined;
+  InlineWrapper.defaultProps = {
+    value: new Date(),
+    onlyCalendar: false,
+    isAccepted: false
+  };
+  return InlineWrapper;
+}(react__WEBPACK_IMPORTED_MODULE_1__["PureComponent"]);
+var styles$9 = {
+  popoverPaper: {
+    width: DIALOG_WIDTH,
+    paddingBottom: 8
+  }
+};
+var InlineWrapper$1 = _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default()(styles$9)(InlineWrapper);
+
+var DatePickerInline = function (props) {
+  var allowKeyboardControl = props.allowKeyboardControl,
+      animateYearScrolling = props.animateYearScrolling,
+      disableFuture = props.disableFuture,
+      disablePast = props.disablePast,
+      format = props.format,
+      forwardedRef = props.forwardedRef,
+      labelFunc = props.labelFunc,
+      leftArrowIcon = props.leftArrowIcon,
+      maxDate = props.maxDate,
+      minDate = props.minDate,
+      initialFocusedDate = props.initialFocusedDate,
+      onChange = props.onChange,
+      openToYearSelection = props.openToYearSelection,
+      renderDay = props.renderDay,
+      rightArrowIcon = props.rightArrowIcon,
+      shouldDisableDate = props.shouldDisableDate,
+      value = props.value,
+      autoOk = props.autoOk,
+      onlyCalendar = props.onlyCalendar,
+      other = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(props, ["allowKeyboardControl", "animateYearScrolling", "disableFuture", "disablePast", "format", "forwardedRef", "labelFunc", "leftArrowIcon", "maxDate", "minDate", "initialFocusedDate", "onChange", "openToYearSelection", "renderDay", "rightArrowIcon", "shouldDisableDate", "value", "autoOk", "onlyCalendar"]);
+
+  var ComponentToShow = onlyCalendar ? Calendar$1 : DatePicker$1;
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(BasePicker$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, props, {
+    autoOk: true
+  }), function (_a) {
+    var date = _a.date,
+        utils = _a.utils,
+        isAccepted = _a.isAccepted,
+        handleChange = _a.handleChange,
+        handleTextFieldChange = _a.handleTextFieldChange,
+        handleAccept = _a.handleAccept;
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(InlineWrapper$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      disableFuture: disableFuture,
+      disablePast: disablePast,
+      format: format || utils.dateFormat,
+      labelFunc: labelFunc,
+      maxDate: maxDate,
+      minDate: minDate,
+      onChange: handleTextFieldChange,
+      innerRef: forwardedRef,
+      value: value,
+      isAccepted: isAccepted,
+      handleAccept: handleAccept
+    }, other), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ComponentToShow, {
+      date: date,
+      allowKeyboardControl: allowKeyboardControl,
+      animateYearScrolling: animateYearScrolling,
+      disableFuture: disableFuture,
+      disablePast: disablePast,
+      leftArrowIcon: leftArrowIcon,
+      maxDate: maxDate,
+      minDate: minDate,
+      onChange: handleChange,
+      openToYearSelection: openToYearSelection,
+      renderDay: renderDay,
+      rightArrowIcon: rightArrowIcon,
+      shouldDisableDate: shouldDisableDate
+    }));
+  });
+};
+var DatePickerInline$1 = Object(react__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function (props, ref) {
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DatePickerInline, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, props, {
+    forwardedRef: ref
+  }));
+});
+
+var center = {
+  x: 260 / 2,
+  y: 260 / 2
+};
+var basePoint = {
+  x: center.x,
+  y: 0
+};
+var cx = basePoint.x - center.x;
+var cy = basePoint.y - center.y;
+
+var rad2deg = function (rad) {
+  return rad * 57.29577951308232;
+};
+
+var getAngleValue = function (step, offsetX, offsetY) {
+  var x = offsetX - center.x;
+  var y = offsetY - center.y;
+  var atan = Math.atan2(cx, cy) - Math.atan2(x, y);
+  var deg = rad2deg(atan);
+  deg = Math.round(deg / step) * step;
+  deg %= 360;
+  var value = Math.floor(deg / step) || 0;
+  var delta = Math.pow(x, 2) + Math.pow(y, 2);
+  var distance = Math.sqrt(delta);
+  return {
+    value: value,
+    distance: distance
+  };
+};
+
+var getHours = function (offsetX, offsetY, ampm) {
+  // tslint:disable-next-line
+  var _a = getAngleValue(30, offsetX, offsetY),
+      value = _a.value,
+      distance = _a.distance;
+
+  value = value || 12;
+
+  if (!ampm) {
+    if (distance < 90) {
+      value += 12;
+      value %= 24;
+    }
+  } else {
+    value %= 12;
+  }
+
+  return value;
+};
+var getMinutes = function (offsetX, offsetY, step) {
+  if (step === void 0) {
+    step = 6;
+  }
+
+  var value = getAngleValue(step, offsetX, offsetY).value;
+  return value;
+};
+var convertToMeridiem = function (time, meridiem, ampm, utils) {
+  if (ampm) {
+    var currentMeridiem = utils.getHours(time) >= 12 ? 'pm' : 'am';
+
+    if (currentMeridiem !== meridiem) {
+      var hours = meridiem === 'am' ? utils.getHours(time) - 12 : utils.getHours(time) + 12;
+      return utils.setHours(time, hours);
+    }
+  }
+
+  return time;
+};
+
+var ClockType;
+
+(function (ClockType) {
+  ClockType["HOURS"] = "hours";
+  ClockType["MINUTES"] = "minutes";
+  ClockType["SECONDS"] = "seconds";
+})(ClockType || (ClockType = {}));
+
+var ClockType$1 = ClockType;
+
+var ClockPointer =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(ClockPointer, _super);
+
+  function ClockPointer() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.state = {
+      toAnimateTransform: false,
+      previousType: undefined
+    };
+
+    _this.getAngleStyle = function () {
+      var _a = _this.props,
+          value = _a.value,
+          isInner = _a.isInner,
+          type = _a.type;
+      var max = type === ClockType$1.HOURS ? 12 : 60;
+      var angle = 360 / max * value;
+
+      if (type === ClockType$1.HOURS && value > 12) {
+        angle -= 360; // round up angle to max 360 degrees
+      }
+
+      return {
+        height: isInner ? '26%' : '40%',
+        transform: "rotateZ(" + angle + "deg)"
+      };
+    };
+
+    return _this;
+  }
+
+  ClockPointer.prototype.render = function () {
+    var _a, _b;
+
+    var _c = this.props,
+        classes = _c.classes,
+        hasSelected = _c.hasSelected;
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+      style: this.getAngleStyle(),
+      className: classnames__WEBPACK_IMPORTED_MODULE_14___default()(classes.pointer, (_a = {}, _a[classes.animateTransform] = this.state.toAnimateTransform, _a))
+    }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+      className: classnames__WEBPACK_IMPORTED_MODULE_14___default()(classes.thumb, (_b = {}, _b[classes.noPoint] = hasSelected, _b))
+    }));
+  };
+
+   true ? ClockPointer.propTypes = {
+    value: prop_types__WEBPACK_IMPORTED_MODULE_2__["number"].isRequired,
+    hasSelected: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"].isRequired,
+    isInner: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"].isRequired,
+    type: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["oneOf"])(Object.keys(ClockType$1).map(function (key) {
+      return ClockType$1[key];
+    })).isRequired
+  } : undefined;
+
+  ClockPointer.getDerivedStateFromProps = function (nextProps, state) {
+    if (nextProps.type !== state.previousType) {
+      return {
+        toAnimateTransform: true,
+        previousType: nextProps.type
+      };
+    }
+
+    return {
+      toAnimateTransform: false,
+      previousType: nextProps.type
+    };
+  };
+
+  return ClockPointer;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+var styles$a = function (theme) {
+  return _material_ui_core_styles_createStyles__WEBPACK_IMPORTED_MODULE_16___default()({
+    pointer: {
+      width: 2,
+      backgroundColor: theme.palette.primary.main,
+      position: 'absolute',
+      left: 'calc(50% - 1px)',
+      bottom: '50%',
+      transformOrigin: 'center bottom 0px'
+    },
+    animateTransform: {
+      transition: theme.transitions.create(['transform', 'height'])
+    },
+    thumb: {
+      width: 4,
+      height: 4,
+      backgroundColor: theme.palette.common.white,
+      borderRadius: '100%',
+      position: 'absolute',
+      top: -21,
+      left: -15,
+      border: "14px solid " + theme.palette.primary.main,
+      boxSizing: 'content-box'
+    },
+    noPoint: {
+      backgroundColor: theme.palette.primary.main
+    }
+  });
+};
+var ClockPointer$1 = _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default()(styles$a, {
+  name: 'MuiPickersClockPointer'
+})(ClockPointer);
+
+var Clock =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(Clock, _super);
+
+  function Clock() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.isMoving = false;
+
+    _this.handleTouchMove = function (e) {
+      _this.isMoving = true;
+
+      _this.setTime(e);
+    };
+
+    _this.handleTouchEnd = function (e) {
+      if (_this.isMoving) {
+        _this.setTime(e, true);
+
+        _this.isMoving = false;
+      }
+    };
+
+    _this.handleMove = function (e) {
+      e.preventDefault();
+      e.stopPropagation(); // MouseEvent.which is deprecated, but MouseEvent.buttons is not supported in Safari
+
+      var isButtonPressed = typeof e.buttons === 'undefined' ? e.nativeEvent.which === 1 : e.buttons === 1;
+
+      if (isButtonPressed) {
+        _this.setTime(e.nativeEvent, false);
+      }
+    };
+
+    _this.handleMouseUp = function (e) {
+      if (_this.isMoving) {
+        _this.isMoving = false;
+      }
+
+      _this.setTime(e.nativeEvent, true);
+    };
+
+    _this.hasSelected = function () {
+      var _a = _this.props,
+          type = _a.type,
+          value = _a.value;
+
+      if (type === ClockType$1.HOURS) {
+        return true;
+      }
+
+      return value % 5 === 0;
+    };
+
+    return _this;
+  }
+
+  Clock.prototype.setTime = function (e, isFinish) {
+    if (isFinish === void 0) {
+      isFinish = false;
+    }
+
+    var offsetX = e.offsetX,
+        offsetY = e.offsetY;
+
+    if (typeof offsetX === 'undefined') {
+      var rect = e.target.getBoundingClientRect();
+      offsetX = e.changedTouches[0].clientX - rect.left;
+      offsetY = e.changedTouches[0].clientY - rect.top;
+    }
+
+    var value = this.props.type === ClockType$1.SECONDS || this.props.type === ClockType$1.MINUTES ? getMinutes(offsetX, offsetY) : getHours(offsetX, offsetY, Boolean(this.props.ampm));
+    this.props.onChange(value, isFinish);
+  };
+
+  Clock.prototype.render = function () {
+    var _a = this.props,
+        classes = _a.classes,
+        value = _a.value,
+        children = _a.children,
+        type = _a.type,
+        ampm = _a.ampm;
+    var isPointerInner = !ampm && type === ClockType$1.HOURS && (value < 1 || value > 12);
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+      className: classes.container
+    }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+      className: classes.clock
+    }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+      role: "menu",
+      tabIndex: -1,
+      className: classes.squareMask,
+      onTouchMove: this.handleTouchMove,
+      onTouchEnd: this.handleTouchEnd,
+      onMouseUp: this.handleMouseUp,
+      onMouseMove: this.handleMove
+    }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+      className: classes.pin
+    }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ClockPointer$1, {
+      type: type,
+      value: value,
+      isInner: isPointerInner,
+      hasSelected: this.hasSelected()
+    }), children));
+  };
+
+   true ? Clock.propTypes = {
+    type: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["oneOf"])(Object.keys(ClockType$1).map(function (key) {
+      return ClockType$1[key];
+    })).isRequired,
+    value: prop_types__WEBPACK_IMPORTED_MODULE_2__["number"].isRequired,
+    onChange: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired,
+    children: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["arrayOf"])(prop_types__WEBPACK_IMPORTED_MODULE_2__["node"]).isRequired,
+    ampm: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    innerRef: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"]
+  } : undefined;
+  Clock.defaultProps = {
+    ampm: false
+  };
+  return Clock;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+var styles$b = function (theme) {
+  return _material_ui_core_styles_createStyles__WEBPACK_IMPORTED_MODULE_16___default()({
+    container: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'flex-end',
+      margin: theme.spacing.unit * 4 + "px 0 " + theme.spacing.unit + "px"
+    },
+    clock: {
+      backgroundColor: 'rgba(0,0,0,.07)',
+      borderRadius: '50%',
+      height: 260,
+      width: 260,
+      position: 'relative',
+      pointerEvents: 'none',
+      zIndex: 1
+    },
+    squareMask: {
+      width: '100%',
+      height: '100%',
+      position: 'absolute',
+      pointerEvents: 'auto',
+      outline: 'none',
+      touchActions: 'none',
+      userSelect: 'none',
+      '&:active': {
+        cursor: 'move'
+      }
+    },
+    pin: {
+      width: 6,
+      height: 6,
+      borderRadius: '50%',
+      backgroundColor: theme.palette.primary.main,
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)'
+    }
+  });
+};
+var Clock$1 = _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default()(styles$b, {
+  name: 'MuiPickersClock'
+})(Clock);
+
+var positions = {
+  0: [0, 40],
+  1: [55, 19.6],
+  2: [94.4, 59.5],
+  3: [109, 114],
+  4: [94.4, 168.5],
+  5: [54.5, 208.4],
+  6: [0, 223],
+  7: [-54.5, 208.4],
+  8: [-94.4, 168.5],
+  9: [-109, 114],
+  10: [-94.4, 59.5],
+  11: [-54.5, 19.6],
+  12: [0, 5],
+  13: [36.9, 49.9],
+  14: [64, 77],
+  15: [74, 114],
+  16: [64, 151],
+  17: [37, 178],
+  18: [0, 188],
+  19: [-37, 178],
+  20: [-64, 151],
+  21: [-74, 114],
+  22: [-64, 77],
+  23: [-37, 50]
+};
+
+var ClockNumber =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(ClockNumber, _super);
+
+  function ClockNumber() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.getTransformStyle = function (index) {
+      var position = positions[index];
+      return {
+        transform: "translate(" + position[0] + "px, " + position[1] + "px"
+      };
+    };
+
+    return _this;
+  }
+
+  ClockNumber.prototype.render = function () {
+    var _a;
+
+    var _b = this.props,
+        selected = _b.selected,
+        label = _b.label,
+        index = _b.index,
+        classes = _b.classes,
+        isInner = _b.isInner;
+    var className = classnames__WEBPACK_IMPORTED_MODULE_14___default()(classes.clockNumber, (_a = {}, _a[classes.selected] = selected, _a));
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_19___default.a, {
+      component: "span",
+      className: className,
+      variant: isInner ? 'body2' : 'body1',
+      style: this.getTransformStyle(index)
+    }, label);
+  };
+
+   true ? ClockNumber.propTypes = {
+    index: prop_types__WEBPACK_IMPORTED_MODULE_2__["number"].isRequired,
+    label: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"].isRequired,
+    selected: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"].isRequired,
+    classes: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"].isRequired,
+    isInner: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    innerRef: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"]
+  } : undefined;
+  ClockNumber.defaultProps = {
+    isInner: false
+  };
+  return ClockNumber;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+var styles$c = function (theme) {
+  var size = theme.spacing.unit * 4;
+  return _material_ui_core_styles_createStyles__WEBPACK_IMPORTED_MODULE_16___default()({
+    clockNumber: {
+      width: size,
+      height: size,
+      userSelect: 'none',
+      position: 'absolute',
+      left: "calc(50% - " + size / 2 + "px)",
+      display: 'inline-flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      borderRadius: '50%',
+      color: theme.palette.type === 'light' ? theme.palette.text.primary : theme.palette.text.hint
+    },
+    selected: {
+      color: theme.palette.common.white
+    }
+  });
+};
+var ClockNumber$1 = _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default()(styles$c, {
+  name: 'MuiPickersClockNumber'
+})(ClockNumber);
+
+var getHourNumbers = function (_a) {
+  var ampm = _a.ampm,
+      utils = _a.utils,
+      date = _a.date;
+  var currentHours = utils.getHours(date);
+  var hourNumbers = [];
+  var startHour = ampm ? 1 : 0;
+  var endHour = ampm ? 12 : 23;
+
+  var isSelected = function (hour) {
+    if (ampm) {
+      if (hour === 12) {
+        return currentHours === 12 || currentHours === 0;
+      }
+
+      return currentHours === hour || currentHours - 12 === hour;
+    }
+
+    return currentHours === hour;
+  };
+
+  for (var hour = startHour; hour <= endHour; hour += 1) {
+    var label = hour.toString();
+
+    if (hour === 0) {
+      label = '00';
+    }
+
+    var props = {
+      index: hour,
+      label: utils.formatNumber(label),
+      selected: isSelected(hour),
+      isInner: !ampm && (hour === 0 || hour > 12)
+    };
+    hourNumbers.push(Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ClockNumber$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      key: hour
+    }, props)));
+  }
+
+  return hourNumbers;
+};
+var getMinutesNumbers = function (_a) {
+  var value = _a.value,
+      utils = _a.utils;
+  var f = utils.formatNumber;
+  return [Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ClockNumber$1, {
+    label: f('00'),
+    selected: value === 0,
+    index: 12,
+    key: 12
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ClockNumber$1, {
+    label: f('05'),
+    selected: value === 5,
+    index: 1,
+    key: 1
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ClockNumber$1, {
+    label: f('10'),
+    selected: value === 10,
+    index: 2,
+    key: 2
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ClockNumber$1, {
+    label: f('15'),
+    selected: value === 15,
+    index: 3,
+    key: 3
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ClockNumber$1, {
+    label: f('20'),
+    selected: value === 20,
+    index: 4,
+    key: 4
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ClockNumber$1, {
+    label: f('25'),
+    selected: value === 25,
+    index: 5,
+    key: 5
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ClockNumber$1, {
+    label: f('30'),
+    selected: value === 30,
+    index: 6,
+    key: 6
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ClockNumber$1, {
+    label: f('35'),
+    selected: value === 35,
+    index: 7,
+    key: 7
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ClockNumber$1, {
+    label: f('40'),
+    selected: value === 40,
+    index: 8,
+    key: 8
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ClockNumber$1, {
+    label: f('45'),
+    selected: value === 45,
+    index: 9,
+    key: 9
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ClockNumber$1, {
+    label: f('50'),
+    selected: value === 50,
+    index: 10,
+    key: 10
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ClockNumber$1, {
+    label: f('55'),
+    selected: value === 55,
+    index: 11,
+    key: 11
+  })];
+};
+
+var TimePickerView =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(TimePickerView, _super);
+
+  function TimePickerView() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.getViewProps = function () {
+      var _a = _this.props,
+          type = _a.type,
+          ampm = _a.ampm,
+          date = _a.date,
+          utils = _a.utils;
+
+      switch (type) {
+        case ClockType$1.HOURS:
+          return {
+            value: utils.getHours(date),
+            children: getHourNumbers({
+              date: date,
+              ampm: Boolean(ampm),
+              utils: utils
+            }),
+            onChange: _this.handleHourChange
+          };
+
+        case ClockType$1.MINUTES:
+          var minutesValue = utils.getMinutes(date);
+          return {
+            value: minutesValue,
+            children: getMinutesNumbers({
+              value: minutesValue,
+              utils: utils
+            }),
+            onChange: _this.handleMinutesChange
+          };
+
+        case ClockType$1.SECONDS:
+          var secondsValue = utils.getSeconds(date);
+          return {
+            value: secondsValue,
+            children: getMinutesNumbers({
+              value: secondsValue,
+              utils: utils
+            }),
+            onChange: _this.handleSecondsChange
+          };
+
+        default:
+          throw new Error('You must provide the type for TimePickerView');
+      }
+    };
+
+    _this.handleHourChange = function (hours, isFinish) {
+      var _a = _this.props,
+          date = _a.date,
+          utils = _a.utils;
+      var updatedTime = utils.setHours(date, hours);
+
+      _this.props.onHourChange(updatedTime, isFinish);
+    };
+
+    _this.handleMinutesChange = function (minutes, isFinish) {
+      var _a = _this.props,
+          date = _a.date,
+          utils = _a.utils;
+      var updatedTime = utils.setMinutes(date, minutes);
+
+      _this.props.onMinutesChange(updatedTime, isFinish);
+    };
+
+    _this.handleSecondsChange = function (seconds, isFinish) {
+      var _a = _this.props,
+          date = _a.date,
+          utils = _a.utils;
+      var updatedTime = utils.setSeconds(date, seconds);
+
+      _this.props.onSecondsChange(updatedTime, isFinish);
+    };
+
+    return _this;
+  }
+
+  TimePickerView.prototype.render = function () {
+    var _a = this.props,
+        ampm = _a.ampm,
+        type = _a.type;
+    var viewProps = this.getViewProps();
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(Clock$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      type: type,
+      ampm: ampm
+    }, viewProps));
+  };
+
+   true ? TimePickerView.propTypes = {
+    date: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"].isRequired,
+    onHourChange: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired,
+    onMinutesChange: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired,
+    onSecondsChange: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired,
+    ampm: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    type: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["oneOf"])(Object.keys(ClockType$1).map(function (key) {
+      return ClockType$1[key];
+    })).isRequired
+  } : undefined;
+  TimePickerView.defaultProps = {
+    ampm: true
+  };
+  return TimePickerView;
+}(react__WEBPACK_IMPORTED_MODULE_1__["PureComponent"]);
+var TimePickerView$1 = withUtils()(TimePickerView);
+
+var TimePicker =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(TimePicker, _super);
+
+  function TimePicker() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.state = {
+      openView: ClockType$1.HOURS,
+      meridiemMode: _this.props.utils.getHours(_this.props.date) >= 12 ? 'pm' : 'am'
+    };
+
+    _this.setMeridiemMode = function (mode) {
+      return function () {
+        _this.setState({
+          meridiemMode: mode
+        }, function () {
+          return _this.handleChange({
+            time: _this.props.date,
+            isFinish: false,
+            openMinutes: false,
+            openSeconds: false
+          });
+        });
+      };
+    };
+
+    _this.handleChange = function (_a) {
+      var time = _a.time,
+          isFinish = _a.isFinish,
+          openMinutes = _a.openMinutes,
+          openSeconds = _a.openSeconds;
+      var withMeridiem = convertToMeridiem(time, _this.state.meridiemMode, Boolean(_this.props.ampm), _this.props.utils);
+
+      if (isFinish) {
+        if (!openMinutes && !openSeconds) {
+          _this.props.onChange(withMeridiem, isFinish);
+
+          return;
+        }
+
+        if (openMinutes) {
+          _this.openMinutesView();
+        }
+
+        if (openSeconds) {
+          _this.openSecondsView();
+        }
+      }
+
+      _this.props.onChange(withMeridiem, false);
+    };
+
+    _this.handleHourChange = function (time, isFinish) {
+      _this.handleChange({
+        time: time,
+        isFinish: isFinish,
+        openMinutes: true,
+        openSeconds: false
+      });
+    };
+
+    _this.handleMinutesChange = function (time, isFinish) {
+      _this.handleChange({
+        time: time,
+        isFinish: isFinish,
+        openMinutes: false,
+        openSeconds: Boolean(_this.props.seconds)
+      });
+    };
+
+    _this.handleSecondsChange = function (time, isFinish) {
+      _this.handleChange({
+        time: time,
+        isFinish: isFinish,
+        openMinutes: false,
+        openSeconds: false
+      });
+    };
+
+    _this.openSecondsView = function () {
+      _this.setState({
+        openView: ClockType$1.SECONDS
+      });
+    };
+
+    _this.openMinutesView = function () {
+      _this.setState({
+        openView: ClockType$1.MINUTES
+      });
+    };
+
+    _this.openHourView = function () {
+      _this.setState({
+        openView: ClockType$1.HOURS
+      });
+    };
+
+    return _this;
+  }
+
+  TimePicker.prototype.render = function () {
+    var _a;
+
+    var _b = this.props,
+        classes = _b.classes,
+        theme = _b.theme,
+        date = _b.date,
+        utils = _b.utils,
+        ampm = _b.ampm,
+        seconds = _b.seconds;
+    var _c = this.state,
+        meridiemMode = _c.meridiemMode,
+        openView = _c.openView;
+    var rtl = theme.direction === 'rtl';
+    var hourMinuteClassName = rtl ? classes.hourMinuteLabelReverse : classes.hourMinuteLabel;
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(PickerToolbar$1, {
+      className: classnames__WEBPACK_IMPORTED_MODULE_14___default()(classes.toolbar, (_a = {}, _a[classes.toolbarLeftPadding] = ampm, _a))
+    }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+      className: hourMinuteClassName
+    }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+      variant: "h2",
+      onClick: this.openHourView,
+      selected: openView === ClockType$1.HOURS,
+      label: utils.getHourText(date, Boolean(ampm))
+    }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+      variant: "h2",
+      label: ":",
+      selected: false,
+      className: classes.separator
+    }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+      variant: "h2",
+      onClick: this.openMinutesView,
+      selected: openView === ClockType$1.MINUTES,
+      label: utils.getMinuteText(date)
+    }), seconds && Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+      variant: "h2",
+      label: ":",
+      selected: false,
+      className: classes.separator
+    }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+      variant: "h2",
+      onClick: this.openSecondsView,
+      selected: openView === ClockType$1.SECONDS,
+      label: utils.getSecondText(date)
+    }))), ampm && Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+      className: seconds ? classes.ampmSelectionWithSeconds : classes.ampmSelection
+    }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+      className: classes.ampmLabel,
+      selected: meridiemMode === 'am',
+      variant: "subtitle1",
+      label: utils.getMeridiemText('am'),
+      onClick: this.setMeridiemMode('am')
+    }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+      className: classes.ampmLabel,
+      selected: meridiemMode === 'pm',
+      variant: "subtitle1",
+      label: utils.getMeridiemText('pm'),
+      onClick: this.setMeridiemMode('pm')
+    }))), this.props.children, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(TimePickerView$1, {
+      date: date,
+      type: this.state.openView,
+      ampm: ampm,
+      onHourChange: this.handleHourChange,
+      onMinutesChange: this.handleMinutesChange,
+      onSecondsChange: this.handleSecondsChange
+    }));
+  };
+
+   true ? TimePicker.propTypes = {
+    date: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"].isRequired,
+    onChange: prop_types__WEBPACK_IMPORTED_MODULE_2__["func"].isRequired,
+    utils: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"].isRequired,
+    ampm: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    seconds: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    innerRef: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"]
+  } : undefined;
+  TimePicker.defaultProps = {
+    children: null,
+    ampm: true,
+    seconds: false
+  };
+  return TimePicker;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+var styles$d = function () {
+  return _material_ui_core_styles_createStyles__WEBPACK_IMPORTED_MODULE_16___default()({
+    toolbar: {
+      flexDirection: 'row',
+      alignItems: 'center'
+    },
+    toolbarLeftPadding: {
+      paddingLeft: 50
+    },
+    separator: {
+      margin: '0 4px 0 2px',
+      cursor: 'default'
+    },
+    ampmSelection: {
+      marginLeft: 20,
+      marginRight: -20
+    },
+    ampmSelectionWithSeconds: {
+      marginLeft: 15,
+      marginRight: 10
+    },
+    ampmLabel: {
+      fontSize: 18
+    },
+    hourMinuteLabel: {
+      display: 'flex',
+      justifyContent: 'flex-end',
+      alignItems: 'flex-end'
+    },
+    hourMinuteLabelReverse: {
+      display: 'flex',
+      justifyContent: 'flex-end',
+      alignItems: 'flex-end',
+      flexDirection: 'row-reverse'
+    }
+  });
+};
+var TimePicker$1 = _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default()(styles$d, {
+  withTheme: true,
+  name: 'MuiPickersTimePicker'
+})(withUtils()(TimePicker));
+
+var TimePickerModal = function (props) {
+  var value = props.value,
+      format = props.format,
+      autoOk = props.autoOk,
+      onChange = props.onChange,
+      ampm = props.ampm,
+      forwardedRef = props.forwardedRef,
+      seconds = props.seconds,
+      other = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(props, ["value", "format", "autoOk", "onChange", "ampm", "forwardedRef", "seconds"]);
+
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(BasePicker$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+    mergePreviousDateOnChange: true
+  }, props), function (_a) {
+    var date = _a.date,
+        utils = _a.utils,
+        handleAccept = _a.handleAccept,
+        handleChange = _a.handleChange,
+        handleClear = _a.handleClear,
+        handleDismiss = _a.handleDismiss,
+        handleSetTodayDate = _a.handleSetTodayDate,
+        handleTextFieldChange = _a.handleTextFieldChange,
+        isAccepted = _a.isAccepted,
+        pick12hOr24hFormat = _a.pick12hOr24hFormat;
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ModalWrapper, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      ref: forwardedRef,
+      value: value,
+      onClear: handleClear,
+      onAccept: handleAccept,
+      onChange: handleTextFieldChange,
+      onDismiss: handleDismiss,
+      onSetToday: handleSetTodayDate,
+      isAccepted: isAccepted,
+      format: pick12hOr24hFormat(utils.time12hFormat, utils.time24hFormat)
+    }, other), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(TimePicker$1, {
+      date: date,
+      onChange: handleChange,
+      ampm: ampm,
+      seconds: seconds
+    }));
+  });
+};
+var TimePickerModal$1 = Object(react__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function (props, ref) {
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(TimePickerModal, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, props, {
+    forwardedRef: ref
+  }));
+});
+
+var TimePickerInline = function (props) {
+  var value = props.value,
+      format = props.format,
+      onChange = props.onChange,
+      ampm = props.ampm,
+      forwardedRef = props.forwardedRef,
+      seconds = props.seconds,
+      other = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(props, ["value", "format", "onChange", "ampm", "forwardedRef", "seconds"]);
+
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(BasePicker$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+    mergePreviousDateOnChange: true,
+    autoOk: true
+  }, props), function (_a) {
+    var date = _a.date,
+        utils = _a.utils,
+        handleChange = _a.handleChange,
+        handleTextFieldChange = _a.handleTextFieldChange,
+        isAccepted = _a.isAccepted,
+        pick12hOr24hFormat = _a.pick12hOr24hFormat,
+        handleAccept = _a.handleAccept;
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(InlineWrapper$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      innerRef: forwardedRef,
+      value: value,
+      onChange: handleTextFieldChange,
+      isAccepted: isAccepted,
+      handleAccept: handleAccept,
+      format: pick12hOr24hFormat(utils.time12hFormat, utils.time24hFormat)
+    }, other), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(TimePicker$1, {
+      date: date,
+      onChange: handleChange,
+      ampm: ampm,
+      seconds: seconds
+    }));
+  });
+};
+var TimePickerInline$1 = Object(react__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function (props, ref) {
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(TimePickerInline, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, props, {
+    forwardedRef: ref
+  }));
+});
+
+var DateTimePickerView;
+
+(function (DateTimePickerView) {
+  DateTimePickerView["YEAR"] = "year";
+  DateTimePickerView["DATE"] = "date";
+  DateTimePickerView["HOUR"] = "hours";
+  DateTimePickerView["MINUTES"] = "minutes";
+})(DateTimePickerView || (DateTimePickerView = {}));
+
+var DateTimePickerView$1 = DateTimePickerView;
+
+var styles$e = function (theme) {
+  return _material_ui_core_styles_createStyles__WEBPACK_IMPORTED_MODULE_16___default()({
+    toolbar: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      paddingLeft: 16,
+      paddingRight: 16,
+      justifyContent: 'space-around'
+    },
+    separator: {
+      margin: '0 4px 0 2px',
+      cursor: 'default'
+    },
+    ampmSelection: {
+      top: 9,
+      position: 'relative',
+      marginLeft: 10,
+      marginRight: -10
+    },
+    ampmLabel: {
+      fontSize: 18
+    },
+    hourMinuteLabel: {
+      top: 5,
+      position: 'relative',
+      display: 'flex',
+      justifyContent: 'flex-end',
+      alignItems: 'flex-end',
+      flexDirection: theme.direction === 'rtl' ? 'row-reverse' : 'row'
+    },
+    dateHeader: {
+      height: 60,
+      minWidth: 110,
+      marginRight: 4
+    },
+    timeHeader: {
+      height: 65,
+      minWidth: 155,
+      display: 'flex',
+      justifyContent: 'flex-end',
+      alignItems: 'flex-end'
+    }
+  });
+};
+var DateTimePickerHeader = function (_a) {
+  var date = _a.date,
+      classes = _a.classes,
+      openView = _a.openView,
+      meridiemMode = _a.meridiemMode,
+      onOpenViewChange = _a.onOpenViewChange,
+      setMeridiemMode = _a.setMeridiemMode,
+      utils = _a.utils,
+      ampm = _a.ampm;
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(PickerToolbar$1, {
+    className: classes.toolbar
+  }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+    className: classes.dateHeader
+  }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+    variant: "subtitle1",
+    onClick: function () {
+      return onOpenViewChange(DateTimePickerView$1.YEAR);
+    },
+    selected: openView === DateTimePickerView$1.YEAR,
+    label: utils.getYearText(date)
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+    variant: "h4",
+    onClick: function () {
+      return onOpenViewChange(DateTimePickerView$1.DATE);
+    },
+    selected: openView === DateTimePickerView$1.DATE,
+    label: utils.getDateTimePickerHeaderText(date)
+  })), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+    className: classes.timeHeader
+  }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+    className: classes.hourMinuteLabel
+  }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+    variant: "h3",
+    onClick: function () {
+      return onOpenViewChange(DateTimePickerView$1.HOUR);
+    },
+    selected: openView === DateTimePickerView$1.HOUR,
+    label: utils.getHourText(date, ampm)
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+    variant: "h3",
+    label: ":",
+    selected: false,
+    className: classes.separator
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+    variant: "h3",
+    onClick: function () {
+      return onOpenViewChange(DateTimePickerView$1.MINUTES);
+    },
+    selected: openView === DateTimePickerView$1.MINUTES,
+    label: utils.getMinuteText(date)
+  })), ampm && Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+    className: classes.ampmSelection
+  }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+    className: classes.ampmLabel,
+    selected: meridiemMode === 'am',
+    variant: "subtitle1",
+    label: utils.getMeridiemText('am'),
+    onClick: setMeridiemMode('am')
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ToolbarButton$1, {
+    className: classes.ampmLabel,
+    selected: meridiemMode === 'pm',
+    variant: "subtitle1",
+    label: utils.getMeridiemText('pm'),
+    onClick: setMeridiemMode('pm')
+  }))));
+};
+ true ? DateTimePickerHeader.propTypes = {
+  date: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"].isRequired,
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"].isRequired,
+  meridiemMode: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"].isRequired,
+  utils: prop_types__WEBPACK_IMPORTED_MODULE_2__["object"].isRequired,
+  ampm: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+  innerRef: prop_types__WEBPACK_IMPORTED_MODULE_2__["any"]
+} : undefined;
+var DatetimePickerHeader = _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default()(styles$e, {
+  name: 'MuiPickerDTHeader'
+})(withUtils()(DateTimePickerHeader));
+
+var DateRangeIcon = function (props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_SvgIcon__WEBPACK_IMPORTED_MODULE_7___default.a, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, props), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
+    d: "M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
+    fill: "none",
+    d: "M0 0h24v24H0z"
+  }));
+};
+
+var TimeIcon = function (props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_SvgIcon__WEBPACK_IMPORTED_MODULE_7___default.a, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, props), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
+    d: "M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
+    fill: "none",
+    d: "M0 0h24v24H0z"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
+    d: "M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+  }));
+};
+
+var viewToTabIndex = function (openView) {
+  if (openView === DateTimePickerView$1.DATE || openView === DateTimePickerView$1.YEAR) {
+    return 'date';
+  }
+
+  return 'time';
+};
+
+var tabIndexToView = function (tab) {
+  if (tab === 'date') {
+    return DateTimePickerView$1.DATE;
+  }
+
+  return DateTimePickerView$1.HOUR;
+};
+
+var DateTimePickerTabs = function (props) {
+  var view = props.view,
+      onChange = props.onChange,
+      classes = props.classes,
+      theme = props.theme,
+      dateRangeIcon = props.dateRangeIcon,
+      timeIcon = props.timeIcon;
+  var indicatorColor = theme.palette.type === 'light' ? 'secondary' : 'primary';
+
+  var handleChange = function (e, value) {
+    if (value !== viewToTabIndex(view)) {
+      onChange(tabIndexToView(value));
+    }
+  };
+
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_23___default.a, null, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_26___default.a, {
+    variant: "fullWidth",
+    value: viewToTabIndex(view),
+    onChange: handleChange,
+    className: classes.tabs,
+    indicatorColor: indicatorColor
+  }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_25___default.a, {
+    value: "date",
+    icon: Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, dateRangeIcon)
+  }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_25___default.a, {
+    value: "time",
+    icon: Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, timeIcon)
+  })));
+};
+ true ? DateTimePickerTabs.propTypes = {
+  view: prop_types__WEBPACK_IMPORTED_MODULE_2__["string"].isRequired,
+  dateRangeIcon: prop_types__WEBPACK_IMPORTED_MODULE_2__["node"].isRequired,
+  timeIcon: prop_types__WEBPACK_IMPORTED_MODULE_2__["node"].isRequired
+} : undefined;
+DateTimePickerTabs.defaultProps = {
+  dateRangeIcon: Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DateRangeIcon, null),
+  timeIcon: Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(TimeIcon, null)
+};
+var styles$f = function (theme) {
+  return {
+    tabs: {
+      color: theme.palette.common.white,
+      backgroundColor: theme.palette.type === 'light' ? theme.palette.primary.main : theme.palette.background["default"]
+    }
+  };
+};
+var DateTimePickerTabs$1 = _material_ui_core_styles_withTheme__WEBPACK_IMPORTED_MODULE_24___default()()(_material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_17___default()(styles$f, {
+  name: 'MuiPickerDTTabs'
+})(DateTimePickerTabs));
+
+var DateTimePickerView$2 = function (_a) {
+  var selected = _a.selected,
+      children = _a.children;
+
+  if (!selected) {
+    return null;
+  }
+
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", {
+    children: children
+  });
+};
+
+var DateTimePicker =
+/*@__PURE__*/
+function (_super) {
+  Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"])(DateTimePicker, _super);
+
+  function DateTimePicker() {
+    var _this = _super !== null && _super.apply(this, arguments) || this;
+
+    _this.state = {
+      openView: _this.props.openTo,
+      meridiemMode: _this.props.utils.getHours(_this.props.date) >= 12 ? 'pm' : 'am'
+    };
+
+    _this.onChange = function (time, isFinish, nextView) {
+      if (isFinish === void 0) {
+        isFinish = true;
+      }
+
+      _this.handleChange(time);
+
+      if (isFinish && _this.props.autoSubmit) {
+        _this.handleViewChange(nextView);
+      }
+    };
+
+    _this.setMeridiemMode = function (mode) {
+      return function () {
+        _this.setState({
+          meridiemMode: mode
+        }, function () {
+          return _this.handleChange(_this.props.date, false);
+        });
+      };
+    };
+
+    _this.handleViewChange = function (view) {
+      _this.setState({
+        openView: view
+      });
+    };
+
+    _this.handleChange = function (time, isFinish) {
+      if (isFinish === void 0) {
+        isFinish = false;
+      }
+
+      var withMeridiem = convertToMeridiem(time, _this.state.meridiemMode, Boolean(_this.props.ampm), _this.props.utils);
+
+      _this.props.onChange(withMeridiem, isFinish);
+    };
+
+    _this.handleYearChange = function (date) {
+      _this.onChange(date, true, DateTimePickerView$1.DATE);
+    };
+
+    _this.handleDayChange = function (date, isFinish) {
+      _this.onChange(date, isFinish, DateTimePickerView$1.HOUR);
+    };
+
+    _this.handleHourChange = function (time, isFinish) {
+      _this.onChange(time, isFinish, DateTimePickerView$1.MINUTES);
+    };
+
+    return _this;
+  }
+
+  DateTimePicker.prototype.render = function () {
+    var _a = this.state,
+        openView = _a.openView,
+        meridiemMode = _a.meridiemMode;
+    var _b = this.props,
+        date = _b.date,
+        minDate = _b.minDate,
+        maxDate = _b.maxDate,
+        showTabs = _b.showTabs,
+        disablePast = _b.disablePast,
+        disableFuture = _b.disableFuture,
+        leftArrowIcon = _b.leftArrowIcon,
+        rightArrowIcon = _b.rightArrowIcon,
+        dateRangeIcon = _b.dateRangeIcon,
+        timeIcon = _b.timeIcon,
+        renderDay = _b.renderDay,
+        ampm = _b.ampm,
+        shouldDisableDate = _b.shouldDisableDate,
+        animateYearScrolling = _b.animateYearScrolling,
+        allowKeyboardControl = _b.allowKeyboardControl,
+        ViewContainerComponent = _b.ViewContainerComponent;
+    var Container = ViewContainerComponent;
+    var ViewContainerComponentProps = typeof ViewContainerComponent === 'string' ? {} : {
+      openView: openView,
+      onChange: this.onChange
+    };
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DatetimePickerHeader, {
+      date: date,
+      openView: openView,
+      meridiemMode: meridiemMode,
+      setMeridiemMode: this.setMeridiemMode,
+      onOpenViewChange: this.handleViewChange,
+      ampm: ampm
+    }), showTabs && Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DateTimePickerTabs$1, {
+      view: openView,
+      onChange: this.handleViewChange,
+      dateRangeIcon: dateRangeIcon,
+      timeIcon: timeIcon
+    }), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(Container, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, ViewContainerComponentProps), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DateTimePickerView$2, {
+      selected: openView === DateTimePickerView$1.YEAR
+    }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(YearSelection$1, {
+      date: date,
+      minDate: minDate,
+      maxDate: maxDate,
+      onChange: this.handleYearChange,
+      disablePast: disablePast,
+      disableFuture: disableFuture,
+      animateYearScrolling: animateYearScrolling
+    })), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DateTimePickerView$2, {
+      selected: openView === DateTimePickerView$1.DATE
+    }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(Calendar$1, {
+      allowKeyboardControl: allowKeyboardControl,
+      date: date,
+      minDate: minDate,
+      maxDate: maxDate,
+      onChange: this.handleDayChange,
+      disablePast: disablePast,
+      disableFuture: disableFuture,
+      leftArrowIcon: leftArrowIcon,
+      rightArrowIcon: rightArrowIcon,
+      renderDay: renderDay,
+      shouldDisableDate: shouldDisableDate
+    })), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DateTimePickerView$2, {
+      selected: openView === DateTimePickerView$1.HOUR || openView === DateTimePickerView$1.MINUTES
+    }, Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(TimePickerView$1, {
+      date: date,
+      type: openView,
+      onHourChange: this.handleHourChange,
+      onMinutesChange: this.handleChange,
+      onSecondsChange: this.handleChange,
+      ampm: ampm
+    }))));
+  };
+
+   true ? DateTimePicker.propTypes = {
+    autoSubmit: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    openTo: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["oneOf"])(Object.keys(DateTimePickerView$1).map(function (key) {
+      return DateTimePickerView$1[key];
+    })),
+    showTabs: prop_types__WEBPACK_IMPORTED_MODULE_2__["bool"],
+    ViewContainerComponent: Object(prop_types__WEBPACK_IMPORTED_MODULE_2__["oneOfType"])([prop_types__WEBPACK_IMPORTED_MODULE_2__["string"], prop_types__WEBPACK_IMPORTED_MODULE_2__["func"], prop_types__WEBPACK_IMPORTED_MODULE_2__["object"]])
+  } : undefined;
+  DateTimePicker.defaultProps = {
+    autoSubmit: true,
+    showTabs: true,
+    ampm: true,
+    openTo: 'date',
+    ViewContainerComponent: 'div'
+  };
+  return DateTimePicker;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+var DateTimePicker$1 = withUtils()(DateTimePicker);
+
+var DateTimePickerModal = function (props) {
+  var value = props.value,
+      format = props.format,
+      autoOk = props.autoOk,
+      openTo = props.openTo,
+      minDate = props.minDate,
+      maxDate = props.maxDate,
+      initialFocusedDate = props.initialFocusedDate,
+      showTabs = props.showTabs,
+      autoSubmit = props.autoSubmit,
+      disablePast = props.disablePast,
+      disableFuture = props.disableFuture,
+      leftArrowIcon = props.leftArrowIcon,
+      rightArrowIcon = props.rightArrowIcon,
+      dateRangeIcon = props.dateRangeIcon,
+      timeIcon = props.timeIcon,
+      renderDay = props.renderDay,
+      ampm = props.ampm,
+      shouldDisableDate = props.shouldDisableDate,
+      animateYearScrolling = props.animateYearScrolling,
+      forwardedRef = props.forwardedRef,
+      allowKeyboardControl = props.allowKeyboardControl,
+      other = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(props, ["value", "format", "autoOk", "openTo", "minDate", "maxDate", "initialFocusedDate", "showTabs", "autoSubmit", "disablePast", "disableFuture", "leftArrowIcon", "rightArrowIcon", "dateRangeIcon", "timeIcon", "renderDay", "ampm", "shouldDisableDate", "animateYearScrolling", "forwardedRef", "allowKeyboardControl"]); // do not show tabs for small screens
+
+
+  var toShowTabs = Boolean(showTabs && typeof window !== 'undefined' && window.innerHeight > 667);
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(BasePicker$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, props), function (_a) {
+    var date = _a.date,
+        utils = _a.utils,
+        handleAccept = _a.handleAccept,
+        handleChange = _a.handleChange,
+        handleClear = _a.handleClear,
+        handleDismiss = _a.handleDismiss,
+        handleSetTodayDate = _a.handleSetTodayDate,
+        handleTextFieldChange = _a.handleTextFieldChange,
+        isAccepted = _a.isAccepted,
+        pick12hOr24hFormat = _a.pick12hOr24hFormat;
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(ModalWrapper, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      showTabs: toShowTabs,
+      ref: forwardedRef,
+      disableFuture: disableFuture,
+      disablePast: disablePast,
+      maxDate: maxDate,
+      minDate: minDate,
+      onAccept: handleAccept,
+      onChange: handleTextFieldChange,
+      onClear: handleClear,
+      onDismiss: handleDismiss,
+      onSetToday: handleSetTodayDate,
+      value: value,
+      isAccepted: isAccepted,
+      format: pick12hOr24hFormat(utils.dateTime12hFormat, utils.dateTime24hFormat)
+    }, other), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DateTimePicker$1, {
+      allowKeyboardControl: allowKeyboardControl,
+      ampm: ampm,
+      animateYearScrolling: animateYearScrolling,
+      autoSubmit: autoSubmit,
+      date: date,
+      dateRangeIcon: dateRangeIcon,
+      disableFuture: disableFuture,
+      disablePast: disablePast,
+      leftArrowIcon: leftArrowIcon,
+      maxDate: maxDate,
+      minDate: minDate,
+      onChange: handleChange,
+      openTo: openTo,
+      renderDay: renderDay,
+      rightArrowIcon: rightArrowIcon,
+      shouldDisableDate: shouldDisableDate,
+      showTabs: toShowTabs,
+      timeIcon: timeIcon
+    }));
+  });
+};
+DateTimePickerModal.defaultProps = {
+  showTabs: true
+};
+var DateTimePickerModal$1 = Object(react__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function (props, ref) {
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DateTimePickerModal, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, props, {
+    forwardedRef: ref
+  }));
+});
+
+var DateTimePickerInline = function (props) {
+  var value = props.value,
+      format = props.format,
+      autoOk = props.autoOk,
+      openTo = props.openTo,
+      minDate = props.minDate,
+      maxDate = props.maxDate,
+      initialFocusedDate = props.initialFocusedDate,
+      showTabs = props.showTabs,
+      autoSubmit = props.autoSubmit,
+      disablePast = props.disablePast,
+      disableFuture = props.disableFuture,
+      leftArrowIcon = props.leftArrowIcon,
+      rightArrowIcon = props.rightArrowIcon,
+      dateRangeIcon = props.dateRangeIcon,
+      timeIcon = props.timeIcon,
+      renderDay = props.renderDay,
+      ampm = props.ampm,
+      shouldDisableDate = props.shouldDisableDate,
+      animateYearScrolling = props.animateYearScrolling,
+      forwardedRef = props.forwardedRef,
+      allowKeyboardControl = props.allowKeyboardControl,
+      other = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(props, ["value", "format", "autoOk", "openTo", "minDate", "maxDate", "initialFocusedDate", "showTabs", "autoSubmit", "disablePast", "disableFuture", "leftArrowIcon", "rightArrowIcon", "dateRangeIcon", "timeIcon", "renderDay", "ampm", "shouldDisableDate", "animateYearScrolling", "forwardedRef", "allowKeyboardControl"]);
+
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(BasePicker$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, props, {
+    autoOk: true
+  }), function (_a) {
+    var date = _a.date,
+        utils = _a.utils,
+        handleChange = _a.handleChange,
+        handleTextFieldChange = _a.handleTextFieldChange,
+        isAccepted = _a.isAccepted,
+        pick12hOr24hFormat = _a.pick12hOr24hFormat,
+        handleAccept = _a.handleAccept;
+    return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(InlineWrapper$1, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({
+      innerRef: forwardedRef,
+      disableFuture: disableFuture,
+      disablePast: disablePast,
+      maxDate: maxDate,
+      minDate: minDate,
+      onChange: handleTextFieldChange,
+      value: value,
+      isAccepted: isAccepted,
+      handleAccept: handleAccept,
+      format: pick12hOr24hFormat(utils.dateTime12hFormat, utils.dateTime24hFormat)
+    }, other), Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DateTimePicker$1, {
+      allowKeyboardControl: allowKeyboardControl,
+      ampm: ampm,
+      animateYearScrolling: animateYearScrolling,
+      autoSubmit: autoSubmit,
+      date: date,
+      dateRangeIcon: dateRangeIcon,
+      disableFuture: disableFuture,
+      disablePast: disablePast,
+      leftArrowIcon: leftArrowIcon,
+      maxDate: maxDate,
+      minDate: minDate,
+      onChange: handleChange,
+      openTo: openTo,
+      renderDay: renderDay,
+      rightArrowIcon: rightArrowIcon,
+      shouldDisableDate: shouldDisableDate,
+      showTabs: showTabs,
+      timeIcon: timeIcon
+    }));
+  });
+};
+var DateTimePickerInline$1 = Object(react__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(function (props, ref) {
+  return Object(react__WEBPACK_IMPORTED_MODULE_1__["createElement"])(DateTimePickerInline, Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__assign"])({}, props, {
+    forwardedRef: ref
+  }));
+});
+
+
+//# sourceMappingURL=material-ui-pickers.esm.js.map
 
 
 /***/ }),
@@ -71296,6 +81797,485 @@ function pathToRegexp (path, keys, options) {
 
 /***/ }),
 
+/***/ "./node_modules/react-text-mask/dist/reactTextMask.js":
+/*!************************************************************!*\
+  !*** ./node_modules/react-text-mask/dist/reactTextMask.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+!function(e,t){ true?module.exports=t(__webpack_require__(/*! react */ "./node_modules/react/index.js")):undefined}(this,function(e){return function(e){function t(n){if(r[n])return r[n].exports;var o=r[n]={exports:{},id:n,loaded:!1};return e[n].call(o.exports,o,o.exports,t),o.loaded=!0,o.exports}var r={};return t.m=e,t.c=r,t.p="",t(0)}([function(e,t,r){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}function o(e,t){var r={};for(var n in e)t.indexOf(n)>=0||Object.prototype.hasOwnProperty.call(e,n)&&(r[n]=e[n]);return r}function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function a(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function u(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}Object.defineProperty(t,"__esModule",{value:!0}),t.conformToMask=void 0;var l=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var n in r)Object.prototype.hasOwnProperty.call(r,n)&&(e[n]=r[n])}return e},s=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),f=r(2);Object.defineProperty(t,"conformToMask",{enumerable:!0,get:function(){return n(f).default}});var c=r(11),p=n(c),d=r(9),h=n(d),v=r(5),y=n(v),m=function(e){function t(){var e;i(this,t);for(var r=arguments.length,n=Array(r),o=0;o<r;o++)n[o]=arguments[o];var u=a(this,(e=t.__proto__||Object.getPrototypeOf(t)).call.apply(e,[this].concat(n)));return u.onBlur=u.onBlur.bind(u),u.onChange=u.onChange.bind(u),u}return u(t,e),s(t,[{key:"initTextMask",value:function(){var e=this.props,t=this.props.value;this.textMaskInputElement=(0,y.default)(l({inputElement:this.inputElement},e)),this.textMaskInputElement.update(t)}},{key:"componentDidMount",value:function(){this.initTextMask()}},{key:"componentDidUpdate",value:function(){this.initTextMask()}},{key:"render",value:function e(){var t=this,r=this.props,e=r.render,n=o(r,["render"]);delete n.mask,delete n.guide,delete n.pipe,delete n.placeholderChar,delete n.keepCharPositions,delete n.value,delete n.onBlur,delete n.onChange,delete n.showMask;var i=function(e){return t.inputElement=e};return e(i,l({onBlur:this.onBlur,onChange:this.onChange,defaultValue:this.props.value},n))}},{key:"onChange",value:function(e){this.textMaskInputElement.update(),"function"==typeof this.props.onChange&&this.props.onChange(e)}},{key:"onBlur",value:function(e){"function"==typeof this.props.onBlur&&this.props.onBlur(e)}}]),t}(p.default.Component);t.default=m,m.propTypes={mask:h.default.oneOfType([h.default.array,h.default.func,h.default.bool,h.default.shape({mask:h.default.oneOfType([h.default.array,h.default.func]),pipe:h.default.func})]).isRequired,guide:h.default.bool,value:h.default.oneOfType([h.default.string,h.default.number]),pipe:h.default.func,placeholderChar:h.default.string,keepCharPositions:h.default.bool,showMask:h.default.bool},m.defaultProps={render:function(e,t){return p.default.createElement("input",l({ref:e},t))}}},function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.placeholderChar="_",t.strFunction="function"},function(e,t,r){"use strict";function n(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:l,t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:u,r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};if(!(0,i.isArray)(t)){if(("undefined"==typeof t?"undefined":o(t))!==a.strFunction)throw new Error("Text-mask:conformToMask; The mask property must be an array.");t=t(e,r),t=(0,i.processCaretTraps)(t).maskWithoutCaretTraps}var n=r.guide,s=void 0===n||n,f=r.previousConformedValue,c=void 0===f?l:f,p=r.placeholderChar,d=void 0===p?a.placeholderChar:p,h=r.placeholder,v=void 0===h?(0,i.convertMaskToPlaceholder)(t,d):h,y=r.currentCaretPosition,m=r.keepCharPositions,b=s===!1&&void 0!==c,g=e.length,k=c.length,C=v.length,O=t.length,T=g-k,P=T>0,x=y+(P?-T:0),w=x+Math.abs(T);if(m===!0&&!P){for(var _=l,M=x;M<w;M++)v[M]===d&&(_+=d);e=e.slice(0,x)+_+e.slice(x,g)}for(var S=e.split(l).map(function(e,t){return{char:e,isNew:t>=x&&t<w}}),j=g-1;j>=0;j--){var E=S[j].char;if(E!==d){var R=j>=x&&k===O;E===v[R?j-T:j]&&S.splice(j,1)}}var V=l,A=!1;e:for(var N=0;N<C;N++){var B=v[N];if(B===d){if(S.length>0)for(;S.length>0;){var I=S.shift(),F=I.char,q=I.isNew;if(F===d&&b!==!0){V+=d;continue e}if(t[N].test(F)){if(m===!0&&q!==!1&&c!==l&&s!==!1&&P){for(var D=S.length,L=null,W=0;W<D;W++){var J=S[W];if(J.char!==d&&J.isNew===!1)break;if(J.char===d){L=W;break}}null!==L?(V+=F,S.splice(L,1)):N--}else V+=F;continue e}A=!0}b===!1&&(V+=v.substr(N,C));break}V+=B}if(b&&P===!1){for(var U=null,H=0;H<V.length;H++)v[H]===d&&(U=H);V=null!==U?V.substr(0,U+1):l}return{conformedValue:V,meta:{someCharsRejected:A}}}Object.defineProperty(t,"__esModule",{value:!0});var o="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};t.default=n;var i=r(3),a=r(1),u=[],l=""},function(e,t,r){"use strict";function n(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:s,t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:l.placeholderChar;if(!o(e))throw new Error("Text-mask:convertMaskToPlaceholder; The mask property must be an array.");if(e.indexOf(t)!==-1)throw new Error("Placeholder character must not be used as part of the mask. Please specify a character that is not present in your mask as your placeholder character.\n\n"+("The placeholder character that was received is: "+JSON.stringify(t)+"\n\n")+("The mask that was received is: "+JSON.stringify(e)));return e.map(function(e){return e instanceof RegExp?t:e}).join("")}function o(e){return Array.isArray&&Array.isArray(e)||e instanceof Array}function i(e){return"string"==typeof e||e instanceof String}function a(e){return"number"==typeof e&&void 0===e.length&&!isNaN(e)}function u(e){for(var t=[],r=void 0;r=e.indexOf(f),r!==-1;)t.push(r),e.splice(r,1);return{maskWithoutCaretTraps:e,indexes:t}}Object.defineProperty(t,"__esModule",{value:!0}),t.convertMaskToPlaceholder=n,t.isArray=o,t.isString=i,t.isNumber=a,t.processCaretTraps=u;var l=r(1),s=[],f="[]"},function(e,t){"use strict";function r(e){var t=e.previousConformedValue,r=void 0===t?o:t,i=e.previousPlaceholder,a=void 0===i?o:i,u=e.currentCaretPosition,l=void 0===u?0:u,s=e.conformedValue,f=e.rawValue,c=e.placeholderChar,p=e.placeholder,d=e.indexesOfPipedChars,h=void 0===d?n:d,v=e.caretTrapIndexes,y=void 0===v?n:v;if(0===l||!f.length)return 0;var m=f.length,b=r.length,g=p.length,k=s.length,C=m-b,O=C>0,T=0===b,P=C>1&&!O&&!T;if(P)return l;var x=O&&(r===s||s===p),w=0,_=void 0,M=void 0;if(x)w=l-C;else{var S=s.toLowerCase(),j=f.toLowerCase(),E=j.substr(0,l).split(o),R=E.filter(function(e){return S.indexOf(e)!==-1});M=R[R.length-1];var V=a.substr(0,R.length).split(o).filter(function(e){return e!==c}).length,A=p.substr(0,R.length).split(o).filter(function(e){return e!==c}).length,N=A!==V,B=void 0!==a[R.length-1]&&void 0!==p[R.length-2]&&a[R.length-1]!==c&&a[R.length-1]!==p[R.length-1]&&a[R.length-1]===p[R.length-2];!O&&(N||B)&&V>0&&p.indexOf(M)>-1&&void 0!==f[l]&&(_=!0,M=f[l]);for(var I=h.map(function(e){return S[e]}),F=I.filter(function(e){return e===M}).length,q=R.filter(function(e){return e===M}).length,D=p.substr(0,p.indexOf(c)).split(o).filter(function(e,t){return e===M&&f[t]!==e}).length,L=D+q+F+(_?1:0),W=0,J=0;J<k;J++){var U=S[J];if(w=J+1,U===M&&W++,W>=L)break}}if(O){for(var H=w,Y=w;Y<=g;Y++)if(p[Y]===c&&(H=Y),p[Y]===c||y.indexOf(Y)!==-1||Y===g)return H}else if(_){for(var z=w-1;z>=0;z--)if(s[z]===M||y.indexOf(z)!==-1||0===z)return z}else for(var G=w;G>=0;G--)if(p[G-1]===c||y.indexOf(G)!==-1||0===G)return G}Object.defineProperty(t,"__esModule",{value:!0}),t.default=r;var n=[],o=""},function(e,t,r){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}function o(e){var t={previousConformedValue:void 0,previousPlaceholder:void 0};return{state:t,update:function(r){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:e,o=n.inputElement,s=n.mask,c=n.guide,y=n.pipe,b=n.placeholderChar,g=void 0===b?h.placeholderChar:b,k=n.keepCharPositions,C=void 0!==k&&k,O=n.showMask,T=void 0!==O&&O;if("undefined"==typeof r&&(r=o.value),r!==t.previousConformedValue){("undefined"==typeof s?"undefined":l(s))===m&&void 0!==s.pipe&&void 0!==s.mask&&(y=s.pipe,s=s.mask);var P=void 0,x=void 0;if(s instanceof Array&&(P=(0,d.convertMaskToPlaceholder)(s,g)),s!==!1){var w=a(r),_=o.selectionEnd,M=t.previousConformedValue,S=t.previousPlaceholder,j=void 0;if(("undefined"==typeof s?"undefined":l(s))===h.strFunction){if(x=s(w,{currentCaretPosition:_,previousConformedValue:M,placeholderChar:g}),x===!1)return;var E=(0,d.processCaretTraps)(x),R=E.maskWithoutCaretTraps,V=E.indexes;x=R,j=V,P=(0,d.convertMaskToPlaceholder)(x,g)}else x=s;var A={previousConformedValue:M,guide:c,placeholderChar:g,pipe:y,placeholder:P,currentCaretPosition:_,keepCharPositions:C},N=(0,p.default)(w,x,A),B=N.conformedValue,I=("undefined"==typeof y?"undefined":l(y))===h.strFunction,F={};I&&(F=y(B,u({rawValue:w},A)),F===!1?F={value:M,rejected:!0}:(0,d.isString)(F)&&(F={value:F}));var q=I?F.value:B,D=(0,f.default)({previousConformedValue:M,previousPlaceholder:S,conformedValue:q,placeholder:P,rawValue:w,currentCaretPosition:_,placeholderChar:g,indexesOfPipedChars:F.indexesOfPipedChars,caretTrapIndexes:j}),L=q===P&&0===D,W=T?P:v,J=L?W:q;t.previousConformedValue=J,t.previousPlaceholder=P,o.value!==J&&(o.value=J,i(o,D))}}}}}function i(e,t){document.activeElement===e&&(b?g(function(){return e.setSelectionRange(t,t,y)},0):e.setSelectionRange(t,t,y))}function a(e){if((0,d.isString)(e))return e;if((0,d.isNumber)(e))return String(e);if(void 0===e||null===e)return v;throw new Error("The 'value' provided to Text Mask needs to be a string or a number. The value received was:\n\n "+JSON.stringify(e))}Object.defineProperty(t,"__esModule",{value:!0});var u=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var n in r)Object.prototype.hasOwnProperty.call(r,n)&&(e[n]=r[n])}return e},l="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};t.default=o;var s=r(4),f=n(s),c=r(2),p=n(c),d=r(3),h=r(1),v="",y="none",m="object",b="undefined"!=typeof navigator&&/Android/i.test(navigator.userAgent),g="undefined"!=typeof requestAnimationFrame?requestAnimationFrame:setTimeout},function(e,t){"use strict";function r(e){return function(){return e}}var n=function(){};n.thatReturns=r,n.thatReturnsFalse=r(!1),n.thatReturnsTrue=r(!0),n.thatReturnsNull=r(null),n.thatReturnsThis=function(){return this},n.thatReturnsArgument=function(e){return e},e.exports=n},function(e,t,r){"use strict";function n(e,t,r,n,i,a,u,l){if(o(t),!e){var s;if(void 0===t)s=new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var f=[r,n,i,a,u,l],c=0;s=new Error(t.replace(/%s/g,function(){return f[c++]})),s.name="Invariant Violation"}throw s.framesToPop=1,s}}var o=function(e){};e.exports=n},function(e,t,r){"use strict";var n=r(6),o=r(7),i=r(10);e.exports=function(){function e(e,t,r,n,a,u){u!==i&&o(!1,"Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types")}function t(){return e}e.isRequired=e;var r={array:e,bool:e,func:e,number:e,object:e,string:e,symbol:e,any:e,arrayOf:t,element:e,instanceOf:t,node:e,objectOf:t,oneOf:t,oneOfType:t,shape:t,exact:t};return r.checkPropTypes=n,r.PropTypes=r,r}},function(e,t,r){"use strict";"function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e.exports=r(8)()},function(e,t){"use strict";var r="SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";e.exports=r},function(t,r){t.exports=e}])});
+
+/***/ }),
+
+/***/ "./node_modules/react-transition-group/CSSTransition.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-transition-group/CSSTransition.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = void 0;
+
+var PropTypes = _interopRequireWildcard(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+
+var _addClass = _interopRequireDefault(__webpack_require__(/*! dom-helpers/class/addClass */ "./node_modules/dom-helpers/class/addClass.js"));
+
+var _removeClass = _interopRequireDefault(__webpack_require__(/*! dom-helpers/class/removeClass */ "./node_modules/dom-helpers/class/removeClass.js"));
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _Transition = _interopRequireDefault(__webpack_require__(/*! ./Transition */ "./node_modules/react-transition-group/Transition.js"));
+
+var _PropTypes = __webpack_require__(/*! ./utils/PropTypes */ "./node_modules/react-transition-group/utils/PropTypes.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
+
+var addClass = function addClass(node, classes) {
+  return node && classes && classes.split(' ').forEach(function (c) {
+    return (0, _addClass.default)(node, c);
+  });
+};
+
+var removeClass = function removeClass(node, classes) {
+  return node && classes && classes.split(' ').forEach(function (c) {
+    return (0, _removeClass.default)(node, c);
+  });
+};
+/**
+ * A `Transition` component using CSS transitions and animations.
+ * It's inspired by the excellent [ng-animate](http://www.nganimate.org/) library.
+ *
+ * `CSSTransition` applies a pair of class names during the `appear`, `enter`,
+ * and `exit` stages of the transition. The first class is applied and then a
+ * second "active" class in order to activate the css animation. After the animation,
+ * matching `done` class names are applied to persist the animation state.
+ *
+ * When the `in` prop is toggled to `true` the Component will get
+ * the `example-enter` CSS class and the `example-enter-active` CSS class
+ * added in the next tick. This is a convention based on the `classNames` prop.
+ */
+
+
+var CSSTransition =
+/*#__PURE__*/
+function (_React$Component) {
+  _inheritsLoose(CSSTransition, _React$Component);
+
+  function CSSTransition() {
+    var _this;
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
+
+    _this.onEnter = function (node, appearing) {
+      var _this$getClassNames = _this.getClassNames(appearing ? 'appear' : 'enter'),
+          className = _this$getClassNames.className;
+
+      _this.removeClasses(node, 'exit');
+
+      addClass(node, className);
+
+      if (_this.props.onEnter) {
+        _this.props.onEnter(node, appearing);
+      }
+    };
+
+    _this.onEntering = function (node, appearing) {
+      var _this$getClassNames2 = _this.getClassNames(appearing ? 'appear' : 'enter'),
+          activeClassName = _this$getClassNames2.activeClassName;
+
+      _this.reflowAndAddClass(node, activeClassName);
+
+      if (_this.props.onEntering) {
+        _this.props.onEntering(node, appearing);
+      }
+    };
+
+    _this.onEntered = function (node, appearing) {
+      var _this$getClassNames3 = _this.getClassNames('enter'),
+          doneClassName = _this$getClassNames3.doneClassName;
+
+      _this.removeClasses(node, appearing ? 'appear' : 'enter');
+
+      addClass(node, doneClassName);
+
+      if (_this.props.onEntered) {
+        _this.props.onEntered(node, appearing);
+      }
+    };
+
+    _this.onExit = function (node) {
+      var _this$getClassNames4 = _this.getClassNames('exit'),
+          className = _this$getClassNames4.className;
+
+      _this.removeClasses(node, 'appear');
+
+      _this.removeClasses(node, 'enter');
+
+      addClass(node, className);
+
+      if (_this.props.onExit) {
+        _this.props.onExit(node);
+      }
+    };
+
+    _this.onExiting = function (node) {
+      var _this$getClassNames5 = _this.getClassNames('exit'),
+          activeClassName = _this$getClassNames5.activeClassName;
+
+      _this.reflowAndAddClass(node, activeClassName);
+
+      if (_this.props.onExiting) {
+        _this.props.onExiting(node);
+      }
+    };
+
+    _this.onExited = function (node) {
+      var _this$getClassNames6 = _this.getClassNames('exit'),
+          doneClassName = _this$getClassNames6.doneClassName;
+
+      _this.removeClasses(node, 'exit');
+
+      addClass(node, doneClassName);
+
+      if (_this.props.onExited) {
+        _this.props.onExited(node);
+      }
+    };
+
+    _this.getClassNames = function (type) {
+      var classNames = _this.props.classNames;
+      var className = typeof classNames !== 'string' ? classNames[type] : classNames + '-' + type;
+      var activeClassName = typeof classNames !== 'string' ? classNames[type + 'Active'] : className + '-active';
+      var doneClassName = typeof classNames !== 'string' ? classNames[type + 'Done'] : className + '-done';
+      return {
+        className: className,
+        activeClassName: activeClassName,
+        doneClassName: doneClassName
+      };
+    };
+
+    return _this;
+  }
+
+  var _proto = CSSTransition.prototype;
+
+  _proto.removeClasses = function removeClasses(node, type) {
+    var _this$getClassNames7 = this.getClassNames(type),
+        className = _this$getClassNames7.className,
+        activeClassName = _this$getClassNames7.activeClassName,
+        doneClassName = _this$getClassNames7.doneClassName;
+
+    className && removeClass(node, className);
+    activeClassName && removeClass(node, activeClassName);
+    doneClassName && removeClass(node, doneClassName);
+  };
+
+  _proto.reflowAndAddClass = function reflowAndAddClass(node, className) {
+    // This is for to force a repaint,
+    // which is necessary in order to transition styles when adding a class name.
+    if (className) {
+      /* eslint-disable no-unused-expressions */
+      node && node.scrollTop;
+      /* eslint-enable no-unused-expressions */
+
+      addClass(node, className);
+    }
+  };
+
+  _proto.render = function render() {
+    var props = _extends({}, this.props);
+
+    delete props.classNames;
+    return _react.default.createElement(_Transition.default, _extends({}, props, {
+      onEnter: this.onEnter,
+      onEntered: this.onEntered,
+      onEntering: this.onEntering,
+      onExit: this.onExit,
+      onExiting: this.onExiting,
+      onExited: this.onExited
+    }));
+  };
+
+  return CSSTransition;
+}(_react.default.Component);
+
+CSSTransition.propTypes =  true ? _extends({}, _Transition.default.propTypes, {
+  /**
+   * The animation classNames applied to the component as it enters, exits or has finished the transition.
+   * A single name can be provided and it will be suffixed for each stage: e.g.
+   *
+   * `classNames="fade"` applies `fade-enter`, `fade-enter-active`, `fade-enter-done`,
+   * `fade-exit`, `fade-exit-active`, `fade-exit-done`, `fade-appear`, and `fade-appear-active`.
+   * Each individual classNames can also be specified independently like:
+   *
+   * ```js
+   * classNames={{
+   *  appear: 'my-appear',
+   *  appearActive: 'my-active-appear',
+   *  enter: 'my-enter',
+   *  enterActive: 'my-active-enter',
+   *  enterDone: 'my-done-enter',
+   *  exit: 'my-exit',
+   *  exitActive: 'my-active-exit',
+   *  exitDone: 'my-done-exit',
+   * }}
+   * ```
+   *
+   * If you want to set these classes using CSS Modules:
+   *
+   * ```js
+   * import styles from './styles.css';
+   * ```
+   *
+   * you might want to use camelCase in your CSS file, that way could simply spread
+   * them instead of listing them one by one:
+   *
+   * ```js
+   * classNames={{ ...styles }}
+   * ```
+   *
+   * @type {string | {
+   *  appear?: string,
+   *  appearActive?: string,
+   *  enter?: string,
+   *  enterActive?: string,
+   *  enterDone?: string,
+   *  exit?: string,
+   *  exitActive?: string,
+   *  exitDone?: string,
+   * }}
+   */
+  classNames: _PropTypes.classNamesShape,
+
+  /**
+   * A `<Transition>` callback fired immediately after the 'enter' or 'appear' class is
+   * applied.
+   *
+   * @type Function(node: HtmlElement, isAppearing: bool)
+   */
+  onEnter: PropTypes.func,
+
+  /**
+   * A `<Transition>` callback fired immediately after the 'enter-active' or
+   * 'appear-active' class is applied.
+   *
+   * @type Function(node: HtmlElement, isAppearing: bool)
+   */
+  onEntering: PropTypes.func,
+
+  /**
+   * A `<Transition>` callback fired immediately after the 'enter' or
+   * 'appear' classes are **removed** and the `done` class is added to the DOM node.
+   *
+   * @type Function(node: HtmlElement, isAppearing: bool)
+   */
+  onEntered: PropTypes.func,
+
+  /**
+   * A `<Transition>` callback fired immediately after the 'exit' class is
+   * applied.
+   *
+   * @type Function(node: HtmlElement)
+   */
+  onExit: PropTypes.func,
+
+  /**
+   * A `<Transition>` callback fired immediately after the 'exit-active' is applied.
+   *
+   * @type Function(node: HtmlElement)
+   */
+  onExiting: PropTypes.func,
+
+  /**
+   * A `<Transition>` callback fired immediately after the 'exit' classes
+   * are **removed** and the `exit-done` class is added to the DOM node.
+   *
+   * @type Function(node: HtmlElement)
+   */
+  onExited: PropTypes.func
+}) : undefined;
+var _default = CSSTransition;
+exports.default = _default;
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./node_modules/react-transition-group/ReplaceTransition.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/react-transition-group/ReplaceTransition.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = void 0;
+
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _reactDom = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+
+var _TransitionGroup = _interopRequireDefault(__webpack_require__(/*! ./TransitionGroup */ "./node_modules/react-transition-group/TransitionGroup.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
+
+/**
+ * The `<ReplaceTransition>` component is a specialized `Transition` component
+ * that animates between two children.
+ *
+ * ```jsx
+ * <ReplaceTransition in>
+ *   <Fade><div>I appear first</div></Fade>
+ *   <Fade><div>I replace the above</div></Fade>
+ * </ReplaceTransition>
+ * ```
+ */
+var ReplaceTransition =
+/*#__PURE__*/
+function (_React$Component) {
+  _inheritsLoose(ReplaceTransition, _React$Component);
+
+  function ReplaceTransition() {
+    var _this;
+
+    for (var _len = arguments.length, _args = new Array(_len), _key = 0; _key < _len; _key++) {
+      _args[_key] = arguments[_key];
+    }
+
+    _this = _React$Component.call.apply(_React$Component, [this].concat(_args)) || this;
+
+    _this.handleEnter = function () {
+      for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+        args[_key2] = arguments[_key2];
+      }
+
+      return _this.handleLifecycle('onEnter', 0, args);
+    };
+
+    _this.handleEntering = function () {
+      for (var _len3 = arguments.length, args = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
+        args[_key3] = arguments[_key3];
+      }
+
+      return _this.handleLifecycle('onEntering', 0, args);
+    };
+
+    _this.handleEntered = function () {
+      for (var _len4 = arguments.length, args = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
+        args[_key4] = arguments[_key4];
+      }
+
+      return _this.handleLifecycle('onEntered', 0, args);
+    };
+
+    _this.handleExit = function () {
+      for (var _len5 = arguments.length, args = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
+        args[_key5] = arguments[_key5];
+      }
+
+      return _this.handleLifecycle('onExit', 1, args);
+    };
+
+    _this.handleExiting = function () {
+      for (var _len6 = arguments.length, args = new Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {
+        args[_key6] = arguments[_key6];
+      }
+
+      return _this.handleLifecycle('onExiting', 1, args);
+    };
+
+    _this.handleExited = function () {
+      for (var _len7 = arguments.length, args = new Array(_len7), _key7 = 0; _key7 < _len7; _key7++) {
+        args[_key7] = arguments[_key7];
+      }
+
+      return _this.handleLifecycle('onExited', 1, args);
+    };
+
+    return _this;
+  }
+
+  var _proto = ReplaceTransition.prototype;
+
+  _proto.handleLifecycle = function handleLifecycle(handler, idx, originalArgs) {
+    var _child$props;
+
+    var children = this.props.children;
+
+    var child = _react.default.Children.toArray(children)[idx];
+
+    if (child.props[handler]) (_child$props = child.props)[handler].apply(_child$props, originalArgs);
+    if (this.props[handler]) this.props[handler]((0, _reactDom.findDOMNode)(this));
+  };
+
+  _proto.render = function render() {
+    var _this$props = this.props,
+        children = _this$props.children,
+        inProp = _this$props.in,
+        props = _objectWithoutPropertiesLoose(_this$props, ["children", "in"]);
+
+    var _React$Children$toArr = _react.default.Children.toArray(children),
+        first = _React$Children$toArr[0],
+        second = _React$Children$toArr[1];
+
+    delete props.onEnter;
+    delete props.onEntering;
+    delete props.onEntered;
+    delete props.onExit;
+    delete props.onExiting;
+    delete props.onExited;
+    return _react.default.createElement(_TransitionGroup.default, props, inProp ? _react.default.cloneElement(first, {
+      key: 'first',
+      onEnter: this.handleEnter,
+      onEntering: this.handleEntering,
+      onEntered: this.handleEntered
+    }) : _react.default.cloneElement(second, {
+      key: 'second',
+      onEnter: this.handleExit,
+      onEntering: this.handleExiting,
+      onEntered: this.handleExited
+    }));
+  };
+
+  return ReplaceTransition;
+}(_react.default.Component);
+
+ReplaceTransition.propTypes =  true ? {
+  in: _propTypes.default.bool.isRequired,
+  children: function children(props, propName) {
+    if (_react.default.Children.count(props[propName]) !== 2) return new Error("\"" + propName + "\" must be exactly two transition components.");
+    return null;
+  }
+} : undefined;
+var _default = ReplaceTransition;
+exports.default = _default;
+module.exports = exports["default"];
+
+/***/ }),
+
 /***/ "./node_modules/react-transition-group/Transition.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-transition-group/Transition.js ***!
@@ -72118,6 +83098,35 @@ var _default = (0, _reactLifecyclesCompat.polyfill)(TransitionGroup);
 
 exports.default = _default;
 module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./node_modules/react-transition-group/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/react-transition-group/index.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _CSSTransition = _interopRequireDefault(__webpack_require__(/*! ./CSSTransition */ "./node_modules/react-transition-group/CSSTransition.js"));
+
+var _ReplaceTransition = _interopRequireDefault(__webpack_require__(/*! ./ReplaceTransition */ "./node_modules/react-transition-group/ReplaceTransition.js"));
+
+var _TransitionGroup = _interopRequireDefault(__webpack_require__(/*! ./TransitionGroup */ "./node_modules/react-transition-group/TransitionGroup.js"));
+
+var _Transition = _interopRequireDefault(__webpack_require__(/*! ./Transition */ "./node_modules/react-transition-group/Transition.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = {
+  Transition: _Transition.default,
+  TransitionGroup: _TransitionGroup.default,
+  ReplaceTransition: _ReplaceTransition.default,
+  CSSTransition: _CSSTransition.default
+};
 
 /***/ }),
 
@@ -76323,6 +87332,224 @@ function symbolObservablePonyfill(root) {
 
 /***/ }),
 
+/***/ "./node_modules/tslib/tslib.es6.js":
+/*!*****************************************!*\
+  !*** ./node_modules/tslib/tslib.es6.js ***!
+  \*****************************************/
+/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __exportStar, __values, __read, __spread, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at http://www.apache.org/licenses/LICENSE-2.0
+
+THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+MERCHANTABLITY OR NON-INFRINGEMENT.
+
+See the Apache Version 2.0 License for specific language governing permissions
+and limitations under the License.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+}
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) if (e.indexOf(p[i]) < 0)
+            t[p[i]] = s[p[i]];
+    return t;
+}
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __param(paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+}
+
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+}
+
+function __exportStar(m, exports) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+function __values(o) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator], i = 0;
+    if (m) return m.call(o);
+    return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+}
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+function __spread() {
+    for (var ar = [], i = 0; i < arguments.length; i++)
+        ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+    function fulfill(value) { resume("next", value); }
+    function reject(value) { resume("throw", value); }
+    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+}
+
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+}
+
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+}
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result.default = mod;
+    return result;
+}
+
+function __importDefault(mod) {
+    return (mod && mod.__esModule) ? mod : { default: mod };
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/typeface-roboto/files/roboto-latin-100.woff":
 /*!******************************************************************!*\
   !*** ./node_modules/typeface-roboto/files/roboto-latin-100.woff ***!
@@ -77435,6 +88662,200 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./src/client/Components/AppBar/navBar.js":
+/*!************************************************!*\
+  !*** ./src/client/Components/AppBar/navBar.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/index.es.js");
+/* harmony import */ var _static_style_styles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../static/style/styles */ "./src/static/style/styles.js");
+/* harmony import */ var _material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/AccountCircle */ "./node_modules/@material-ui/icons/AccountCircle.js");
+/* harmony import */ var _material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/Home */ "./node_modules/@material-ui/icons/Home.js");
+/* harmony import */ var _material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _material_ui_icons_Settings__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/Settings */ "./node_modules/@material-ui/icons/Settings.js");
+/* harmony import */ var _material_ui_icons_Settings__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Settings__WEBPACK_IMPORTED_MODULE_12__);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var NavBar =
+/*#__PURE__*/
+function (_Component) {
+  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(NavBar, _Component);
+
+  function NavBar() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, NavBar);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, (_getPrototypeOf2 = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(NavBar)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this)), "state", {
+      settingsOpen: false
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this)), "handlesettingsOpen", function () {
+      _this.setState({
+        settingsOpen: !_this.state.settingsOpen
+      });
+    });
+
+    return _this;
+  }
+
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(NavBar, [{
+    key: "render",
+    value: function render() {
+      var classes = this.props.classes;
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: classes.root
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["AppBar"], {
+        color: "primary",
+        position: "static"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Toolbar"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["IconButton"], {
+        color: "inherit",
+        href: "/"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_11___default.a, null)), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Typography"], {
+        align: "center",
+        variant: "h6",
+        color: "inherit",
+        className: classes.root
+      }, "Random GIF Generator"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["IconButton"], {
+        color: "inherit",
+        onClick: this.handlesettingsOpen
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_icons_Settings__WEBPACK_IMPORTED_MODULE_12___default.a, null)), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["IconButton"], {
+        color: "inherit"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_10___default.a, null))))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Dialog"], {
+        open: this.state.settingsOpen,
+        onClose: this.handlesettingsOpen
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["DialogTitle"], null, "Settings"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["DialogContentText"], null, "Select the settings suitable for you.")));
+    }
+  }]);
+
+  return NavBar;
+}(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["withStyles"])(_static_style_styles__WEBPACK_IMPORTED_MODULE_9__["default"])(NavBar));
+
+/***/ }),
+
+/***/ "./src/client/Components/Home/home.js":
+/*!********************************************!*\
+  !*** ./src/client/Components/Home/home.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _static_style_styles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../static/style/styles */ "./src/static/style/styles.js");
+/* harmony import */ var _AppBar_navBar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../AppBar/navBar */ "./src/client/Components/AppBar/navBar.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/index.es.js");
+
+
+
+
+
+
+
+
+
+
+
+
+var Home =
+/*#__PURE__*/
+function (_Component) {
+  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(Home, _Component);
+
+  function Home() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, Home);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, (_getPrototypeOf2 = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(Home)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this)), "state", {});
+
+    return _this;
+  }
+
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Home, [{
+    key: "render",
+    value: function render() {
+      var classes = this.props.classes;
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: classes.root
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_AppBar_navBar__WEBPACK_IMPORTED_MODULE_9__["default"], null));
+    }
+  }]);
+
+  return Home;
+}(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__["withStyles"])(_static_style_styles__WEBPACK_IMPORTED_MODULE_8__["default"])(Home));
+
+/***/ }),
+
 /***/ "./src/client/Components/Login/login.js":
 /*!**********************************************!*\
   !*** ./src/client/Components/Login/login.js ***!
@@ -77454,9 +88875,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
 /* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/index.es.js");
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/index.es.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/AccountCircle */ "./node_modules/@material-ui/icons/AccountCircle.js");
+/* harmony import */ var _material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _static_style_styles__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../static/style/styles */ "./src/static/style/styles.js");
+
+
+
+
+
 
 
 
@@ -77470,26 +88905,521 @@ var Login =
 function (_Component) {
   _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(Login, _Component);
 
-  function Login() {
+  function Login(props) {
+    var _this;
+
     _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, Login);
 
-    return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(Login).apply(this, arguments));
+    _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(Login).call(this, props));
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this)), "handleButtonClick", function () {
+      _this.setState({
+        displayProgressBar: !_this.state.displayProgressBar,
+        buttonDisabled: !_this.state.buttonDisabled
+      });
+
+      setTimeout(function () {
+        _this.setState({
+          displayProgressBar: !_this.state.displayProgressBar,
+          buttonDisabled: !_this.state.buttonDisabled
+        });
+      }, 3000);
+    });
+
+    _this.state = {
+      displayProgressBar: false,
+      buttonDisabled: false
+    };
+    return _this;
   }
 
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Login, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      document.title = "Login";
+    }
+  }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", null, "This is a test"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Paper"], null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Typography"], {
-        variant: "h5",
-        align: "center"
-      }, "This is a test Typography")));
+      var newStyles = {
+        progressBar: {
+          display: this.state.displayProgressBar ? "block" : "none"
+        }
+      };
+      var classes = this.props.classes;
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        className: classes.root
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12,
+        md: 12,
+        lg: 12
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Paper"], {
+        className: classes.paper,
+        elevation: 1
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_icons_AccountCircle__WEBPACK_IMPORTED_MODULE_10___default.a, {
+        color: "primary",
+        className: classes.accountCircle
+      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["TextField"], {
+        id: "login-username",
+        label: "E-mail",
+        className: classes.textField,
+        margin: "normal",
+        type: "email"
+      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["TextField"], {
+        id: "login-password",
+        label: "Password",
+        className: classes.textField,
+        margin: "normal",
+        type: "password"
+      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["CircularProgress"], {
+        style: newStyles.progressBar,
+        className: classes.progressBar
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Button"], {
+        className: classes.button,
+        color: "primary",
+        variant: "contained",
+        onClick: this.handleButtonClick,
+        disabled: this.state.buttonDisabled
+      }, "Login"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        cs: 12,
+        sm: 12
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Typography"], {
+        align: "center",
+        variant: "subtitle1"
+      }, "Don't have an account?", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Link"], {
+        variant: "inherit",
+        href: "/signup"
+      }, "\xA0Sign Up"))))))));
     }
   }]);
 
   return Login;
-}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (Login);
+Login.propTypes = {
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.object.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["withStyles"])(_static_style_styles__WEBPACK_IMPORTED_MODULE_11__["default"])(Login));
+
+/***/ }),
+
+/***/ "./src/client/Components/SignUp/signup.js":
+/*!************************************************!*\
+  !*** ./src/client/Components/SignUp/signup.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/index.es.js");
+/* harmony import */ var _static_style_styles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../static/style/styles */ "./src/static/style/styles.js");
+/* harmony import */ var _API_KEYS__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../API_KEYS */ "./API_KEYS.js");
+/* harmony import */ var _material_ui_icons_AddAPhoto__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/AddAPhoto */ "./node_modules/@material-ui/icons/AddAPhoto.js");
+/* harmony import */ var _material_ui_icons_AddAPhoto__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_AddAPhoto__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var material_ui_pickers__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! material-ui-pickers */ "./node_modules/material-ui-pickers/dist/material-ui-pickers.esm.js");
+/* harmony import */ var _date_io_date_fns__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @date-io/date-fns */ "./node_modules/@date-io/date-fns/build/index.esm.js");
+/* harmony import */ var _static_JS_countryList__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../static/JS/countryList */ "./src/static/JS/countryList.js");
+/* harmony import */ var _static_JS_Genders__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../static/JS/Genders */ "./src/static/JS/Genders.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var wordnikUrl = "https://api.wordnik.com/v4/words.json/randomWords?hasDictionaryDef=true&maxCorpusCount=-1&minDictionaryCount=1&maxDictionaryCount=-1&minLength=5&maxLength=-1&limit=10&api_key=".concat(_API_KEYS__WEBPACK_IMPORTED_MODULE_10__["WordnikKey"]);
+var giphyUrl = "http://api.giphy.com/v1/gifs/search?api_key=".concat(_API_KEYS__WEBPACK_IMPORTED_MODULE_10__["giphyKey"], "&q=hello");
+
+var SignUp =
+/*#__PURE__*/
+function (_Component) {
+  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(SignUp, _Component);
+
+  function SignUp() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, SignUp);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(this, (_getPrototypeOf2 = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(SignUp)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this)), "state", {
+      selectedDate: null,
+      country: "",
+      gender: "",
+      termsAccepted: false
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this)), "handleFileButtonClick", function () {
+      document.getElementById("register-file").click();
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this)), "handleDateChange", function (date) {
+      _this.setState({
+        selectedDate: date
+      });
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this)), "handleChange", function (name) {
+      return function (event) {
+        _this.setState(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()({}, name, event.target.value));
+      };
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5___default()(_this)), "invertTerms", function () {
+      _this.setState({
+        termsAccepted: !_this.state.termsAccepted
+      });
+    });
+
+    return _this;
+  }
+
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(SignUp, [{
+    key: "render",
+    value: function render() {
+      var width = this.props.width;
+      console.log(width);
+      console.log(_static_JS_countryList__WEBPACK_IMPORTED_MODULE_14__["countryList"]);
+      console.log(_static_JS_Genders__WEBPACK_IMPORTED_MODULE_15__["Genders"]);
+      document.title = "Sign Up";
+      var classes = this.props.classes;
+      fetch(wordnikUrl).then(function (data) {
+        return data.json();
+      }).then(function (data) {
+        return console.log(data);
+      });
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(material_ui_pickers__WEBPACK_IMPORTED_MODULE_12__["MuiPickersUtilsProvider"], {
+        utils: _date_io_date_fns__WEBPACK_IMPORTED_MODULE_13__["default"]
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        className: classes.root,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12,
+        md: 8,
+        lg: 8
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Paper"], {
+        className: classes.paperRegister,
+        elevation: 1
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center",
+        spacing: 0
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12,
+        md: 12,
+        lg: 12
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
+        type: "file",
+        id: "register-file",
+        style: {
+          display: "none"
+        },
+        accept: "image/*"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Tooltip"], {
+        title: "Upload Profile Picture"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["IconButton"], {
+        onClick: this.handleFileButtonClick
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_icons_AddAPhoto__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        color: "primary",
+        className: classes.addPhoto
+      }))))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12,
+        md: 6,
+        lg: 6
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["TextField"], {
+        id: "register-firstname",
+        label: "First Name",
+        className: classes.textField,
+        margin: "normal",
+        type: "text"
+      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12,
+        md: 6,
+        lg: 6
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["TextField"], {
+        id: "register-lastname",
+        label: "Last Name",
+        className: classes.textField,
+        margin: "normal",
+        type: "text"
+      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12,
+        md: 6,
+        lg: 6
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["TextField"], {
+        id: "register-email",
+        label: "E-mail",
+        className: classes.textField,
+        margin: "normal",
+        type: "email"
+      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12,
+        md: 6,
+        lg: 6
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["TextField"], {
+        id: "register-confirm-email",
+        label: "Confirm E-mail",
+        className: classes.textField,
+        margin: "normal",
+        type: "email"
+      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12,
+        md: 6,
+        lg: 6
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["TextField"], {
+        id: "register-password",
+        label: "Password",
+        className: classes.textField,
+        margin: "normal",
+        type: "password"
+      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12,
+        md: 6,
+        lg: 6
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["TextField"], {
+        id: "register-confirm-password",
+        label: "Confirm Password",
+        className: classes.textField,
+        margin: "normal",
+        type: "password"
+      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12,
+        md: 6,
+        lg: 6
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Tooltip"], {
+        title: "Birthday"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(material_ui_pickers__WEBPACK_IMPORTED_MODULE_12__["DatePicker"], {
+        value: this.state.selectedDate,
+        label: "Birthday",
+        onChange: this.handleDateChange,
+        format: "dd/MM/yyyy",
+        className: classes.textField,
+        style: {
+          marginTop: 15
+        }
+      })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12,
+        md: 6,
+        lg: 6
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["TextField"], {
+        id: "register-gender",
+        label: "Gender",
+        className: classes.textField,
+        margin: "normal",
+        select: true,
+        value: this.state.gender,
+        onChange: this.handleChange("gender"),
+        SelectProps: {
+          MenuProps: {
+            className: classes.textField
+          }
+        }
+      }, _static_JS_Genders__WEBPACK_IMPORTED_MODULE_15__["Genders"].map(function (option) {
+        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["MenuItem"], {
+          key: option.value,
+          value: option.value
+        }, option.label);
+      })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12,
+        md: 6,
+        lg: 6
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["TextField"], {
+        id: "register-country",
+        label: "Country",
+        className: classes.textField,
+        margin: "normal",
+        select: true,
+        value: this.state.country,
+        onChange: this.handleChange("country"),
+        SelectProps: {
+          MenuProps: {
+            className: classes.textField
+          }
+        }
+      }, _static_JS_countryList__WEBPACK_IMPORTED_MODULE_14__["countryList"].map(function (option) {
+        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["MenuItem"], {
+          key: option.value,
+          value: option.value
+        }, option.label);
+      })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12,
+        sm: 12,
+        md: 6,
+        lg: 6
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["TextField"], {
+        id: "register-address",
+        label: "Address",
+        className: classes.textField,
+        margin: "normal",
+        type: "text"
+      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        style: {
+          marginTop: 15
+        },
+        item: true,
+        xs: 12
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "flex-start"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Checkbox"], {
+        onChange: this.invertTerms,
+        className: classes.checkBox,
+        color: "primary"
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Typography"], {
+        style: {
+          marginTop: 10
+        },
+        align: "center",
+        variant: "subtitle1"
+      }, "I accept the terms and conditions."))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        item: true,
+        xs: 12
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Grid"], {
+        container: true,
+        justify: "center"
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Button"], {
+        className: classes.button,
+        color: "primary",
+        variant: "contained",
+        disabled: !this.state.termsAccepted
+      }, "Register")))))))));
+    }
+  }]);
+
+  return SignUp;
+}(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["withWidth"])()(Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["withStyles"])(_static_style_styles__WEBPACK_IMPORTED_MODULE_9__["default"])(SignUp)));
 
 /***/ }),
 
@@ -77509,8 +89439,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/styles/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _static_themes_theme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../static/themes/theme */ "./src/static/themes/theme.js");
-/* harmony import */ var _static_themes_theme__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_static_themes_theme__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _Components_Login_login__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Components/Login/login */ "./src/client/Components/Login/login.js");
+/* harmony import */ var _Components_SignUp_signup__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Components/SignUp/signup */ "./src/client/Components/SignUp/signup.js");
+/* harmony import */ var _Components_Home_home__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Components/Home/home */ "./src/client/Components/Home/home.js");
 
 
 
@@ -77518,9 +89449,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var basic = function basic() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "This is path none"));
-};
+
 
 var about = function about() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "This is path about"));
@@ -77538,10 +89467,12 @@ var noPage = function noPage() {
 };
 
 var Routes = function Routes() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["MuiThemeProvider"], {
+    theme: _static_themes_theme__WEBPACK_IMPORTED_MODULE_4__["default"]
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/",
     exact: true,
-    component: basic
+    component: _Components_Home_home__WEBPACK_IMPORTED_MODULE_7__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/about",
     component: about
@@ -77552,9 +89483,12 @@ var Routes = function Routes() {
     path: "/login",
     component: _Components_Login_login__WEBPACK_IMPORTED_MODULE_5__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/signup",
+    component: _Components_SignUp_signup__WEBPACK_IMPORTED_MODULE_6__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "*",
     component: noPage
-  })));
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Routes);
@@ -77585,7 +89519,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/styles/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _static_themes_theme__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./static/themes/theme */ "./src/static/themes/theme.js");
-/* harmony import */ var _static_themes_theme__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_static_themes_theme__WEBPACK_IMPORTED_MODULE_8__);
 
 
 
@@ -77595,8 +89528,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+document.title = "React Project";
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.hydrate(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_7__["MuiThemeProvider"], {
-  theme: _static_themes_theme__WEBPACK_IMPORTED_MODULE_8___default.a
+  theme: _static_themes_theme__WEBPACK_IMPORTED_MODULE_8__["default"]
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_client_Routes_routes__WEBPACK_IMPORTED_MODULE_2__["default"], null))), document.querySelector("#root"));
 
 /***/ }),
@@ -77656,66 +89590,911 @@ if(true) {
 
 /***/ }),
 
+/***/ "./src/static/JS/Genders.js":
+/*!**********************************!*\
+  !*** ./src/static/JS/Genders.js ***!
+  \**********************************/
+/*! exports provided: Genders */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Genders", function() { return Genders; });
+var Genders = [{
+  value: "M",
+  label: "Male"
+}, {
+  value: "F",
+  label: "Female"
+}, {
+  value: "O",
+  label: "Other"
+}];
+
+/***/ }),
+
+/***/ "./src/static/JS/countryList.js":
+/*!**************************************!*\
+  !*** ./src/static/JS/countryList.js ***!
+  \**************************************/
+/*! exports provided: countryList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "countryList", function() { return countryList; });
+var countryList = [{
+  value: "AF",
+  label: "Afghanistan"
+}, {
+  value: "AX",
+  label: "Åland Islands"
+}, {
+  value: "AL",
+  label: "Albania"
+}, {
+  value: "DZ",
+  label: "Algeria"
+}, {
+  value: "AS",
+  label: "American Samoa"
+}, {
+  value: "AD",
+  label: "Andorra"
+}, {
+  value: "AO",
+  label: "Angola"
+}, {
+  value: "AI",
+  label: "Anguilla"
+}, {
+  value: "AQ",
+  label: "Antarctica"
+}, {
+  value: "AG",
+  label: "Antigua and Barbuda"
+}, {
+  value: "AR",
+  label: "Argentina"
+}, {
+  value: "AM",
+  label: "Armenia"
+}, {
+  value: "AW",
+  label: "Aruba"
+}, {
+  value: "AU",
+  label: "Australia"
+}, {
+  value: "AT",
+  label: "Austria"
+}, {
+  value: "AZ",
+  label: "Azerbaijan"
+}, {
+  value: "BS",
+  label: "Bahamas"
+}, {
+  value: "BH",
+  label: "Bahrain"
+}, {
+  value: "BD",
+  label: "Bangladesh"
+}, {
+  value: "BB",
+  label: "Barbados"
+}, {
+  value: "BY",
+  label: "Belarus"
+}, {
+  value: "BE",
+  label: "Belgium"
+}, {
+  value: "BZ",
+  label: "Belize"
+}, {
+  value: "BJ",
+  label: "Benin"
+}, {
+  value: "BM",
+  label: "Bermuda"
+}, {
+  value: "BT",
+  label: "Bhutan"
+}, {
+  value: "BO",
+  label: "Bolivia, Plurinational State of"
+}, {
+  value: "BQ",
+  label: "Bonaire, Sint Eustatius and Saba"
+}, {
+  value: "BA",
+  label: "Bosnia and Herzegovina"
+}, {
+  value: "BW",
+  label: "Botswana"
+}, {
+  value: "BW",
+  label: "Botswana"
+}, {
+  value: "BV",
+  label: "Bouvet Island"
+}, {
+  value: "BR",
+  label: "Brazil"
+}, {
+  value: "IO",
+  label: "British Indian Ocean Territory"
+}, {
+  value: "BN",
+  label: "Brunei Darussalam"
+}, {
+  value: "BG",
+  label: "Bulgaria"
+}, {
+  value: "BF",
+  label: "Burkina"
+}, {
+  value: "BI",
+  label: "Burundi"
+}, {
+  value: "KH",
+  label: "Cambodia"
+}, {
+  value: "CM",
+  label: "Cameroon"
+}, {
+  value: "CA",
+  label: "Canada"
+}, {
+  value: "CV",
+  label: "Cape Verde"
+}, {
+  value: "KY",
+  label: "Cayman Islands"
+}, {
+  value: "CF",
+  label: "Central African Republic"
+}, {
+  value: "TD",
+  label: "Chad"
+}, {
+  value: "CL",
+  label: "Chile"
+}, {
+  value: "CN",
+  label: "China"
+}, {
+  value: "CX",
+  label: "Christmas Island"
+}, {
+  value: "CC",
+  label: "Cocos (Keeling) Islands"
+}, {
+  value: "CO",
+  label: "Colombia"
+}, {
+  value: "KM",
+  label: "Comoros"
+}, {
+  value: "CG",
+  label: "Congo"
+}, {
+  value: "CD",
+  label: "Congo, the Democratic Republic of the"
+}, {
+  value: "CK",
+  label: "Cook Islands"
+}, {
+  value: "CR",
+  label: "Costa Rica"
+}, {
+  value: "CI",
+  label: "Côte d'Ivoire"
+}, {
+  value: "HR",
+  label: "Croatia"
+}, {
+  value: "CU",
+  label: "Cuba"
+}, {
+  value: "CW",
+  label: "Curaçao"
+}, {
+  value: "CY",
+  label: "Cyprus"
+}, {
+  value: "CZ",
+  label: "Czech Republic"
+}, {
+  value: "DK",
+  label: "Denmark"
+}, {
+  value: "DJ",
+  label: "Djibouti"
+}, {
+  value: "DM",
+  label: "Dominica"
+}, {
+  value: "DO",
+  label: "Dominican Republic"
+}, {
+  value: "EC",
+  label: "Ecuador"
+}, {
+  value: "EG",
+  label: "Egypt"
+}, {
+  value: "SV",
+  label: "El Salvador"
+}, {
+  value: "GQ",
+  label: "Equatorial Guinea"
+}, {
+  value: "ER",
+  label: "Eritrea"
+}, {
+  value: "EE",
+  label: "Estonia"
+}, {
+  value: "ET",
+  label: "Ethiopia"
+}, {
+  value: "FK",
+  label: "Falkland Islands (Malvinas)"
+}, {
+  value: "FO",
+  label: "Faroe Islands"
+}, {
+  value: "FJ",
+  label: "Fiji"
+}, {
+  value: "FI",
+  label: "Finland"
+}, {
+  value: "FR",
+  label: "France"
+}, {
+  value: "GF",
+  label: "French Guiana"
+}, {
+  value: "PF",
+  label: "French Polynesia"
+}, {
+  value: "TF",
+  label: "French Southern Territories"
+}, {
+  value: "GA",
+  label: "Gabon"
+}, {
+  value: "GM",
+  label: "Gambia"
+}, {
+  value: "GE",
+  label: "Georgia"
+}, {
+  value: "DE",
+  label: "Germany"
+}, {
+  value: "GH",
+  label: "Ghana"
+}, {
+  value: "GI",
+  label: "Gibraltar"
+}, {
+  value: "GR",
+  label: "Greece"
+}, {
+  value: "GL",
+  label: "Greenland"
+}, {
+  value: "GD",
+  label: "Grenada"
+}, {
+  value: "GP",
+  label: "Guadeloupe"
+}, {
+  value: "GU",
+  label: "Guam"
+}, {
+  value: "GT",
+  label: "Guatemala"
+}, {
+  value: "GG",
+  label: "Guernsey"
+}, {
+  value: "GN",
+  label: "Guinea"
+}, {
+  value: "GW",
+  label: "Guinea-Bissau"
+}, {
+  value: "GY",
+  label: "Guyana"
+}, {
+  value: "HT",
+  label: "Haiti"
+}, {
+  value: "HM",
+  label: "Heard Island and McDonald Islands"
+}, {
+  value: "VA",
+  label: "Holy See (Vatican City State)"
+}, {
+  value: "HN",
+  label: "Honduras"
+}, {
+  value: "HK",
+  label: "Hong Kong"
+}, {
+  value: "HU",
+  label: "Hungary"
+}, {
+  value: "IS",
+  label: "Iceland"
+}, {
+  value: "IN",
+  label: "India"
+}, {
+  value: "ID",
+  label: "Indonesia"
+}, {
+  value: "IR",
+  label: "Iran, Islamic Republic of"
+}, {
+  value: "IQ",
+  label: "Iraq"
+}, {
+  value: "IE",
+  label: "Ireland"
+}, {
+  value: "IM",
+  label: "Isle of Man"
+}, {
+  value: "IL",
+  label: "Israel"
+}, {
+  value: "IT",
+  label: "Italy"
+}, {
+  value: "JM",
+  label: "Jamaica"
+}, {
+  value: "JP",
+  label: "Japan"
+}, {
+  value: "JE",
+  label: "Jersey"
+}, {
+  value: "JO",
+  label: "Jordan"
+}, {
+  value: "KZ",
+  label: "Kazakhstan"
+}, {
+  value: "KE",
+  label: "Kenya"
+}, {
+  value: "KI",
+  label: "Kiribati"
+}, {
+  value: "KP",
+  label: "Korea, Democratic People's Republic of"
+}, {
+  value: "KR",
+  label: "Korea, Republic of"
+}, {
+  value: "KW",
+  label: "Kuwait"
+}, {
+  value: "KG",
+  label: "Kyrgyzstan"
+}, {
+  value: "LA",
+  label: "Lao People's Democratic Republic"
+},, {
+  value: "LV",
+  label: "Latvia"
+}, {
+  value: "LB",
+  label: "Lebanon"
+}, {
+  value: "LS",
+  label: "Lesotho"
+}, {
+  value: "LR",
+  label: "Liberia"
+}, {
+  value: "LY",
+  label: "Libya"
+}, {
+  value: "LI",
+  label: "Liechtenstein"
+}, {
+  value: "LT",
+  label: "Lithuania"
+}, {
+  value: "LU",
+  label: "Luxembourg"
+}, {
+  value: "MO",
+  label: "Macao"
+}, {
+  value: "MK",
+  label: "Macedonia, the former Yugoslav Republic of"
+}, {
+  value: "MG",
+  label: "Madagascar"
+}, {
+  value: "MW",
+  label: "Malawi"
+}, {
+  value: "MY",
+  label: "Malaysia"
+}, {
+  value: "MV",
+  label: "Maldives"
+}, {
+  value: "ML",
+  label: "Mali"
+}, {
+  value: "MT",
+  label: "Malta"
+}, {
+  value: "MH",
+  label: "Marshall Islands"
+}, {
+  value: "MQ",
+  label: "Martinique"
+}, {
+  value: "MR",
+  label: "Mauritania"
+}, {
+  value: "MU",
+  label: "Mauritius"
+}, {
+  value: "YT",
+  label: "Mayotte"
+}, {
+  value: "MX",
+  label: "Mexico"
+}, {
+  value: "FM",
+  label: "Micronesia, Federated States of"
+}, {
+  value: "MD",
+  label: "Moldova, Republic of"
+}, {
+  value: "MC",
+  label: "Monaco"
+}, {
+  value: "MN",
+  label: "Mongolia"
+}, {
+  value: "ME",
+  label: "Montenegro"
+}, {
+  value: "MS",
+  label: "Montserrat"
+}, {
+  value: "MA",
+  label: "Morocco"
+}, {
+  value: "MZ",
+  label: "Mozambique"
+}, {
+  value: "MM",
+  label: "Myanmar"
+}, {
+  value: "NA",
+  label: "Namibia"
+}, {
+  value: "NR",
+  label: "Nauru"
+}, {
+  value: "NP",
+  label: "Nepal"
+}, {
+  value: "NL",
+  label: "Netherlands"
+}, {
+  value: "NC",
+  label: "New Caledonia"
+}, {
+  value: "NZ",
+  label: "New Zealand"
+}, {
+  value: "NI",
+  label: "Nicaragua"
+}, {
+  value: "NE",
+  label: "Niger"
+}, {
+  value: "NG",
+  label: "Nigeria"
+}, {
+  value: "NU",
+  label: "Niue"
+}, {
+  value: "NF",
+  label: "Norfolk Island"
+}, {
+  value: "MP",
+  label: "Northern Mariana Islands"
+}, {
+  value: "NO",
+  label: "Norway"
+}, {
+  value: "OM",
+  label: "Oman"
+}, {
+  value: "PK",
+  label: "Pakistan"
+}, {
+  value: "PW",
+  label: "Palau"
+}, {
+  value: "PS",
+  label: "Palestinian Territory, Occupied"
+}, {
+  value: "PA",
+  label: "Panama"
+}, {
+  value: "PG",
+  label: "Papua New Guinea"
+}, {
+  value: "PY",
+  label: "Paraguay"
+}, {
+  value: "PE",
+  label: "Peru"
+}, {
+  value: "PH",
+  label: "Philippines"
+}, {
+  value: "PN",
+  label: "Pitcairn"
+}, {
+  value: "PL",
+  label: "Poland"
+}, {
+  value: "PT",
+  label: "Portugal"
+}, {
+  value: "PR",
+  label: "Puerto Rico"
+}, {
+  value: "QA",
+  label: "Qatar"
+}, {
+  value: "RE",
+  label: "Réunion"
+}, {
+  value: "RO",
+  label: "Romania"
+}, {
+  value: "RU",
+  label: "Russian Federation"
+}, {
+  value: "RW",
+  label: "Rwanda"
+}, {
+  value: "BL",
+  label: "Saint Barthélemy"
+}, {
+  value: "SH",
+  label: "Saint Helena, Ascension and Tristan da Cunha"
+}, {
+  value: "KN",
+  label: "Saint Kitts and Nevis"
+}, {
+  value: "LC",
+  label: "Saint Lucia"
+}, {
+  value: "MF",
+  label: "Saint Martin (French part)"
+}, {
+  value: "PM",
+  label: "Saint Pierre and Miquelon"
+}, {
+  value: "VC",
+  label: "Saint Vincent and the Grenadines"
+}, {
+  value: "WS",
+  label: "Samoa"
+}, {
+  value: "SM",
+  label: "San Marino"
+}, {
+  value: "ST",
+  label: "Sao Tome and Principe"
+}, {
+  value: "SA",
+  label: "Saudi Arabia"
+}, {
+  value: "SN",
+  label: "Senegal"
+}, {
+  value: "RS",
+  label: "Serbia"
+}, {
+  value: "SC",
+  label: "Seychelles"
+}, {
+  value: "SL",
+  label: "Sierra Leone"
+}, {
+  value: "SG",
+  label: "Singapore"
+}, {
+  value: "SX",
+  label: "Sint Maarten (Dutch part)"
+}, {
+  value: "SK",
+  label: "Slovakia"
+}, {
+  value: "SI",
+  label: "Slovenia"
+}, {
+  value: "SB",
+  label: "Solomon Islands"
+}, {
+  value: "SO",
+  label: "Somalia"
+}, {
+  value: "ZA",
+  label: "South Africa"
+}, {
+  value: "GS",
+  label: "South Georgia and the South Sandwich Islands"
+}, {
+  value: "SS",
+  label: "South Sudan"
+}, {
+  value: "ES",
+  label: "Spain"
+}, {
+  value: "LK",
+  label: "Sri Lanka"
+}, {
+  value: "SD",
+  label: "Sudan"
+}, {
+  value: "SR",
+  label: "Suriname"
+}, {
+  value: "SJ",
+  label: "Svalbard and Jan Mayen"
+}, {
+  value: "SZ",
+  label: "Swaziland"
+}, {
+  value: "SE",
+  label: "Sweden"
+}, {
+  value: "CH",
+  label: "Switzerland"
+}, {
+  value: "SY",
+  label: "Syrian Arab Republic"
+}, {
+  value: "TW",
+  label: "Taiwan, Province of China"
+}, {
+  value: "TJ",
+  label: "Tajikistan"
+}, {
+  value: "TZ",
+  label: "Tanzania, United Republic of"
+}, {
+  value: "TH",
+  label: "Thailand"
+}, {
+  value: "TL",
+  label: "Timor-Leste"
+}, {
+  value: "TG",
+  label: "Togo"
+}, {
+  value: "TK",
+  label: "Tokelau"
+}, {
+  value: "TO",
+  label: "Tonga"
+}, {
+  value: "TT",
+  label: "Trinidad and Tobago"
+}, {
+  value: "TN",
+  label: "Tunisia"
+}, {
+  value: "TR",
+  label: "Turkey"
+}, {
+  value: "TM",
+  label: "Turkmenistan"
+}, {
+  value: "TC",
+  label: "Turks and Caicos Islands"
+}, {
+  value: "TV",
+  label: "Tuvalu"
+}, {
+  value: "UG",
+  label: "Uganda"
+}, {
+  value: "UA",
+  label: "Ukraine"
+}, {
+  value: "AE",
+  label: "United Arab Emirates"
+}, {
+  value: "GB",
+  label: "United Kingdom"
+}, {
+  value: "US",
+  label: "United States"
+}, {
+  value: "UM",
+  label: "United States Minor Outlying Islands"
+}, {
+  value: "UY",
+  label: "Uruguay"
+}, {
+  value: "UZ",
+  label: "Uzbekistan"
+}, {
+  value: "VU",
+  label: "Vanuatu"
+}, {
+  value: "VE",
+  label: "Venezuela, Bolivarian Republic of"
+}, {
+  value: "VN",
+  label: "Viet Nam"
+}, {
+  value: "VG",
+  label: "Virgin Islands, British"
+}, {
+  value: "VI",
+  label: "Virgin Islands, U.S."
+}, {
+  value: "WF",
+  label: "Wallis and Futuna"
+}, {
+  value: "EH",
+  label: "Western Sahara"
+}, {
+  value: "YE",
+  label: "Yemen"
+}, {
+  value: "ZM",
+  label: "Zambia"
+}, {
+  value: "ZW",
+  label: "Zimbabwe"
+}];
+
+/***/ }),
+
+/***/ "./src/static/style/styles.js":
+/*!************************************!*\
+  !*** ./src/static/style/styles.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var styles = function styles(theme) {
+  var _paper, _paperRegister;
+
+  return {
+    root: {
+      flexGrow: 1
+    },
+    paper: (_paper = {
+      marginTop: theme.spacing.unit * 15,
+      padding: theme.spacing.unit * 3,
+      paddingLeft: theme.spacing.unit * 8,
+      paddingRight: theme.spacing.unit * 8,
+      minWidth: 400
+    }, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(_paper, theme.breakpoints.down("sm"), {
+      height: "100vh",
+      padding: 0,
+      marginTop: 0
+    }), _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(_paper, theme.breakpoints.only("md"), {
+      marginTop: theme.spacing.unit * 25
+    }), _paper),
+    paperRegister: (_paperRegister = {
+      marginTop: theme.spacing.unit * 15,
+      padding: theme.spacing.unit * 3,
+      minWidth: 400
+    }, _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(_paperRegister, theme.breakpoints.down("sm"), {
+      height: "auto",
+      padding: 0,
+      marginTop: 0
+    }), _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(_paperRegister, theme.breakpoints.only("md"), {
+      marginTop: theme.spacing.unit * 25
+    }), _paperRegister),
+    textField: _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({
+      width: 250
+    }, theme.breakpoints.only("md"), {
+      width: 350
+    }),
+    accountCircle: _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({
+      width: 150,
+      height: 150
+    }, theme.breakpoints.down("sm"), {
+      marginTop: 150
+    }),
+    addPhoto: {
+      width: 150,
+      height: 150
+    },
+    button: {
+      margin: theme.spacing.unit * 2
+    },
+    image: {
+      height: 300,
+      width: 300
+    },
+    progressBar: _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({
+      position: "absolute",
+      left: 650,
+      top: 350
+    }, theme.breakpoints.down("sm"), {
+      left: "45vw",
+      top: "45vh"
+    }),
+    checkBox: _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()({
+      marginLeft: 65
+    }, theme.breakpoints.only("md"), {
+      marginLeft: 0
+    })
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (styles);
+
+/***/ }),
+
 /***/ "./src/static/themes/theme.js":
 /*!************************************!*\
   !*** ./src/static/themes/theme.js ***!
   \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// import { createMuiTheme } from "@material-ui/core/styles";
-// import themeInitialState from "./themeInitialState";
-// import { create, SheetsRegistry } from "jss";
-// import rtl from "jss-rtl";
-// import { createGenerateClassName, jssPreset } from "@material-ui/core/styles";
-// const getTheme = uiTheme => {
-//   const theme = createMuiTheme({
-//     direction: uiTheme.direction,
-//     nprogress: { color: uiTheme.paletteType === "light" ? "#000" : "#fff" },
-//     palette: { ...uiTheme.paletteColors, type: uiTheme.paletteType },
-//     typography: { useNextVariants: true }
-//   });
-//   if (process.browser) {
-//     window.theme = theme;
-//   }
-//   return theme;
-// };
-// const theme = getTheme(themeInitialState);
-// const jss = create({
-//   plugins: [...jssPreset().plugins, rtl()],
-//   insertionPoint: "insertion-point-jss"
-// });
-// const createPageContext = () => {
-//   return {
-//     jss,
-//     theme,
-//     sheetsManager: new Map(),
-//     sheetsRegistry: new SheetsRegistry(),
-//     generateClassName: createGenerateClassName({
-//       productionPrefix: "j"
-//     })
-//   };
-// };
-// let pageContext;
-// export function updatePageContext(uiTheme) {
-//   pageContext = {
-//     ...pageContext,
-//     theme: getTheme(uiTheme)
-//   };
-//   return pageContext;
-// }
-// export default function getPageContext() {
-//   // Make sure to create a new store for every server-side request so that data
-//   // isn't shared between connections (which would be bad)
-//   if (!process.browser) {
-//     return createPageContext();
-//   }
-//   // Reuse context on the client-side
-//   if (!pageContext) {
-//     pageContext = createPageContext();
-//   }
-//   return pageContext;
-// }
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/styles/index.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core_colors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/colors */ "./node_modules/@material-ui/core/colors/index.js");
+/* harmony import */ var _material_ui_core_colors__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_colors__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_0__["createMuiTheme"])({
+  palette: {
+    primary: {
+      main: _material_ui_core_colors__WEBPACK_IMPORTED_MODULE_1__["blue"][500]
+    },
+    secondary: {
+      main: _material_ui_core_colors__WEBPACK_IMPORTED_MODULE_1__["green"][500]
+    },
+    error: {
+      main: _material_ui_core_colors__WEBPACK_IMPORTED_MODULE_1__["red"][500]
+    }
+  },
+  typography: {
+    useNextVariants: true
+  }
+});
+/* harmony default export */ __webpack_exports__["default"] = (theme);
 
 /***/ }),
 

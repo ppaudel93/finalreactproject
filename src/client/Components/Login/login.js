@@ -6,15 +6,43 @@ import {
   Grid,
   withStyles,
   TextField,
-  Link
+  Link,
+  CircularProgress
 } from "@material-ui/core";
 import PropTypes from "prop-types";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import styles from "../../../static/style/styles";
 
 class Login extends Component {
-  render() {
+  constructor(props) {
+    super(props);
+    this.state = {
+      displayProgressBar: false,
+      buttonDisabled: false
+    };
+  }
+  componentDidMount() {
     document.title = "Login";
+  }
+  handleButtonClick = () => {
+    this.setState({
+      displayProgressBar: !this.state.displayProgressBar,
+      buttonDisabled: !this.state.buttonDisabled
+    });
+    setTimeout(() => {
+      this.setState({
+        displayProgressBar: !this.state.displayProgressBar,
+        buttonDisabled: !this.state.buttonDisabled
+      });
+    }, 3000);
+  };
+
+  render() {
+    let newStyles = {
+      progressBar: {
+        display: this.state.displayProgressBar ? "block" : "none"
+      }
+    };
     const { classes } = this.props;
     return (
       <Grid container className={classes.root}>
@@ -52,12 +80,18 @@ class Login extends Component {
                   />
                 </Grid>
               </Grid>
+              <CircularProgress
+                style={newStyles.progressBar}
+                className={classes.progressBar}
+              />
               <Grid item xs={12} sm={12}>
                 <Grid container justify="center">
                   <Button
                     className={classes.button}
                     color="primary"
                     variant="contained"
+                    onClick={this.handleButtonClick}
+                    disabled={this.state.buttonDisabled}
                   >
                     Login
                   </Button>

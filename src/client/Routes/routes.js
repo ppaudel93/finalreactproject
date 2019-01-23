@@ -5,12 +5,8 @@ import { MuiThemeProvider } from "@material-ui/core/styles";
 import theme from "../../static/themes/theme";
 import Login from "../Components/Login/login";
 import SignUp from "../Components/SignUp/signup";
+import Home from "../Components/Home/home";
 
-const basic = () => (
-  <div>
-    <h1>This is path none</h1>
-  </div>
-);
 const about = () => (
   <div>
     <h1>This is path about</h1>
@@ -32,7 +28,7 @@ const Routes = () => (
   <MuiThemeProvider theme={theme}>
     <div>
       <Switch>
-        <Route path="/" exact component={basic} />
+        <Route path="/" exact component={Home} />
         <Route path="/about" component={about} />
         <Route path="/home" component={home} />
         <Route path="/login" component={Login} />

@@ -41,4 +41,5 @@ const PORT = process.env.PORT || 3002;
 app.listen(PORT, () => {
   console.log(`Listening on ${PORT}`);
   console.log("Press Ctrl+C to quit.");
+  console.log(`Server created at http://localhost:${PORT}`);
 });
