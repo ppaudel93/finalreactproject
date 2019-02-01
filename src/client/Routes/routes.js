@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
-import { MuiThemeProvider } from "@material-ui/core/styles";
-import theme from "../../static/themes/theme";
 import Login from "../Components/Login/login";
 import SignUp from "../Components/SignUp/signup";
 import Home from "../Components/Home/home";
@@ -25,18 +23,16 @@ const noPage = () => (
   </div>
 );
 const Routes = () => (
-  <MuiThemeProvider theme={theme}>
-    <div>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={about} />
-        <Route path="/home" component={home} />
-        <Route path="/login" component={Login} />
-        <Route path="/signup" component={SignUp} />
-        <Route path="*" component={noPage} />
-      </Switch>
-    </div>
-  </MuiThemeProvider>
+  <div>
+    <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/about" component={about} />
+      <Route path="/home" component={home} />
+      <Route path="/login" component={Login} />
+      <Route path="/signup" component={SignUp} />
+      <Route path="*" component={noPage} />
+    </Switch>
+  </div>
 );
 
 export default Routes;

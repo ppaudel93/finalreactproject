@@ -9,6 +9,8 @@ import ReactDOMServer from "react-dom/server";
 import { StaticRouter } from "react-router-dom";
 import Routes from "../client/Routes/routes";
 import fs from "fs";
+import { Provider } from "react-redux";
+import store from "../client/Store";
 
 let app = express(),
   DIST_DIR = __dirname,
@@ -23,9 +25,11 @@ app.use(webpackHotMiddleware(compiler));
 app.get("/*", (req, res) => {
   const context = {};
   const app = ReactDOMServer.renderToString(
-    <StaticRouter location={req.url} context={context}>
-      <Routes />
-    </StaticRouter>
+    <Provider store={store}>
+      <StaticRouter location={req.url} context={context}>
+        <Routes />
+      </StaticRouter>
+    </Provider>
   );
   fs.readFile(HTML_FILE, "utf8", (err, data) => {
     if (err) {

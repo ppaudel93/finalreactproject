@@ -19,6 +19,21 @@ import { MuiPickersUtilsProvider, DatePicker } from "material-ui-pickers";
 import DateFnsUtils from "@date-io/date-fns";
 import { countryList } from "../../../static/JS/countryList";
 import { Genders } from "../../../static/JS/Genders";
+import { connect } from "react-redux";
+import {
+  changeAddressRegister,
+  changeBirthdayRegister,
+  changeCountryRegister,
+  changeEmailConfirmRegister,
+  changeEmailRegister,
+  changeFirstnameRegister,
+  changeGenderRegister,
+  changeLastnameRegister,
+  changePasswordConfirmRegister,
+  changePasswordRegister
+} from "./signupModule";
+import { bindActionCreators } from "redux";
+import PropTypes from "prop-types";
 
 class SignUp extends Component {
   state = {
@@ -27,11 +42,38 @@ class SignUp extends Component {
     gender: "",
     termsAccepted: false
   };
+  handlePasswordConfirmChange = e => {
+    this.props.changePasswordConfirmRegister(e.target.value);
+  };
+  handlePasswordChange = e => {
+    this.props.changePasswordRegister(e.target.value);
+  };
+  handleLastnameChange = e => {
+    this.props.changeLastnameRegister(e.target.value);
+  };
+  handleGenderChange = n => e => {
+    this.props.changeGenderRegister(e.target.value);
+  };
+  handleFirstnameChange = e => {
+    this.props.changeFirstnameRegister(e.target.value);
+  };
+  handleEmailConfirmChange = e => {
+    this.props.changeEmailConfirmRegister(e.target.value);
+  };
+  handleEmailChange = e => {
+    this.props.changeEmailRegister(e.target.value);
+  };
+  handleCountryChange = n => e => {
+    this.props.changeCountryRegister(e.target.value);
+  };
+  handleBirthdayChange = date => {
+    this.props.changeBirthdayRegister(date);
+  };
+  handleAddressChange = e => {
+    this.props.changeAddressRegister(e.target.value);
+  };
   handleFileButtonClick = () => {
     document.getElementById("register-file").click();
-  };
-  handleDateChange = date => {
-    this.setState({ selectedDate: date });
   };
   handleChange = name => event => {
     this.setState({
@@ -78,6 +120,8 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         type="text"
+                        value={this.props.firstname}
+                        onChange={this.handleFirstnameChange}
                       />
                     </Grid>
                   </Grid>
@@ -89,6 +133,8 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         type="text"
+                        value={this.props.lastname}
+                        onChange={this.handleLastnameChange}
                       />
                     </Grid>
                   </Grid>
@@ -100,6 +146,8 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         type="email"
+                        value={this.props.email}
+                        onChange={this.handleEmailChange}
                       />
                     </Grid>
                   </Grid>
@@ -111,6 +159,8 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         type="email"
+                        value={this.props.confirmEmail}
+                        onChange={this.handleEmailConfirmChange}
                       />
                     </Grid>
                   </Grid>
@@ -122,6 +172,8 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         type="password"
+                        value={this.props.password}
+                        onChange={this.handlePasswordChange}
                       />
                     </Grid>
                   </Grid>
@@ -133,6 +185,8 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         type="password"
+                        value={this.props.confirmPassword}
+                        onChange={this.handlePasswordConfirmChange}
                       />
                     </Grid>
                   </Grid>
@@ -140,9 +194,9 @@ class SignUp extends Component {
                     <Grid container justify="center">
                       <Tooltip title="Birthday">
                         <DatePicker
-                          value={this.state.selectedDate}
+                          value={this.props.birthday}
                           label="Birthday"
-                          onChange={this.handleDateChange}
+                          onChange={this.handleBirthdayChange}
                           format="dd/MM/yyyy"
                           className={classes.textField}
                           style={{ marginTop: 15 }}
@@ -158,8 +212,8 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         select
-                        value={this.state.gender}
-                        onChange={this.handleChange("gender")}
+                        value={this.props.gender}
+                        onChange={this.handleGenderChange("gender")}
                         SelectProps={{
                           MenuProps: { className: classes.textField }
                         }}
@@ -180,8 +234,8 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         select
-                        value={this.state.country}
-                        onChange={this.handleChange("country")}
+                        value={this.props.country}
+                        onChange={this.handleCountryChange("country")}
                         SelectProps={{
                           MenuProps: { className: classes.textField }
                         }}
@@ -202,6 +256,8 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         type="text"
+                        value={this.props.address}
+                        onChange={this.handleAddressChange}
                       />
                     </Grid>
                   </Grid>
@@ -242,5 +298,59 @@ class SignUp extends Component {
     );
   }
 }
+const mapStateToProps = state => ({
+  email: state.register.email,
+  confirmEmail: state.register.confirmEmail,
+  password: state.register.password,
+  confirmPassword: state.register.confirmPassword,
+  firstname: state.register.firstname,
+  lastname: state.register.lastname,
+  birthday: state.register.birthday,
+  address: state.register.address,
+  country: state.register.country,
+  gender: state.register.gender
+});
 
-export default withWidth()(withStyles(styles)(SignUp));
+const mapDispatchToProps = dispatch =>
+  bindActionCreators(
+    {
+      changeEmailRegister,
+      changeEmailConfirmRegister,
+      changePasswordRegister,
+      changePasswordConfirmRegister,
+      changeFirstnameRegister,
+      changeLastnameRegister,
+      changeAddressRegister,
+      changeBirthdayRegister,
+      changeCountryRegister,
+      changeGenderRegister
+    },
+    dispatch
+  );
+SignUp.propTypes = {
+  classes: PropTypes.object.isRequired,
+  email: PropTypes.string.isRequired,
+  confirmEmail: PropTypes.string.isRequired,
+  password: PropTypes.string.isRequired,
+  confirmPassword: PropTypes.string.isRequired,
+  firstname: PropTypes.string.isRequired,
+  lastname: PropTypes.string.isRequired,
+  birthday: PropTypes.string.isRequired,
+  address: PropTypes.string.isRequired,
+  country: PropTypes.string.isRequired,
+  gender: PropTypes.string.isRequired,
+  changeEmailRegister: PropTypes.func.isRequired,
+  changeEmailConfirmRegister: PropTypes.func.isRequired,
+  changePasswordRegister: PropTypes.func.isRequired,
+  changePasswordConfirmRegister: PropTypes.func.isRequired,
+  changeFirstnameRegister: PropTypes.func.isRequired,
+  changeLastnameRegister: PropTypes.func.isRequired,
+  changeAddressRegister: PropTypes.func.isRequired,
+  changeBirthdayRegister: PropTypes.func.isRequired,
+  changeCountryRegister: PropTypes.func.isRequired,
+  changeGenderRegister: PropTypes.func.isRequired
+};
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(withWidth()(withStyles(styles)(SignUp)));

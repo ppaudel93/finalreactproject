@@ -12,6 +12,17 @@ import {
 import PropTypes from "prop-types";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import styles from "../../../static/style/styles";
+import { changeEmailLogin, changePasswordLogin } from "./loginModule";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+
+const mapStateToprops = state => ({
+  email: state.login.email,
+  password: state.login.password
+});
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({ changeEmailLogin, changePasswordLogin }, dispatch);
 
 class Login extends Component {
   constructor(props) {
@@ -37,6 +48,12 @@ class Login extends Component {
     }, 3000);
   };
 
+  handleEmailChange = e => {
+    this.props.changeEmailLogin(e.target.value);
+  };
+  handlePasswordChange = e => {
+    this.props.changePasswordLogin(e.target.value);
+  };
   render() {
     let newStyles = {
       progressBar: {
@@ -66,6 +83,8 @@ class Login extends Component {
                     className={classes.textField}
                     margin="normal"
                     type="email"
+                    value={this.props.email}
+                    onChange={this.handleEmailChange}
                   />
                 </Grid>
               </Grid>
@@ -77,6 +96,8 @@ class Login extends Component {
                     className={classes.textField}
                     margin="normal"
                     type="password"
+                    value={this.props.password}
+                    onChange={this.handlePasswordChange}
                   />
                 </Grid>
               </Grid>
@@ -116,7 +137,14 @@ class Login extends Component {
 }
 
 Login.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
+  email: PropTypes.string.isRequired,
+  password: PropTypes.string.isRequired,
+  changeEmailLogin: PropTypes.func.isRequired,
+  changePasswordLogin: PropTypes.func.isRequired
 };
 
-export default withStyles(styles)(Login);
+export default connect(
+  mapStateToprops,
+  mapDispatchToProps
+)(withStyles(styles)(Login));
