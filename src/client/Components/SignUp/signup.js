@@ -30,17 +30,40 @@ import {
   changeGenderRegister,
   changeLastnameRegister,
   changePasswordConfirmRegister,
-  changePasswordRegister
+  changePasswordRegister,
+  register
 } from "./signupModule";
 import { bindActionCreators } from "redux";
 import PropTypes from "prop-types";
+import bcrypt from "bcrypt-nodejs";
 
 class SignUp extends Component {
   state = {
     selectedDate: null,
     country: "",
     gender: "",
-    termsAccepted: false
+    termsAccepted: false,
+    emailError: false
+  };
+  handleRegister = () => {
+    let firstname = this.props.firstname;
+    let lastname = this.props.lastname;
+    let email = this.props.email;
+    let password = bcrypt.hashSync(this.props.password);
+    let birthday = this.props.birthday;
+    let gender = this.props.gender;
+    let country = this.props.country;
+    let address = this.props.address;
+    this.props.register({
+      firstname,
+      lastname,
+      email,
+      password,
+      birthday,
+      gender,
+      country,
+      address
+    });
   };
   handlePasswordConfirmChange = e => {
     this.props.changePasswordConfirmRegister(e.target.value);
@@ -284,6 +307,7 @@ class SignUp extends Component {
                         color="primary"
                         variant="contained"
                         disabled={!this.state.termsAccepted}
+                        onClick={this.handleRegister}
                       >
                         Register
                       </Button>
@@ -323,7 +347,8 @@ const mapDispatchToProps = dispatch =>
       changeAddressRegister,
       changeBirthdayRegister,
       changeCountryRegister,
-      changeGenderRegister
+      changeGenderRegister,
+      register
     },
     dispatch
   );
@@ -335,7 +360,7 @@ SignUp.propTypes = {
   confirmPassword: PropTypes.string.isRequired,
   firstname: PropTypes.string.isRequired,
   lastname: PropTypes.string.isRequired,
-  birthday: PropTypes.string.isRequired,
+  birthday: PropTypes.object,
   address: PropTypes.string.isRequired,
   country: PropTypes.string.isRequired,
   gender: PropTypes.string.isRequired,
@@ -348,7 +373,8 @@ SignUp.propTypes = {
   changeAddressRegister: PropTypes.func.isRequired,
   changeBirthdayRegister: PropTypes.func.isRequired,
   changeCountryRegister: PropTypes.func.isRequired,
-  changeGenderRegister: PropTypes.func.isRequired
+  changeGenderRegister: PropTypes.func.isRequired,
+  register: PropTypes.func.isRequired
 };
 export default connect(
   mapStateToProps,

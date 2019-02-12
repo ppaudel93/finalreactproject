@@ -10,8 +10,15 @@ import { StaticRouter } from "react-router-dom";
 import Routes from "../client/Routes/routes";
 import fs from "fs";
 import { Provider } from "react-redux";
-import store from "../client/Store";
+import CreateStore from "../client/Store";
+import signupApi from "./signup";
+import loginApi from "./login";
+import Mongo from "mongodb";
+import { MONGO_URL, DB_NAME } from "../static/JS/actionConstants";
+import { findAll, connectToDB } from "./generalFunctions";
 
+const MongoClient = Mongo.MongoClient;
+const store = CreateStore();
 let app = express(),
   DIST_DIR = __dirname,
   HTML_FILE = Path.join(DIST_DIR, "index.html"),
@@ -22,6 +29,29 @@ app.use(
   })
 );
 app.use(webpackHotMiddleware(compiler));
+app.use(express.json());
+app.use(express.urlencoded());
+app.get("/loginnewuser/:id", (req, res) => {
+  res.send("New User Creation API" + req.params.id);
+});
+app.post("/login", (req, res) => {
+  loginApi(req, res);
+});
+app.post("/signup", (req, res) => {
+  signupApi(req, res);
+});
+app.get("/users", (req, res) => {
+  connectToDB()
+    .then(db => {
+      findAll(db).then(docs => {
+        console.log(docs);
+        res.send(docs);
+      });
+    })
+    .catch(err => {
+      console.log("error:" + err);
+    });
+});
 app.get("/*", (req, res) => {
   const context = {};
   const app = ReactDOMServer.renderToString(
@@ -42,8 +72,9 @@ app.get("/*", (req, res) => {
   });
 });
 const PORT = process.env.PORT || 3002;
-app.listen(PORT, () => {
+const HOST = process.env.HOST || "localhost";
+app.listen(PORT, HOST, () => {
   console.log(`Listening on ${PORT}`);
   console.log("Press Ctrl+C to quit.");
-  console.log(`Server created at http://localhost:${PORT}`);
+  console.log(`Server created at http://${HOST}:${PORT}`);
 });

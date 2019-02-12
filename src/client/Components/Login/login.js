@@ -12,17 +12,30 @@ import {
 import PropTypes from "prop-types";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import styles from "../../../static/style/styles";
-import { changeEmailLogin, changePasswordLogin } from "./loginModule";
+import { changeEmailLogin, changePasswordLogin, login } from "./loginModule";
+import { toggleLoggedIn, changeCurrentUser } from "../AppBar/navBarModule";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
+import bcrypt from "bcrypt-nodejs";
 
 const mapStateToprops = state => ({
   email: state.login.email,
-  password: state.login.password
+  password: state.login.password,
+  loggedIn: state.navBar.loggedIn,
+  currentUser: state.navBar.currentUser
 });
 
 const mapDispatchToProps = dispatch =>
-  bindActionCreators({ changeEmailLogin, changePasswordLogin }, dispatch);
+  bindActionCreators(
+    {
+      changeEmailLogin,
+      changePasswordLogin,
+      login,
+      toggleLoggedIn,
+      changeCurrentUser
+    },
+    dispatch
+  );
 
 class Login extends Component {
   constructor(props) {
@@ -32,21 +45,47 @@ class Login extends Component {
       buttonDisabled: false
     };
   }
+  handleProgressBar = () => {
+    this.props.toggleProgressBar();
+  };
+  handleLoginClick = () => {
+    let email = this.props.email;
+    let password = this.props.password;
+    if (email === "") {
+      alert("Email cannot be empty");
+      return;
+    }
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+      alert(
+        "The email address you entered is invalid. Please enter a valid email address."
+      );
+      return;
+    }
+    if (password === "") {
+      alert("Password cannot be empty");
+      return;
+    }
+    this.setState(
+      {
+        displayProgressBar: !this.state.displayProgressBar,
+        buttonDisabled: !this.state.buttonDisabled
+      },
+      () => {
+        let hash = bcrypt.hashSync(password);
+        console.log(hash);
+        this.props.login({ email, password });
+        // this.props.toggleLoggedIn(true);
+        // this.props.changeCurrentUser(email);
+        this.setState({
+          displayProgressBar: !this.state.displayProgressBar,
+          buttonDisabled: !this.state.buttonDisabled
+        });
+      }
+    );
+  };
   componentDidMount() {
     document.title = "Login";
   }
-  handleButtonClick = () => {
-    this.setState({
-      displayProgressBar: !this.state.displayProgressBar,
-      buttonDisabled: !this.state.buttonDisabled
-    });
-    setTimeout(() => {
-      this.setState({
-        displayProgressBar: !this.state.displayProgressBar,
-        buttonDisabled: !this.state.buttonDisabled
-      });
-    }, 3000);
-  };
 
   handleEmailChange = e => {
     this.props.changeEmailLogin(e.target.value);
@@ -111,7 +150,7 @@ class Login extends Component {
                     className={classes.button}
                     color="primary"
                     variant="contained"
-                    onClick={this.handleButtonClick}
+                    onClick={this.handleLoginClick}
                     disabled={this.state.buttonDisabled}
                   >
                     Login
@@ -140,6 +179,7 @@ Login.propTypes = {
   classes: PropTypes.object.isRequired,
   email: PropTypes.string.isRequired,
   password: PropTypes.string.isRequired,
+  login: PropTypes.func.isRequired,
   changeEmailLogin: PropTypes.func.isRequired,
   changePasswordLogin: PropTypes.func.isRequired
 };

@@ -8,8 +8,13 @@ import {
   CHANGE_GENDER_REGISTER,
   CHANGE_LASTNAME_REGISTER,
   CHANGE_PASSWORD_CONFIRM_REGISTER,
-  CHANGE_PASSWORD_REGISTER
+  CHANGE_PASSWORD_REGISTER,
+  REGISTER
 } from "../../../static/JS/actionConstants";
+import { of } from "rxjs";
+import { ajax } from "rxjs/ajax";
+import { switchMap, mergeMap, catchError } from "rxjs/operators";
+import { ofType } from "redux-observable";
 
 const initialState = {
   email: "",
@@ -61,6 +66,10 @@ export const changeLastnameRegister = payload => {
 
 export const changeGenderRegister = payload => {
   return { type: CHANGE_GENDER_REGISTER, payload };
+};
+
+export const register = data => {
+  return { type: REGISTER, data };
 };
 
 const signupReducer = (state = initialState, action) => {
@@ -127,3 +136,33 @@ const signupReducer = (state = initialState, action) => {
   return state;
 };
 export default signupReducer;
+
+const handleRegisterResponse = response => {
+  const resp = response.response;
+  if (resp.success === true) {
+    alert("Success");
+    window.location = "/login";
+  } else {
+    console.log("Error");
+    alert("Registration Failed. The user already exists.");
+  }
+  return of({ type: "" });
+};
+
+export const registerEpic = action$ => {
+  return action$.pipe(
+    ofType(REGISTER),
+    switchMap(action =>
+      ajax
+        .post(
+          "/signup",
+          { data: action.data },
+          { "Content-Type": "application/json" }
+        )
+        .pipe(
+          mergeMap(response => handleRegisterResponse(response)),
+          catchError(err => console.log(err))
+        )
+    )
+  );
+};
