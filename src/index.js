@@ -9,11 +9,6 @@ import { MuiThemeProvider } from "@material-ui/core/styles";
 import theme from "./static/themes/theme";
 import CreateStore from "./client/Store";
 import { Provider } from "react-redux";
-// import "rxjs/operators";
-
-// import "rxjs/add/operator/map";
-// import "rxjs/add/observable/of";
-// import "rxjs/add/operator/catch";
 
 const LOGGED_IN = "LOGGED_IN";
 const store = CreateStore();

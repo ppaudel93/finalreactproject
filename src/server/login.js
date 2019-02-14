@@ -11,7 +11,9 @@ const loginApi = (req, res) => {
         console.log(docs);
         if (docs.length > 0 && docs[0] !== null) {
           const requiredDoc = docs[0];
-          if (requiredDoc.password === bcrypt.hashSync(password)) {
+          console.log(bcrypt.hashSync(data.password));
+          console.log(bcrypt.compareSync(data.password, requiredDoc.password));
+          if (bcrypt.compareSync(data.password, requiredDoc.password)) {
             return res.send({ success: true, data: docs[0].email });
           } else {
             return res.send({ success: false });
@@ -22,6 +24,5 @@ const loginApi = (req, res) => {
       })
     )
     .catch(err => console.log(err));
-  return res.send({ success: true });
 };
 export default loginApi;

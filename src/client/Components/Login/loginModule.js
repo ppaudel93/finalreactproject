@@ -48,7 +48,7 @@ const handleLoginResponse = response => {
   if (resp.success === true) {
     localStorage.setItem("LOGGED_IN", true);
     localStorage.setItem("CURRENT_USER", resp.data);
-    //window.location = "/";
+    window.location = "/";
   } else {
     console.log("Error");
     alert("Username, Password or both seem to be incorrect.");

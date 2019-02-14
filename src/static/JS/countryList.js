@@ -120,10 +120,6 @@ export const countryList = [
     label: "Botswana"
   },
   {
-    value: "BW",
-    label: "Botswana"
-  },
-  {
     value: "BV",
     label: "Bouvet Island"
   },

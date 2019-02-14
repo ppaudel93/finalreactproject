@@ -42,46 +42,79 @@ class Login extends Component {
     super(props);
     this.state = {
       displayProgressBar: false,
-      buttonDisabled: false
+      buttonDisabled: false,
+      emailEmptyError: false,
+      emailRegexError: false,
+      passwordEmptyError: false,
+      emailErrorMessage: "",
+      passwordErrorMessage: "",
+      errorStatus: true
     };
   }
   handleProgressBar = () => {
     this.props.toggleProgressBar();
   };
+  changeErrorStatus = boolean =>
+    this.setState({ errorStatus: boolean }, () =>
+      console.log(this.state.errorStatus)
+    );
+  inverter = name => {
+    if (name === "emailEmptyError") this.setState({ emailEmptyError: true });
+    if (name === "emailRegexError") this.setState({ emailRegexError: true });
+    if (name === "passwordEmptyError")
+      this.setState({ passwordEmptyError: true });
+  };
+  changeErrorMessage = name => {
+    if (name === "emailEmpty") {
+      this.setState({ emailErrorMessage: "Email cannot be empty" });
+    }
+    if (name === "passwordEmpty") {
+      this.setState({ passwordErrorMessage: "Password cannot be empty" });
+    }
+    if (name === "emailRegex") {
+      this.setState({ emailErrorMessage: "Email is invalid" }, () =>
+        console.log(this.state.emailErrorMessage)
+      );
+    }
+  };
   handleLoginClick = () => {
     let email = this.props.email;
     let password = this.props.password;
-    if (email === "") {
-      alert("Email cannot be empty");
-      return;
-    }
     if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-      alert(
-        "The email address you entered is invalid. Please enter a valid email address."
-      );
-      return;
+      this.inverter("emailRegexError");
+      this.changeErrorMessage("emailRegex");
+      this.changeErrorStatus(true);
+    }
+    if (email === "") {
+      this.inverter("emailEmptyError");
+      this.changeErrorMessage("emailEmpty");
+      this.changeErrorStatus(true);
     }
     if (password === "") {
-      alert("Password cannot be empty");
-      return;
+      this.inverter("passwordEmptyError");
+      this.changeErrorMessage("passwordEmpty");
+      this.changeErrorStatus(true);
     }
-    this.setState(
-      {
-        displayProgressBar: !this.state.displayProgressBar,
-        buttonDisabled: !this.state.buttonDisabled
-      },
-      () => {
-        let hash = bcrypt.hashSync(password);
-        console.log(hash);
-        this.props.login({ email, password });
-        // this.props.toggleLoggedIn(true);
-        // this.props.changeCurrentUser(email);
-        this.setState({
+
+    if (this.state.errorStatus === true) {
+      return;
+    } else {
+      this.setState(
+        {
           displayProgressBar: !this.state.displayProgressBar,
           buttonDisabled: !this.state.buttonDisabled
-        });
-      }
-    );
+        },
+        () => {
+          let hash = bcrypt.hashSync(password);
+          console.log(hash);
+          this.props.login({ email, password });
+          this.setState({
+            displayProgressBar: !this.state.displayProgressBar,
+            buttonDisabled: !this.state.buttonDisabled
+          });
+        }
+      );
+    }
   };
   componentDidMount() {
     document.title = "Login";
@@ -89,9 +122,17 @@ class Login extends Component {
 
   handleEmailChange = e => {
     this.props.changeEmailLogin(e.target.value);
+    this.setState({
+      emailEmptyError: false,
+      emailRegexError: false,
+      emailErrorMessage: ""
+    });
+    this.changeErrorStatus(false);
   };
   handlePasswordChange = e => {
     this.props.changePasswordLogin(e.target.value);
+    this.setState({ passwordEmptyError: false, passwordErrorMessage: "" });
+    this.changeErrorStatus(false);
   };
   render() {
     let newStyles = {
@@ -122,6 +163,12 @@ class Login extends Component {
                     className={classes.textField}
                     margin="normal"
                     type="email"
+                    error={
+                      this.state.emailEmptyError
+                        ? this.state.emailEmptyError
+                        : this.state.emailRegexError
+                    }
+                    helperText={this.state.emailErrorMessage}
                     value={this.props.email}
                     onChange={this.handleEmailChange}
                   />
@@ -135,6 +182,8 @@ class Login extends Component {
                     className={classes.textField}
                     margin="normal"
                     type="password"
+                    error={this.state.passwordEmptyError}
+                    helperText={this.state.passwordErrorMessage}
                     value={this.props.password}
                     onChange={this.handlePasswordChange}
                   />

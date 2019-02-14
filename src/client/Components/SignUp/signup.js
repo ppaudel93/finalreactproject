@@ -43,57 +43,214 @@ class SignUp extends Component {
     country: "",
     gender: "",
     termsAccepted: false,
-    emailError: false
+    emailEmptyError: false,
+    emailConfirmEmptyError: false,
+    emailRegexError: false,
+    passwordConfirmEmptyError: false,
+    passwordEmptyError: false,
+    emailSameError: false,
+    passwordSameError: false,
+    firstnameError: false,
+    lastnameError: false,
+    birthdayError: false,
+    genderError: false,
+    countryError: false,
+    addressError: false,
+    emptyError: true,
+    emailErrorMessage: "",
+    passwordErrorMessage: "",
+    errorStatus: true
+  };
+  changeErrorStatus = boolean =>
+    this.setState({ errorStatus: boolean }, () =>
+      console.log(this.state.errorStatus)
+    );
+  inverter = name => {
+    if (name === "emailEmptyError")
+      this.setState({ emailEmptyError: true }, () =>
+        console.log(this.state.emailEmptyError)
+      );
+    if (name === "emailRegexError")
+      this.setState({ emailRegexError: true }, () => {
+        console.log(this.state.emailRegexError);
+      });
+    if (name === "emailConfirmError")
+      this.setState({ emailConfirmEmptyError: true });
+    if (name === "passwordConfirmError")
+      this.setState({ passwordConfirmEmptyError: true });
+    if (name === "passwordEmptyError")
+      this.setState({ passwordEmptyError: true });
+    if (name === "emailSameError") this.setState({ emailSameError: true });
+    if (name === "passwordSameError")
+      this.setState({ passwordSameError: true });
+    if (name === "firstnameError") this.setState({ firstnameError: true });
+    if (name === "lastnameError") this.setState({ lastnameError: true });
+    if (name === "birthdayError") this.setState({ birthdayError: true });
+    if (name === "genderError") this.setState({ genderError: true });
+    if (name === "countryError") this.setState({ countryError: true });
+    if (name === "addressError") this.setState({ addressError: true });
+  };
+  changeErrorMessage = name => {
+    if (name === "emailMatch") {
+      this.setState({ emailErrorMessage: "Emails do not match." });
+    }
+    if (name === "passwordMatch") {
+      this.setState({ passwordErrorMessage: "Passwords do not match" });
+    }
+    if (name === "emailEmpty") {
+      this.setState({ emailErrorMessage: "Email cannot be empty" });
+    }
+    if (name === "passwordEmpty") {
+      this.setState({ passwordErrorMessage: "Password cannot be empty" });
+    }
+    if (name === "emailRegex") {
+      this.setState({ emailErrorMessage: "Email is invalid" }, () =>
+        console.log(this.state.emailErrorMessage)
+      );
+    }
   };
   handleRegister = () => {
     let firstname = this.props.firstname;
     let lastname = this.props.lastname;
     let email = this.props.email;
+    let emailConfirm = this.props.confirmEmail;
     let password = bcrypt.hashSync(this.props.password);
+    let passwordConfirm = bcrypt.hashSync(this.props.confirmPassword);
     let birthday = this.props.birthday;
     let gender = this.props.gender;
     let country = this.props.country;
     let address = this.props.address;
-    this.props.register({
-      firstname,
-      lastname,
-      email,
-      password,
-      birthday,
-      gender,
-      country,
-      address
-    });
+    if (email === "") {
+      this.inverter("emailEmptyError");
+      this.changeErrorMessage("emailEmpty");
+      this.changeErrorStatus(true);
+    }
+    if (firstname === "") {
+      this.inverter("firstnameError");
+      this.changeErrorStatus(true);
+    }
+    if (lastname === "") {
+      this.inverter("lastnameError");
+      this.changeErrorStatus(true);
+    }
+    if (password === "") {
+      this.inverter("passwordEmptyError");
+      this.changeErrorMessage("passwordEmpty");
+      this.changeErrorStatus(true);
+    }
+    if (birthday === null || birthday === "") {
+      this.inverter("birthdayError");
+      this.changeErrorStatus(true);
+    }
+    if (gender === "") {
+      this.inverter("genderError");
+      this.changeErrorStatus(true);
+    }
+    if (country === "") {
+      this.inverter("countryError");
+      this.changeErrorStatus(true);
+    }
+    if (address === "") {
+      this.inverter("addressError");
+      this.changeErrorStatus(true);
+    }
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+      this.inverter("emailRegexError");
+      this.changeErrorMessage("emailRegex");
+      this.inverter("emailConfirmError");
+      this.changeErrorStatus(true);
+    }
+    if (email !== emailConfirm) {
+      this.inverter("emailSameError");
+      this.changeErrorMessage("emailMatch");
+      this.changeErrorStatus(true);
+    }
+    if (password !== passwordConfirm) {
+      this.inverter("passwordSameError");
+      this.changeErrorMessage("passwordMatch");
+      this.changeErrorStatus(true);
+    }
+    if (this.state.errorStatus === true) {
+      return;
+    } else {
+      this.props.register({
+        firstname,
+        lastname,
+        email,
+        password,
+        birthday,
+        gender,
+        country,
+        address
+      });
+    }
   };
   handlePasswordConfirmChange = e => {
     this.props.changePasswordConfirmRegister(e.target.value);
+    this.setState({
+      passwordConfirmEmptyError: false,
+      passwordSameError: false,
+      passwordErrorMessage: ""
+    });
+    this.changeErrorStatus(false);
   };
   handlePasswordChange = e => {
     this.props.changePasswordRegister(e.target.value);
+    this.setState({
+      passwordEmptyError: false,
+      passwordSameError: false,
+      passwordErrorMessage: ""
+    });
+    this.changeErrorStatus(false);
   };
   handleLastnameChange = e => {
     this.props.changeLastnameRegister(e.target.value);
+    this.setState({ lastnameError: false });
+    this.changeErrorStatus(false);
   };
   handleGenderChange = n => e => {
     this.props.changeGenderRegister(e.target.value);
+    this.setState({ genderError: false });
+    this.changeErrorStatus(false);
   };
   handleFirstnameChange = e => {
     this.props.changeFirstnameRegister(e.target.value);
+    this.setState({ firstnameError: false });
+    this.changeErrorStatus(false);
   };
   handleEmailConfirmChange = e => {
     this.props.changeEmailConfirmRegister(e.target.value);
+    this.setState({
+      emailConfirmEmptyError: false,
+      emailSameError: false,
+      emailErrorMessage: ""
+    });
+    this.changeErrorStatus(false);
   };
   handleEmailChange = e => {
     this.props.changeEmailRegister(e.target.value);
+    this.setState({
+      emailEmptyError: false,
+      emailRegexError: false,
+      emailSameError: false,
+      emailErrorMessage: ""
+    });
+    this.changeErrorStatus(false);
   };
   handleCountryChange = n => e => {
     this.props.changeCountryRegister(e.target.value);
+    this.setState({ countryError: false });
+    this.changeErrorStatus(false);
   };
   handleBirthdayChange = date => {
     this.props.changeBirthdayRegister(date);
+    this.setState({ birthdayError: false });
+    this.changeErrorStatus(false);
   };
   handleAddressChange = e => {
     this.props.changeAddressRegister(e.target.value);
+    this.setState({ addressError: false });
+    this.changeErrorStatus(false);
   };
   handleFileButtonClick = () => {
     document.getElementById("register-file").click();
@@ -143,6 +300,12 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         type="text"
+                        error={this.state.firstnameError}
+                        helperText={
+                          this.state.firstnameError
+                            ? "First Name cannot be empty"
+                            : ""
+                        }
                         value={this.props.firstname}
                         onChange={this.handleFirstnameChange}
                       />
@@ -156,6 +319,12 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         type="text"
+                        error={this.state.lastnameError}
+                        helperText={
+                          this.state.lastnameError
+                            ? "Last Name cannot be empty"
+                            : ""
+                        }
                         value={this.props.lastname}
                         onChange={this.handleLastnameChange}
                       />
@@ -169,6 +338,14 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         type="email"
+                        error={
+                          !this.state.emailSameError
+                            ? this.state.emailEmptyError
+                              ? this.state.emailEmptyError
+                              : this.state.emailRegexError
+                            : this.state.emailSameError
+                        }
+                        helperText={this.state.emailErrorMessage}
                         value={this.props.email}
                         onChange={this.handleEmailChange}
                       />
@@ -182,6 +359,12 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         type="email"
+                        error={
+                          !this.state.emailSameError
+                            ? this.state.emailConfirmEmptyError
+                            : this.state.emailSameError
+                        }
+                        helperText={this.state.emailErrorMessage}
                         value={this.props.confirmEmail}
                         onChange={this.handleEmailConfirmChange}
                       />
@@ -195,6 +378,12 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         type="password"
+                        error={
+                          !this.state.passwordSameError
+                            ? this.state.passwordEmptyError
+                            : this.state.passwordSameError
+                        }
+                        helperText={this.state.passwordErrorMessage}
                         value={this.props.password}
                         onChange={this.handlePasswordChange}
                       />
@@ -208,6 +397,12 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         type="password"
+                        error={
+                          !this.state.passwordSameError
+                            ? this.state.passwordEmptyError
+                            : this.state.passwordSameError
+                        }
+                        helperText={this.state.passwordErrorMessage}
                         value={this.props.confirmPassword}
                         onChange={this.handlePasswordConfirmChange}
                       />
@@ -217,6 +412,12 @@ class SignUp extends Component {
                     <Grid container justify="center">
                       <Tooltip title="Birthday">
                         <DatePicker
+                          error={this.state.birthdayError}
+                          helperText={
+                            this.state.birthdayError
+                              ? "Birthday cannot be empty"
+                              : ""
+                          }
                           value={this.props.birthday}
                           label="Birthday"
                           onChange={this.handleBirthdayChange}
@@ -235,6 +436,10 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         select
+                        error={this.state.genderError}
+                        helperText={
+                          this.state.genderError ? "Gender cannot be empty" : ""
+                        }
                         value={this.props.gender}
                         onChange={this.handleGenderChange("gender")}
                         SelectProps={{
@@ -257,6 +462,12 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         select
+                        error={this.state.countryError}
+                        helperText={
+                          this.state.countryError
+                            ? "Country cannot be empty"
+                            : ""
+                        }
                         value={this.props.country}
                         onChange={this.handleCountryChange("country")}
                         SelectProps={{
@@ -279,6 +490,12 @@ class SignUp extends Component {
                         className={classes.textField}
                         margin="normal"
                         type="text"
+                        error={this.state.addressError}
+                        helperText={
+                          this.state.addressError
+                            ? "Address cannot be empty"
+                            : ""
+                        }
                         value={this.props.address}
                         onChange={this.handleAddressChange}
                       />

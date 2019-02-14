@@ -1,6 +1,11 @@
+import { red } from "@material-ui/core/colors";
+
 let styles = theme => ({
   root: {
     flexGrow: 1
+  },
+  typoGraphy: {
+    padding: theme.spacing.unit
   },
   paper: {
     marginTop: theme.spacing.unit * 15,
@@ -17,6 +22,30 @@ let styles = theme => ({
       marginTop: theme.spacing.unit * 25
     }
   },
+  paperHome: {
+    marginTop: 0,
+    padding: theme.spacing.unit * 3,
+    paddingLeft: theme.spacing.unit * 8,
+    paddingRight: theme.spacing.unit * 8,
+    minWidth: 800,
+    margin: theme.spacing.unit,
+    [theme.breakpoints.down("sm")]: {
+      height: "auto",
+      padding: 0,
+      marginTop: 0
+    },
+    [theme.breakpoints.only("md")]: {
+      marginTop: theme.spacing.unit * 25
+    }
+  },
+  media: {
+    height: 0,
+    paddingTop: "56.25%",
+    margin: theme.spacing.unit,
+    [theme.breakpoints.down("sm")]: {
+      width: "100vw"
+    }
+  },
   paperRegister: {
     marginTop: theme.spacing.unit * 15,
     padding: theme.spacing.unit * 3,
@@ -29,6 +58,11 @@ let styles = theme => ({
     [theme.breakpoints.only("md")]: {
       marginTop: theme.spacing.unit * 25
     }
+  },
+  card: {
+    minWidth: 400,
+    maxWidth: 800,
+    margin: theme.spacing.unit
   },
   textField: {
     width: 250,
@@ -68,6 +102,11 @@ let styles = theme => ({
     [theme.breakpoints.only("md")]: {
       marginLeft: 0
     }
+  },
+  avatar: {
+    backgroundColor: red[500],
+    margin: theme.spacing.unit,
+    marginTop: theme.spacing.unit * 1.5
   }
 });
 

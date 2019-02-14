@@ -16,5 +16,7 @@ export const CHANGE_COUNTRY_REGISTER = "CHANGE_COUNTRY_REGISTER";
 export const CHANGE_ADDRESS_REGISTER = "CHANGE_ADDRESS_REGISTER";
 export const TOGGLE_LOGGED_IN = "TOGGLE_LOGGED_IN";
 export const CHANGE_CURRENT_USER = "CHANGE_CURRENT_USER";
+export const CHANGE_WORD_NUM = "CHANGE_WORD_NUM";
+export const CHANGE_GIF_NUM = "CHANGE_GIF_NUM";
 export const MONGO_URL = "mongodb://localhost:27017";
 export const DB_NAME = "GIFviewer";
