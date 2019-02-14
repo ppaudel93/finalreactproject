@@ -59,6 +59,7 @@ class NavBar extends Component {
   };
   handleLogout = () => {
     this.props.toggleLoggedIn(false);
+    this.props.changeCurrentUser("");
     this.handleClose();
     localStorage.clear();
   };
@@ -74,6 +75,7 @@ class NavBar extends Component {
     const isMenuOpen = Boolean(this.state.anchorEl);
     const renderMenu = (
       <Menu
+        MenuListProps={{ className: classes.textField }}
         anchorEl={this.state.anchorEl}
         anchorOrigin={{ vertical: "top", horizontal: "right" }}
         transformOrigin={{ vertical: "top", horizontal: "right" }}
