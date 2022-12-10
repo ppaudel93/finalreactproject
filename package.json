@@ -20,7 +20,7 @@
     "bcrypt-nodejs": "^0.0.3",
     "date-fns": "2.0.0-alpha.25",
     "detect-libc": "^1.0.3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "forever-agent": "^0.6.1",
     "fs-minipass": "^1.2.5",
     "fstream": "^1.0.12",
